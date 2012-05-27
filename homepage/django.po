@@ -1,0 +1,4855 @@
+# WeeChat site
+# Copyright (c) 2009 by FlashCode <flashcode@flashtux.org>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WeeChat\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-15 14:23+0200\n"
+"PO-Revision-Date: 2012-05-19 10:40+0100\n"
+"Last-Translator: Nils Görs <weechatter@arcor.de>\n"
+"Language-Team: Nils G <weechatter@arcor.de>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: settings.py:37
+#: doc/models.py:10
+msgid "English"
+msgstr "Englisch"
+
+#: settings.py:38
+#: doc/models.py:11
+msgid "French"
+msgstr "Französisch"
+
+#: settings.py:39
+#: doc/models.py:8
+msgid "German"
+msgstr "Deutsch"
+
+#: settings.py:40
+#: doc/models.py:13
+msgid "Italian"
+msgstr "Italienisch"
+
+#: settings.py:41
+#: doc/models.py:14
+msgid "Polish"
+msgstr "Polnisch"
+
+#: settings.py:42
+#: doc/models.py:16
+msgid "Portuguese (Brazil)"
+msgstr "portugiesisch (Brasilien)"
+
+#. Translators: this is date format, see http://uk3.php.net/manual/en/function.date.php
+#: settings.py:151
+msgid "M j, Y"
+msgstr "d.m.Y"
+
+#: doc/models.py:7
+msgid "Czech"
+msgstr "Tschechisch"
+
+#: doc/models.py:9
+msgid "Spanish"
+msgstr "Spanisch"
+
+#: doc/models.py:12
+msgid "Hungarian"
+msgstr "Ungarisch"
+
+#: doc/models.py:15
+msgid "Russian"
+msgstr "Russisch"
+
+#: doc/models.py:17
+msgid "Scots"
+msgstr "Schottisch"
+
+#: doc/models.py:18
+msgid "Swedish"
+msgstr "Schwedisch"
+
+#: doc/models.py:19
+msgid "Japanese"
+msgstr "Japanisch"
+
+#: doc/models.py:46
+msgid "FAQ"
+msgstr "FAQ"
+
+#: doc/models.py:47
+msgid "User's guide"
+msgstr "Benutzeranleitung"
+
+#: doc/models.py:48
+msgid "Plugin API reference"
+msgstr "Anleitung für API Erweiterung"
+
+#: doc/models.py:49
+msgid "Scripting guide"
+msgstr "Skript Anleitung"
+
+#: doc/models.py:50
+msgid "Quick Start guide"
+msgstr "Quickstart-Anleitung"
+
+#: doc/models.py:51
+msgid "Tester's guide"
+msgstr "Anleitung für Testpersonen"
+
+#: doc/models.py:52
+msgid "Developer's guide"
+msgstr "Entwicklerhandbuch"
+
+#: doc/models.py:53
+msgid "Relay protocol"
+msgstr "Relay Protokoll"
+
+#: info/views.py:11
+msgid "stable version"
+msgstr "stabile Version"
+
+#: info/views.py:12
+msgid "stable version, as number, like plugin API: info_get(\"version_number\")"
+msgstr "stabile Version, als Nummer, siehe Erweiterung-API: info_get(\"version_number\")"
+
+#: info/views.py:13
+msgid "date of stable version"
+msgstr "Datum der stabilen Version"
+
+#: info/views.py:14
+msgid "development version"
+msgstr "Entwicklerversion"
+
+#: info/views.py:15
+msgid "output of \"git rev-parse HEAD\" for sources repository"
+msgstr "Ausgabe von \"git rev-parse HEAD\" für Quelltext Repository"
+
+#: info/views.py:16
+msgid "output of \"git rev-parse HEAD\" for scripts repository"
+msgstr "Ausgabe von \"git rev-parse HEAD\" für Skripten Repository"
+
+#: info/views.py:17
+msgid "next stable version"
+msgstr "kommende stabile Version"
+
+#: info/views.py:18
+msgid "next stable version, as number, like plugin API: info_get(\"version_number\")"
+msgstr "kommende stabile Version, als Nummer, siehe Erweiterung-API: info_get(\"version_number\")"
+
+#: info/views.py:19
+msgid "approximate date of next stable version"
+msgstr "voraussichtliches Datum der kommenden stabilen Version"
+
+#: info/views.py:20
+msgid "all infos (one info by line, format: \"info:value\")"
+msgstr "alle Informationen (eine Information pro Zeile, Format: \"Info:Wert\")"
+
+#: keydates/_keydates_i18n.py:4
+msgid "plugin guile, support of python 3.x, weechat protocol in relay (remote interfaces), URL transfer in API (v0.3.7)"
+msgstr "Guile Erweiterung, Python 3.x Unterstützung, WeeChat-Protokoll für Relay (Remoteschnittstelle), URL Transfer in API (v0.3.7)"
+
+#: keydates/_keydates_i18n.py:5
+msgid "mouse support, cursor mode (v0.3.6)"
+msgstr "Unterstützung von Maus- und Cursormodus (v0.3.6)"
+
+#: keydates/_keydates_i18n.py:6
+msgid "dynamic allocation and attributes for colors (v0.3.5)"
+msgstr "dynamische Reservierung und Attribute für Farben (v0.3.5)"
+
+#: keydates/_keydates_i18n.py:7
+msgid "256 colors, irc proxy, rmodifier, redirection of irc commands (v0.3.4)"
+msgstr "256 Farben, irc proxy, rmodifier, Umlenkung von IRC Befehlen (v0.3.4)"
+
+#: keydates/_keydates_i18n.py:8
+msgid "SASL authentication (v0.3.2)"
+msgstr "SASL Authentifizierung (v0.3.2)"
+
+#: keydates/_keydates_i18n.py:9
+msgid "new site weechat.org, major rewrite of WeeChat with new plugin API, tcl plugin (v0.3.0)"
+msgstr "neue Internetpräsenz (weechat.org),  WeeChat wurde neu entwickelt, mit neuer API Schnittstelle, tcl Erweiterung (v0.3.0)"
+
+#: keydates/_keydates_i18n.py:10
+msgid "last version before a major rewrite of WeeChat (v0.2.6)"
+msgstr "letzte Version bevor WeeChat neu geschrieben wurde (v0.2.6)"
+
+#: keydates/_keydates_i18n.py:11
+msgid "incremental text search in buffers (v0.2.4)"
+msgstr "schrittweise Textsuche in Buffers (v0.2.4)"
+
+#: keydates/_keydates_i18n.py:12
+msgid "aspell plugin (v0.2.0)"
+msgstr "aspell Erweiterung (v0.2.0)"
+
+#: keydates/_keydates_i18n.py:13
+msgid "lua plugin (v0.1.8)"
+msgstr "lua Erweiterung (v0.1.8)"
+
+#: keydates/_keydates_i18n.py:14
+msgid "ruby plugin (v0.1.7)"
+msgstr "ruby Erweiterung (v0.1.7)"
+
+#: keydates/_keydates_i18n.py:15
+msgid "full utf-8 support (v0.1.6)"
+msgstr "vollständige Unterstützung von utf-8 (v0.1.6)"
+
+#: keydates/_keydates_i18n.py:16
+msgid "proxy support, ipv6, SSL (v0.1.3)"
+msgstr "proxy Unterstützung, ipv6, SSL (v0.1.3)"
+
+#: keydates/_keydates_i18n.py:17
+msgid "python plugin (v0.1.2)"
+msgstr "python Erweiterung (v0.1.2)"
+
+#: keydates/_keydates_i18n.py:18
+msgid "dcc chat and file, fifo plugin (v0.1.1)"
+msgstr "dcc chat und Datentransfer, fifo Erweiterung (v0.1.1)"
+
+#: keydates/_keydates_i18n.py:19
+msgid "perl plugin (v0.0.4)"
+msgstr "perl Erweiterung (v0.0.4)"
+
+#: keydates/_keydates_i18n.py:20
+msgid "first version (v0.0.1)"
+msgstr "erste Version (v0.0.1)"
+
+#: keydates/_keydates_i18n.py:21
+msgid "first line of code"
+msgstr "erste Zeile des Codes"
+
+#: news/_news_i18n.py:4
+msgid "Version 0.3.7"
+msgstr "Version 0.3.7"
+
+#: news/_news_i18n.py:5
+msgid ""
+"Version 0.3.7 is available!\n"
+"\n"
+"This is a major release, with lot of bugs fixed and major new features.\n"
+"\n"
+"Among the new features:\n"
+"- support of Scheme scripts (new plugin \"guile\")\n"
+"- support of Python 3.x (but version 2.x still recommended)\n"
+"- add \"weechat\" protocol in relay plugin for remote interfaces, like <a href=\"http://dev.weechat.org/post/2011/12/25/QWeeChat-Python-Qt-GUI\">QWeeChat</a>\n"
+"- new option irc.color.mirc_remap to remap mirc colors in irc messages\n"
+"- new options irc.look.highlight_{server|channel|pv} to customize or disable default nick highlight\n"
+"- new option \"capabilities\" in irc servers (to enable some client capabilities on connection)\n"
+"- new option weechat.history.max_buffer_lines_minutes to limit buffer history by time\n"
+"- use extended regex in /filter, /ignore and /list\n"
+"- add support of flags in regular expressions and highlight options\n"
+"- add URL transfer in plugin API (with hook_process and hook_process_hashtable)\n"
+"- add translations in japanese\n"
+"- add doc for relay protocol\n"
+"- add developer's guide\n"
+"- many bugs fixed.\n"
+"\n"
+"For complete list of new features and bugs fixed, please look at <a href=\"http://dev.weechat.org/post/2012/02/26/Version-0.3.7\">development blog</a> or <a href=\"/files/changelog/ChangeLog-0.3.7.html\">ChangeLog</a>."
+msgstr ""
+"Version 0.3.7 ist verfügbar!\n"
+"\n"
+"Diese Version ist erneut ein Major Release, in welchem viele Fehler behoben sind und ganz neue Funktionen bietet.\n"
+"\n"
+"Zu den neuen Eigenschaften dieser Version:\n"
+"- Unterstützung von Scheme Skripten (neue Erweiterung \"guile\")\n"
+"- Unterstützung von Python 3.0 (Version 2.x wird weiterhin empfohlen)\n"
+"- \"weechat\" Protokoll in der Relay-Erweiterung für Remoteschnittstellen hinzugefügt, z.B. <a href=\"http://dev.weechat.org/post/2011/12/25/QWeeChat-Python-Qt-GUI\">QWeeChat</a>\n"
+"- neue Option, irc.color.mirc_remap um eine Farbanpassung der mIRC Farben in IRC Nachrichten durchzuführen\n"
+"- neue Option, irc.look.highlight_{server|channel|pv} um Standard Highlights anzupassen oder generell zu deaktivieren\n"
+"- neue Option, \"capabilities\" für IRC Server (um einige Client Fähigkeiten während des Verbindungsaufbaus zu aktivieren)\n"
+"- neue Option, weechat.history.max_buffer_lines_minutes um den Verlaufspeicher zeitlich zu beschränken\n"
+"- Unterstützung erweiterter Regex für /filter, /ignore und /list\n"
+"- Unterstützung von Flags in regulären Ausdrücken und in Optionen die Highlights betreffen\n"
+"- URL Transfer in API Erweiterung eingebaut (mittels hook_process und hook_process_hashtable)\n"
+"- japanische Übersetzung vorhanden\n"
+"- Dokumentation über Relay-Protokoll ergänzt\n"
+"- Entwicklerhandbuch erstellt\n"
+"- viele Fehlerbereinigungen\n"
+"\n"
+"Eine vollständige Liste der neuen Funktionen und Fehlerbereinigungen findet man unter folgenden Links: <a href=\"http://dev.weechat.org/post/2012/02/26/Version-0.3.7\">development blog</a> oder <a href=\"/files/changelog/ChangeLog-0.3.7.html\">ChangeLog</a>."
+
+#: news/_news_i18n.py:6
+msgid "QWeeChat - Python/Qt GUI"
+msgstr "QWeeChat - Python/Qt GUI"
+
+#: news/_news_i18n.py:7
+msgid ""
+"Christmas gift: <a href=\"/download/devel\">QWeeChat</a>, the first remote interface for WeeChat. It is written in Python, using Qt toolkit.\n"
+"\n"
+"Note that this is an alpha version of this interface, many features are missing.\n"
+"\n"
+"More info and screenshot are on <a href=\"http://dev.weechat.org/post/2011/12/25/QWeeChat-Python-Qt-GUI\">development blog</a>.\n"
+"\n"
+"Merry Christmas and happy new year 2012 with WeeChat and QWeeChat!"
+msgstr ""
+"Weihnachtsgeschenk: <a href=\"/download/devel\">QWeeChat</a>, die erste externe Benutzeroberfläche für WeeChat.  Die Oberfläche ist mittels Python erstellt und nutzt das Qt Toolkit.\n"
+"\n"
+"Hinweis: Diese Oberfläche ist eine Alphaversion und viele Funktionen sind noch nicht implementiert.\n"
+"\n"
+"Für weitere Informationen und Bildschirmfotos siehe <a href=\"http://dev.weechat.org/post/2011/12/25/QWeeChat-Python-Qt-GUI\">development blog</a>.\n"
+"\n"
+"Frohe Weihnachten und ein glückliches neues Jahr 2012, mit WeeChat und QWeeChat!"
+
+#: news/_news_i18n.py:8
+msgid "Version 0.3.6"
+msgstr "Version 0.3.6"
+
+#: news/_news_i18n.py:9
+msgid ""
+"Version 0.3.6 is available!\n"
+"\n"
+"This is a major release, with lot of bugs fixed and major new features.\n"
+"\n"
+"Among the new features:\n"
+"- mouse support\n"
+"- cursor mode (free movement of cursor on screen)\n"
+"- contexts for keys\n"
+"- hdata in API (direct access to WeeChat and plugins data)\n"
+"- \"inactive\" colors for inactive windows and lines in merged buffers\n"
+"- support of merged buffers in /layout, save layout of buffers/windows on /upgrade\n"
+"- horizontal scrolling in buffers with free content\n"
+"- split of outgoing IRC messages\n"
+"- options for \"more\" chars in bars\n"
+"- bold not used any more for basic colors (if terminal has at least 16 colors)\n"
+"- automatic zoom on current window when terminal becomes too small for windows\n"
+"- new command /repeat\n"
+"- local variable \"highlight_regex\" in buffers.\n"
+"\n"
+"For complete list of new features and bugs fixed, please look at <a href=\"http://dev.weechat.org/post/2011/10/22/Version-0.3.6\">development blog</a> or <a href=\"/files/changelog/ChangeLog-0.3.6.html\">ChangeLog</a>."
+msgstr ""
+"Version 0.3.6 ist verfügbar!\n"
+"\n"
+"Dieses Major-Release beinhaltet viele Fehlerbereinigungen und neue großartige Funktionen.\n"
+"\n"
+"Überblick über die neuen Funktionen:\n"
+"- Mausunterstützung\n"
+"- Cursor-Modus (der Cursor kann frei auf dem Bildschirm positioniert werden)\n"
+"- Kontextverwaltung für Tasten\n"
+"- hdata in der API (direkter Zugriff auf Daten von WeeChat und Erweiterungen)\n"
+"- \"inaktive\" Farben zur Darstellung von inaktiven Fenstern und Zeilen in zusammengefügten Buffern\n"
+"- Unterstützung von zusammengefügten Buffern in /layout. Das Layout von Buffern/Fenstern wird bei einem /upgrade gesichert\n"
+"- horizontaler Bildlauf in Buffern mit freiem Text\n"
+"- Ausgehende IRC Nachrichten werden geteilt\n"
+"- Optionen für \"weitere\" Chars in Bars.\n"
+"- Textattribut \"fett\" wird für Grundfarben nicht mehr genutzt (sofern der Terminal mindestens 16 Farben darstellen kann)\n"
+"- automatisches zoomen des aktuellen Fensters, falls der Terminal zu klein für das Fenster wird\n"
+"- neuer Befehl /repeat\n"
+"- lokale Variable \"highlight_regex\" für Buffer.\n"
+"\n"
+"Eine vollständige Liste der neuen Funktionen und Fehlerbereinigungen findet man unter folgenden Links:  <a href=\"http://dev.weechat.org/post/2011/10/22/Version-0.3.6\">development blog</a> oder <a href=\"/files/changelog/ChangeLog-0.3.6.html\">ChangeLog</a>."
+
+#: news/_news_i18n.py:10
+msgid "Dennis Ritchie has left #world"
+msgstr "Dennis Ritchie ist verstorben"
+
+#: news/_news_i18n.py:11
+msgid ""
+"<a href=\"http://en.wikipedia.org/wiki/Dennis_Ritchie\">Dennis Ritchie</a>, creator of the C programming language, and key developer of the Unix operating system has died.\n"
+"WeeChat is written in C, and runs on derivatives of Unix.\n"
+"So we just say a big thank you to you, Dennis, for your wonderful job."
+msgstr ""
+"<a href=\"http://de.wikipedia.org/wiki/Dennis_Ritchie\">Dennis Ritchie</a>, entwickelte die Programmiersprache C und war Hauptentwickler des Unix-Betriebssystems.\n"
+"WeeChat ist in C geschrieben und läuft auf Unix ähnlichen Betriebssystemen.\n"
+"Wir möchten uns bei Dir, Dennis, für Deine großartige Arbeit bedanken."
+
+#: news/_news_i18n.py:12
+msgid "Version 0.3.5"
+msgstr "Version 0.3.5"
+
+#: news/_news_i18n.py:13
+msgid ""
+"Version 0.3.5 is available!\n"
+"\n"
+"This is a major release, with lot of bugs fixed and major new features.\n"
+"\n"
+"Among the new features:\n"
+"- 256 colors support improved (dynamic allocation of colors)\n"
+"- attributes for colors (bold/reverse/underline)\n"
+"- better scroll of input (with long text)\n"
+"- output of /help improved for list of commands and their arguments\n"
+"- remember scroll position of buffers in windows\n"
+"- list of buffers in filters\n"
+"- count of messages in hotlist buffers\n"
+"- swap buffers of windows\n"
+"- balance of windows\n"
+"- new API function to set help on plugin/script options\n"
+"- speller options in aspell plugin\n"
+"- option for SSL priorities in IRC servers\n"
+"- color nicks in nicklist and output of /names.\n"
+"\n"
+"For complete list of new features and bugs fixed, please look at <a href=\"http://dev.weechat.org/post/2011/05/15/Version-0.3.5\">development blog</a> or <a href=\"/files/changelog/ChangeLog-0.3.5.html\">ChangeLog</a>."
+msgstr ""
+"Version 0.3.5 ist verfügbar!\n"
+"\n"
+"Dies stellt erneut ein umfangreiches Update dar, mit vielen neuen Funktionen und Fehlerbereinigungen.\n"
+"\n"
+"Überblick über die neuen Funktionen:\n"
+"- Unterstützung von 256 Farben verbessert (dynamische Reservierung der Farben)\n"
+"- Attribute für Farben (fett/invertiert/unterstrichen)\n"
+"- besseres scrollen der Eingabezeile (bei sehr langem Text)\n"
+"- Ausgabe der Hilfstexte (/help) überarbeitet, sowohl für die Auflistung wie auch für die Argumente\n"
+"- Textposition in Buffern wird beim umschalten beibehalten\n"
+"- Auflistung der Buffer in Filter\n"
+"- Anzahl der Nachrichten wird in der Hotliste für jeden Buffer dargestellt\n"
+"-  Buffer von Fenstern tauschen\n"
+"- Größenanpassung von Fenstern\n"
+"- neue API Funktion für Hilfstexte für Erweiterungen/Skripten-Optionen\n"
+"- Buchstabieroptionen für Aspell-Erweiterung\n"
+"- Optionen für SSL Priorität bei IRC Servern\n"
+"- Nicks werden in der Nickliste und bei der Ausgabe von /names farblich dargestellt.\n"
+"\n"
+"Um die vollständige Liste der neuen Funktionen und Fehlerbereinigungen einzusehen: <a href=\"http://dev.weechat.org/post/2011/05/15/Version-0.3.5\">development blog</a> oder <a href=\"/files/changelog/ChangeLog-0.3.5.html\">ChangeLog</a>."
+
+#: news/_news_i18n.py:14
+msgid "Version 0.3.4"
+msgstr "Version 0.3.4"
+
+#: news/_news_i18n.py:15
+msgid ""
+"Version 0.3.4 is available!\n"
+"\n"
+"This is a major release, with lot of bugs fixed and major new features.\n"
+"\n"
+"Among the new features:\n"
+"- 256 colors support, with unlimited number of nick colors\n"
+"- irc proxy (relay plugin)\n"
+"- redirection of IRC commands\n"
+"- command /notify\n"
+"- rmodifier plugin\n"
+"- regular expressions for highlights\n"
+"- color support for timestamp in chat buffer\n"
+"- irc option to force color for some nicks\n"
+"- share input line between buffers.\n"
+"\n"
+"For complete list of new features and bugs fixed, please look at <a href=\"http://dev.weechat.org/post/2011/01/16/Version-0.3.4\">development blog</a> or <a href=\"/files/changelog/ChangeLog-0.3.4.html\">ChangeLog</a>."
+msgstr ""
+"Version 0.3.4 ist verfügbar!\n"
+"\n"
+"Diese Version überzeugt durch neue, großartige Funktionen und Fehlerbereinigungen.\n"
+"\n"
+"Einige der neuen Funktionen:\n"
+"- Unterstützung von 256 Farben, mit unlimitierter Anzahl an Nick-Farben\n"
+"- IRC Proxy (relay Erweiterung)\n"
+"- Umlenkung von IRC Befehlen\n"
+"- /notify Befehl\n"
+"- rmodifier Erweiterung\n"
+"- reguläre Ausdrücke für Highlights\n"
+"- Datumsanzeige im Chatfenster kann farblich angepasst werden\n"
+"- IRC Option um Farben den Nicks zuzuordnen\n"
+"- Inhalt der Eingabezeile wird für Buffer übernommen.\n"
+"\n"
+"Um eine Übersicht aller neuen Funktionen und Fehlerbereinigungen zu erhalten kann man sich den <a href=\"http://dev.weechat.org/post/2011/01/16/Version-0.3.4\">Entwickler-Blog</a> oder die <a href=\"/files/changelog/ChangeLog-0.3.4.html\">ChangeLog</a> ansehen."
+
+#: news/_news_i18n.py:16
+msgid "Happy colorful Christmas with WeeChat!"
+msgstr "Ein frohes und farbenreiches Weihnachtsfest mit WeeChat!"
+
+#: news/_news_i18n.py:17
+msgid ""
+"As a Christmas gift, a new major feature of WeeChat is now available: support of 256 colors!\n"
+"It is available in git repository, or in devel package with version 0.3.4-rc2.\n"
+"\n"
+"The future version 0.3.4 will bring major features like:\n"
+"- 256 colors\n"
+"- irc proxy (relay plugin)\n"
+"- redirection of IRC commands\n"
+"- command /notify\n"
+"- rmodifier plugin\n"
+"- regular expressions for highlights\n"
+"- and much more!\n"
+"\n"
+"We wish you happy Christmas and happy new year with WeeChat!\n"
+"See you in 2011 for version 0.3.4 :-)"
+msgstr ""
+"Als Weihnachtsgeschenk gibt es eine neue großartige Funktion für WeeChat: Unterstützung von 256 Farben!\n"
+"Diese Version, 0.3.4-rc2, ist sowohl über die Git-Repository oder als Devel-Paket  verfügbar.\n"
+"\n"
+"Die kommende stabile Version, 0.3.4, wird über neue Funktionen verfügen:\n"
+"- 256 Farben\n"
+"- IRC Proxy (Relay Erweiterung)\n"
+"- Umlenkung von IRC Befehlen\n"
+"- /notify Befehl\n"
+"- rmodifier Erweiterung\n"
+"- reguläre Ausdrücke für Highlights\n"
+"- und noch einiges mehr!\n"
+"\n"
+"Wir wünschen Euch ein frohes Weihnachtsfest und ein glückliches neues Jahr mit WeeChat!\n"
+"Wir sehen uns im Jahr 2011 mit Version 0.3.4 :-)"
+
+#: news/_news_i18n.py:18
+msgid "Version 0.3.3"
+msgstr "Version 0.3.3"
+
+#: news/_news_i18n.py:19
+msgid ""
+"Version 0.3.3 is available!\n"
+"\n"
+"As usual, many new features and bug fixes:\n"
+"- keys to undo/redo changes on command line,\n"
+"- better lag indicator,\n"
+"- new irc command /wallchops,\n"
+"- display message in irc private buffer when nick is back on server after a /quit,\n"
+"- reverse regex in a filter (with leading \"!\"),\n"
+"- new option to confirm /quit,\n"
+"- new option to align end of lines,\n"
+"- hashtables in plugin API,\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.3.3 ist verfügbar!\n"
+"\n"
+"Erneut mit vielen neuen Funktionen und Fehlerbeseitigungen:\n"
+"- Tastenbefehle um Änderungen in der Befehlszeile rückgängig zu machen bzw. wiederherzustellen,\n"
+"- verbesserter Lag Indikator,\n"
+"- neuer IRC Befehl /wallchops,\n"
+"- es wird nun eine Mitteilung im privaten IRC Buffer ausgegeben falls der User wieder zurück kommt nach einem /quit,\n"
+"- regex in einem Filter kann nun invers suchen (mittels einem führendem \"!\"),\n"
+"- neue Option um den Befehl /quit zu bestätigen\n"
+"- neue Option um bei einem Zeilenumbruch die neue Zeile auszurichten\n"
+"- Hashtables in Erweiterungs-API,\n"
+"- viele Fehlerbeseitigungen."
+
+#: news/_news_i18n.py:20
+msgid "Version 0.3.2"
+msgstr "Version 0.3.2"
+
+#: news/_news_i18n.py:21
+msgid ""
+"Version 0.3.2 is available!\n"
+"\n"
+"As usual, many new features and bug fixes:\n"
+"- SASL authentication with IRC servers,\n"
+"- new commands: mute, map,\n"
+"- command /key improved,\n"
+"- new command line option \"-s\" to start without script,\n"
+"- plugins autoload improved,\n"
+"- custom completions for aliases,\n"
+"- date allowed in log filenames,\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.3.2 ist verfügbar!\n"
+"\n"
+"wie üblich mit vielen neuen Funktionen und Fehlerbereinigungen:\n"
+"- SASL Authentifizierung bei IRC Servern,\n"
+"- neue Befehle: mute, map\n"
+"- /key-Befehl wurde überarbeitet,\n"
+"- neue Option beim Programmstart: \"-s\" WeeChat wird ohne Skripten gestartet,\n"
+"- laden der Erweiterungen verbessert,\n"
+"- benutzerdefinierte Vervollständigung für Alias,\n"
+"- die Protokolldatei kann im Dateinamen das Datum enthalten,\n"
+"- viele Fehlerbereinigungen."
+
+#: news/_news_i18n.py:22
+msgid "Version 0.3.1.1"
+msgstr "Version 0.3.1.1"
+
+#: news/_news_i18n.py:23
+msgid ""
+"Version 0.3.1.1 is available!\n"
+"\n"
+"This version fixes crashes with SSL connection to IRC server and purge of old DCC chats. It is recommended to upgrade from 0.3.1 to 0.3.1.1 for all users."
+msgstr ""
+"Version 0.3.1.1 ist verfügbar!\n"
+"\n"
+"Dieses Zwischenupdate behebt einen gravierenden Fehler beim Verbindungsaufbau mittels SSL sowie einen Fehler bei der Bereinigung alter DCC Chats. Es wird allen Anwendern empfohlen von 0.3.1 auf v0.3.1.1 upzugraden."
+
+#: news/_news_i18n.py:24
+msgid "Version 0.3.1"
+msgstr "Version 0.3.1"
+
+#: news/_news_i18n.py:25
+msgid ""
+"Version 0.3.1 is available!\n"
+"\n"
+"As usual, many new features and bug fixes:\n"
+"- new IRC commands: allserv, allchan, sajoin, samode, sanick, sapart, saquit,\n"
+"- check of SSL certificates and use of CertFP for IRC servers,\n"
+"- options to customize IRC CTCP replies,\n"
+"- options to choose target buffer for IRC messages,\n"
+"- anti-flood improved for IRC servers,\n"
+"- new expansions for alias arguments,\n"
+"- new color darkgray, bright colors supported for backgrounds,\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.3.1 ist verfügbar!\n"
+"\n"
+"mit neuen Funktionen und Fehlerbereinigungen:\n"
+"- neue IRC Befehle: allserv, allchan, sajoin, samode, sanick, sapart, saquit,\n"
+"- Überprüfung auf SSL Zertifikate und Nutzung von CertFP für IRC Server,\n"
+"- Optionen um IRC CTCP Antworten individuell zu handhaben,\n"
+"- Optionen um einen Zielbuffer für IRC Nachrichten auszuwählen,\n"
+"- Anti-Flood für IRC Server verbessert,\n"
+"- erweitere Funktionalität für Alias Argumente,\n"
+"- neue Farbe, darkgray und hellere Farben für Hintergrund  werden unterstützt,\n"
+"- umfangreiche Fehlerbehebungen."
+
+#: news/_news_i18n.py:26
+msgid "Version 0.3.0"
+msgstr "Version 0.3.0"
+
+#: news/_news_i18n.py:27
+msgid ""
+"Version 0.3.0 is released, after 2 years of work and more than 1000 commits!\n"
+"This is a major upgrade since last stable, please read files UPGRADE_0.3 and ChangeLog for list of changes: configuration files and plugin API are not compatible with previous versions.\n"
+"For this important release, site has moved to weechat.org, with a new look!\n"
+"Enjoy WeeChat!"
+msgstr ""
+"Nach zwei Jahren Arbeit und mehr als 1000 commits ist nun die Version 0.3.0 von WeeChat veröffentlicht worden.\n"
+"Diese Version stellt ein \"major upgrade\" dar, in der grundlegende Veränderungen an WeeChat vorgenommen worden sind. Bitte lesen Sie dazu die UPGRADE_0.3 und ChangeLog-Dateien.\n"
+"Denn sowohl die Konfigurationsdateien als auch die API Erweiterungen sind zu den vorherigen Versionen nicht mehr kompatibel.\n"
+"Viel Spaß mit WeeChat!"
+
+#: news/_news_i18n.py:28
+msgid "Version 0.3.0-rc3"
+msgstr "Version 0.3.0-rc3"
+
+#: news/_news_i18n.py:29
+msgid "Third release candidate (version 0.3.0-rc3) for future version 0.3.0 is available."
+msgstr "Dritte Vorabveröffentlichung (Version 0.3.0-rc3), der neuen Version 0.3.0, ist verfügbar."
+
+#: news/_news_i18n.py:30
+msgid "Version 0.3.0-rc2"
+msgstr "Version 0.3.0-rc2"
+
+#: news/_news_i18n.py:31
+msgid "Second release candidate (version 0.3.0-rc2) for future version 0.3.0 is available."
+msgstr "Zweite Vorabveröffentlichung (Version 0.3.0-rc2), der neuen Version 0.3.0, ist verfügbar."
+
+#: news/_news_i18n.py:32
+msgid "Version 0.3.0-rc1"
+msgstr "Version 0.3.0-rc1"
+
+#: news/_news_i18n.py:33
+msgid "First release candidate (version 0.3.0-rc1) for future version 0.3.0 is available. No major feature will be added until version 0.3.0 will be released."
+msgstr "Erste Vorabveröffentlichung (Version 0.3.0-rc1), der neuen Version 0.3.0, ist verfügbar. Es werden bis zur Veröffentlichung von v0.3.0 keine wesentlichen Funktionen mehr hinzugefügt."
+
+#: news/_news_i18n.py:34
+msgid "Version 0.2.6.3"
+msgstr "Version 0.2.6.3"
+
+#: news/_news_i18n.py:35
+msgid "Version 0.2.6.3 is available. This release fixes a bug with detection of gnutls."
+msgstr "Version 0.2.6.3 ist verfügbar. Diese Version  behebt einen Fehler mit der gnutls Erkennung."
+
+#: news/_news_i18n.py:36
+msgid "Version 0.2.6.2"
+msgstr "Version 0.2.6.2"
+
+#: news/_news_i18n.py:37
+msgid "Version 0.2.6.2 is available. This release fixes a charset decoding problem of version 0.2.6.1."
+msgstr "Version 0.2.6.2 ist verfügbar. Diese Version behebt einen Fehler in der Zeichensatz Dekodierung, von V 0.2.6.1."
+
+#: news/_news_i18n.py:38
+msgid "Version 0.2.6.1"
+msgstr "Version 0.2.6.1"
+
+#: news/_news_i18n.py:39
+msgid ""
+"Version 0.2.6.1 is available. This release fixes a crash when receiving some special chars in IRC messages.\n"
+"\n"
+"It is strongly recommended to upgrade to this version for all users of version 0.2.6 (versions 0.2.5 or older are not affected by this bug)."
+msgstr ""
+"Version 0.2.6.1. ist verfügbar. Diese Version behebt einen Fehler wenn einige spezielle Zeichen in IRC\n"
+"Nachrichten empfangen wurden. Es wird dringend empfohlen auf diese Version umzusteigen, falls man\n"
+"noch die Version 0.2.6 nutzt (V 0.2.5 und ältere Versionen sind von diesem Fehler nicht betroffen!)"
+
+#: news/_news_i18n.py:40
+msgid "Jabber plugin"
+msgstr "Jabber Erweiterung"
+
+#: news/_news_i18n.py:41
+msgid ""
+"Development of Jabber plugin for WeeChat has started and a first alpha version is available.\n"
+"Note: many features are missing, like TLS connection, buddy list management, presence information, MUC and transports."
+msgstr ""
+"Die Entwicklung der Jabber Erweiterung für WeeChat wurde begonnen und eine erste Alpha Version ist verfügbar.\n"
+"Hinweis: Viele Funktionen sind noch nicht integriert, beispielsweise; TLC Verbindungen, buddy list management, presence information, MUC und transports."
+
+#: news/_news_i18n.py:42
+#: templates/home.html:164
+msgid "Devel blog"
+msgstr "Devel Blog"
+
+#: news/_news_i18n.py:43
+msgid ""
+"A new blog about WeeChat development has been added. It announces all new features in development version and let you discuss about future of WeeChat.\n"
+"Feel free to read it and add comments!"
+msgstr ""
+"Es gibt nun einen Blog für die WeeChat Entwicklung. Dort werden die neuen Funktionen der Entwicklerversion vorgestellt und über zukünftige Entwicklung\n"
+"von WeeChat diskutiert. Sie sind herzlich eingeladen mit zu lesen und selber Kommentare zu schreiben!"
+
+#: news/_news_i18n.py:44
+msgid "News about development"
+msgstr "Neuigkeiten über die Entwicklung"
+
+#: news/_news_i18n.py:45
+msgid ""
+"Next WeeChat version (codename \"revolution\") is under development.\n"
+"Large part of code was rewritten, it's now faster, easier, and more extensible.\n"
+"List of new features and screenshots can be found on wiki page (see link below).\n"
+"\n"
+"Today there's no planed release date, some features are still missing, and there's lot of work until a stable version.\n"
+"\n"
+"We need help, like beta testers, to test this version. You can look at wiki page for more info.\n"
+"\n"
+"To be continued in some months for other news..."
+msgstr ""
+"Die neue Version von WeeChat (Codename \"revolution\") ist in der Entwicklung.\n"
+"Große Teile des Programms wurden neu geschrieben. Dadurch ist WeeChat nun schneller, schlanker und wesentlich Erweiterungsfähiger.\n"
+"Eine Liste mit den neuen Funktionen und Screenshots findet man auf der Wiki-Seite (siehe Link unten)\n"
+"\n"
+"Zur Zeit steht noch kein Datum einer Veröffentlichung fest. Einige Funktionen sind noch nicht implementiert und es gibt noch einiges an Arbeit, damit eine stabile Version heraus gegeben werden kann.\n"
+"\n"
+"Wir benötigen noch immer Hilfe in Form von Beta-Testern, die diese Version testen. Sie finden dazu weitere Informationen auf der Wiki-Seite\n"
+"\n"
+"Fortsetzung folgt in einigen Monaten mit anderen Neuigkeiten..."
+
+#: news/_news_i18n.py:46
+msgid "Version 0.2.6"
+msgstr "Version 0.2.6"
+
+#: news/_news_i18n.py:47
+msgid ""
+"Version 0.2.6 is available!\n"
+"\n"
+"News since last version are:\n"
+"- new license (GPLv3)\n"
+"- added hotlist sort\n"
+"- added scroll option to /buffer command\n"
+"- added key to jump to previous buffer\n"
+"- fixed bugs with IRC color in messages, now color codes are inserted in command line with ^Cc (Ctrl-C + c), ^Cb,.. instead of %C,%B,..\n"
+"- improved /server command: now possible to copy and rename servers\n"
+"- improved /connect command: now possible to connect to a temporary server without creating it with /server\n"
+"- many bugs fixed and other new features."
+msgstr ""
+"Version 0.2.6 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- neue Lizenz (GPLv3)\n"
+"- hinzugefügt: hotlist sort\n"
+"- hinzugefügt: /buffer Befehl enthält eine Scrollmöglichkeitl\n"
+"- hinzugefügt: Option um zum vorherigen Buffer zu springen\n"
+"- Fehler: Farben in IRC Nachrichten behoben, Farbsteuerzeichen werden nun in der Kommandozeile ^Cc (Ctrl-C + c), ^Cb,.. anstelle von %C,%B,.. verwendet\n"
+"- verbessert: /server Befehl: Kopieren und Umbenennen des Servers möglich\n"
+"- verbessert: /connect Befehl: ein connect zum temporären Server ist möglich ohne ihn vorher mit /server zu erstellen\n"
+"- viele Fehlerbehebungen und neue Funktionen."
+
+#: news/_news_i18n.py:48
+msgid "Version 0.2.5"
+msgstr "Version 0.2.5"
+
+#: news/_news_i18n.py:49
+msgid ""
+"Version 0.2.5 is available!\n"
+"\n"
+"News since last version are:\n"
+"- smart completion (first uses last channel speakers)\n"
+"- added /reconnect command\n"
+"- added %M for completion with current server nicks\n"
+"- added color for text not found in buffer history\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.2.5 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- elegantes beenden (first uses last channel speakers)\n"
+"- hinzugefügt: /reconnect Befehl\n"
+"- hinzugefügt: %M zum ergänzen der aktuellen server nicks\n"
+"- hinzugefügt: Farbe für nicht gefundenen Text in Buffer-Verlauf\n"
+"- viele Fehler entfernt."
+
+#: news/_news_i18n.py:50
+msgid "Version 0.2.4"
+msgstr "Version 0.2.4"
+
+#: news/_news_i18n.py:51
+msgid ""
+"Version 0.2.4 is available!\n"
+"\n"
+"News since last version are:\n"
+"- search in buffer history (ctrl-R)\n"
+"- added \"call\" option to /key command\n"
+"- added \"event handlers\" to plugins API\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.2.4 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- Suche in Buffer-Verlauf (ctrl-R)\n"
+"- hinzugefügt: \"call\" Option zum /key Befehl\n"
+"- hinzugefügt: \"event handler\" zur API Erweiterung\n"
+"- viele Fehlerbereinigungen."
+
+#: news/_news_i18n.py:52
+msgid "Version 0.2.3"
+msgstr "Version 0.2.3"
+
+#: news/_news_i18n.py:53
+msgid ""
+"Version 0.2.3 is available!\n"
+"This version fixes major bugs of version 0.2.2. All users of version 0.2.2 should upgrade now.\n"
+"\n"
+"News since last version are:\n"
+"- fixed many bugs with charset plugin\n"
+"- fixed display bugs with nicklist at top/bottom when look_nicklist_separator is OFF\n"
+"- fixed topic scroll when topic has multi-bytes chars\n"
+"- fixed compilation problem with iconv under FreeBSD."
+msgstr ""
+"Version 0.2.3 ist verfügbar!\n"
+"Diese Version behebt grundlegende Fehler der Version 0.2.2. Benutzer der Version 0.2.2 sollten ein Upgrade durchführen.\n"
+"\n"
+"Neuerungen:\n"
+"- viele Fehler in der Zeichensatzerweiterung behoben\n"
+"- Darstellungsfehler mit nicklist bei top/bottom falls look_nicklist_separator auf OFF ist\n"
+"- Topic Anzeige überarbeitet damit ein Multibyte Zeichensatz genutzt werden kann\n"
+"- Probleme beim kompilieren mit iconv unter FreeBSD behoben."
+
+#: news/_news_i18n.py:54
+msgid "Bugs with version 0.2.2"
+msgstr "Fehler in Version 0.2.2"
+
+#: news/_news_i18n.py:55
+msgid ""
+"Bugs have been detected with WeeChat 0.2.2: for servers using charsets like KOI8-R. When nicks are encoded with cyrillic chars, WeeChat doesn't decode them, and display and behaviour with server are buggy.\n"
+"\n"
+"If you use KOI8-R (or charsets like this one), we recommend you to use version 0.2.1 or development version.\n"
+"If you use only UTF-8 or ISO charsets, there's no problem with version 0.2.2.\n"
+"\n"
+"These problems are fixed in development version.\n"
+"A new version will be available soon, it will fix all problems."
+msgstr ""
+"Folgende Probleme sind in WeeChat 0.2.2 aufgefallen: für Server die einen Zeichensatz KOI8-R öder ähnlich verwenden. Falls Nicks mit einem kyrillischen Zeichensatz kodiert waren hat WeeChat diesen nicht dargestellt.\n"
+"\n"
+"Falls ein solcher Zeichensatz Verwendung findet, ist es ratsam die Version 0.2.1 oder die Entwicklerversion zu nutzen.\n"
+"Falls nur ein UTF-8 oder ISO Zeichensatz genutzt wird, gibt es keine Probleme mit Version 0.2.2.\n"
+"\n"
+"Diese Probleme wurden mit der Entwicklerversion behoben.\n"
+"Eine neue Version wird in kürze Erscheinen, in der diese Fehler behoben sind."
+
+#: news/_news_i18n.py:56
+msgid "Version 0.2.2"
+msgstr "Version 0.2.2"
+
+#: news/_news_i18n.py:57
+msgid ""
+"Version 0.2.2 is available!\n"
+"\n"
+"News since last version are:\n"
+"- added new charset plugin, which replaces internal /charset command: fixes many bugs with charsets, WeeChat internal is now full UTF-8\n"
+"- added \"modifier\" in plugins API: plugins are now able to modify or drop received IRC messages\n"
+"- added filename completion\n"
+"- added anti-flood mechanism\n"
+"- added keys to scroll topic\n"
+"- added new option to send unknown IRC commands\n"
+"- improved /plugin command\n"
+"- pdf version of documentation is back\n"
+"- fixed many bugs: portability, memleak in keyboard input, ignore and alias commands, many display bugs."
+msgstr ""
+"Version 0.2.2 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- hinzugefügt: Neue Zeichensatzerweiterung, welches den internen /charset Befehl ersetzt: dies behebt viele Zeichensatzprobleme intern ist WeeChat nun voll  UTF-8 fähig.\n"
+"- hinzugefügt: \"modifier\" in API Erweiterung: Erweiterungen können nun IRC Nachrichten modifizieren oder verwerfen.\n"
+"- hinzugefügt: Dateinamen Vervollständigung\n"
+"- hinzugefügt: anti-flood Mechanismen\n"
+"- hinzugefügt: Tastenfunktion um den Topic zu scrollen\n"
+"- hinzugefügt: neue Funktion um unbekannte IRC Befehle zu senden\n"
+"- verbessert: /plugin Befehl\n"
+"- eine PDF Fassung der Dokumentation ist wieder verfügbar\n"
+"- Fehlerbereinigungen bei: Portabilität, Speicherverbrauch der Tastatureingabe, ignore und alias Befehle, in der Darstellung."
+
+#: news/_news_i18n.py:58
+msgid "Version 0.2.1"
+msgstr "Version 0.2.1"
+
+#: news/_news_i18n.py:59
+msgid ""
+"Version 0.2.1 is available!\n"
+"\n"
+"News since last version are:\n"
+"- added server default notify\n"
+"- added arguments ($1,..,$9) for alias and special vars ($nick, $channel, $server)\n"
+"- added hotlist in session file when using /upgrade command\n"
+"- fixed crash with DCC when resuming file\n"
+"- fixed random crash with /upgrade command\n"
+"- fixed nicklist display when location is top or bottom\n"
+"- fixed bug with CTCP version on channels\n"
+"- fixed bug with auto-rejoin for keyed channels\n"
+"- fixed chan owner and chan admin nicks."
+msgstr ""
+"Version 0.2.1 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- hinzugefügt: server default Benachrichtigung\n"
+"- hinzugefügt: Argumente ($1,..,$9) für alias und spezielle Variablen ($nick, $channel, $server)\n"
+"- hinzugefügt: Hotlist in Sitzungsdatei wenn der /upgrade Befehl genutzt wird\n"
+"- Absturz mit DCC behoben wenn ein Dateitransfer wieder aufgenommen wird\n"
+"- mehrere Abstürze mit /upgrade Befehl behoben\n"
+"- Anzeige der Nicklist überarbeitet falls die Nicklist-Position oben oder unten ist\n"
+"- Fehler mit CTCP Version in Channels behoben\n"
+"- Fehler mit auto-rejoin behoben.\n"
+"- Fehler mit chan owner und chan admin nicks behoben."
+
+#: news/_news_i18n.py:60
+msgid "Version 0.2.0"
+msgstr "Version 0.2.0"
+
+#: news/_news_i18n.py:61
+msgid ""
+"Version 0.2.0 is available!\n"
+"\n"
+"News since last version are:\n"
+"- plugin aspell for fixing user typos (language is customizable by channel)\n"
+"- improved DCC speed by adding DCC fast option and sending/receiving in background\n"
+"- added generic function for missing IRC commands\n"
+"- added new functions in plugins API: info about windows, buffers, and buffer content\n"
+"- fixed many IRC commands (wallops and other)\n"
+"- fixed refresh bugs\n"
+"- fixed crashes with DCC\n"
+"- fixed many other bugs."
+msgstr ""
+"Version 0.2.0 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"-  Aspell Erweiterung: Rechtschreibkorrektur (Sprache ist  einstellbar für jeden Channel)\n"
+"-  DCC Geschwindigkeit erhöht durch Nutzung der DCC fast Option und senden/empfangen im Hintergrund\n"
+"- hinzugefügt: allgemeine Funktion für fehlende IRC Befehle\n"
+"- hinzugefügt: neue Funktion in API Erweiterung: Information über Fenster, Buffer, und Bufferinhalt\n"
+"- behoben: Fehler in IRC Befehlen (wallops und andere)\n"
+"- behoben: Fehler bei der Aktualisierung\n"
+"- behoben: Abstürze mit DCC\n"
+"- weitere Fehlerbereinigungen."
+
+#: news/_news_i18n.py:62
+msgid "Version 0.1.9"
+msgstr "Version 0.1.9"
+
+#: news/_news_i18n.py:63
+msgid ""
+"Version 0.1.9 is available!\n"
+"\n"
+"News since last version are:\n"
+"- nick aligment, makes channels more readable\n"
+"- new commands: /cycle, /setp\n"
+"- new option to customize IP/hostname (when using multipe IP)\n"
+"- new option to customize input prompt\n"
+"- added keyboard handler for plugins\n"
+"- german translations (messages and documentation)\n"
+"- many bugs fixed for: UTF-8, DCC chat, Ruby, mutiple queries with same name, some commands, long IRC messages (> 512 bytes), terminal refresh, nicklist."
+msgstr ""
+"Version 0.1.9 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- Ausrichtung des Nick-Namens, macht Channels besser lesbar\n"
+"- Neue Befehle: /cycle, /setp\n"
+"- Neue Option um IP/hostname anzupassen (bei Nutzung mehrerer IPs)\n"
+"- Neue Option um den Input prompt anzupassen\n"
+"- hinzugefügt: Tastatur-Handler für Erweiterungen\n"
+"- deutsche Übersetzung (Mitteilungen und Dokumentation)\n"
+"- Fehlerbereinigungen in: UTF-8, DCC chat, Ruby, mehrere Anfragen über den selben Namen, in einigen Befehlen, langen IRC Nachrichten (> 512 bytes), terminal refresh, nicklist."
+
+#: news/_news_i18n.py:64
+msgid "Story... with screenshots"
+msgstr "Geschichte.... mit Screenshots"
+
+#: news/_news_i18n.py:65
+msgid ""
+"WeeChat story page is now available, as screenshots. You can see differences between all versions in one view!\n"
+"Development version is visible too, and frequently updated."
+msgstr ""
+"Die WeeChat Story-Seite ist nun mit Screenshots, verfügbar. Dort findet man Bilder aller Versionen\n"
+"Entwicklungsversionen sind ebenso aufgeführt und es findet ein regelmäßiges Update statt."
+
+#: news/_news_i18n.py:66
+msgid "WeeChat users map"
+msgstr "Karte der WeeChat Anwender"
+
+#: news/_news_i18n.py:67
+msgid "A map of developers, contributors and users is now available. Everybody is invited to add nick/location to this map."
+msgstr "Eine Karte der Entwickler, Helfer und Anwender ist nun verfügbar. Jeder ist eingeladen seinen Nick, mit Ortsangabe in die Karte einzutragen."
+
+#: news/_news_i18n.py:68
+msgid "WeeChat will merge with irssi"
+msgstr "WeeChat verschmilzt mit irssi"
+
+#: news/_news_i18n.py:69
+msgid ""
+"After discussion with irssi developers, both projects are going to merge in the next weeks.\n"
+"Most of WeeChat features will not be available in first merged versions, but they will be in a few months.\n"
+"This merge will give missing features to WeeChat and give new from irssi.\n"
+"\n"
+"WeeChat developers will not take part into final client (which should be renamed to \"weerssi\").\n"
+"\n"
+"Update: it is of course an april joke :-)"
+msgstr ""
+"Nach Diskussionen mit den irssi Entwicklern werden beide Projekte in den nächsten Wochen miteinander fusionieren.\n"
+"Die meisten WeeChat Funktionen werden in der ersten kombinierten Version nicht verfügbar sein. Dies wird leider einige Monate dauert.\n"
+"Die Zusammenführung beider Projekte wird WeeChat fehlende Funktionalität geben, die irssi schon besitzt.\n"
+"\n"
+"Die WeeChat Entwickler werden für die endgültige Fassung, die dann \"weerssi\" heißen wird nicht mehr verantwortlich sein.\n"
+"\n"
+"Update: April, April! :-)"
+
+#: news/_news_i18n.py:70
+msgid "Version 0.1.8"
+msgstr "Version 0.1.8"
+
+#: news/_news_i18n.py:71
+msgid ""
+"Version 0.1.8 is available!\n"
+"\n"
+"News since last version are:\n"
+"- added IRC raw data buffer (new key: alt-J + alt-R)\n"
+"- keys alt-{home|end} to scroll top/bottom, alt-{f11-f12} to scroll nicklist top/bottom\n"
+"- added new scroll keys for a few lines up/down (default: alt-pgup/pgdn)\n"
+"- added Lua script plugin\n"
+"- improved Ruby plugin\n"
+"- added functions in plugins API: get_server_info, free_server_info, get_channel_info, free_channel_info, get_nick_info, free_nick_info\n"
+"- added special names for plugin message handlers: weechat_pv, weechat_highlight, weechat_ctcp, weechat_dcc\n"
+"- script plugins now load scripts in WeeChat system share directory\n"
+"- added inactivity time, available for plugins via get_info(\"inactivity\")\n"
+"- added new plugins functions: add_timer_handler, remove_timer_handler, remove_infobar\n"
+"- many commands allowed for aliases\n"
+"- many commands allowed when connecting to server\n"
+"- added options \"irc_show_away_once\", \"look_nick_complete_first\", \"look_open_near_server\", \"irc_away_check_max_nicks\"\n"
+"- added new command line argument for setting WeeChat homedir (-d or --dir)\n"
+"- added partial hungarian translation\n"
+"- improved alias completion (now uses target command for completion)\n"
+"- /msg command does not open any buffer any more (use /query for opening private buffer)\n"
+"- fixed crash when using global history (when older entry is removed)\n"
+"- fixed bug with /upgrade and servers buffer\n"
+"- fixed bug with \"get_dcc_info\" plugin interface function\n"
+"- many other bugs fixed."
+msgstr ""
+"Version 0.1.8 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- hinzugefügt: IRC raw data buffer (neue Taste: alt-J + alt-R)\n"
+"- Tasten alt-{home|end} um zum Anfang/Ende der Seite zu springen, alt-{f11-f12} das selbe in der Nicklist\n"
+"- hinzugefügt: neue Tasten zum scrollen einzelner Zeilen (Standard: alt-pgup/pgdn)\n"
+"- hinzugefügt: Erweiterung für Lua Skripten\n"
+"- verbessert: Ruby Erweiterung\n"
+"- hinzugefügt: Funktionen für API Erweiterung: get_server_info, free_server_info, get_channel_info, free_channel_info, get_nick_info, free_nick_info\n"
+"- hinzugefügt: Der message handler der Erweiterungen nutzt folgende Namen: weechat_pv, weechat_highlight, weechat_ctcp, weechat_dcc\n"
+"- Skripten-Erweiterung lädt Skripten nun ins WeeChat Verzeichnis\n"
+"- hinzugefügt: Zeit für Inaktivität, verfügbar für Erweiterungen mittels get_info(\"inactivity\")\n"
+"- hinzugefügt: Funktionen für Erweiterungen: add_timer_handler, remove_timer_handler, remove_infobar\n"
+"- viele Befehle für aliases zugelassen\n"
+"- viele Befehle zugelassen wenn zum Server eine Verbindung aufgebaut wird\n"
+"- hinzugefügt: Option \"irc_show_away_once\", \"look_nick_complete_first\", \"look_open_near_server\", \"irc_away_check_max_nicks\"\n"
+"- hinzugefügt: neues Argument, beim starten von WeeChat, um das Heimatverzeichnis zu definieren (-d or --dir)\n"
+"- hinzugefügt: teilweise ungarische Übersetzung\n"
+"- automatische Vervollständigung bei alias verbessert\n"
+"- /msg Befehl  öffnet keinen Buffer mehr (nutze /query um einen privaten Buffer zu öffnen)\n"
+"- Absturz bei der globalen Historie behoben (falls ein älterer Eintrag gelöscht wurde)\n"
+"- Fehler in /upgrade und servers buffer behoben\n"
+"- Fehler in der API Erweiterung \"get_dcc_info\" behoben\n"
+"- weitere Fehlerbereinigungen..."
+
+#: news/_news_i18n.py:72
+msgid "Version 0.1.7"
+msgstr "Version 0.1.7"
+
+#: news/_news_i18n.py:73
+msgid ""
+"Version 0.1.7 is available!\n"
+"\n"
+"News since last version are:\n"
+"- new commands: /upgrade, /uptime, /history\n"
+"- removed \"irc_default_msg_away\" setting, for RFC 2812 conformity (/away command wihtout argument only removes away status), new values for \"irc_display_away\" (off, local, channel)\n"
+"- replaced Texinfo doc by XML Docbook\n"
+"- added color for window separators\n"
+"- added completion system for plugins/scripts commands\n"
+"- added charset by server and channel, new command: /charset\n"
+"- added Ruby script plugin\n"
+"- added ETA (Estimated Time of Arrival) for DCC files\n"
+"- /nick command is now allowed when not connected to server\n"
+"- added server/channel arg to /buffer command for jumping to buffer\n"
+"- added new keys for switching to other windows: alt-w followed by alt-{arrow}\n"
+"- added new keys for scrolling to previous/next highlight: alt-P / alt-N\n"
+"- added \"read marker\": an indicator for first unread line in a server or channel buffer (new key alt-U to scroll to marker)\n"
+"- new window maganement: custom size for windows, auto resize when terminal is resized\n"
+"- fixed: plugins autoload and unload, some display bugs."
+msgstr ""
+"Version 0.1.7 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- neue Befehle: /upgrade, /uptime, /history\n"
+"- \"irc_default_msg_away\" Einstellungen entfernt, um RFC 2812 konform zu bleiben (/away Befehl ohne Argumente entfernt lediglich den Away Status), neue Werte für \"irc_display_away\" (off, local, channel)\n"
+"- Texinfo doc ersetzt durch XML Docbook\n"
+"- hinzugefügt: Farbe für Fenster-Trenner\n"
+"- hinzugefügt: automatische Vervollständigung für Erweiterung/Skripten Befehle\n"
+"- hinzugefügt: /charset Befehl für Server und Channel\n"
+"- hinzugefügt: Erweiterung für Ruby-Skripten\n"
+"- hinzugefügt:  ETA (Estimated Time of Arrival) für DCC Dateien\n"
+"- /nick command kann auch ausgeführt werden wenn man nicht mit dem Server verbunden ist\n"
+"- hinzugefügt: Server/Channel Argumente für /buffer Befehl um zwischen den Buffern zu wechseln\n"
+"- hinzugefügt: neuer Tastenbefehl um zwischen den Fenstern zu wechseln. alt-w gefolgt von alt-{Pfeil}\n"
+"- hinzugefügt: neuer Tastenbefehl um zum vorherigen oder nächsten Highlight zu springen: alt-P / alt-N\n"
+"- hinzugefügt: \"read marker\": eine optische Anzeige um die erste ungelesene Zeile darzustellen (neuer Tastenbefehl alt-U um zu der Stelle zu springen)\n"
+"- neues Fenster-Management : Fenstergröße ist einstellbar; automatische Anpassung der Größe wenn der Terminal verändert wurde\n"
+"- Fehler behoben: Erweiterung autoload und unload, sowie einige Darstellungsfehler."
+
+#: news/_news_i18n.py:74
+msgid "Version 0.1.6"
+msgstr "Version 0.1.6"
+
+#: news/_news_i18n.py:75
+msgid ""
+"Version 0.1.6 is available!\n"
+"\n"
+"News since last version are:\n"
+"- new plugin management: now WeeChat loads/unloads dynamic libraries (.so files under GNU/Linux). Perl and Python become two plugins (script type). Many changes were made, there's some incompatibilities with old scripts, thanks for reading release notes (file NEWS or link below)\n"
+"- config file for plugins\n"
+"- color management in IRC messages (compatible with other IRC clients, including mIrc)\n"
+"- full UTF-8 support\n"
+"- smart hotlist\n"
+"- server mixed on one window (optional)\n"
+"- partial highlights\n"
+"- improved completion, customizable."
+msgstr ""
+"Version 0.1.6 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- neues Erweiterungs-Management: WeeChat lädt/löscht Bibliotheken dynamisch (.so Dateien unter GNU/Linux). Perl und Python sind nun zwei separate Erweiterungen. Da viele Veränderungen vorgenommen wurden, kann es zu Inkompatibilitäten mit alten Skripten führen. Bitte lesen Sie die Release Hinweise (Datei NEWS oder den unteren Link)\n"
+"- Konfigurationsdatei für Erweiterungen\n"
+"- Farben-Management in IRC Nachrichten (Kompatibel mit anderen IRC Clients, einschließlich mIrc)\n"
+"- volle UTF-8 Unterstützung\n"
+"- intelligente hotlist\n"
+"- Server Mix auf einem Fenster (optional)\n"
+"- partiell Highlights\n"
+"- automatische Vervollständigung verbessert und einstellbar."
+
+#: news/_news_i18n.py:76
+msgid "Version 0.1.5"
+msgstr "Version 0.1.5"
+
+#: news/_news_i18n.py:77
+msgid ""
+"Version 0.1.5 is available!\n"
+"\n"
+"News since last version are:\n"
+"- added /ame command (send CTCP action to all channels of all connected servers),\n"
+"- added setting \"irc_notice_as_pv\" to see notices as pv,\n"
+"- added nicks colors in setup file,\n"
+"- added /ignore and /unignore commands,\n"
+"- signal SIGQUIT is now ignored,\n"
+"- jump to next server now saves current channel buffer for each server,\n"
+"- ctrl-up/ctrl-down keys added to call previous/next command in global history (common to all buffers),\n"
+"- many major bugs fixed."
+msgstr ""
+"Version 0.1.5 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- hinzugefügt: /ame Befehl (Nachricht an alle Channels aller verbundenen Server schicken),\n"
+"- hinzugefügt: Einstellung \"irc_notice_as_pv\" um Mitteilungen als pv zu sehen,\n"
+"- hinzugefügt: nicks Farben in Setup Datei,\n"
+"- hinzugefügt: /ignore und /unignore Befehl,\n"
+"- Signal SIGQUIT wird nun ignoriert,\n"
+"- wird zum nächsten Server gewechselt wird der aktuelle Buffe für jeden Server gesichert,\n"
+"- ctrl-up/ctrl-down Tastenbefehl eingebaut um vorherigen/nächsten Befehl in der globalen Historie aufzurufen,\n"
+"- mehrere größere Fehlerbereinigungen."
+
+#: news/_news_i18n.py:78
+msgid "Paypal donations"
+msgstr "Paypal Spende"
+
+#: news/_news_i18n.py:79
+msgid "WeeChat project now accepts donations via Paypal account, with secured payment."
+msgstr "Das WeeChat Projekt kann nun durch das sichere Paypal Verfahren direkt unterstützt werden."
+
+#: news/_news_i18n.py:80
+msgid "Version 0.1.4"
+msgstr "Version 0.1.4"
+
+#: news/_news_i18n.py:81
+msgid ""
+"Version 0.1.4 is available!\n"
+"\n"
+"News since last version are:\n"
+"- new keyboard management, fully customizable\n"
+"- DCC timeout and auto resume failed transfers\n"
+"- new color for private messages (in hotlist)\n"
+"- new colors for join and part/quit (arrows)\n"
+"- customizable highlights with irc_highlight var\n"
+"- command /amsg added\n"
+"- channels auto-prefixed by \"#\" for /join command\n"
+"- added time with seconds in infobar\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.1.4 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- neues Tastatur-Management, voll einstellbar\n"
+"- DCC timeout und auto resume bei abgebrochenem Transfer\n"
+"- neue Farbe für private Nachrichten (in hotlist)\n"
+"- neue Farben für join und part/quit\n"
+"-  einstellbare highlights mit irc_highlight var\n"
+"- Befehl  /amsg hinzugefügt\n"
+"- Channels auto-prefixed mit \"#\" für /join command\n"
+"- hinzugefügt: Uhrzeit wird nun auch mit Sekunden in Infobar angezeigt\n"
+"- Fehlerbereinigungen."
+
+#: news/_news_i18n.py:82
+msgid "Version 0.1.3"
+msgstr "Version 0.1.3"
+
+#: news/_news_i18n.py:83
+msgid ""
+"Version 0.1.3 is available!\n"
+"\n"
+"News since last version are:\n"
+"- IPv6 added\n"
+"- SSL added\n"
+"- proxy support added (http, socks4, socks5)\n"
+"- /set command now completed\n"
+"- channels notify now saved in config file\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.1.3 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- IPv6 Unterstützung hinzugefügt\n"
+"- SSL Unterstützung hinzugefügt\n"
+"- proxy Unterstützung hinzugefügt (http, socks4, socks5)\n"
+"- /set Befehl ist nun vollständig\n"
+"- Channel-Benachrichtigung wird nun in der Konfigurationsdatei gesichert\n"
+"- Fehlerbereinigungen."
+
+#: news/_news_i18n.py:84
+msgid "Version 0.1.2"
+msgstr "Version 0.1.2"
+
+#: news/_news_i18n.py:85
+msgid ""
+"Version v0.1.2 is available!\n"
+"\n"
+"News since last version are:\n"
+"- Python plugin support, Perl interface improved\n"
+"- nicklist scroll keys (Alt+{home/end/pgup/pgdn} or F11/F12)\n"
+"- DCC files transfer rate\n"
+"- buffers timestamp can now be changed\n"
+"- compile is ok under *BSD and Mac OS X\n"
+"- missing IRC commands added (307, 341, 485, 671)\n"
+"- fixed some bugs: crash when purging old DCC, crash with 64-bits arch (like AMD64) when converting UTF-8, nicklist sort.\n"
+"\n"
+"Add-on, 2005-05-24 : fixed crash at startup and Perl/Python detection, version is now 0.1.2.1."
+msgstr ""
+"Version v0.1.2 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- Python Erweiterung, Perl Interface verbessert\n"
+"- Nicklist Scroll-Tasten (Alt+{home/end/pgup/pgdn} oder F11/F12)\n"
+"- DCC Dateitransferrate\n"
+"- Zeitstempel in Buffern kann nun geändert werden\n"
+"- kompilieren unter *BSD und Mac OS X ist möglich\n"
+"- fehlende IRC Befehle implementiert (307, 341, 485, 671)\n"
+"- einige Fehler behoben: Absturz beim reinigen eines alten DCC, Absturz auf 64-Bit Rechnern (z.B.AMD64) beim konvertieren von UTF-8, Nicklist Sortierung.\n"
+"\n"
+"Add-on, 24.05.2005: Absturz beim Programmstart und Perl/Python Erkennung behoben, Version ist nun 0.1.2.1."
+
+#: news/_news_i18n.py:86
+msgid "Version 0.1.1"
+msgstr "Version 0.1.1"
+
+#: news/_news_i18n.py:87
+msgid ""
+"Version 0.1.1 is available!\n"
+"\n"
+"News since last version are:\n"
+"- new display engine: doesn't cut words at end of lines\n"
+"- DCC send (file) and DCC chat\n"
+"- FIFO pipe for remote control\n"
+"- connection to IRC server is now made by child process (non blocking)\n"
+"- nicks count for channel buffers\n"
+"- crash dump when WeeChat receives SIGSEGV (Segmentation fault)\n"
+"- new commands: /ban, /unban, /kickban, /halfop, /dehalfop\n"
+"- UnrealIrcd IRC servers support\n"
+"- spanish translation\n"
+"- bugs fixed (display and commands)."
+msgstr ""
+"Version 0.1.1 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- neue Darstellungsroutine: Wörter werden am Ende der Zeile nicht mehr abgeschnitten\n"
+"- DCC send (file) und DCC chat\n"
+"- FIFO pipe für Fernbedienung\n"
+"- Verbindung zum IRC Server wird nun mittels einem Tochterprozess hergestellt (kein Blockieren mehr des Mutterprozesses)\n"
+"- Nick-Zähler für Channel-Buffer\n"
+"- bei einem Absturz wird der Speicherinhalt angezeigt (SIGSEGV (Segmentanzeige))\n"
+"- neue Befehle: /ban, /unban, /kickban, /halfop, /dehalfop\n"
+"- UnrealIrcd IRC Serverunterstützung\n"
+"- spanische Übersetzung\n"
+"- Fehlerbereinigung (Darstellung und Befehle)."
+
+#: news/_news_i18n.py:88
+msgid "Version 0.1.0"
+msgstr "Version 0.1.0"
+
+#: news/_news_i18n.py:89
+msgid ""
+"Version 0.1.0 is available!\n"
+"\n"
+"News since last version are:\n"
+"- improved /window command: now split and merge are ok\n"
+"- away nicks are now displayed with another color (new option: \"irc_away_check\")\n"
+"- added away indicator in status bar\n"
+"- added lag indicator (and auto-disconnect after a delay if important lag)\n"
+"- improved completion: now completes commands arguments (IRC and internal)\n"
+"- improved /set command: empty strings are allowed, new colors, server options can be changed while WeeChat is running\n"
+"- added default away/part/quit messages in config file\n"
+"- new [irc] section in config file\n"
+"- added new options for charset (UTF-8 support)\n"
+"- fixed many memory leaks\n"
+"- fixed commands: /op, /deop, /voice, /devoice, /me, /away\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.1.0 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- /window Befehl verbessert: trennen und verbinden funktionieren nun\n"
+"- Away Nicks werden nun in einer anderen Farbe dargestellt (neue Option: \"irc_away_check\")\n"
+"- hinzugefügt: Away-Anzeige in Statusanzeige\n"
+"- hinzugefügt: Lag-Anzeige (und automatische Trennung nach einer Verzögerung)\n"
+"- verbessert: automatische Vervollständigung: nun werden auch die Argumente der Befehle vervollständigt (IRC und interne Befehle)\n"
+"- verbessert: /set Befehl: leere Zeichenketten sind möglich, neue Farben, Server Optionen können während der Laufzeit bearbeitet werden\n"
+"- hinzugefügt: Voreingestellte away/part/quit Nachrichten in der Konfigurationsdatei\n"
+"- neue [irc] Sektion in der Konfigurationsdatei\n"
+"- neue Option für Zeichensatz (UTF-8 Unterstützung)\n"
+"- viele Speicherlöcher behoben\n"
+"- Fehler in folgenden Befehlen behoben: /op, /deop, /voice, /devoice, /me, /away\n"
+"- Fehlerbereinigungen."
+
+#: news/_news_i18n.py:90
+msgid "Version 0.0.9"
+msgstr "Version 0.0.9"
+
+#: news/_news_i18n.py:91
+msgid ""
+"Version 0.0.9 is available!\n"
+"\n"
+"News since last version are:\n"
+"- auto reconnection to server when disconnected (and fixed bug: 100% CPU usage after disconnection),\n"
+"- new \"/buffer close\" command (lets you close a server buffer),\n"
+"- \"/notice\" command fixed,\n"
+"- colors delete in incoming messages (existing option \"look_remove_colors_from_msgs\"),\n"
+"- new keys Ctrl-A, Ctrl-E, Ctrl-W, Alt-S, Alt-X,\n"
+"- new setup options: server_autoreconnect, sserver_autoreconnect_delay, server_command_delay."
+msgstr ""
+"Version 0.0.9 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- automatische Verbindung zum Server falls Verbindung abbricht (Fehler behoben: 100%ige CPU Auslastung nach Verbindungsabbruch),\n"
+"- neuer \"/buffer close\" Befehl (damit kann der Server Buffer geschlossen werden),\n"
+"- \"/notice\" Befehl überarbeitet,\n"
+"- Farben bei an ankommenden Nachrichten gelöscht (existierende Option \"look_remove_colors_from_msgs\"),\n"
+"- neue Tastenbefehle: Ctrl-A, Ctrl-E, Ctrl-W, Alt-S, Alt-X,\n"
+"- neue Einstellungsoptionen: server_autoreconnect, sserver_autoreconnect_delay, server_command_delay."
+
+#: news/_news_i18n.py:92
+msgid "Version 0.0.8"
+msgstr "Version 0.0.8"
+
+#: news/_news_i18n.py:93
+msgid ""
+"Version 0.0.8 is available!\n"
+"\n"
+"News since last version are:\n"
+"- DCC incoming file,\n"
+"- away announced in channels,\n"
+"- logging buffers to disk (optional),\n"
+"- auto-join when kicked (optional),\n"
+"- Ctrl-L key: redraw terminal,\n"
+"- Alt-R key: clear hotlist,\n"
+"- improved or fixed commands: /buffer, /query, /kick,\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.0.8 ist verfügbar\n"
+"\n"
+"Neuerungen:\n"
+"- DCC incoming file,\n"
+"- away Mitteilung im Channel,\n"
+"- protokolliert Buffer auf Festplatte (optional),\n"
+"- auto-join falls man ge-kickt wurde (optional),\n"
+"- Ctrl-L Taste: Terminal wird neu gezeichnet,\n"
+"- Alt-R Taste: löscht die Hotlist,\n"
+"- verbesserte oder überarbeitete Befehle: /buffer, /query, /kick,\n"
+"- Fehlerbereinigungen."
+
+#: news/_news_i18n.py:94
+msgid "Version 0.0.7"
+msgstr "Version 0.0.7"
+
+#: news/_news_i18n.py:95
+msgid ""
+"Version 0.0.7 is available!\n"
+"\n"
+"News since last version are:\n"
+"- new channels management, with numbered buffers,\n"
+"- multi-windows management with /window and /buffer commands,\n"
+"- auto jump to buffers with activity (Alt-A),\n"
+"- jump to buffers by number (Alt-number),\n"
+"- unique color for each nick (based on nickname),\n"
+"- history limit (saves memory)."
+msgstr ""
+"Version 0.0.7 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- neues Channel-Management, mit nummerierten Buffern,\n"
+"- Multi-Fenster Management  mittels /window und /buffer Befehlen,\n"
+"- automatischer Sprung zum Buffer mit Aktivitäten (Alt-A),\n"
+"- springt zu einem Buffer mittels Nummer (Alt-Nummer),\n"
+"- unique color for each nick (based on nickname),\n"
+"- History-Beschränkung (schont den Speicher)."
+
+#: news/_news_i18n.py:96
+msgid "Major new features"
+msgstr "neue bedeutende Funktionen"
+
+#: news/_news_i18n.py:97
+msgid ""
+"WeeChat has many new important features since some weeks:\n"
+"- multi-windows management (with horizontal and vertical window split)\n"
+"- buffers managed by number, with direct access by Alt+digit key or with new /buffer command\n"
+"- auto jump to buffers with activity (Alt-A)\n"
+"\n"
+"All new features are in CVS and development version. /window and /buffer commands are still under development.\n"
+"Feel free to report any problem or suggestion to improve navigation between buffers/windows."
+msgstr ""
+"WeeChat besitzt, seit ein paar Wochen, neue Funktionen\n"
+"- Multi-Fenster-Management (mit horizontaler und vertikaler Fensteranordnung)\n"
+"- Buffer Management durch Nummern und einer direkten Anwahl durch Alt+<Nummer>\n"
+"oder mittels dem neuen /buffer Befehl\n"
+"- automatischer Sprung zu Buffern mit Aktivität (Alt-A)\n"
+"Die neuen Funktionen sind in der CVS und Entwicklerversion enthalten. Der /window und /buffer Befehl sind noch\n"
+"in der Testphase. Wenn Sie Fehler finden oder Anmerkungen haben um die Funktionalität der buffer/window/nzu erhöhen, dann melden Sie sich."
+
+#: news/_news_i18n.py:98
+msgid "Version 0.0.6"
+msgstr "Version 0.0.6"
+
+#: news/_news_i18n.py:99
+msgid ""
+"Version 0.0.6 is available!\n"
+"\n"
+"News since last version are:\n"
+"- improved channel highlight (priority to message vs join/part)\n"
+"- fixed bug when opened private win and remote user changes his nick\n"
+"- /query command added (starts private conversation)\n"
+"- IRC messages 476, 477 added\n"
+"- /mode command is now ok and channel flags are displayed in status bar\n"
+"- fixed display bug (text was blinking when scrolling)\n"
+"- CTCP Version reply is now in english only and doesn't show host (security reason)."
+msgstr ""
+"Version 0.0.6 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- verbessertes Channel Highlight\n"
+"- Fehlerbeseitigung wenn ein privates Fenster geöffnet wurde und der User seinen Nick geändert hat\n"
+"- /query Befehl hinzugefügt (startet eine private Unterhaltung)\n"
+"- IRC Nachrichten 476, 477 hinzugefügt\n"
+"- /mode Befehl funktioniert nun und die Channel Flags werden in der Statuszeile anezeigt\n"
+"- Darstellungsfehler behoben (Text hat  beim Scrollen geblinkt)\n"
+"- CTCP Version Antwort ist nun in englisch und zeigt nicht mehr den Host (Sicherheitsaspekt)."
+
+#: news/_news_i18n.py:100
+msgid "Version 0.0.5"
+msgstr "Version 0.0.5"
+
+#: news/_news_i18n.py:101
+msgid ""
+"Version 0.0.5 is available!\n"
+"\n"
+"News since last version are:\n"
+"- info bar with highlight from other channels, can be modified by Perl scripts\n"
+"- /set command (configuration can be modified while WeeChat is running)\n"
+"- new command line parameter: \"-c\" to see config options\n"
+"- nick is now un*x username in default config\n"
+"- secured code to prevent any buffer overflow\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.0.5 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- Info-bar mit Highlights von anderen Channels, kann über Perl-Skript modifiziert werden\n"
+"- /set Befehl (Konfiguration kann während der Laufzeit von WeeChat konfiguriert werden)\n"
+"- neuer Kommandozeilen Parameter: \"-c\" sie Konfigurationsmöglichkeiten\n"
+"- Nick ist nun un*x Benutzername in der Standardkonfiguration\n"
+"- abgesicherter Code um einen Buffer-Overflow zu vermeiden\n"
+"- Fehlerbereinigungen."
+
+#: news/_news_i18n.py:102
+msgid "Version 0.0.4"
+msgstr "Version 0.0.4"
+
+#: news/_news_i18n.py:103
+msgid ""
+"Version 0.0.4 is available!\n"
+"\n"
+"News since last version are:\n"
+"- Perl scripts support, with auto-load\n"
+"- highlight\n"
+"- Ctrl-C now intercepted (ignored)\n"
+"- debug messages can be enabled via ./configure --enbale-debug option\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.0.4 it verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- Perl Skripten werden unterstützt und automatisch geladen\n"
+"- Highlight\n"
+"- Ctrl-C wird abgefangen (ignoriert)\n"
+"- Debug Mitteilungen können eingeschaltet werden via ./configure --enbale-debug option\n"
+"- Fehlerbereinigungen."
+
+#: news/_news_i18n.py:104
+msgid "WeeChat scripts page"
+msgstr "WeeChat Skriptenseite"
+
+#: news/_news_i18n.py:105
+msgid ""
+"WeeChat scripts page (today Perl scripts only) has been added.\n"
+"On this page you can submit your script (need to be approved by WeeChat development team).\n"
+"\n"
+"Note: Perl scripts require version of WeeChat > 0.0.3, so today you must download development version."
+msgstr ""
+"WeeChat Skripten Seite (zur Zeit nur Perl-Skripten) hinzugefügt.\n"
+"Auf dieser Seite können Sie Ihren Skripten einreichen (diese müssen vom WeeChat Entwicklerteam freigegeben werden).\n"
+"\n"
+"Hinweis: Perl-Skripten benötigen mindestens Version > 0.0.3 von WeeChat. Zur Zeit muss somit die Entwicklerversion genutzt werden."
+
+#: news/_news_i18n.py:106
+msgid "Version 0.0.3"
+msgstr "Version 0.0.3"
+
+#: news/_news_i18n.py:107
+msgid ""
+"Version 0.0.3 is available!\n"
+"\n"
+"News since last version are:\n"
+"- script ./configure to build WeeChat\n"
+"- french translation\n"
+"- new commands: stats, service, squit, motd, lusers, links, time, trace, admin, info, servlist, squery, who, whowas, die, summon, users, wallops, userhost, ison, ctcp ping\n"
+"- many bugs fixed."
+msgstr ""
+"Version 0.0.3 ist verfügbar\n"
+"\n"
+"Neuerungen:\n"
+"- Skript ./configure um WeeChat zu kompilieren\n"
+"- französische Übersetzung\n"
+"- neue Befehle: stats, service, squit, motd, lusers, links, time, trace, admin, info, servlist, squery, who, whowas, die, summon, users, wallops, userhost, ison, ctcp ping\n"
+"- Fehlerbereinigungen."
+
+#: news/_news_i18n.py:108
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: news/_news_i18n.py:109
+msgid ""
+"First version of WeeChat users guide is available. Many formats: PDF, html, text and texinfo (source document).\n"
+"\n"
+"Note: this documentation is not finished and we're still looking for translators, feel free to contact us ;)"
+msgstr ""
+"Eine erste Anleitung für WeeChat Anwender ist, in folgenden Formaten, verfügbar: PDF, HTML, Text und Texinfo (Quelldokument).\n"
+"\n"
+"Hinweis: Diese Dokumentation ist keine endgültige Fassung und es werden noch immer Übersetzer gesucht. Wenn Sie Interesse haben, dann setzen Sie sich mit uns in Kontakt ;)"
+
+#: news/_news_i18n.py:110
+msgid "Version 0.0.2"
+msgstr "Version 0.0.2"
+
+#: news/_news_i18n.py:111
+msgid ""
+"Version 0.0.2 is available!\n"
+"\n"
+"News since last version are:\n"
+"- added commands /rehash and /restart\n"
+"- command &amp; auto-join channels when connected to server\n"
+"- new commands for alias: /alias, /unalias (new section in config file)\n"
+"- config is now saved automatically when quitting WeeChat, /save command added\n"
+"- new commands for servers: /server, /connect, /disconnect\n"
+"- added autoconnect flag for each server in config file\n"
+"- added \"look_set_title\" option in config file\n"
+"- term window title is modified with WeeChat name and version\n"
+"- CTCP version returns more info (about OS)\n"
+"- many bugs fixed (including nicklist display bug)."
+msgstr ""
+"Version 0.0.2 ist verfügbar!\n"
+"\n"
+"Neuerungen:\n"
+"- hinzugefügt:Befehl /rehash und /restart\n"
+"- Befehl &amp; Auto-join Channels wenn zum Server ein Connect aufgebaut wurde\n"
+"- neue Befehle für alias: /alias, /unalias (neue Sektion in Konfigurationsdatei)\n"
+"- Konfiguration wird nun automatisch gesichert wenn WeeChat beendet wird, /save Befehl hinzugefügt\n"
+"- neue Befehle für Server: /server, /connect, /disconnect\n"
+"- hinzugefügt: Autoconnect flag für jeden Server in der Konfigurationsdatei\n"
+"- hinzugefügt: \"look_set_title\" Option in Konfigurationsdatei\n"
+"- Term Fenstertitel wird auf den WeeChat Namen und Version angepasst\n"
+"- CTCP Version gibt mehr Informationen zurück (über OS)\n"
+"- weitere Fehlerbereinigungen (zum Beispiel Nicklist-Darstellungsfehler)."
+
+#: news/_news_i18n.py:112
+msgid "Version 0.0.1"
+msgstr "Version 0.0.1"
+
+#: news/_news_i18n.py:113
+msgid ""
+"WeeChat, the fast, light and extensible IRC client, is released for the first time, version 0.0.1.\n"
+"CVS is opened on Savannah page.\n"
+"Warning, this is still Alpha version, all IRC commands are not yet developed and lot of work is to be done.\n"
+"In this version, there is:\n"
+"- Curses front-end (other front-end are not yet developed),\n"
+"- almost all IRC commands from RFC1459,\n"
+"- multi-servers,\n"
+"- configuration file,\n"
+"- completion, commands history,\n"
+"- ...\n"
+"(see ChangeLog and TODO files)\n"
+"\n"
+"Note to people who wants to help us:\n"
+"- we're looking for translations for WeeChat and documentation (not written today), for example german, spanish, italian,...\n"
+"- we're looking too for people which knows other OS (like *BSD, GNU/Hurd, ...) to port WeeChat.\n"
+"\n"
+"All suggestions and bug reports are welcome, look at WeeChat support page for contacting us."
+msgstr ""
+"WeeChat ist ein schneller, schlanker und erweiterbarer IRC Client. Die erste Veröffentlichung ist Version 0.0.1\n"
+"CVS ist geöffnet auf der Savannah Seite\n"
+"Warnung: Dies ist eine Alpha Version. Es sind noch nicht alle IRC Befehle integriert.\n"
+"Diese Version enthält:\n"
+"- Curses GUI (andere GUIs sind bisher nicht entwickelt),\n"
+"- fast alle IRC Befehle von RFC1459,\n"
+"- Multi-Server,\n"
+"- Konfigurationsdatei,\n"
+"- Vervollständigung und Befehls-Verlauf,\n"
+"- ...\n"
+"(siehe ChangeLog und TODO Datei)\n"
+"\n"
+"Hinweis an diejenigen die gerne helfen möchten:\n"
+"- wir suchen nach Übersetzern für WeeChat und die dazugehörige Dokumentation (z.Zt. noch nicht geschrieben. Zum Beispiel in deutsch, spanisch, italienisch, ....\n"
+"- des weiteren wird nach Leuten gesucht die sich mit anderen Betriebssystem auskennen (z.B. *BSD, GNU/Hurd,...), damit WeeChat auf diese Plattformen portiert werden kann.\n"
+"\n"
+"Alle Vorschläge und Fehlermeldungen sind willkommen. Unsere Kontaktdaten finden Sie auf der WeeChat Support Seite."
+
+#: news/_news_i18n.py:114
+msgid "New WeeChat screenshot"
+msgstr "Neue WeeChat Screenshots"
+
+#: news/_news_i18n.py:115
+msgid ""
+"IRC Client WeeChat is under development, a new screenshot is available: nick list and window for each channel.\n"
+"This version is still unstable and doesn't implement all IRC commands.\n"
+"Current developments are:\n"
+"- IRC protocol,\n"
+"- configuration file management,\n"
+"- ncurses front-end (color display, window management),\n"
+"- Gtk+ and Qt front-ends."
+msgstr ""
+"IRC Client WeeChat ist in der Entwicklung, ein neuer Screenshot ist verfügbar! Nick-Liste und Fenster für jeden einzelnen Channel.\n"
+"Diese Version ist weiterhin instabil und verfügt noch nicht über alle IRC Befehle.\n"
+"gegenwärtig wird folgendes Entwickelt:\n"
+"- IRC Protokoll,\n"
+"- Konfigurations-Managment,\n"
+"- ncurses Oberfläche (Farbendarstellung, Fenster-Management),\n"
+"- Gtk+ und Qt Oberfläche."
+
+#: news/_news_i18n.py:116
+msgid "WeeChat screenshot"
+msgstr "WeeChat Screenshot"
+
+#: news/_news_i18n.py:117
+msgid ""
+"First WeeChat screenshot is available (version with ncurses interface).\n"
+"This chat client is under development, first stable version will be available soon. Thanks for your patience..."
+msgstr ""
+"Der erste Screenshot von WeeChat ist veröffentlicht (Version mit ncurses Oberfläche).\n"
+"Dieser Client ist in der Programmentwicklung. Die erste stabile Version wird bald zur Verfügung stehen. Danke für Ihre Geduld..."
+
+#: news/_news_i18n.py:118
+msgid "WeeChat - Wee Enhanced Environment for Chat"
+msgstr "WeeChat - Wee Enhanced Environment for Chat"
+
+#: news/_news_i18n.py:119
+msgid ""
+"WeeChat project is started.\n"
+"\n"
+"It is a chat client, with many features like:\n"
+"- irc client,\n"
+"- many GUI: text, ncurses and gtk,\n"
+"- multi-platforms,\n"
+"- fast, light and extensible with scripts.\n"
+"- ..."
+msgstr ""
+"WeeChat Projekt hat begonnen.\n"
+"\n"
+"Es handelt sich um einen Chat-Client mit vielen Funktionen:\n"
+"- IRC Client,\n"
+"- mehreren Benutzeroberflächen: Text, ncurses und Gtk,\n"
+"- auf mehreren Plattformen lauffähig,\n"
+"- schnell, schlank und erweiterbar durch Skripten.\n"
+"- ..."
+
+#. Translators: description for script "fete.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:6
+msgid "Manage feasts from french calendar."
+msgstr "verwaltet Feiertage des französischen Kalenders."
+
+#. Translators: description for script "sound.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:9
+msgid "Play a sound when highlighted/private msg, or for ctcp sound event."
+msgstr "spielt bei einer Highlighted/privaten Nachricht, oder bei einem ctcp event, einen Sound ab."
+
+#. Translators: description for script "awaylog.pl" (0.0.1-0.2.6)
+#. Translators: description for script "awaylog.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:12
+#: plugins/_plugins_i18n.py:246
+msgid "Log highlights/private msg when you are away."
+msgstr "Hightlight/Private Nachrichten werden protokolliert, falls man nicht anwesend ist."
+
+#. Translators: description for script "exec.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:15
+msgid "Execute the command and print it to the actual buffer or server."
+msgstr "führt einen Befehl aus, dabei wird die Ausgabe im aktuellen Buffer oder Server ausgegeben."
+
+#. Translators: description for script "autoauth.py" (0.0.1-0.2.6)
+#. Translators: description for script "autoauth.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:18
+#: plugins/_plugins_i18n.py:786
+msgid "Permits to auto-authenticate when changing nick."
+msgstr "erlaubt automatische Authentisierung, wenn der Nick geändert wird."
+
+#. Translators: description for script "tinyurl.py" (0.0.1-0.2.6)
+#. Translators: description for script "tinyurl.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:21
+#: plugins/_plugins_i18n.py:285
+msgid "Get \"tinyurl.com\" equivalent for URLs."
+msgstr "erstellt mittels \"tinyurl.com\" ein äquivalent von URLs."
+
+#. Translators: description for script "uname.py" (0.0.1-0.2.6)
+#. Translators: description for script "uname.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:24
+#: plugins/_plugins_i18n.py:408
+msgid "Sends \"uname -a\" output to current channel."
+msgstr "sendet die Ausgabe von \"uname -a\" in den aktuellen Channel."
+
+#. Translators: description for script "urlgrab.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:27
+msgid "Collects all URLs said in a channel, and launches them in your web browser."
+msgstr "sammelt alle URLs in einem Channel und öffnet sie in einem Webbrowser."
+
+#. Translators: description for script "ctcp.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:30
+msgid "Customize answers to CTCP requests."
+msgstr "einstellbare Antworten auf CTCP Anfragen."
+
+#. Translators: description for script "xmms.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:33
+msgid "Display which song xmms is currently playing."
+msgstr "zeigt an welcher Song gerade von xmms gespielt wird."
+
+#. Translators: description for script "moc.pl" (0.0.1-0.2.6)
+#. Translators: description for script "moc.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:36
+#: plugins/_plugins_i18n.py:270
+msgid "Show info about current song in moc."
+msgstr "zeigt Informationen über den aktuellen Song in moc an."
+
+#. Translators: description for script "gimmicks.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:39
+msgid "Do funny things with your input and enerve others."
+msgstr "stelle lustige Dinge mit Deiner Eingabe an und nerve andere."
+
+#. Translators: description for script "todo.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:42
+msgid "Let users send you assignments that will be put into a file."
+msgstr "Anwender können Ihnen Anweisungen senden, die in eine Datei gespeichert werden."
+
+#. Translators: description for script "mpdnp.py" (0.0.1-0.2.6)
+#. Translators: description for script "weempd.py" (0.0.1-0.2.6)
+#. Translators: description for script "mpdnp.py" (0.3.0+)
+#. Translators: description for script "weempd.py" (0.3.0+)
+#. Translators: description for script "mpdspam.rb" (0.3.0+)
+#: plugins/_plugins_i18n.py:45
+#: plugins/_plugins_i18n.py:132
+#: plugins/_plugins_i18n.py:273
+#: plugins/_plugins_i18n.py:357
+#: plugins/_plugins_i18n.py:399
+msgid "Display which song mpd is currently playing."
+msgstr "zeigt an welche Musik von mpd gerade gespielt wird."
+
+#. Translators: description for script "kernel.pl" (0.0.1-0.2.6)
+#. Translators: description for script "kernel.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:48
+#: plugins/_plugins_i18n.py:321
+msgid "Display latest available kernel on kernel.org."
+msgstr "zeigt die aktuelle Kernel Version auf kernel.org an."
+
+#. Translators: description for script "hello.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:51
+msgid "Sends greetings in the current channel."
+msgstr "verschickt einen Gruß an den aktiven Channel."
+
+#. Translators: description for script "fortune.pl" (0.0.1-0.2.6)
+#. Translators: description for script "fortune.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:54
+#: plugins/_plugins_i18n.py:318
+msgid "Sends a random fortune cookie."
+msgstr "verschickt ein Zufalls-Cookie."
+
+#. Translators: description for script "auto_op.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:57
+msgid "Automatically op and voice some nicks."
+msgstr "automatisch \"op\" und \"voice\" an Nicks vergeben."
+
+#. Translators: description for script "autoaway.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:60
+msgid "Sets away after a period of inactivity."
+msgstr "nach Ablauf einer festgelegten Zeit ohne Aktivität wird der eigene Status auf abwesend gesetzt."
+
+#. Translators: description for script "shell.py" (0.1.7-0.2.6)
+#. Translators: description for script "shell.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:63
+#: plugins/_plugins_i18n.py:279
+msgid "Run shell commands inside WeeChat."
+msgstr "ein Shell-Befehl wird aus WeeChat heraus ausgeführt."
+
+#. Translators: description for script "now-playing.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:66
+msgid "Sends now-playing informations (fetched from amaroK or moc) to the current channel."
+msgstr "schickt eine Information an den aktiven Channel, welche Musik man hört (benötigt amaroK oder moc)."
+
+#. Translators: description for script "loadavg.lua" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:69
+msgid "Prints the machine load average in the infobar."
+msgstr "zeigt die Auslastung des Rechners in der Infobar dar."
+
+#. Translators: description for script "myuptime.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:72
+msgid "Display machine uptime."
+msgstr "zeigt an wie lange der Rechner schon läuft."
+
+#. Translators: description for script "logsearch.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:75
+msgid "Looks for text in WeeChat disk log files."
+msgstr "Textsuche in den gespeicherten WeeChat Protokoll-Dateien."
+
+#. Translators: description for script "onattach.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:78
+msgid "Execute commands on screen attach/detach."
+msgstr "führt Befehle auf dem Bildschirm aus (attach/detach)."
+
+#. Translators: description for script "theme.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:81
+msgid "Theme manager for WeeChat."
+msgstr "Theme-Manager für WeeChat."
+
+#. Translators: description for script "catapult.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:84
+msgid "Less ordinary abuse generator."
+msgstr "gewöhnlicher Beleidigungs-Generator."
+
+#. Translators: description for script "translate.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:87
+msgid "Translate words from/to other languages."
+msgstr "übersetzt Wörter in/aus eine(r) anderen Sprache."
+
+#. Translators: description for script "beep.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:90
+msgid "Speaker beep on highlight/private message."
+msgstr "Lautsprecher beep bei einer Hightlight- oder privaten Nachricht."
+
+#. Translators: description for script "toggle.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:93
+msgid "Adds a simple command to toggle boolean WeeChat settings."
+msgstr "fügt einen einfachen Befehl hinzu um in den WeeChat Einstellungen boolesche Variablen umzuschalten."
+
+#. Translators: description for script "keepnick.py" (0.0.1-0.2.6)
+#. Translators: description for script "keepnick.py" (0.3.4+)
+#: plugins/_plugins_i18n.py:96
+#: plugins/_plugins_i18n.py:846
+msgid "Keep your nick and recover it in case it's stolen."
+msgstr "behalte Deinen Nick oder hole ihn dir wieder zurück, falls er gestohlen wurde."
+
+#. Translators: description for script "audacious.pl" (0.0.1-0.2.6)
+#. Translators: description for script "audacious.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:99
+#: plugins/_plugins_i18n.py:315
+msgid "Display which song Audacious is currently playing."
+msgstr "zeigt an welche Musik gerade von Audacious abspielt wird."
+
+#. Translators: description for script "bufsave.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:102
+msgid "Save current buffer to a file."
+msgstr "speichert den aktiven Buffer in eine Datei."
+
+#. Translators: description for script "pyexec.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:105
+msgid "Run Python code directly from WeeChat."
+msgstr "starte Python Code direkt von WeeChat."
+
+#. Translators: description for script "clonescan.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:108
+msgid "Scans clones on demand on a channel, or on join."
+msgstr "sucht auf Nachfrage in einem Channel nach Klonen oder automatisch, sobald man einen Channel betritt."
+
+#. Translators: description for script "amarok.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:111
+msgid "Amarok control and now playing script. Works locally and over SSH."
+msgstr "Amarok aus WeeChat heraus steuern und sich anzeigen lassen, was gerade gespielt wird. Funktioniert lokal und über SSH."
+
+#. Translators: description for script "mp3blaster.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:114
+msgid "Display which song mp3blaster is currently playing."
+msgstr "zeigt an welche Musik mp3blaster gerade abspielt."
+
+#. Translators: description for script "last.fm.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:117
+msgid "Fetches your last submitted song from last.fm and shows it in the current channel."
+msgstr "holt den zuletzt vorgeschlagenen Song von last.fm und gibt in im aktuellen Channel aus."
+
+#. Translators: description for script "weexaile.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:120
+msgid "Display which song exaile is currently playing."
+msgstr "zeigt an welche Musik exaile gerade spielt."
+
+#. Translators: description for script "awl.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:123
+msgid "Display list of open buffers in infobar."
+msgstr "zZeigt die geöffneten Buffer in der Infobar an."
+
+#. Translators: description for script "rbox.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:126
+msgid "Display which song Rhythmbox is currently playing."
+msgstr "zeigt an welche Musik Rhythmbox gerade abspielt."
+
+#. Translators: description for script "logurlsql.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:129
+msgid "Log URLs to a SQL Database."
+msgstr "speichert URLs in eine SQL Datenbank."
+
+#. Translators: description for script "response.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:135
+msgid "Autoresponse script."
+msgstr "Skript für eine automatisierte Rückantwort."
+
+#. Translators: description for script "limits.tar.bz2" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:138
+msgid "Check server limits (eg. topic length or number of mode parameters). Print warning or send multiple IRC commands if needed."
+msgstr "überprüft Server Beschränkungen (z.B. Länge des Topics oder Anzahl der Mode-Parameter). Stellt eine Warnung dar oder sendet IRC Befehle, falls gewünscht."
+
+#. Translators: description for script "oldtopic.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:141
+msgid "Display old topics for a channel."
+msgstr "zeigt die alten Topics eines Channels an."
+
+#. Translators: description for script "browse.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:144
+msgid "Browse/list URLs in channels."
+msgstr "sucht nach URLs in Channels und zeigt diese an."
+
+#. Translators: description for script "forcenick.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:147
+msgid "Forces original nickname and wipes out ghosts and nick stealers."
+msgstr "erzwingt original Nicknamen und eliminiert Geister und Nick-Diebe."
+
+#. Translators: description for script "mpd.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:150
+msgid "Basic MPD management."
+msgstr "einfaches MPD Management."
+
+#. Translators: description for script "layout.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:153
+msgid "Save/restore buffers layout."
+msgstr "speichert und stellt Buffer Layouts wieder her."
+
+#. Translators: description for script "growl-notify.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:156
+msgid "Growl notification script."
+msgstr "Skript um eine Growl-Benachrichtigung (MacOS) zu erstellen"
+
+#. Translators: description for script "weeter.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:159
+msgid "Send CTCP ACTIONs as Twitter updates."
+msgstr "sendet CTCP Aktionen bei Twitter updates."
+
+#. Translators: description for script "mac-update-status.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:162
+msgid "Update status messages in various Mac IM programs."
+msgstr "Update Status-Nachricht von verschiedenen MAC IM Programmen."
+
+#. Translators: description for script "surfraw.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:165
+msgid "An interface to Surfraw."
+msgstr "Schnittstelle zu Surfraw."
+
+#. Translators: description for script "automode.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:168
+msgid "Automatically change IRC modes of other users when they join."
+msgstr "ändert automatisch den IRC Modus anderer, wenn sie den Chat betreten."
+
+#. Translators: description for script "xmms2.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:171
+msgid "Print currently playing track (format is configurable) in xmms2 to a channel or private buffer."
+msgstr "zeigt im Channel oder dem privaten Buffer an was gerade von xmms2 gespielt wird (das Ausgabeformat ist konfigurierbar)."
+
+#. Translators: description for script "bitlback.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:174
+msgid "Display JOIN message to open query if buddy comes back to &bitlbee channel."
+msgstr "zeigt eine JOIN Nachricht an für eine Anfrage wenn ein Freund den &bitlbee Channel betritt."
+
+#. Translators: description for script "notify.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:177
+msgid "Notifies the user using pynotify module (just like pidgin/gaim)."
+msgstr "informiert den Anwender mittels pynotify-Module (wie bei pidgin/gaim)."
+
+#. Translators: description for script "text_replace.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:180
+msgid "Replace text in messages."
+msgstr "ersetzt einen Text in Nachrichten."
+
+#. Translators: description for script "orpheus.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:183
+msgid "Displays the current playing track from Orpheus in current channel."
+msgstr "zeigt den aktuell gespielten Song von Orpheus im aktuellen Channel an."
+
+#. Translators: description for script "pmwhitelist.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:186
+msgid "Private message white list manager - stop unwanted intrusions."
+msgstr "Positivliste für private Nachrichten - stoppe ungewollte private Anfragen."
+
+#. Translators: description for script "nickserv.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:189
+msgid "Nickserv identify."
+msgstr "Nickserv Identifizierung."
+
+#. Translators: description for script "tray.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:192
+msgid "Tray and notification."
+msgstr "Tray und Benachrichtigung."
+
+#. Translators: description for script "auto_dcc_own_ip.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:195
+msgid "Automatic dcc_own_ip."
+msgstr "automatische dcc_own_ip."
+
+#. Translators: description for script "highlight_jabber_notify.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:198
+msgid "Jabber's notification on highlight and private message."
+msgstr "Jabbers Benachrichtigung bei Highlight oder privaten Nachrichten."
+
+#. Translators: description for script "auto_invite.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:201
+msgid "Auto-join channel when \"invite\" is received."
+msgstr "Betritt automatisch den Channel wenn \"invite\" erhalten wurde."
+
+#. Translators: description for script "weesonata.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:204
+msgid "Show what's playing on your sonata player."
+msgstr "zeigt an was sonata-Player gerade spielt."
+
+#. Translators: description for script "mslapper.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:207
+msgid "Say all nicknames on current channel."
+msgstr "benennt alle Nicknamen des aktuellen Channel."
+
+#. Translators: description for script "weenotify.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:210
+msgid "Notify of nick highlight via libnotify."
+msgstr "Benachrichtigung von Nick Highlights via libnotify."
+
+#. Translators: description for script "highlights.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:213
+msgid "Aggregates nick highlight messages internally to be output later by command."
+msgstr "sammelt Nick-Highlight Nachrichten intern, um sie später anzuzeigen."
+
+#. Translators: description for script "obsolete.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:216
+msgid "Script to check if your scripts are up to date with list located at WeeChat website."
+msgstr "Dieses Skript überprüft ob die installierten Skripten aktuell sind."
+
+#. Translators: description for script "pagetitle.py" (0.0.1-0.2.6)
+#. Translators: description for script "pagetitle.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:219
+#: plugins/_plugins_i18n.py:276
+msgid "Adds HTML page titles to http:// urls in your message."
+msgstr "fügt einer http:// URL den entsprechenden HTML Seitentitel hinzu."
+
+#. Translators: description for script "wildcard.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:222
+msgid "Adds wildcard support to nick completions."
+msgstr "fügt Wildcard Funktion zu Nick-Vervollständigung hinzu."
+
+#. Translators: description for script "crypt.py" (0.0.1-0.2.6)
+#. Translators: description for script "crypt.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:225
+#: plugins/_plugins_i18n.py:255
+msgid "Encrypt/decrypt messages using openssl."
+msgstr "Ver- und entschlüsseln von Nachrichten mittels openssl."
+
+#. Translators: description for script "histecho.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:228
+msgid "Displays the last few log lines at the start of each new buffer."
+msgstr "zeigt die letzten Protokolleinträge des aktuell geöffneten Buffers an."
+
+#. Translators: description for script "kikoo.pl" (0.0.1-0.2.6)
+#. Translators: description for script "kikoo.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:231
+#: plugins/_plugins_i18n.py:432
+msgid "Send a colored \"kikoo\" on current channel."
+msgstr "schickt eine farbige \"kikoo\" in den aktuellen Channel."
+
+#. Translators: description for script "url_shorten.rb" (0.0.1-0.2.6)
+#. Translators: description for script "url_shorten.rb" (0.3.0+)
+#: plugins/_plugins_i18n.py:234
+#: plugins/_plugins_i18n.py:288
+msgid "Shorten long urls in channels."
+msgstr "verkürzt lange URLs in Channels."
+
+#. Translators: description for script "roll.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:237
+msgid "Roll a random number with different simulated dice combo."
+msgstr "zufällige Zahl mit unterschiedlichen Würfelkombinationen."
+
+#. Translators: description for script "eightball.rb" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:240
+msgid "Magic 8 Ball."
+msgstr "Magic 8 Ball."
+
+#. Translators: description for script "weetris.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:243
+msgid "Tetris-like game."
+msgstr "Tetris-Spiel."
+
+#. Translators: description for script "beep.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:249
+msgid "Beep (terminal bell) or run command on highlight/private message."
+msgstr "Lautsprecher beep oder Aufruf eines externen Befehl bei einer Hightlight- oder privaten Nachricht."
+
+#. Translators: description for script "buffers.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:252
+msgid "Sidebar with list of buffers."
+msgstr "zeigt alle Buffer in einem separaten Seitenfenster an (empfohlen!)."
+
+#. Translators: description for script "go.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:258
+msgid "Quick jump to buffers."
+msgstr "schneller Wechsel zu Buffern."
+
+#. Translators: description for script "iset.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:261
+msgid "Set WeeChat and plugins options interactively."
+msgstr "interaktiver WeeChat- und Erweiterungen-Editor."
+
+#. Translators: description for script "launcher.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:264
+msgid "Launch external commands for signals."
+msgstr "tartet externe Programme für Signale."
+
+#. Translators: description for script "mastermind.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:267
+msgid "Mastermind game."
+msgstr "Spiel: Mastermind."
+
+#. Translators: description for script "sound.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:282
+msgid "Play a sound for IRC \"CTCP SOUND\" message."
+msgstr "spielt einen Sound bei einer IRC  \"CTCP SOUND\" Nachricht ab."
+
+#. Translators: description for script "vdm.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:291
+msgid "Display content of viedemerde.fr/fmylife.com website."
+msgstr "zeigt den Inhalt der Webseite viedemerde.fr/fmylife.com."
+
+#. Translators: description for script "whois_on_query.py" (0.3.2+)
+#: plugins/_plugins_i18n.py:294
+msgid "Send \"whois\" on nick when receiving new IRC query."
+msgstr "sende \"whois\" an Nick wenn ein IRC Query empfangen wird."
+
+#. Translators: description for script "weeget.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:297
+msgid "Scripts manager."
+msgstr "Skript-Manager. Zum einfachen (de-)installieren von Skripten auf der WeeChat-Homepage (empfohlen!)."
+
+#. Translators: description for script "quodnp.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:300
+msgid "A now playing and control script for Quodlibet."
+msgstr "Quodlibet Fernbedienung und zum Anzeigen welches Musikstück gerade gespielt wird."
+
+#. Translators: description for script "growl-net-notify.pl" (0.0.1-0.2.6)
+#. Translators: description for script "growl_net_notify.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:303
+#: plugins/_plugins_i18n.py:312
+msgid "Notifications through Net::Growl."
+msgstr "Benachrichtigung durch Net::Growl."
+
+#. Translators: description for script "notify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:306
+msgid "Notification on screen for highlights and private messages."
+msgstr "Benachrichtigung bei Highlights und privaten Nachrichten."
+
+#. Translators: description for script "chan_hl.tcl" (0.3.0+)
+#: plugins/_plugins_i18n.py:309
+msgid "Highlight some channels on each message."
+msgstr "Channels werden, bei jeder Nachricht, auf highlight gesetzt."
+
+#. Translators: description for script "shuffle.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:324
+msgid "Simple text shuffler."
+msgstr "einfacher Textmischer."
+
+#. Translators: description for script "kbtimeout.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:327
+msgid "Kickban nick and unban after some seconds."
+msgstr "Kickban Nick und Unban nach ein paar Sekunden."
+
+#. Translators: description for script "title.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:330
+msgid "Set terminal title to active buffer name and hotlist items."
+msgstr "setzt den aktiven Buffer Namen als Terminal-Titel und fügt Hotlist-Einträge hinzu."
+
+#. Translators: description for script "remnotify.pl" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:333
+msgid "Send raw TCP notify to remote host for highlights and private messages."
+msgstr "schickt TCP Benachrichtigung an entfernten Host für Highlights und private Nachrichten."
+
+#. Translators: description for script "chanact.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:336
+msgid "New hotlist, use names and keybindings instead of numbers."
+msgstr "neue, verbesserte Hotlist. Nutzt Namen und Tastenkurzbefehle anstelle von Zahlen."
+
+#. Translators: description for script "urlbar.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:339
+msgid "Display a url bar for easy clicking or selecting."
+msgstr "stellt eine Bar zur Verfügung um einfacher URLs zu selektieren und anzuwählen."
+
+#. Translators: description for script "urlgrab.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:342
+msgid "Logs url and open them in browser."
+msgstr "protokolliert URL und öffne sie in einem Browser."
+
+#. Translators: description for script "weebanshee.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:345
+msgid "Now-playing script for banshee."
+msgstr "zeigt an welches Lied gerade von banshee gespielt wird."
+
+#. Translators: description for script "chanmon.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:348
+msgid "Adds a channel monitor buffer."
+msgstr "startet einen Channel-Monitor Buffer."
+
+#. Translators: description for script "bufsave.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:351
+msgid "Save current buffer content to a file."
+msgstr "speichert den aktuellen Buffer-Inhalt in eine Datei."
+
+#. Translators: description for script "histsearch.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:354
+msgid "Quick search in command history."
+msgstr "schnellsuche im Befehlsverlauf."
+
+#. Translators: description for script "kiloseconds.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:360
+msgid "Adds a command and bar item for displaying the current time in kiloseconds."
+msgstr "fügt eine Kommando- und Barzeile hinzu um die aktuelle Zeit in Kilosekunden anzuzeigen."
+
+#. Translators: description for script "autojoin.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:363
+msgid "Configure autojoin for all servers according to currently joined channels."
+msgstr "konfiguriert autojoin für alle Server, gemäß den Einstellungen des aktuellen Channels."
+
+#. Translators: description for script "toggle_nicklist.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:366
+msgid "Auto show and hide nicklist depending on buffer name."
+msgstr "automatisches Ein-& Ausblenden der Nicklist nach Buffer-Name."
+
+#. Translators: description for script "wetwit.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:369
+msgid "Send/read Twitter messages."
+msgstr "sendet und Liest Twitter-Nachrichten."
+
+#. Translators: description for script "rslap.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:372
+msgid "Slaps with random messages."
+msgstr "nerve mit zufälligen Nachrichten."
+
+#. Translators: description for script "identica.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:375
+msgid "Format identi.ca bot messages."
+msgstr "formatiere identi.ca Bot-Nachrichten."
+
+#. Translators: description for script "highmon.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:378
+msgid "Adds a highlight monitor buffer."
+msgstr "startet einen Highlight Monitor Buffer."
+
+#. Translators: description for script "amarok2.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:381
+msgid "Amarok 2 control and now playing script. Works locally and over SSH."
+msgstr "Amarok 2 Fernbedienung. Funktioniert lokal und über SSH."
+
+#. Translators: description for script "grep.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:384
+msgid "Search regular expression in buffers or log files."
+msgstr "sucht nach regulären Ausdrücken in Buffern und Protokoll-Dateien."
+
+#. Translators: description for script "rainbow.py" (0.0.1-0.2.6)
+#: plugins/_plugins_i18n.py:387
+msgid "Prints text with a rainbow pattern."
+msgstr "gibt einen Text im Regenbogenmuster aus."
+
+#. Translators: description for script "country.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:390
+msgid "Print user's country and local time in whois/whowas replies."
+msgstr "zeigt das Herkunftsland und die Lokalzeit eines Users in whois/whowas an."
+
+#. Translators: description for script "moc-control.py" (0.0.1-0.2.6)
+#. Translators: description for script "moc_control.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:393
+#: plugins/_plugins_i18n.py:396
+msgid "Control and now-playing script for moc."
+msgstr "Fernbedienung für moc."
+
+#. Translators: description for script "jnotify.pl" (0.3.1+)
+#: plugins/_plugins_i18n.py:402
+msgid "Start internal comand or external program if a user or one of your buddies joins a channel you are in."
+msgstr "startet einen internen Befehl oder ein externes Programm, wenn ein User oder einer Deiner Buddies einen Channel betritt."
+
+#. Translators: description for script "highlightxmpp.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:405
+msgid "Relay highlighted and private messages over XMPP (Jabber)."
+msgstr "übermittelt Highlight oder private Nachrichten über XMPP (Jabber)."
+
+#. Translators: description for script "myuptime.rb" (0.3.0+)
+#: plugins/_plugins_i18n.py:411
+msgid "Sends machine uptime to current channel."
+msgstr "sendet die Computer \"Uptime\" an aktuellen Channel."
+
+#. Translators: description for script "spotify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:414
+msgid "Looks up meta information about spotify-URIs and posts back to channel."
+msgstr "sucht nach Meta-Informationen über spotify-URLs und postet diese in den Channel."
+
+#. Translators: description for script "hlpvitem.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:417
+msgid "Add bar item with highlight/private messages."
+msgstr "fügt eine Bar-Item hinzu mit Highlight/Privaten Nachrichten."
+
+#. Translators: description for script "rhythmbox.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:420
+msgid "Display which song rhythmbox is currently playing."
+msgstr "zeigt an welche Musik Rhythmbox gerade abspielt."
+
+#. Translators: description for script "gnotify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:423
+msgid "Notifications through Growl."
+msgstr "Benachrichtigung durch Growl."
+
+#. Translators: description for script "amarok2.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:426
+msgid "Amarok 2 control and now playing script."
+msgstr "Fernbedienung für Amarok2 und zum anzeigen welches Musikstück gerade gespielt wird."
+
+#. Translators: description for script "volumeter.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:429
+msgid "Show volume of data on network interface in a bar."
+msgstr "gibt das Datenvolumen der Netzwerk-Schnittstelle in einer Bar an."
+
+#. Translators: description for script "bandwidth.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:435
+msgid "Displays network interface bandwidth on a bar."
+msgstr "gibt die Bandbreite der Netzwerk-Schnittstelle in einer Bar an."
+
+#. Translators: description for script "translate.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:438
+msgid "Translate string using Google translate API."
+msgstr "übersetzt ein Wort mittels der Google Übersetzungs-API."
+
+#. Translators: description for script "stats_bar.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:441
+msgid "Bar items with stats about network interface, load, and free memory."
+msgstr "In der Bar-Item Informationen der genutzte Netzwerk-Schnittstelle, Durchschnittsbelastung der CPU, sowie dem freiem Speicher anzeigen lassen."
+
+#. Translators: description for script "nickregain.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:444
+msgid "Automatically attempts to regain IRC primary nick."
+msgstr "versucht automatisch den ursprünglichen IRC-Nick wieder zu erlangen."
+
+#. Translators: description for script "text_replace.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:447
+msgid "Replaces text you write with replacement text."
+msgstr "ersetzt den geschriebenen Text durch einen anderen Text."
+
+#. Translators: description for script "autojoin_on_invite.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:450
+msgid "Auto joins channels when invited."
+msgstr "betritt automatisch einen Channel wenn man eingeladen (\"/invite\") wurde."
+
+#. Translators: description for script "chanop.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:453
+msgid "Helper script for IRC channel operators."
+msgstr "Hilfsskript für IRC Channel Operatoren."
+
+#. Translators: description for script "dellog.pl" (0.3.2+)
+#: plugins/_plugins_i18n.py:456
+msgid "Delete log file of current buffer."
+msgstr "löscht die Protokoll-Datei des aktuellen Buffers."
+
+#. Translators: description for script "imap_status.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:459
+msgid "Bar item with unread imap messages count."
+msgstr "Bar-Item welches die ungelesen imap-Nachrichten zählt."
+
+#. Translators: description for script "yaaa.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:462
+msgid "Auto-away script."
+msgstr "nach einer vorgegebenen Zeit automatisch den /away-Status setzen."
+
+#. Translators: description for script "screen_away.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:465
+msgid "Set away status when detaching and attaching from screen or tmux."
+msgstr "setzt den Status auf abwesend, falls man sich bei  Screen oder tmux an-oder abmeldet."
+
+#. Translators: description for script "infolist.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:468
+msgid "Display infolist in a buffer, useful for script developers."
+msgstr "in einem separaten Buffer wird eine Infolisten angezeigt (sinnvoll für Skripten-Entwickler!)"
+
+#. Translators: description for script "buffer_autoclose.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:471
+msgid "Automatically close inactive private message buffers."
+msgstr "schließt automatisch alle inaktiven, privaten Buffer."
+
+#. Translators: description for script "hotlist2extern.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:474
+msgid "Give hotlist to an external file/program."
+msgstr "die Hotlist wird an ein externes Programm oder in eine Datei weitergereicht."
+
+#. Translators: description for script "buddylist.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:477
+msgid "A simple buddylist to show if your buddies are online/away/offline."
+msgstr "eine einfache Buddyliste die anzeigt, ob Deine Buddies Online/Abwesend/Offline sind."
+
+#. Translators: description for script "announce_url_title.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:480
+msgid "Announce URL title to user or to channel."
+msgstr "schickt einen URL Titel an einen User oder in den Channel."
+
+#. Translators: description for script "rnotify.tcl" (0.3.0+)
+#: plugins/_plugins_i18n.py:483
+msgid "Sends highlights to (remote) client using libnotify."
+msgstr "schickt Highlights zu einem (remote) Client mittels libnotify."
+
+#. Translators: description for script "strmon.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:486
+msgid "Monitoring of highlights, tags, buffers, nicks with optional sound and osd notifications."
+msgstr "Aufzeichnung von Highlights, Schlagwörtern, Buffern, Nicks mit optionaler Ton- oder Bildschirmanzeige."
+
+#. Translators: description for script "query_blocker.pl" (0.3.1+)
+#: plugins/_plugins_i18n.py:489
+msgid "Simple blocker for private message (i.e. spam)."
+msgstr "einfaches Blockieren von privaten Nachrichten (zum Beispiel: Spam)."
+
+#. Translators: description for script "nameday.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:492
+msgid "Display name days in bar item and buffer (only french calendar)."
+msgstr "zeigt den Namenstag in einer Bar-Item und dem Buffer an (für den französischen Kalender)."
+
+#. Translators: description for script "shortenurl.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:495
+msgid "Shorten long urls using isgd or tinyurl."
+msgstr "verkürzt lange URLs mittels isgd oder tinyurl."
+
+#. Translators: description for script "uppercase.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:498
+msgid "Transform all your input to uppercase (useful for INTERNATIONAL CAPSLOCK DAY)."
+msgstr "alle Eingaben werden in Großbuchstaben umgewandelt  (nützlich für den INTERNATIONALEN FESTSTELLTASTEN-TAG)."
+
+#. Translators: description for script "upside_down.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:501
+msgid "Replaces text you write with upside down text."
+msgstr "stellt den geschriebenen Text auf dem Kopf dar."
+
+#. Translators: description for script "newsbar.pl" (0.3.1+)
+#: plugins/_plugins_i18n.py:504
+msgid "Print highlights or text given by commands into a bar (auto popup if needed)."
+msgstr "Highlights oder Ausgaben von Befehlen werden in einer separaten Bar dargestellt (autom. Pop-Up, falls gewünscht)."
+
+#. Translators: description for script "filter_ext.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:507
+msgid "Extends /filter, help against spam."
+msgstr "erweitert die /filter-Funktion, um gegen SPAM gewappneter zu sein."
+
+#. Translators: description for script "foo_spam.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:510
+msgid "Show info about current song in foobar2000."
+msgstr "zeigt Informationen über den aktuellen Song in foobar2000 an."
+
+#. Translators: description for script "completion.py" (0.3.1+)
+#: plugins/_plugins_i18n.py:513
+msgid "Custom word completions."
+msgstr "benutzerdefinierte Wortvervollständigung"
+
+#. Translators: description for script "alternatetz.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:516
+msgid "Add an alternate timezone item."
+msgstr "fügt der Bar-Item eine zusätzliche Zeitzone hinzu."
+
+#. Translators: description for script "weerock.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:519
+msgid "A \"now playing\" script for several music players."
+msgstr "zeigt für verschiedene Musikabspielprogramme an, welcher Song gerade gespielt wird."
+
+#. Translators: description for script "mplex.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:522
+msgid "Simple remote control of multiplexer (screen or tmux), optionally set away status."
+msgstr "simple Fernbedienung für multiplexer (screen oder tmux), wahlweise mit Abwesenheitsstatus."
+
+#. Translators: description for script "snarl_net_notify.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:525
+msgid "Snarl notifications for highlights."
+msgstr "Snarln Benachrichtigung bei Highlight-Nachrichten."
+
+#. Translators: description for script "dcc_antispam.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:528
+msgid "Antispam for DCC file/chat requests."
+msgstr "Antispam für DCC Datei/Chat Anfragen."
+
+#. Translators: description for script "auto_away.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:531
+msgid "A simple auto-away script."
+msgstr "ein einfaches Abwesenheit-Skript."
+
+#. Translators: description for script "facebook_rename.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:534
+msgid "Rename Facebook usernames when using Bitlbee or Minbif."
+msgstr "benennt Facebook-Namen um wenn Bitlbee oder Minbif genutzt wird."
+
+#. Translators: description for script "beat.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:537
+msgid "Add a bar item with the Beat-Internet-Time."
+msgstr "fügt der Bar-Item eine Beat-Internet-Zeit Anzeige hinzu."
+
+#. Translators: description for script "inotify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:540
+msgid "Notification script using libnotify or dbus with screen support."
+msgstr "Skript um Benachrichtigungen mittels libnotify oder dbus auszugeben (unterstützt screen)."
+
+#. Translators: description for script "typing_counter.py" (0.3.2+)
+#: plugins/_plugins_i18n.py:543
+msgid "Bar item showing typing count and cursor position."
+msgstr "zeigt in der Bar-Item an wie viele Zeichen in der Eingabezeile geschrieben wurden und wo sich der Cursor befindet."
+
+#. Translators: description for script "colorize_nicks.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:546
+msgid "Use the weechat nick colors in the chat area and command line."
+msgstr "im Textbereich oder der Eingabezeile wird der Nickname mit der entsprechenden Farbe für den Nick angezeigt."
+
+#. Translators: description for script "away_action.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:549
+msgid "Run command on highlight and privmsg when away."
+msgstr "führt einen Befehl aus falls man abwesend (/away) ist und man eine highlight- oder private Nachricht erhalten sollte."
+
+#. Translators: description for script "ubus.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:552
+msgid "Ubus notification."
+msgstr "Skript um eine Ubus Benachrichtigung zu erstellen."
+
+#. Translators: description for script "gweather.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:555
+msgid "Add a bar item with Google weather."
+msgstr "fügt der Bar-Item Wetterinformation vom Google Wetterdienst hinzu."
+
+#. Translators: description for script "buffer_autoset.py" (0.3.2+)
+#: plugins/_plugins_i18n.py:558
+msgid "Auto-set buffer properties when a buffer is opened."
+msgstr "Buffer Eigenschaften werden automatisch gesetzt falls ein Buffer geöffnet wird."
+
+#. Translators: description for script "postpone.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:561
+msgid "Postpone written messages for later dispatching if target nick is not on channel."
+msgstr "geschriebene Nachrichten werden einem Nick der zur Zeit nicht im Channel ist zu einem späteren Zeitpunkt zugestellt."
+
+#. Translators: description for script "bitlbee_typing_notice.py" (0.3.2+)
+#: plugins/_plugins_i18n.py:564
+msgid "Send notice when typing message on bitlbee, display if user is writing in a bar item."
+msgstr "versendet eine Mitteilung falls eine Nachricht auf bitlbee geschrieben wird oder zeigt an falls jemand eine Nachricht an Sie schreibt."
+
+#. Translators: description for script "minbif_typing_notice.rb" (0.3.2+)
+#: plugins/_plugins_i18n.py:567
+msgid "Send notice when typing message on minbif, display if user is writing in a bar item."
+msgstr "versendet eine Mitteilung falls eine Nachricht auf minbif geschrieben wird oder zeigt an falls jemand eine Nachricht an Sie schreibt."
+
+#. Translators: description for script "colorize_lines.pl" (0.3.4+)
+#: plugins/_plugins_i18n.py:570
+msgid "Color the channel text with nick color."
+msgstr "der Text wird in der jeweiligen Farbe des Verfassers dargestellt."
+
+#. Translators: description for script "prism.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:573
+msgid "Send text using rainbow colors."
+msgstr "versendet den Text in Regenbogenfarben."
+
+#. Translators: description for script "curiousignore.pl" (0.3.2+)
+#: plugins/_plugins_i18n.py:576
+msgid "Remove messages from a nick and only print nick."
+msgstr "unterdrückt die Nachricht eines Users in einem Channel und nur sein Nickname wird angezeigt."
+
+#. Translators: description for script "chanstat.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:579
+msgid "Displays channel's peak, low and average users."
+msgstr "zeigt die höchste, niedrigste und durchschnittliche Anzahl an Usern in Channels an."
+
+#. Translators: description for script "lastfm.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:582
+msgid "Send your latest Last.fm track to the current buffer."
+msgstr "sendet den aktuellen Last.fm Titel in den aktuellen Buffer."
+
+#. Translators: description for script "notifo_notify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:585
+msgid "Push notification to iPod touch/iPhone with notifo."
+msgstr "schickt eine Mitteilung an einen iPod touch/iPhone mittels notifo."
+
+#. Translators: description for script "cron.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:588
+msgid "Time-based scheduler, like cron and at."
+msgstr "Zeit basiertes Steuerprogramm, wie cron und at."
+
+#. Translators: description for script "ichatts.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:591
+msgid "iChat-style timestamps."
+msgstr "iChat-mäßiger Zeitstempel der in den jeweiligen Channel geschrieben wird."
+
+#. Translators: description for script "zerotab.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:594
+msgid "Complete empty input line with latest speaker nick in channel."
+msgstr "in einer leeren Eingabezeile wird der Name des Users eingefügt der als letzter im Channel etwas geschrieben hat."
+
+#. Translators: description for script "jabber.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:597
+msgid "Jabber/XMPP protocol."
+msgstr "Jabber/XMPP Protokoll."
+
+#. Translators: description for script "wmiibar.pl" (0.3.3+)
+#: plugins/_plugins_i18n.py:600
+msgid "Wmii statusbar notification for highlights."
+msgstr "Wmii Benachrichtigung bei Highlight-Nachrichten."
+
+#. Translators: description for script "weefish.rb" (0.3.0+)
+#. Translators: description for script "fish.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:603
+#: plugins/_plugins_i18n.py:867
+msgid "FiSH encryption/decryption."
+msgstr "FiSH Verschlüsselung/Entschlüsselung."
+
+#. Translators: description for script "lnotify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:606
+msgid "A libnotify script."
+msgstr "ein libnotify Skript."
+
+#. Translators: description for script "windicate.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:609
+msgid "Add alerts to the message menu in Ubuntu."
+msgstr "fügt eine Mitteilung dem Ubuntu Benachrichtigungssystem hinzu."
+
+#. Translators: description for script "xosdnotify.tcl" (0.3.0+)
+#: plugins/_plugins_i18n.py:612
+msgid "Show highlights and private messages with OSD."
+msgstr "zeigt Highlight- oder private Nachrichten mittels OSD."
+
+#. Translators: description for script "text_effects.lua" (0.3.0+)
+#: plugins/_plugins_i18n.py:615
+msgid "Adds effects to words surrounded by certain characters."
+msgstr "fügt einen Effekt hinzu falls Wörter durch bestimmte Zeichen eingerahmt werden."
+
+#. Translators: description for script "sensors.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:618
+msgid "Displays sensor data."
+msgstr "zeigt Sensordaten an."
+
+#. Translators: description for script "snotify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:621
+msgid "Play sound when messages are printed in buffers."
+msgstr "spielt einen Sound ab falls Nachrichten in einem Buffer dargestellt werden."
+
+#. Translators: description for script "update_notifier.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:624
+msgid "Notify user about WeeChat updates."
+msgstr "informiert Anwender über WeeChat updates."
+
+#. Translators: description for script "confversion.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:627
+msgid "Save config files in a version control system."
+msgstr "speichert die Konfigurationsdateien mittels einer Versionsverwaltung"
+
+#. Translators: description for script "thinklight_blink.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:630
+msgid "Thinklight blink on highlight/private message."
+msgstr "Thinklight blinkt bei einer Hightlight- oder privaten Nachricht."
+
+#. Translators: description for script "pybuffer.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:633
+msgid "Debugging tool for python scripts or test WeeChat's API functions."
+msgstr "Debugtool für Python-Skripten oder um die API Funktionen von WeeChat zu testen."
+
+#. Translators: description for script "msg_command.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:636
+msgid "Run chat received in a buffer as commands."
+msgstr "führt einen empfangen Befehl in einem Buffer aus."
+
+#. Translators: description for script "tailer.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:639
+msgid "Tail any number of files and run any command with line appended."
+msgstr "fügt an das Ende einer Datei die Ausgabe eines Befehls hinzu."
+
+#. Translators: description for script "whatismyip.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:642
+msgid "Display external ip address."
+msgstr "zeigt externe IP Adresse an."
+
+#. Translators: description for script "xfer_setip.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:645
+msgid "Set xfer own ip with external ip."
+msgstr "die externe IP wird in der Option \"xfer.network.own_ip\" gesichert."
+
+#. Translators: description for script "automode.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:648
+msgid "Auto op/voice users when they join IRC channel."
+msgstr "automatische Zuweisung von op/voice an einen User falls er einen IRC Channel betritt."
+
+#. Translators: description for script "pop3_mail.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:651
+msgid "Check POP3 server for mails and display mail headers."
+msgstr "überprüft den POP3 Maileingang auf neue E-Mails und zeigt ausgewählte Mail-Header an."
+
+#. Translators: description for script "bashorg.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:654
+msgid "Retrieve quotes from bash.org."
+msgstr "zeigt Zitate von bash.org an."
+
+#. Translators: description for script "expand_url.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:657
+msgid "Expand short URLs."
+msgstr "von verkürzten URLs wird der entsprechende Ziellink angezeigt."
+
+#. Translators: description for script "leet.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:660
+msgid "Convert text to leet."
+msgstr "wandelt einen Text nach Leetspeek"
+
+#. Translators: description for script "queue.py" (0.3.3+)
+#: plugins/_plugins_i18n.py:663
+msgid "Command queuing."
+msgstr "Befehle in eine Warteschlange aufnehmen und ausführen."
+
+#. Translators: description for script "amqp_notify.rb" (0.3.3+)
+#: plugins/_plugins_i18n.py:666
+msgid "Send private messages and highlights to an AMQP exchange."
+msgstr "schickt private Nachrichten und Highlights an einen AMQP Exchange."
+
+#. Translators: description for script "weather.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:669
+msgid "Display weather from Google."
+msgstr "fügt der Bar-Item Wetterinformation vom Google Wetterdienst hinzu."
+
+#. Translators: description for script "topicdiff.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:672
+msgid "Show differences between old and new topics."
+msgstr "zeigt Unterschiede zwischen einem alten und dem neuen Topic an."
+
+#. Translators: description for script "clemenshow.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:675
+msgid "Display which song clementine is currently playing."
+msgstr "zeigt an welche Musik clementine gerade spielt."
+
+#. Translators: description for script "xmms2.rb" (0.3.0+)
+#: plugins/_plugins_i18n.py:678
+msgid "Display which song xmms2 is currently playing."
+msgstr "zeigt an welcher Song von xmms2 gespielt wird."
+
+#. Translators: description for script "purgelogs.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:681
+msgid "Delete log files by age or size."
+msgstr "löscht Protokolldateien nach Alter oder Größe."
+
+#. Translators: description for script "correction_completion.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:684
+msgid "Provides a completion for \"s/typo/correct\"."
+msgstr "stellt eine Vervollständigung für \"s/Tippfehler/Korrektur\" zur Verfügung."
+
+#. Translators: description for script "hilites.rb" (0.3.0+)
+#: plugins/_plugins_i18n.py:687
+msgid "Display Weechat highlights in dzen (and beep)."
+msgstr "zeigt Highlight in dzen an (und nutzt beep)."
+
+#. Translators: description for script "menu.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:690
+msgid "Bar with popup menu."
+msgstr "Bar mit Popup-Menü"
+
+#. Translators: description for script "mpc.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:693
+msgid "A now playing and control script for mpd."
+msgstr "Fernbedienung für mpd und zum anzeigen welches Musikstück gerade gespielt wird."
+
+#. Translators: description for script "fileaway.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:696
+msgid "Set away status based on presence of a file."
+msgstr "die Abwesenheit wird durch das Vorhandensein einer Datei gesteuert."
+
+#. Translators: description for script "input_lock.rb" (0.3.0+)
+#: plugins/_plugins_i18n.py:699
+msgid "Lock input (authorize only commands)."
+msgstr "Eingabesperre (erlaubt ausschließlich Befehlseingaben)."
+
+#. Translators: description for script "sort_buffers.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:702
+msgid "Sort irc buffers alphabetically."
+msgstr "sortiert IRC Buffer alphabetisch."
+
+#. Translators: description for script "seeks.pl" (0.3.6+)
+#: plugins/_plugins_i18n.py:705
+msgid "Search terms on seeks node and display results."
+msgstr "sucht nach Begriffen auf Seeks Node und zeigt das Ergebnis an."
+
+#. Translators: description for script "cmd_help.py" (0.3.5+)
+#: plugins/_plugins_i18n.py:708
+msgid "Contextual command line help."
+msgstr "kontextbezogener Hilfstext in der Befehlszeile"
+
+#. Translators: description for script "listsort.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:711
+msgid "Sort the output of /list command by user count."
+msgstr "sortiert die Ausgabe des /list Befehls nach Anzahl der Besucher."
+
+#. Translators: description for script "autoconnect.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:714
+msgid "Reopen servers and channels opened last time WeeChat closed."
+msgstr "öffnet erneut die Server und Channel die geöffnet waren, als WeeChat beendet wurde."
+
+#. Translators: description for script "urlbuf.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:717
+msgid "A common buffer for URLs."
+msgstr "ein einfacher Buffer für URLs."
+
+#. Translators: description for script "sysinfo.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:720
+msgid "System info command."
+msgstr "Befehl um Systeminformationen anzeigen zu lassen."
+
+#. Translators: description for script "spotify_nowplaying.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:723
+msgid "Current song script for Spotify on OS X."
+msgstr "zeigt das derzeitig gespielte Lied von Spotify an (OS X)."
+
+#. Translators: description for script "echo.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:726
+msgid "Print a line and additionally set activity level."
+msgstr "stellt eine Zeile im Buffer dar und zusätzlich wird der Level der Aktivität gesetzt."
+
+#. Translators: description for script "kickban.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:729
+msgid "Customizable kickban command with unban timer and mask resolver."
+msgstr "anpassbarer kickban Befehl mit unban timer und mask Resolver."
+
+#. Translators: description for script "perlexec.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:732
+msgid "Execute perl code with a command or in a buffer."
+msgstr "führt Perl-Code in einem Buffer aus."
+
+#. Translators: description for script "ragefaces.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:735
+msgid "Send ragefac.es URLs."
+msgstr "sendet ragefac.es URLs"
+
+#. Translators: description for script "mpris_np.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:738
+msgid "A now playing script for players supporting the mpris dbus interface."
+msgstr "zeigt an was gespielt wird, für Programme die das mpris dbus Interface nutzen."
+
+#. Translators: description for script "chanpriority.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:741
+msgid "Set channel priority."
+msgstr "setzt die Priorität des Channels."
+
+#. Translators: description for script "floodit.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:744
+msgid "Flood'it game."
+msgstr "Flood'it Spiel."
+
+#. Translators: description for script "notifo.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:747
+msgid "Send private messages and highlights as push notifications to your iPhone/Android."
+msgstr "schickt private Nachrichten und Highlights als Push Mitteilung an Dein iPhone/Android."
+
+#. Translators: description for script "unset_unused.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:750
+msgid "Unset script option(s) fom scripts that are no longer installed."
+msgstr "Optionen von nicht (mehr) installierten Skripten werden gelöscht."
+
+#. Translators: description for script "ncmpcpp.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:753
+msgid "Control and now playing script for ncmpcpp."
+msgstr "Fernbedienung für ncmpcpp."
+
+#. Translators: description for script "arespond.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:756
+msgid "Simple autoresponder."
+msgstr "Anfragen werden automatisch beantwortet."
+
+#. Translators: description for script "weenetsoul.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:759
+msgid "Netsoul protocol."
+msgstr "Netsoul Protokoll."
+
+#. Translators: description for script "topicsed.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:762
+msgid "Edit channel topics by perl regular expressions or in input-line."
+msgstr "editieren des Channel-Topics mittels regulären Ausdrücken oder durch den Input-Editor."
+
+#. Translators: description for script "script.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:765
+msgid "Load/reload/unload scripts for any language."
+msgstr "Skriptsprachen unabhängiges laden/erneut laden/entfernen von Skripten."
+
+#. Translators: description for script "listbuffer.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:768
+msgid "Show /list results in a common buffer and interact with them."
+msgstr "die Ausgabe des \"/list\" Befehls wird in einem separaten Buffer ausgegeben."
+
+#. Translators: description for script "xclip.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:771
+msgid "Paste content from X11 clipboard."
+msgstr "einfügen des Inhalts der X11 Zwischenablage."
+
+#. Translators: description for script "allquery.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:774
+msgid "Execute command on all irc query buffers."
+msgstr "führt einen Befehl aus der auf alle Query-Buffer angewendet wird"
+
+#. Translators: description for script "nma.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:777
+msgid "Receive notifications in Notify My Android (android phone app)."
+msgstr "empfange Benachrichtigung mittels NotifyMyAndroid (Android Telefon-App)."
+
+#. Translators: description for script "clone_scanner.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:780
+msgid "Detect multiple nicknames from the same host on irc channels."
+msgstr "bemerkt die Nickamen die mit dem selben Host in IRC Channels angemeldet sind."
+
+#. Translators: description for script "buffer_swap.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:783
+msgid "Swap two buffers."
+msgstr "die Position zweier Buffer wird getauscht."
+
+#. Translators: description for script "growl.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:789
+msgid "Send Growl notifications upon events."
+msgstr "sendet eine Growl-Benachrichtigung bei einem Ereignis."
+
+#. Translators: description for script "infos.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:792
+msgid "Display WeeChats infos, useful for script developers."
+msgstr "zeigt Informationen zu WeeChat an, sinnvoll für Skripten-Entwickler."
+
+#. Translators: description for script "minesweeper.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:795
+msgid "Minesweeper game."
+msgstr "Spiel: Minesweeper"
+
+#. Translators: description for script "isgd.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:798
+msgid "Shorten URLs with is.gd on command."
+msgstr "verkürzt lange URLs mit is.gd, wenn der Befehl aufgerufen wird."
+
+#. Translators: description for script "slock_away.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:801
+msgid "Set away status if slock (X display locker) is running."
+msgstr "setzt den Abwesenheitsstatus falls slock (X Bildschirmlocker) läuft."
+
+#. Translators: description for script "sshnotify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:804
+msgid "A notify script which uses ssh."
+msgstr "ein Skript für Benachrichtigungen, mit SSH Unterstützung."
+
+#. Translators: description for script "urlserver.py" (0.3.4+)
+#: plugins/_plugins_i18n.py:807
+msgid "Shorten URLs with own HTTP server."
+msgstr "verkürzt lange URLs mittels eigenem HTTP Server."
+
+#. Translators: description for script "gntp_notify.rb" (0.3.0+)
+#: plugins/_plugins_i18n.py:810
+msgid "Growl notifications using ruby-gntp."
+msgstr "Growl-Benachrichtigung mittels ruby-gntp."
+
+#. Translators: description for script "zmq_notify.rb" (0.3.0+)
+#: plugins/_plugins_i18n.py:813
+msgid "Send notifications to a ZMQ socket."
+msgstr "sendet eine Benachrichtigung an ein ZMQ Socket."
+
+#. Translators: description for script "snake.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:816
+msgid "Snake game."
+msgstr "Spiel: Snake"
+
+#. Translators: description for script "memon.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:819
+msgid "Freenode memo notifications."
+msgstr "Freenode Memo Benachrichtigung."
+
+#. Translators: description for script "im_kayac_com_notify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:822
+msgid "Push notification to im.kayac.com."
+msgstr "sendet Benachrichtigung an im.kayac.com."
+
+#. Translators: description for script "bufsize.py" (0.3.6+)
+#: plugins/_plugins_i18n.py:825
+msgid "Bar item with scroll indicator and info about number of lines in buffer."
+msgstr "Bar-Item mit Scroll-Indikator und Anzeige über die Anzahl der Zeilen des aktuellen Buffers."
+
+#. Translators: description for script "logsize.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:828
+msgid "Display size of current log file in a bar item."
+msgstr "zeigt in der Bar-Item an, wie groß die zu dem Buffer zugehörige Log-Datei ist."
+
+#. Translators: description for script "hl_nicks.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:831
+msgid "Generate a list of nicks in input by selecting nicks using flags and patterns."
+msgstr "erstellt in der Eingabezeile, mittels Flag und Muster,  eine List von Nicks."
+
+#. Translators: description for script "customize_bar.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:834
+msgid "Customize bars by buffer."
+msgstr "Bars für jeden Buffer individuell anpassen."
+
+#. Translators: description for script "twmn_notify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:837
+msgid "Notifications for twmn."
+msgstr "Benachrichtigung durch twmn."
+
+#. Translators: description for script "server_autoswitch.py" (0.3.6+)
+#: plugins/_plugins_i18n.py:840
+msgid "Cycle to currently used server (for merged buffers)."
+msgstr "wechselt zum aktuell genutzten Server (bei zusammengefügten Buffern!)"
+
+#. Translators: description for script "quick_force_color.py" (0.3.4+)
+#: plugins/_plugins_i18n.py:843
+msgid "Quickly add/del/change entry in option irc.look.nick_color_force."
+msgstr "schnelles hinzufügen/löschen/ändern von Einträgen in der Option irc.look.nick_color_force."
+
+#. Translators: description for script "yaurls.pl" (0.3.7+)
+#: plugins/_plugins_i18n.py:849
+msgid "Shorten URLs with tinyURL, ls-n, or is.gd."
+msgstr "verkürzt lange URLs mittels tinyURL, ls-n, oder is.gd."
+
+#. Translators: description for script "rhythmbus.pl" (0.3.6+)
+#: plugins/_plugins_i18n.py:852
+msgid "Control Rhythmbox through qdbus."
+msgstr "steuert Rhythmbox mittels qdbus."
+
+#. Translators: description for script "dcc_send_relay.rb" (0.3.4+)
+#: plugins/_plugins_i18n.py:855
+msgid "Forward DCC SEND requests to a different client."
+msgstr "leitet DCC SEND Anfragen an einen anderen Client."
+
+#. Translators: description for script "unwanted_msg.py" (0.3.6+)
+#: plugins/_plugins_i18n.py:858
+msgid "Avoid sending misformatted commands as messages."
+msgstr "verhindert das Versenden von falsch formatierten Befehlen als Nachricht."
+
+#. Translators: description for script "hl2file.py" (0.3.6+)
+#: plugins/_plugins_i18n.py:861
+msgid "Generate a file with highlights for external programs as conky."
+msgstr "Highlights werden in eine Datei geschrieben um z.B. mittels conky darauf zuzugreifen."
+
+#. Translators: description for script "samegame.py" (0.3.6+)
+#: plugins/_plugins_i18n.py:864
+msgid "SameGame."
+msgstr "Spiel: SameGame (Puzzlespiel)"
+
+#. Translators: description for script "weestats.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:870
+msgid "Insert some statistics about buffers/windows on command line."
+msgstr "fügt zusätzliche Statistiken über Buffer/Fenster in die Eingabezeile ein."
+
+#. Translators: description for script "gntpnotify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:873
+msgid "Growl notifications using python-gntp."
+msgstr "Growl-Benachrichtigung mittels python-gntp."
+
+#. Translators: description for script "chatters.pl" (0.3.7+)
+#: plugins/_plugins_i18n.py:876
+msgid "Bar item with chatters (non idle people)."
+msgstr "Anzeige für Chatter, die aktiv im Channel schreiben."
+
+#: plugins/models.py:118
+#: plugins/models.py:129
+#: plugins/models.py:131
+#: themes/models.py:82
+#: themes/models.py:84
+msgid "This field is required."
+msgstr "Dieser Eintrag ist notwendig"
+
+#: plugins/models.py:120
+msgid "This name is invalid."
+msgstr "Dieser Name ist ungültig."
+
+#: plugins/models.py:123
+msgid "This name already exists, please choose another name (update script content accordingly)."
+msgstr "Dieser Name existiert bereits. Bitte wähle einen anderen Namen"
+
+#: plugins/models.py:145
+msgid "0.3.0 or + (stable API, any version)"
+msgstr "0.3.0 oder höher (stabile API, beliebige Version)"
+
+#: plugins/models.py:146
+msgid "0.3.1 or + (stable API, version >= 0.3.1)"
+msgstr "0.3.1 oder höher (stabile API, Version >= 0.3.1)"
+
+#: plugins/models.py:147
+msgid "0.3.2 or + (stable API, version >= 0.3.2)"
+msgstr "0.3.2 oder höher (stabile API, Version >= 0.3.2)"
+
+#: plugins/models.py:148
+msgid "0.3.3 or + (stable API, version >= 0.3.3)"
+msgstr "0.3.3 oder höher (stabile API, Version >= 0.3.3)"
+
+#: plugins/models.py:149
+msgid "0.3.4 or + (stable API, version >= 0.3.4)"
+msgstr "0.3.4 oder höher (stabile API, Version >= 0.3.4)"
+
+#: plugins/models.py:150
+msgid "0.3.5 or + (stable API, version >= 0.3.5)"
+msgstr "0.3.5 oder höher (stabile API, Version >= 0.3.5)"
+
+#: plugins/models.py:151
+msgid "0.3.6 or + (stable API, version >= 0.3.6)"
+msgstr "0.3.6 oder höher (stabile API, Version >= 0.3.6)"
+
+#: plugins/models.py:152
+msgid "0.3.7 or + (stable API, version >= 0.3.7)"
+msgstr "0.3.7 oder höher (stabile API, Version >= 0.3.7)"
+
+#: plugins/models.py:153
+msgid "0.3.8 or + (stable API, version >= 0.3.8)"
+msgstr "0.3.8 oder höher (stabile API, Version >= 0.3.8)"
+
+#: plugins/models.py:154
+msgid "0.0.1 to 0.2.6.x (old API, ---DISCONTINUED---)"
+msgstr "0.0.1 bis 0.2.6.x (alte API, ---EINGESTELLT---)"
+
+#: plugins/models.py:157
+#: templates/plugins_list.html:71
+#: templates/plugins_list.html.py:75
+#: templates/plugins_pending.html:35
+msgid "Language"
+msgstr "Sprache"
+
+#: plugins/models.py:158
+#: templates/plugins_list.html:60
+#: templates/plugins_list.html.py:64
+#: templates/plugins_pending.html:31
+msgid "Name"
+msgstr "Name"
+
+#: plugins/models.py:158
+msgid "short name of script (only lower case letters, digits or \"_\")"
+msgstr "Kurzname des Skripts (nur Kleinbuchstaben, Ziffern oder \"_\")"
+
+#: plugins/models.py:159
+#: templates/doc.html:19
+#: templates/download.html:37
+#: templates/plugins_list.html:68
+#: templates/plugins_pending.html:34
+msgid "Version"
+msgstr "Version"
+
+#: plugins/models.py:159
+msgid "version of script (only digits or dots)"
+msgstr "Version des Skripts (nur Ziffern oder Punkte)"
+
+#: plugins/models.py:160
+#: templates/home.html:25
+#: templates/plugins_list.html:80
+#: templates/plugins_list.html.py:84
+#: templates/plugins_pending.html:36
+msgid "License"
+msgstr "Lizenz"
+
+#: plugins/models.py:160
+msgid "license (for example: GPL3, BSD, ...)"
+msgstr "Lizenzen (zum Beispiel: GPL3, BSD, ...)"
+
+#: plugins/models.py:161
+#: plugins/models.py:182
+#: templates/doc.html:79
+#: themes/models.py:89
+#: themes/models.py:126
+msgid "File"
+msgstr "Datei"
+
+#: plugins/models.py:161
+#: plugins/models.py:182
+msgid "the script"
+msgstr "nach Skript"
+
+#: plugins/models.py:162
+#: templates/info_list.html:18
+#: templates/plugins_list.html:67
+#: templates/plugins_pending.html:32
+#: themes/models.py:90
+msgid "Description"
+msgstr "Beschreibung"
+
+#: plugins/models.py:163
+msgid "Requirements"
+msgstr "zusätzliche Anforderungen"
+
+#: plugins/models.py:163
+#: themes/models.py:90
+msgid "optional"
+msgstr "optional"
+
+#: plugins/models.py:164
+msgid "Min/max WeeChat"
+msgstr "Min/Max WeeChat"
+
+#: plugins/models.py:165
+#: plugins/models.py:183
+#: themes/models.py:91
+#: themes/models.py:127
+msgid "Your name or nick"
+msgstr "Dein Name oder Nick"
+
+#: plugins/models.py:165
+#: plugins/models.py:166
+msgid "used for scripts page and git commit"
+msgstr "wird für die Skripten Seite und Git Commits benötigt"
+
+#: plugins/models.py:166
+#: plugins/models.py:184
+#: themes/models.py:92
+#: themes/models.py:128
+msgid "Your e-mail"
+msgstr "Deine email"
+
+#: plugins/models.py:167
+#: plugins/models.py:185
+#: themes/models.py:93
+#: themes/models.py:129
+msgid "Comment"
+msgstr "Kommentar"
+
+#: plugins/models.py:167
+#: themes/models.py:93
+#: themes/models.py:129
+msgid "optional, not displayed"
+msgstr "optional, wird nicht dargestellt"
+
+#: plugins/models.py:168
+#: plugins/models.py:186
+#: themes/models.py:94
+#: themes/models.py:130
+msgid "Are you a spammer?"
+msgstr "Bist Du ein Spammer?"
+
+#: plugins/models.py:168
+#: plugins/models.py:186
+#: themes/models.py:94
+#: themes/models.py:130
+msgid "enter \"no\" if you are not a spammer"
+msgstr "Falls Du kein Spammer bist, gebe \"no\" ein."
+
+#: plugins/models.py:180
+#: templates/plugins_source.html:16
+msgid "Script"
+msgstr "Skript"
+
+#: plugins/models.py:181
+msgid "New version"
+msgstr "Neue Version"
+
+#: plugins/models.py:183
+#: plugins/models.py:184
+msgid "used for git commit"
+msgstr "wird für Git Commit benötigt"
+
+#: plugins/models.py:185
+msgid "changes in this release"
+msgstr "Änderungen dieser Version"
+
+#: press/_press_i18n.py:4
+msgid "Article on the-apps.org, written by CMack and JDHore"
+msgstr "Artikel auf \"the-apps.org\", geschrieben von CMack und JDHore"
+
+#: press/_press_i18n.py:5
+msgid "Article in Yalm magazine, written by Thomas Rudolph (aka holloway)"
+msgstr "Artikel im Yalm-Magazin. Geschrieben von Thomas Rudolph (aka holloway)"
+
+#: templates/403.html:5
+msgid "Error 403: forbidden"
+msgstr "Fehler 403: (unzulässig)"
+
+#: templates/403.html:6
+msgid "Error 403"
+msgstr "Fehler 403"
+
+#: templates/403.html:8
+msgid "Oh no! This page is forbidden..."
+msgstr "Entschuldigung, aber diese Seite ist nicht zulässig..."
+
+#: templates/403.html:9
+msgid "You're looking where you shouldn't ? ;)"
+msgstr "Bist Du Alice im Wunderland und suchst hier das weiße Kaninchen? ;)"
+
+#: templates/404.html:5
+msgid "Error 404: page not found"
+msgstr "Fehler 404: Seite nicht gefunden"
+
+#: templates/404.html:6
+msgid "Error 404"
+msgstr "Fehler 404"
+
+#: templates/404.html:7
+msgid "Oh no! This page does not exist..."
+msgstr "Diese Seite existiert nicht..."
+
+#: templates/about.html:5
+msgid "about"
+msgstr "Über"
+
+#: templates/about.html:10
+#: templates/home.html:124
+msgid "About WeeChat"
+msgstr "Über WeeChat"
+
+#: templates/about.html:12
+msgid "Why WeeChat?"
+msgstr "Weshalb WeeChat?"
+
+#: templates/about.html:14
+msgid "In early 2003, I searched for an IRC client with following features:"
+msgstr "Anfang 2003 suchte ich einen IRC Client der folgende Funktionalität bieten sollte:"
+
+#: templates/about.html:16
+msgid "free software"
+msgstr "freie Software"
+
+#: templates/about.html:17
+msgid "running on Linux"
+msgstr "lauffähig unter Linux"
+
+#: templates/about.html:18
+msgid "text interface"
+msgstr "textbasierte Oberfläche"
+
+#: templates/about.html:19
+msgid "real nicklist"
+msgstr "echte Nicklist"
+
+#: templates/about.html:20
+msgid "extensible with scripts written in various languages"
+msgstr "erweiterbar durch Skripten für verschiedenen Sprachen"
+
+#: templates/about.html:22
+msgid "My search was unsuccessful!"
+msgstr "Meine Suche war nicht erfolgreich!"
+
+#: templates/about.html:25
+msgid "And then WeeChat was born, on June 2003."
+msgstr "dann wurde WeeChat im Juni 2003 geboren."
+
+#: templates/about.html:32
+msgid "Key dates"
+msgstr "Meilensteine"
+
+#: templates/about.html:47
+msgid "In the press"
+msgstr "In der Fachliteratur"
+
+#: templates/about.html:65
+msgid "Story"
+msgstr "Geschichte"
+
+#: templates/about.html:67
+msgid "WeeChat story:"
+msgstr "Entwicklung von WeeChat:"
+
+#: templates/about.html:67
+msgid "one screenshot by version"
+msgstr "ein Bildschirmfoto für jede Version"
+
+#: templates/base.html:20
+#: templates/home.html:114
+msgid "WeeChat, the extensible chat client"
+msgstr "WeeChat, der erweiterbare Chat Client"
+
+#: templates/base.html:46
+msgid "The extensible chat client"
+msgstr "Der erweiterbare Chat Client"
+
+#: templates/base.html:65
+msgid "Home"
+msgstr "Hauptseite"
+
+#: templates/base.html:66
+#: templates/home.html:141
+msgid "Features"
+msgstr "Funktionen"
+
+#: templates/base.html:67
+msgid "Screenshots"
+msgstr "Bilder"
+
+#: templates/base.html:68
+msgid "Doc"
+msgstr "Dokumentation"
+
+#: templates/base.html:69
+#: templates/home.html:142
+#: templates/plugins_source.html:19
+#: templates/themes_source.html:19
+msgid "Download"
+msgstr "Download"
+
+#: templates/base.html:70
+#: templates/home.html:163
+#: templates/plugins.html:13
+#: templates/stats.html:37
+msgid "Scripts"
+msgstr "Skripten"
+
+#: templates/base.html:71
+#: templates/home.html:74
+msgid "Donate"
+msgstr "Spende"
+
+#: templates/base.html:72
+msgid "Support"
+msgstr "Support"
+
+#: templates/base.html:73
+msgid "About"
+msgstr "Über"
+
+#: templates/base.html:97
+msgid "Valid"
+msgstr "Valid"
+
+#: templates/doc.html:5
+msgid "documentation"
+msgstr "Dokumentation"
+
+#: templates/doc.html:12
+msgid "WeeChat documentation"
+msgstr "WeeChat Dokumentation"
+
+#: templates/doc.html:14
+msgid "Official docs"
+msgstr "offizielle Dokumentationen"
+
+#: templates/doc.html:20
+msgid "Document"
+msgstr "Dokument"
+
+#: templates/doc.html:48
+msgid "Other docs"
+msgstr "weitere Dokumentationen"
+
+#: templates/doc.html:54
+msgid "Portuguese tutorial, by"
+msgstr "portugiesische Anleitung"
+
+#: templates/doc.html:61
+msgid "Russian tutorial, by "
+msgstr "russische Anleitung, geschrieben von "
+
+#: templates/doc.html:66
+msgid "Old docs"
+msgstr "veraltete Dokumentationen"
+
+#: templates/doc.html:69
+msgid "Documentation for old versions"
+msgstr "Dokumentation von alten Versionen"
+
+#: templates/doc.html:70
+msgid "warning: these old versions are <b>not supported</b> any more!"
+msgstr "Warnung: Diese veralteten Versionen werden <b>nicht mehr unterstützt</b>!"
+
+#: templates/doc.html:74
+msgid "Internationalization stats"
+msgstr "Statistik über den Fortschritt der Übersetzungen"
+
+#: templates/doc.html:78
+msgid "Language (country)"
+msgstr "Sprache (Land)"
+
+#: templates/doc.html:80
+msgid "Maintainer"
+msgstr "Maintainer"
+
+#: templates/doc.html:81
+msgid "Translated"
+msgstr "übersetzt"
+
+#: templates/doc.html:82
+msgid "Fuzzy"
+msgstr "zu überarbeiten"
+
+#: templates/doc.html:83
+msgid "Untranslated"
+msgstr "nicht übersetzt"
+
+#: templates/doc.html:84
+msgid "Total"
+msgstr "Total"
+
+#: templates/doc.html:85
+msgid "Progress bar"
+msgstr "Fortschrittsanzeige"
+
+#: templates/doc.html:106
+msgid "Base language"
+msgstr "eingebaute Sprache"
+
+#: templates/doc.html:136
+msgid "statistics for gettext files (*.po), auto-built from development version on"
+msgstr "statistische Auswertung der gettext-Dateien (*.po) , automatisch generiert mittels der Entwicklerversion am:"
+
+#: templates/doc.html:139
+msgid "Missing language?"
+msgstr "fehlende Sprachunterstützung?"
+
+#: templates/doc.html:140
+msgid "Feel free to help us by translating WeeChat doc in your language!"
+msgstr "Jeder kann dabei helfen die WeeChat Anleitung in seine Muttersprache zu übersetzen!"
+
+#: templates/doc.html:142
+msgid "More information about WeeChat translations:"
+msgstr "Weiter führende Informationen zu WeeChat Übersetzungen:"
+
+#: templates/donate.html:5
+msgid "donate"
+msgstr "Spenden"
+
+#: templates/donate.html:10
+msgid "WeeChat donations"
+msgstr "Spenden für WeeChat"
+
+#: templates/donate.html:12
+msgid "Why donate?"
+msgstr "Weshalb spenden?"
+
+#: templates/donate.html:14
+msgid "There are three reasons:"
+msgstr "Es gibt drei Gründe:"
+
+#: templates/donate.html:18
+msgid "Dedicated server"
+msgstr "verwendeter Server"
+
+#: templates/donate.html:19
+msgid "This server is used to host WeeChat website, for developments and build of packages."
+msgstr "Dieser Server dient zum hosten der WeeChat Webseite, zur Entwicklung und der Paketerstellung."
+
+#: templates/donate.html:20
+msgid "Your contribution will help us to pay this server each month."
+msgstr "Dein Beitrag dient dazu, die monatlichen Kosten des Servers zu tragen."
+
+#: templates/donate.html:23
+msgid "Hardware"
+msgstr "Hardware"
+
+#: templates/donate.html:24
+msgid "We are working on many platforms (GNU/Linux, *BSD, ...)."
+msgstr "Wir arbeiten auf vielen Plattformen (GNU/Linux, *BSD, ...)."
+
+#: templates/donate.html:25
+msgid "Therefore we need time and machines to perform developments and tests, and go on with WeeChat enhancement."
+msgstr "Deshalb benötigen wir Zeit und die nötige Rechnerumgebung um weiterhin die Entwicklung zu fördern, Tests durchzuführen um WeeChat zu erweitern."
+
+#: templates/donate.html:28
+msgid "Motivation"
+msgstr "Motivation"
+
+#: templates/donate.html:29
+msgid "We write WeeChat on our spare time. It's a pleasure for us to create software that satisfies your needs."
+msgstr "Wir entwickeln WeeChat in unserer Freizeit. Es macht uns Spaß eine Software zu entwickeln die Deine Erwartungen erfüllt."
+
+#: templates/donate.html:30
+msgid "Your contribution will help us being always more motivated for improving WeeChat."
+msgstr "Deine Zuwendung hilft uns noch motivierter zu sein, um WeeChat weiter zu verbessern."
+
+#: templates/donate.html:34
+msgid "How can I donate?"
+msgstr "Wie kann ich spenden?"
+
+#: templates/donate.html:36
+msgid "Click on the Paypal icon below this text and follow instructions, payment is secured by Paypal."
+msgstr "Klicke unten auf die PayPal Grafik und folge der Beschreibung. Die Zahlung, via PayPal, ist sicher!"
+
+#: templates/donate.html:38
+msgid "Notes:"
+msgstr "Bemerkung:"
+
+#: templates/donate.html:40
+msgid "There is no minimal amount nor maximum."
+msgstr "Es existiert weder ein Minimal- noch ein Maximalbetrag (jede Spende ist Willkommen)."
+
+#: templates/donate.html:41
+msgid "You can leave site URL and comment, they will be displayed on this page in sponsors list."
+msgstr "Es kann eine Homepage (URL) und ein Kommentar abgegeben werden. Die URL und der Kommentar werden dann auf dieser Seite veröffentlicht (unter Sponsoren)."
+
+#: templates/donate.html:58
+msgid "Sponsors"
+msgstr "Sponsoren"
+
+#: templates/donate.html:70
+msgid "sent"
+msgstr "spendete"
+
+#: templates/donate.html:71
+msgid "to Weechat"
+msgstr "für WeeChat"
+
+#: templates/donate.html:76
+msgid "No donation received."
+msgstr "Keine Spende erhalten."
+
+#: templates/download.html:5
+msgid "download"
+msgstr "Download"
+
+#: templates/download.html:12
+msgid "WeeChat download"
+msgstr "WeeChat Download"
+
+#: templates/download.html:15
+msgid "Stable"
+msgstr "Stabil"
+
+#: templates/download.html:16
+msgid "Devel"
+msgstr "Instabil"
+
+#: templates/download.html:17
+msgid "Old versions"
+msgstr "alte Versionen"
+
+#: templates/download.html:24
+msgid "<strong>Warning:</strong> this version may be unstable or it may not compile, you're warned!"
+msgstr "<strong>Achtung:</strong> Diese Version könnte instabil sein oder sich nicht kompilieren lassen!"
+
+#: templates/download.html:29
+msgid "<strong>Warning:</strong> it is not recommended to download any old version, because they are less stable."
+msgstr "<strong>Warnung:</strong> Es ist nicht empfehlenswert ältere Versionen herunter zu laden, da diese weniger stabil laufen."
+
+#: templates/download.html:31
+msgid "Do it only if you've got problems with latest version and that developers didn't manage to solve your problem!"
+msgstr "Dies sollte nur gemacht werden falls mit der aktuellen Version Probleme auftreten sollten, die durch die Entwickler nicht behoben werden können!"
+
+#: templates/download.html:47
+msgid "planned date for version"
+msgstr "angedachter Termin für Version"
+
+#: templates/download.html:52
+msgid "Packages"
+msgstr "Pakete"
+
+#: templates/download.html:84
+msgid "About release"
+msgstr "Über Release"
+
+#: templates/download.html:86
+msgid "ChangeLog"
+msgstr "Change-Log"
+
+#: templates/download.html:90
+msgid "Release notes"
+msgstr "Release notes"
+
+#: templates/download.html:95
+#: templates/home.html:180
+msgid "Roadmap"
+msgstr "Meilensteinplan"
+
+#: templates/download.html:104
+msgid "Additional commands for some OS"
+msgstr "Installationsbefehle für verschiedene Betriebssysteme"
+
+#: templates/download.html:133
+msgid "Remote interfaces (external contribs, NO support from WeeChat team)"
+msgstr "externe Remote-Schnittstellen (es findet KEINE Hilfestellung durch das WeeChat Team statt)"
+
+#: templates/download.html:145
+msgid "Supported OS"
+msgstr "unterstütze Betriebssysteme"
+
+#: templates/download.html:149
+msgid "OS"
+msgstr "System"
+
+#: templates/download.html:150
+msgid "Status"
+msgstr "Status"
+
+#: templates/download.html:151
+msgid "Comments"
+msgstr "zusätzliche Informationen"
+
+#: templates/download.html:155
+#: templates/download.html.py:160
+#: templates/download.html:165
+#: templates/download.html.py:170
+#: templates/download.html:175
+#: templates/download.html.py:180
+#: templates/download.html:185
+#: templates/download.html.py:190
+#: templates/download.html:195
+#: templates/download.html.py:205
+#: templates/download.html:210
+msgid "OK"
+msgstr "Ok"
+
+#: templates/download.html:156
+msgid "OK with all distros"
+msgstr "lauffähig auf allen Distributionen"
+
+#: templates/download.html:176
+msgid "OK (it's recommended to install with Homebrew package manager)"
+msgstr "lauffähig (es wird empfohlen die Installation mittels Homebrew package manager durchzuführen)"
+
+#: templates/download.html:200
+msgid "KO"
+msgstr "KO"
+
+#: templates/download.html:201
+msgid "Under progress"
+msgstr "in der Entwicklung"
+
+#: templates/download.html:211
+msgid "QNX 6.3 ok (needs link with libsocket)"
+msgstr "QNX 6.3 Ok (benötigt link mit libsocket)"
+
+#: templates/download.html:216
+msgid "Looking for testers"
+msgstr "Testpersonen werden benötigt"
+
+#: templates/download.html:220
+msgid "under dev"
+msgstr "in der Entw."
+
+#: templates/download.html:221
+msgid "See:"
+msgstr "siehe:"
+
+#: templates/download.html:229
+msgid "Links"
+msgstr "Links"
+
+#: templates/download.html:231
+msgid "Savannah page"
+msgstr "Savannah Seite"
+
+#: templates/download.html:235
+msgid "Git - sources"
+msgstr "Git - Quelltext"
+
+#: templates/download.html:239
+msgid "Git - scripts"
+msgstr "Git - Skripten"
+
+#: templates/download.html:243
+msgid "Git - clone"
+msgstr "Git - Clone"
+
+#: templates/download.html:247
+msgid "Git - snapshot"
+msgstr "Git - Snapshot"
+
+#: templates/download.html:250
+msgid "Charts"
+msgstr "Charts"
+
+#: templates/download.html:252
+msgid "Commits (core), by month"
+msgstr "Commits (Core), nach Monat"
+
+#: templates/download.html:256
+msgid "Commits (core), by version"
+msgstr "Commits (Core), nach Version"
+
+#: templates/download.html:260
+msgid "Commits (scripts), by month"
+msgstr "Commits (Skripten), nach Monat"
+
+#: templates/download.html:264
+msgid "Commits vs other clients"
+msgstr "Commits gegenüber anderen Clients"
+
+#: templates/download.html:268
+msgid "Map of versions"
+msgstr "Versionsfahrplan"
+
+#: templates/download.html:277
+msgid "Error: there is no version called"
+msgstr "Fehler: Es wurde keine Version ausgewählt"
+
+#: templates/error.html:13
+msgid "You can go back to WeeChat home with link below,<br />or report broken link to"
+msgstr "Mittels dem unteren Links kannst Du zurück zur WeeChat Hauptseite,<br />oder melde defekten Link an"
+
+#: templates/error.html:16
+#: templates/home.html:208
+msgid "Back to home"
+msgstr "Zurück zur Hauptseite"
+
+#: templates/features.html:5
+msgid "features"
+msgstr "Funktionen"
+
+#: templates/features.html:10
+msgid "WeeChat features"
+msgstr "Besonderheiten von WeeChat"
+
+#: templates/features.html:17
+msgid "General"
+msgstr "Generell"
+
+#: templates/features.html:19
+msgid "light and fast"
+msgstr "schlank und schnell"
+
+#: templates/features.html:20
+msgid "available in many languages"
+msgstr "in verschiedenen Sprachen verfügbar"
+
+#: templates/features.html:21
+msgid "good documentation"
+msgstr "eine ausführliche Dokumentation"
+
+#: templates/features.html:22
+msgid "developed from scratch"
+msgstr "von Grund auf neu programmiert"
+
+#: templates/features.html:23
+msgid "multi-platform: GNU/Linux, *BSD, Mac OS X, .."
+msgstr "Multi-Plattform: GNU/Linux, *BSD, Mac OS X, .."
+
+#: templates/features.html:24
+msgid "actively developed, fast support and bugs correction"
+msgstr "aktive Entwicklung, sowie schneller Support und Fehlerbereinigung"
+
+#: templates/features.html:25
+#, python-format
+msgid "100% GPL and free"
+msgstr "100% GPL und kostenfrei"
+
+#: templates/features.html:27
+msgid "IRC protocol"
+msgstr "IRC Protokoll"
+
+#: templates/features.html:29
+msgid "IRC standards compliant"
+msgstr "konform mit dem IRC Standard"
+
+#: templates/features.html:30
+msgid "SASL authentication ('plain' and 'dh-blowfish')"
+msgstr "SASL Authentifizierung ('plain' und 'dh-blowfish')"
+
+#: templates/features.html:31
+msgid "DCC support: files and chats"
+msgstr "DCC Unterstützung: Datenübertragung und Chats"
+
+#: templates/features.html:32
+msgid "smart filter for join/part/quit messages"
+msgstr "intelligenter Filter für JOIN/PART/QUIT Nachrichten"
+
+#: templates/features.html:33
+msgid "CTCP replies customization"
+msgstr "CTCP Antworten können angepasst werden"
+
+#: templates/features.html:34
+msgid "options for target buffer of messages"
+msgstr "Optionen für einen Zielbuffer für Nachrichten"
+
+#: templates/features.html:35
+msgid "IRC proxy"
+msgstr "IRC Proxy"
+
+#: templates/features.html:36
+msgid "redirection of IRC commands"
+msgstr "Umlenkung von IRC Befehlen"
+
+#: templates/features.html:38
+msgid "Connection"
+msgstr "Verbindungen"
+
+#: templates/features.html:40
+msgid "multi-servers connection, with no limit"
+msgstr "Multi-Server Verbindungen, ohne jegliche Einschränkung"
+
+#: templates/features.html:41
+msgid "soft, background connection"
+msgstr "angenehme Hintergrundverbindung"
+
+#: templates/features.html:42
+msgid "IPv6 support"
+msgstr "IPv6 Unterstützung"
+
+#: templates/features.html:43
+msgid "SSL support"
+msgstr "SSL Unterstützung"
+
+#: templates/features.html:44
+msgid "proxy support (http/socks4/socks5)"
+msgstr "Unterstützung von Proxy (http/socks4/socks5)"
+
+#: templates/features.html:45
+msgid "auto-reconnection"
+msgstr "automatische Neuanmeldung"
+
+#: templates/features.html:48
+msgid "Incoming features"
+msgstr "geplante Funktionen"
+
+#: templates/features.html:50
+msgid "GTK+ and Qt GUI"
+msgstr "GTK+ und Qt GUI"
+
+#: templates/features.html:51
+msgid "DCC2 support"
+msgstr "DCC2 Unterstützung"
+
+#: templates/features.html:56
+msgid "Innovating features"
+msgstr "Innovative Funktionen"
+
+#: templates/features.html:58
+msgid "customizable bars around chat area (including nicklist)"
+msgstr "Bars können nach persönlichen Bedürfnissen um den Chatbereich angeordnet werden (Nickliste eingeschlossen)"
+
+#: templates/features.html:59
+msgid "horizontal and vertical window split"
+msgstr "horizontale und vertikale Fenstereinteilung"
+
+#: templates/features.html:60
+msgid "smart hotlist in status bar: partial or full names of buffers with activity"
+msgstr "elegante Hotlist in der Statuszeile: mit Teil- oder vollständiger Anzeige der Buffernamen, welche Aktivität beinhalten"
+
+#: templates/features.html:61
+msgid "keys to jump to last read message and highlights in buffer"
+msgstr "Tastenkurzbefehle um in einem Buffer zur letzten gelesen oder zu einer Highlight Nachricht zu springen"
+
+#: templates/features.html:62
+msgid "dynamic filtering of lines displayed in buffers"
+msgstr "dynamische Filterung von Zeilen die in Buffern dargestellt werden"
+
+#: templates/features.html:63
+msgid "incremental text search in buffers"
+msgstr "schrittweise Textsuche in Buffern"
+
+#: templates/features.html:64
+msgid "FIFO pipe for remote control"
+msgstr "FIFO Pipe für Remote-Zugriffe (Fernsteuerung)"
+
+#: templates/features.html:65
+msgid "double charset support (encoding/decoding) by buffer"
+msgstr "Double Charset Unterstützung (encoding/decoding) für Buffer"
+
+#: templates/features.html:66
+msgid "aspell support: check spelling with one or more languages for each buffer"
+msgstr "Aspell Unterstützung: Rechtschreibkorrektur für jeden einzelnen Buffer. Die Anzahl der genutzten Wörterbücher ist nicht beschränkt"
+
+#: templates/features.html:67
+msgid "extensible with C plugins or scripts (Perl, Python, Ruby, Lua, Tcl and Scheme)"
+msgstr "in der Funktionalität erweiterbar, mittels Erweiterungen in C und durch Skripten (Perl, Python, Ruby, Lua , Tcl und Scheme)"
+
+#: templates/features.html:68
+msgid "easy installation of scripts with weeget.py"
+msgstr "einfache Installation von Skripten mittels weeget.py (ähnlich apt)"
+
+#: templates/features.html:69
+msgid "upgrade of WeeChat binary with save of full state (buffers, ...), without disconnection (except for SSL servers)"
+msgstr "Upgrade des WeeChat Hauptprogramms, mit Sicherung aller Daten (Buffer, ...), ohne die Verbindung zu unterbrechen (ausgenommen SSL Verbindungen)"
+
+#: templates/features.html:72
+msgid "Other useful features"
+msgstr "weitere sinnvolle Eigenschaften"
+
+#: templates/features.html:74
+msgid "256 colors support"
+msgstr "Unterstützung von 256 Farben"
+
+#: templates/features.html:75
+msgid "UTF-8 support"
+msgstr "UTF-8 Unterstützung"
+
+#: templates/features.html:76
+msgid "lag indicator"
+msgstr "Wartezeit Indikator (wie lange benötigt eine Nachricht zum Server und zurück (Lag))"
+
+#: templates/features.html:77
+msgid "color for away nicks"
+msgstr "Farbe für nicht anwesende Nicks einstellbar"
+
+#: templates/features.html:78
+msgid "auto completion for nicks, commands and args"
+msgstr "automatische Vervollständigung von Nicks, Befehlen und Argumenten"
+
+#: templates/features.html:79
+msgid "command alias"
+msgstr "Alias für Befehle"
+
+#: templates/features.html:80
+msgid "auto save chats to files"
+msgstr "automatisches Sichern der Chats in eine Datei"
+
+#: templates/features.html:81
+msgid "everything is customizable"
+msgstr "alles ist den eigenen Bedürfnissen anpassbar"
+
+#: templates/features.html:82
+msgid "dynamic setup"
+msgstr "dynamischer Aufbau"
+
+#: templates/home.html:19
+msgid "Project info"
+msgstr "Informationen zum Projekt"
+
+#: templates/home.html:24
+msgid "Extensible chat client"
+msgstr "Erweiterbarer Chat Client"
+
+#: templates/home.html:26
+msgid "Main developer:"
+msgstr "Hauptentwickler:"
+
+#: templates/home.html:27
+msgid "Started on"
+msgstr "Projektstart:"
+
+#: templates/home.html:28
+msgid "Language:"
+msgstr "Sprache:"
+
+#: templates/home.html:28
+msgid "lines"
+msgstr "Zeilen"
+
+#: templates/home.html:30
+msgid "Stable:"
+msgstr "stabile Version:"
+
+#: templates/home.html:31
+msgid "Devel:"
+msgstr "instabile Version:"
+
+#: templates/home.html:32
+msgid "Future stable:"
+msgstr "künftige stabile:"
+
+#: templates/home.html:40
+msgid "Quick links"
+msgstr "Quick Links"
+
+#: templates/home.html:45
+msgid "Source code:"
+msgstr "Quelltext:"
+
+#: templates/home.html:46
+msgid "stable"
+msgstr "stabil"
+
+#: templates/home.html:47
+msgid "devel"
+msgstr "instabil"
+
+#: templates/home.html:50
+msgid "Support:"
+msgstr "Support:"
+
+#: templates/home.html:51
+msgid "bugs"
+msgstr "Fehler"
+
+#: templates/home.html:52
+msgid "tasks"
+msgstr "Aufgaben"
+
+#: templates/home.html:53
+msgid "forum"
+msgstr "Forum"
+
+#: templates/home.html:56
+msgid "Dev:"
+msgstr "Entw.:"
+
+#: templates/home.html:58
+msgid "blog"
+msgstr "Blog"
+
+#: templates/home.html:59
+msgid "wiki"
+msgstr "Wiki"
+
+#: templates/home.html:63
+msgid "Nightly builds:"
+msgstr "Nightly builds:"
+
+#: templates/home.html:64
+msgid "source"
+msgstr "Quelltext"
+
+#: templates/home.html:68
+msgid "Savannah:"
+msgstr "Savannah:"
+
+#: templates/home.html:69
+msgid "project page"
+msgstr "Projektseite"
+
+#: templates/home.html:83
+msgid "Git commits"
+msgstr "Git Commits"
+
+#: templates/home.html:89
+#: templates/stats.html:21
+msgid "Commits by range:"
+msgstr "Commits im vergangenen"
+
+#: templates/home.html:91
+msgid "week:"
+msgstr "Woche:"
+
+#: templates/home.html:92
+#: templates/stats.html:23
+msgid "month:"
+msgstr "Monat:"
+
+#: templates/home.html:93
+#: templates/stats.html:24
+msgid "year:"
+msgstr "Jahr:"
+
+#: templates/home.html:94
+#: templates/stats.html:25
+msgid "total:"
+msgstr "Total:"
+
+#: templates/home.html:100
+#: templates/home.html.py:101
+msgid "All commits"
+msgstr "Alle Commits"
+
+#: templates/home.html:104
+#: templates/home.html.py:105
+msgid "Statistics"
+msgstr "Statistik"
+
+#: templates/home.html:115
+msgid "Fast"
+msgstr "Schnell"
+
+#: templates/home.html:115
+msgid "Light"
+msgstr "Schlank"
+
+#: templates/home.html:115
+msgid "Modular"
+msgstr "Modular"
+
+#: templates/home.html:126
+msgid "WeeChat is a fast, light and extensible chat client."
+msgstr "WeeChat ist ein schneller, schlanker und erweiterbarer Chat Client."
+
+#: templates/home.html:127
+msgid "It runs on many platforms (including Linux, BSD and Mac OS)."
+msgstr "WeeChat ist auf vielen Plattformen lauffähig (einschließlich Linux, BSD und Mac OS)."
+
+#: templates/home.html:130
+msgid "WeeChat is:"
+msgstr "WeeChat ist:"
+
+#: templates/home.html:131
+msgid "<strong>modular</strong>: a lightweight core with plugins around"
+msgstr "<strong>modular</strong>: ein schlanker Kern, mit Erweiterungsmöglichkeit"
+
+#: templates/home.html:132
+msgid "<strong>multi-protocols</strong>: IRC and Jabber (other soon)"
+msgstr "<strong>Multi-Protokoll fähig</strong>: IRC und Jabber (andere folgen)"
+
+#: templates/home.html:133
+msgid "<strong>extensible</strong>: C plugins and scripts (Perl, Python, Ruby, Lua, Tcl and Scheme)"
+msgstr "<strong>erweiterungsfähig</strong>: mittels C Erweiterungen und Skripten (Perl, Python, Ruby, Lua , Tcl und Scheme)"
+
+#: templates/home.html:134
+msgid "<strong>free software</strong>: released under GPLv3 license"
+msgstr "<strong>freie Software</strong>: veröffentlicht unter GPLv3 Lizenz"
+
+#: templates/home.html:135
+msgid "<strong>fully documented</strong>: user's guide, API, FAQ,.. translated in many languages"
+msgstr "<strong>vollständig Dokumentiert</strong>: Benutzerhandbuch, API, FAQ,.. Übersetzt in viele Sprachen"
+
+#: templates/home.html:138
+msgid "Development is <strong>very active</strong>, and bug fixes are very fast!"
+msgstr "WeeChat wird <strong>kontinuierlich</strong> weiterentwickelt und Fehler werden schnellstmöglich behoben!"
+
+#: templates/home.html:145
+msgid "Focus on WeeChat 0.3.x"
+msgstr "Richte Dein Augenmerk auf WeeChat 0.3.x"
+
+#: templates/home.html:147
+msgid "Version <b>0.3.0</b> brought major changes compared to old versions 0.2.x."
+msgstr "Version <b>0.3.0</b> enthält wesentliche Veränderungen im Vergleich zu den alten 0.2.x Versionen."
+
+#: templates/home.html:148
+msgid "IRC protocol has been rewritten as plugin."
+msgstr "Das IRC Protokoll wurde neu programmiert und liegt nun als Erweiterung vor."
+
+#: templates/home.html:151
+msgid "A <strong>new plugin API</strong> has been written, with powerful features like:"
+msgstr "Eine <strong>neue API Erweiterung</strong> wurde programmiert, mit leistungsfähigeren Funktionen:"
+
+#: templates/home.html:152
+msgid "- custom buffers, nicklists and bars/items"
+msgstr "- benutzerdefinierten Buffern, Nicklisten und Bars/Items"
+
+#: templates/home.html:153
+msgid "- hooks: commands, timers, files/sockets, modifiers, completion, ..."
+msgstr "- Hooks: Befehle, Timer, Dateien/Sockets, Modifier, Vervollständigung, ..."
+
+#: templates/home.html:154
+msgid "- configuration files with custom sections/options"
+msgstr "- Konfigurationsdateien mit benutzerdefinierten Sektionen/Optionen"
+
+#: templates/home.html:155
+msgid "- and much more!"
+msgstr "- und vieles mehr!"
+
+#: templates/home.html:158
+msgid "New plugins/scripts have been added:"
+msgstr "Neue Erweiterungen/Skripten sind hinzu gekommen:"
+
+#: templates/home.html:159
+msgid "- <strong>plugins</strong>: alias, demo, fifo, irc, logger, tcl, guile, xfer, relay, rmodifier"
+msgstr "- <strong>Erweiterungen</strong>: alias, demo, fifo, irc, logger, tcl, guile, xfer, relay, rmodifier"
+
+#: templates/home.html:160
+msgid "- <strong>scripts</strong>: weeget.py (scripts manager), buffers.pl (sidebar with list of buffers), jabber.py (jabber/XMPP protocol), go.py (quick jump to buffers), iset.pl (set options interactively), weetris.pl (tetris-like game), mastermind.pl, ..."
+msgstr "- <strong>Skripten</strong>: weeget.py (Skriptenmanager), buffers.pl (seitliches Fenster mit Auflistung aller Buffer), jabber.py (jabber/XMPP Protokoll), go.py (Direktanwahl von Buffern), iset.pl (Optionen interaktiv bearbeiten), weetris.pl (Tetris clone), mastermind.pl, ..."
+
+#: templates/home.html:166
+msgid "Future of WeeChat"
+msgstr "Zukunft von WeeChat"
+
+#: templates/home.html:168
+msgid "Many new features are planned for WeeChat, including:"
+msgstr "Für WeeChat sind viele neue Funktionen geplant, zum Beispiel:"
+
+#: templates/home.html:169
+msgid "- themes"
+msgstr "- Themes"
+
+#: templates/home.html:170
+msgid "- remote GUIs (graphical interfaces connected to WeeChat via network)"
+msgstr "- Remote-GUIs (grafische Benutzeroberflächen die über ein Netzwerk mit WeeChat verbunden sind)"
+
+#: templates/home.html:173
+msgid "Most WeeChat features are ideas of users, so you can submit new ideas or things you would like to have in WeeChat."
+msgstr "Die meisten Funktionen die in WeeChat integriert sind entstanden auf Anregung von Anwendern. Jeder darf Neue Ideen einbringen oder Vorschläge unterbreiten, die er gerne in WeeChat umgesetzt haben möchte."
+
+#: templates/home.html:176
+msgid "You can help WeeChat by testing it, submitting patches, or translating it into your favorite language (WeeChat itself, documentation and this website)."
+msgstr "Auch Du kannst WeeChat unterstützen indem Du es testest, Patches einbringst oder eine Übersetzung in Deiner bevorzugten Sprache erstellst (entweder für WeeChat selbst, die Dokumentation oder für diese Webseite)."
+
+#: templates/home.html:177
+msgid "Feel free to contact us, development team is open to new contributors."
+msgstr "Zögere nicht und trete in Kontakt mit uns. Das Entwicklerteam steht neuen Mitwirkenden offen."
+
+#: templates/home.html:181
+msgid "Tasks"
+msgstr "Aufgaben"
+
+#: templates/home.html:186
+msgid "News"
+msgstr "Neuerungen"
+
+#: templates/home.html:196
+msgid "Posted by"
+msgstr "geposted von"
+
+#: templates/home.html:206
+msgid "More news"
+msgstr "weitere Veränderungen"
+
+#: templates/home.html:224
+msgid "This beta site is powered by"
+msgstr "Diese Beta-Seite wird unterstützt von"
+
+#: templates/info_list.html:9
+msgid "Infos"
+msgstr "Informationen"
+
+#: templates/info_list.html:11
+msgid "Following infos are available:"
+msgstr "Folgende Informationen sind verfügbar:"
+
+#: templates/info_list.html:16
+msgid "Info"
+msgstr "Info"
+
+#: templates/info_list.html:17
+msgid "Current value"
+msgstr "aktueller Wert"
+
+#: templates/info_list.html:31
+msgid "You can fetch these URLs from scripts or other sites."
+msgstr "Diese URLs können durch ein Skript oder eine andere Seite abgefragt werden."
+
+#: templates/maintenance.html:5
+msgid "temporarily unavailable"
+msgstr "vorübergehend nicht erreichbar"
+
+#: templates/maintenance.html:9
+msgid "This page is under maintenance."
+msgstr "Dieser Seite ist zzt. unter Wartung."
+
+#: templates/maintenance.html:13
+msgid "Page will be back soon, please come back later."
+msgstr "Bitte besuchen Sie uns zu einem späteren Zeitpunkt erneut."
+
+#: templates/maintenance.html:15
+#: templates/plugins_add_ok.html:20
+#: templates/plugins_update_ok.html:18
+#: templates/themes_add_ok.html:20
+#: templates/themes_update_ok.html:18
+msgid "Thank you for your patience."
+msgstr "Danke für Deine Geduld."
+
+#: templates/maintenance.html:17
+msgid "Back"
+msgstr "Zurück"
+
+#: templates/photos.html:5
+msgid "screenshots"
+msgstr "Screenshots"
+
+#: templates/photos.html:10
+msgid "WeeChat screenshots"
+msgstr "WeeChat Screenshots"
+
+#: templates/plugins.html:5
+#: templates/plugins_add.html:5
+#: templates/plugins_add_ok.html:5
+#: templates/plugins_list.html:5
+#: templates/plugins_list.html.py:43
+#: templates/plugins_pending.html:5
+#: templates/plugins_source.html:5
+#: templates/plugins_update.html:5
+#: templates/plugins_update_ok.html:5
+msgid "scripts"
+msgstr "Skripten"
+
+#: templates/plugins.html:14
+msgid "New script"
+msgstr "Neues Skript"
+
+#: templates/plugins.html:15
+msgid "New release"
+msgstr "überarbeitetes Skript"
+
+#: templates/plugins.html:16
+msgid "Samples"
+msgstr "Beispiele"
+
+#: templates/plugins.html:17
+msgid "Unofficial scripts"
+msgstr "nicht veröffentlichte Skripten"
+
+#: templates/plugins.html:18
+msgid "Pending scripts"
+msgstr "eingereichte Skripten"
+
+#: templates/plugins_add.html:9
+#: templates/plugins_add_ok.html:9
+msgid "Add new script"
+msgstr "Neues Skript einreichen"
+
+#: templates/plugins_add.html:17
+msgid "<strong>Warning:</strong> please follow <strong>all</strong> these rules, otherwise your script will be rejected:"
+msgstr "<strong>Hinweis:</strong> Es müssen <strong>alle</strong> nachfolgenden Regeln beachtet werden, anderenfalls wird das Skript nicht angenommen:"
+
+#: templates/plugins_add.html:19
+msgid "unique name (not used by any other script, even in a different language)"
+msgstr "für das Skript muss ein Name gewählt werden der nicht durch ein anderes Skript genutzt wird"
+
+#: templates/plugins_add.html:20
+msgid "the script name in register function must be exactly same name as script (without extension)"
+msgstr "der Programmname in der register() Funktion muss exakt mit dem Dateinamen des Skriptes (ohne Dateierweiterung) übereinstimmen"
+
+#: templates/plugins_add.html:21
+msgid "a free license"
+msgstr "das Skript muss unter einer freien Lizenz stehen"
+
+#: templates/plugins_add.html:22
+msgid "a comment at beginning with your name (or pseudo), your e-mail, and the chosen license"
+msgstr "ein Kommentar, zu Beginn des Skriptes, welcher Deinen Namen (oder Dein Pseudonym), Deine e-mail Adresse und die entsprechende Lizenz für das Skript enthält"
+
+#: templates/plugins_add.html:23
+msgid "no shebang on first line (like '#!/usr/bin/perl'), it's not needed"
+msgstr "ein Skript benötigt in der ersten Zeile keine \"Magic Line\" ('#!/usr/bin/perl')"
+
+#: templates/plugins_add.html:24
+msgid "use only english for code and comments"
+msgstr "für den Code und Kommentare bitte ausschließlich die englische Sprache nutzen"
+
+#: templates/plugins_add.html:25
+msgid "no use of extra API between WeeChat and your script (like Ruby gem 'WeeChat'), you must use standard WeeChat API"
+msgstr "Es ist nicht gewünscht dass zwischen WeeChat und Deinem Skript eine zusätzliche API genutzt wird (z.B. Ruby gem 'WeeChat'). Es darf nur die standardisierte WeeChat API genutzt werden"
+
+#: templates/plugins_add.html:26
+msgid "if your script is doing something blocking (like fetching URL), you must use function hook_process to not block WeeChat"
+msgstr "falls Dein Skript externe Funktionen nutzt die WeeChat blockieren können (z.B. um URLs zu überprüfen), dann muss die Funktion hook_process() genutzt werden"
+
+#: templates/plugins_add.html:27
+msgid "to fetch URL, you must use function hook_process (or hook_process_hashtable), available in WeeChat ≥ 0.3.7"
+msgstr "um eine URL abzufragen muss die Funktion hook_process (oder hook_process_hashtable) genutzt werden, verfügbar in WeeChat ≥ 0.3.7"
+
+#: templates/plugins_add.html:28
+msgid "check that no script (or <a href=\"/scripts/pending\">pending script</a>) does exactly same thing as your script"
+msgstr "überprüfe vorher, dass kein anderes Skript (oder ein <a href=\"/scripts/pending\">eingereichtes Skript</a>) die gleiche Funktionalität bereitstellt wie Dein Skript"
+
+#: templates/plugins_add.html:35
+#: templates/plugins_test.html:19
+#: templates/plugins_update.html:19
+#: templates/themes_add.html:27
+#: templates/themes_update.html:19
+msgid "Submit"
+msgstr "Versenden"
+
+#: templates/plugins_add_ok.html:16
+msgid "Your script was submitted for review, it usually takes 24 or 48 hours (up to one or two weeks if many scripts are pending)."
+msgstr "Dein Skript wurde zum Zwecke der Überprüfung übermittelt. Die Bearbeitung dauert circa 24 bis 48 Stunden (es kann auch ein- oder zwei Wochen dauern, falls mehrere neue Skripten ausstehen)."
+
+#: templates/plugins_add_ok.html:18
+msgid "You'll be informed if there is a problem with your script."
+msgstr "Sollte ein Problem mit dem Skript auftreten wirst Du darüber informiert."
+
+#: templates/plugins_add_ok.html:22
+#: templates/plugins_list.html:167
+#: templates/plugins_source.html:18
+#: templates/plugins_source.html.py:25
+#: templates/plugins_update_ok.html:20
+msgid "Back to scripts"
+msgstr "Zurück zu den Skripten"
+
+#: templates/plugins_list.html:9
+#: templates/plugins_pending.html:9
+#: templates/plugins_source.html:10
+msgid "WeeChat scripts"
+msgstr "WeeChat Skripten"
+
+#: templates/plugins_list.html:16
+msgid "<strong>Warning:</strong> these scripts are written by external contributors, therefore WeeChat developers are <strong>NOT RESPONSIBLE</strong> for problems caused by one of these scripts."
+msgstr "<strong>Warnung:</strong> Die Skripten auf dieser Seite werden überwiegend durch Drittentwicklern bereitgestellt. Aus diesem Grund sind die WeeChat Autoren <strong>NICHT VERANTWORTLICH</strong> falls Probleme durch diese Skripten auftreten sollten."
+
+#: templates/plugins_list.html:18
+msgid "You could experience problems like memory leaks, slowdowns, or even <strong>security problems</strong>. You are warned!"
+msgstr "Es können z.B. Speicherlecks auftreten, die Rechenleistung beeinträchtigt werden oder sogar <strong>Sicherheitsprobleme</strong> durch Skripten entstehen. Sie sind gewarnt!"
+
+#: templates/plugins_list.html:22
+msgid "WARNING: the old API is deprecated and these scripts runs only on WeeChat 0.2.x, which is OBSOLETE. You MUST NOT load these scripts with latest stable version of WeeChat!"
+msgstr "WARNUNG: die alte API wird nicht mehr unterstützt und somit sind die Skripten auf dieser Seite nur lauffähig unter der VERALTETEN WeeChat Version 0.2.x. Diese Skripten können nicht mit einer aktuellen Version von WeeChat geladen werden!"
+
+#: templates/plugins_list.html:29
+msgid "Display scripts for stable API (&gt;= 0.3.0)"
+msgstr "Zeige Skripten für stabile API (&gt;= 0.3.0) an"
+
+#: templates/plugins_list.html:31
+msgid "Display scripts for old API (&lt;= 0.2.6)"
+msgstr "Zeige Skripten für alte API (&lt;= 0.2.6) an"
+
+#: templates/plugins_list.html:34
+msgid "XML list"
+msgstr "XML Liste"
+
+#: templates/plugins_list.html:37
+msgid "Version:"
+msgstr "Version:"
+
+#: templates/plugins_list.html:39
+msgid "filter:"
+msgstr "Filter:"
+
+#: templates/plugins_list.html:39
+msgid "remove"
+msgstr "entfernen"
+
+#: templates/plugins_list.html:41
+msgid "no filter"
+msgstr "keine Filterung"
+
+#: templates/plugins_list.html:47
+msgid "Search by tag:"
+msgstr "Schlagwortsuche:"
+
+#: templates/plugins_list.html:49
+#: templates/plugins_list.html.py:140
+msgid "Tag:"
+msgstr "Schlagwort:"
+
+#: templates/plugins_list.html:56
+#: templates/plugins_pending.html:29
+msgid "Scripts list"
+msgstr "Skripten-Liste"
+
+#: templates/plugins_list.html:89
+#: templates/plugins_list.html.py:93
+#: templates/plugins_pending.html:37
+msgid "Min"
+msgstr "Min"
+
+#: templates/plugins_list.html:98
+#: templates/plugins_list.html.py:102
+#: templates/plugins_pending.html:38
+msgid "Max"
+msgstr "Max"
+
+#: templates/plugins_list.html:107
+#: templates/plugins_list.html.py:111
+#: templates/plugins_pending.html:39
+msgid "Author"
+msgstr "Autor"
+
+#: templates/plugins_list.html:116
+#: templates/plugins_list.html.py:120
+#: templates/themes_list.html:31
+msgid "Added"
+msgstr "hinzugefügt"
+
+#: templates/plugins_list.html:125
+#: templates/plugins_list.html.py:129
+msgid "Updated"
+msgstr "aktualisiert"
+
+#: templates/plugins_list.html:144
+#: templates/plugins_pending.html:54
+msgid "requires"
+msgstr "benötigt"
+
+#: templates/plugins_list.html:153
+#: templates/themes_list.html:27
+msgid "Author:"
+msgstr "Autor:"
+
+#: templates/plugins_list.html:164
+msgid "No script found."
+msgstr "Kein Skript gefunden."
+
+#: templates/plugins_pending.html:15
+msgid "Following scripts are waiting for approval, possible future is:"
+msgstr "Folgende Skripten warten auf eine Freigabe. Die weitere Vorgehensweise:"
+
+#: templates/plugins_pending.html:17
+msgid "if script is OK, it is moved to official scripts and git repository,"
+msgstr "entspricht ein Skript den Anforderungen dann wird es als offizielles Skript in die git Repository aufgenommen."
+
+#: templates/plugins_pending.html:18
+msgid "if script does not meet all requirements, it is moved to unofficial scripts,"
+msgstr "entspricht ein Skript nicht den Anforderungen dann wird es zu den nicht veröffentlichten Skripten verschoben."
+
+#: templates/plugins_pending.html:19
+msgid "if script is rejected, it is deleted."
+msgstr "falls ein Skript abgelehnt werden sollte dann wird es gelöscht."
+
+#: templates/plugins_pending.html:21
+msgid "We need your help!"
+msgstr "Wir benötigen Deine Hilfe!"
+
+#: templates/plugins_pending.html:23
+msgid "You can help us by testing these scripts. Please report bugs to author of script and to"
+msgstr "Du kannst uns helfen indem Du die Skripten testest. Sollten dabei Fehler auftreten informiere Bitte den Autor des Skriptes und"
+
+#: templates/plugins_pending.html:33
+msgid "Approval notes"
+msgstr "Hinweis zur Freigabe"
+
+#: templates/plugins_pending.html:40
+msgid "Date"
+msgstr "Datum"
+
+#: templates/plugins_pending.html:72
+msgid "No script pending approval at this time."
+msgstr "Zur Zeit liegen keine Skripten vor die auf eine Freigabe warten."
+
+#: templates/plugins_source.html:23
+msgid "Script not found"
+msgstr "Skript wurde nicht gefunden"
+
+#: templates/plugins_test.html:5
+msgid "plugins"
+msgstr "Erweiterungen"
+
+#: templates/plugins_test.html:9
+msgid "Update a plugin/script"
+msgstr "Aktualisiere eine Erweiterung/Skript"
+
+#: templates/plugins_update.html:9
+#: templates/plugins_update_ok.html:9
+msgid "Update a script"
+msgstr "Aktualisiere ein Skript"
+
+#: templates/plugins_update_ok.html:16
+msgid "New release has been submitted for review."
+msgstr "Neues Release wurde zur Überprüfung übertragen."
+
+#: templates/stats.html:5
+msgid "statistics"
+msgstr "Statistiken"
+
+#: templates/stats.html:9
+msgid "Git statistics"
+msgstr "Statistik zu Git"
+
+#: templates/stats.html:13
+#: templates/stats.html.py:39
+msgid "Repository:"
+msgstr "Repository:"
+
+#: templates/stats.html:14
+#: templates/stats.html.py:40
+msgid "Repository"
+msgstr "Repository"
+
+#: templates/stats.html:18
+msgid "lines of code"
+msgstr "Anzahl an Programmzeilen"
+
+#: templates/stats.html:28
+#: templates/stats.html.py:44
+msgid "Committers:"
+msgstr "Committers:"
+
+#: templates/story.html:5
+msgid "story"
+msgstr "Geschichte"
+
+#: templates/story.html:12
+msgid "WeeChat story"
+msgstr "Entwicklung von WeeChat"
+
+#: templates/support.html:5
+msgid "support"
+msgstr "Support:"
+
+#: templates/support.html:12
+msgid "WeeChat support"
+msgstr "WeeChat Support"
+
+#: templates/support.html:15
+msgid "<strong>Warning:</strong> before asking for help, please read carefully documentation and FAQ."
+msgstr "<strong>Hinweis:</strong> Bevor eine Frage gestellt wird sollte vorher die Anleitung und die FAQ (häufig gestellte Fragen) gelesen werden."
+
+#: templates/support.html:22
+msgid "Server:"
+msgstr "Server:"
+
+#: templates/support.html:22
+msgid "channels:"
+msgstr "Channels:"
+
+#: templates/support.html:24
+msgid "for french speakers"
+msgstr "für französischsprachige"
+
+#: templates/support.html:29
+msgid "Forum"
+msgstr "Forum"
+
+#: templates/support.html:36
+msgid "Mailing list"
+msgstr "Mailingliste"
+
+#: templates/support.html:39
+msgid "Subscribe:"
+msgstr "Abonnieren:"
+
+#: templates/support.html:40
+msgid "Send mail to:"
+msgstr "Sende eine Mail an:"
+
+#: templates/support.html:43
+msgid "Tracker"
+msgstr "Tracker"
+
+#: templates/support.html:46
+msgid "Report a bug:"
+msgstr "Melde einen Fehler:"
+
+#: templates/support.html:47
+msgid "Feature requests:"
+msgstr "Vorschläge zu Funktionen:"
+
+#: templates/support.html:48
+msgid "Send a patch:"
+msgstr "Sende einen Patch:"
+
+#: templates/themes.html:5
+#: templates/themes_add.html:5
+#: templates/themes_add_ok.html:5
+#: templates/themes_list.html:5
+#: templates/themes_source.html:5
+#: templates/themes_update.html:5
+#: templates/themes_update_ok.html:5
+msgid "themes"
+msgstr "Themes"
+
+#: templates/themes.html:13
+msgid "Themes"
+msgstr "Themes"
+
+#: templates/themes.html:14
+msgid "New theme"
+msgstr "Neues Theme"
+
+#: templates/themes.html:15
+msgid "Update theme"
+msgstr "überarbeites Theme"
+
+#: templates/themes_add.html:9
+#: templates/themes_add_ok.html:9
+msgid "Add new theme"
+msgstr "Neues Theme einreichen"
+
+#: templates/themes_add.html:17
+msgid "<strong>Warning:</strong> please follow <strong>all</strong> these rules, otherwise your theme will be rejected:"
+msgstr "<strong>Hinweis:</strong> Es müssen <strong>alle</strong> nachfolgenden Regeln beachtet werden, anderenfalls wird das Theme nicht angenommen:"
+
+#: templates/themes_add.html:19
+msgid "unique name, ending with '.theme' (only letters, digits or '_')"
+msgstr "für das Theme muss ein Name gewählt werden der nicht durch ein anderes Theme genutzt wird und die Datei muss auf '.theme' enden (nur Kleinbuchstaben, Ziffern oder \"_\" sind im Dateinamen erlaubt)"
+
+#: templates/themes_add.html:20
+msgid "theme must be built with latest stable version of WeeChat"
+msgstr "Theme muss mit der letzten stabilen Version von WeeChat erstellt werden"
+
+#: templates/themes_add.html:20
+msgid "or development version"
+msgstr "oder mit einer Entwicklerversion"
+
+#: templates/themes_add_ok.html:16
+msgid "Your theme was submitted for review, it usually takes 24 or 48 hours (up to one or two weeks if many themes are pending)."
+msgstr "Dein Theme wurde zum Zwecke der Überprüfung übermittelt. Die Bearbeitung dauert circa 24 bis 48 Stunden (es kann auch ein- oder zwei Wochen dauern, falls mehrere neue Themes ausstehen)."
+
+#: templates/themes_add_ok.html:18
+msgid "You'll be informed if there is a problem with your theme."
+msgstr "Sollte ein Problem mit Deinem Theme auftreten wirst Du darüber informiert."
+
+#: templates/themes_add_ok.html:22
+#: templates/themes_list.html:44
+#: templates/themes_source.html:18
+#: templates/themes_source.html.py:25
+#: templates/themes_update_ok.html:20
+msgid "Back to themes"
+msgstr "Zurück zu Themes"
+
+#: templates/themes_list.html:9
+#: templates/themes_source.html:10
+msgid "WeeChat themes"
+msgstr "WeeChat Themes"
+
+#: templates/themes_list.html:16
+msgid "<strong>Warning:</strong> alpha version of themes! Alpha version of script is available here:"
+msgstr "<strong>Hinweis:</strong> Alpha Version von Themes! Die Alpha Version des Skriptes bekommt man hier:"
+
+#: templates/themes_list.html:27
+msgid "submitted by"
+msgstr "gesendet von"
+
+#: templates/themes_list.html:32
+msgid "updated"
+msgstr "aktualisiert"
+
+#: templates/themes_list.html:41
+msgid "No theme found."
+msgstr "Kein Theme gefunden."
+
+#: templates/themes_source.html:16
+#: themes/models.py:125
+msgid "Theme"
+msgstr "Theme"
+
+#: templates/themes_source.html:23
+msgid "Theme not found"
+msgstr "Theme wurde nicht gefunden"
+
+#: templates/themes_update.html:9
+#: templates/themes_update_ok.html:9
+msgid "Update a theme"
+msgstr "Aktualisiere ein Theme"
+
+#: templates/themes_update_ok.html:16
+msgid "Updated theme has been submitted for review."
+msgstr "Neues Theme wurde zur Überprüfung übertragen."
+
+#: themes/models.py:89
+#: themes/models.py:126
+msgid "the theme"
+msgstr "Das Theme"
+
+#: themes/models.py:92
+#: themes/models.py:128
+msgid "no spam, never displayed on site"
+msgstr "kein Spam, Adresse wird nicht auf der Seite angezeigt"
+
+#: themes/models.py:99
+#: themes/models.py:139
+msgid "Theme file too big."
+msgstr "Theme Datei ist zu groß."
+
+#: themes/models.py:102
+#: themes/models.py:142
+msgid "Invalid theme file."
+msgstr "ungültige Theme-Datei."
+
+#: themes/models.py:105
+msgid "This name already exists."
+msgstr "Dieser Name wird schon verwendet."
+
+#: themes/models.py:107
+#: themes/models.py:110
+msgid "Invalid name inside theme file."
+msgstr "ungültiger Name in der Theme-Datei."
+
+#: themes/models.py:112
+#: themes/models.py:149
+msgid "Invalid WeeChat version, too old!"
+msgstr "ungültige WeeChat Version, da zu alt!"
+
+#: themes/models.py:145
+msgid "Internal error."
+msgstr "interner Fehler."
+
+#: themes/models.py:147
+msgid "Invalid name: different from theme."
+msgstr "ungültiger Name: unterscheidet sich vom Theme."
+
+#~ msgid "More commits"
+#~ msgstr "weitere Revisionen"
+
+#~ msgid "- support of Guile (Scheme) scripts (ready for v0.3.7)"
+#~ msgstr "- Unterstützung von Guile (Scheme) Skripten (umgesetzt für v0.3.7)"
+
+#~ msgid "used for git commit (or for any problem with script)"
+#~ msgstr ""
+#~ "wird für Git Commit benötigt (oder falls es zu einem Problem mit dem "
+#~ "Skript kommen sollte)"
+
+#~ msgid "Upgrade to v0.3.x"
+#~ msgstr "Upgrade auf v0.3.x"
+
+#~ msgid "- mouse support"
+#~ msgstr "- Mausunterstützung"
