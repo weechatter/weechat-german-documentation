@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-29 10:07+0200\n"
-"PO-Revision-Date: 2012-05-30 20:15+0100\n"
+"PO-Revision-Date: 2012-06-01 21:54+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: Nils G <weechatter@arcor.de>\n"
 "Language: \n"
@@ -2131,7 +2131,7 @@ msgstr "Lautsprecher beep oder Aufruf eines externen Befehl bei einer Hightlight
 #. Translators: description for script "buffers.pl" (0.3.0+)
 #: plugins/_plugins_i18n.py:252
 msgid "Sidebar with list of buffers."
-msgstr "zeigt alle Buffer in einem separaten Seitenfenster an (empfohlen!)."
+msgstr "zeigt alle Buffer in einem separaten Seitenfenster an."
 
 #. Translators: description for script "go.py" (0.3.0+)
 #: plugins/_plugins_i18n.py:258
@@ -4012,19 +4012,19 @@ msgstr "Wartezeit Indikator (wie lange benötigt eine Nachricht zum Server und z
 
 #: templates/features.html:77
 msgid "color for away nicks"
-msgstr "Farbe für nicht anwesende Nicks einstellbar"
+msgstr "Textfarbe für abwesende Nicks einstellbar"
 
 #: templates/features.html:78
 msgid "auto completion for nicks, commands and args"
-msgstr "automatische Vervollständigung von Nicks, Befehlen und Argumenten"
+msgstr "automatische Vervollständigung von Nicknamen, Befehlen und Argumenten"
 
 #: templates/features.html:79
 msgid "command alias"
-msgstr "Alias für Befehle"
+msgstr "Kurznamen (Alias) für Befehlsaufrufe können definiert werden"
 
 #: templates/features.html:80
 msgid "auto save chats to files"
-msgstr "automatisches Sichern der Chats in eine Datei"
+msgstr "Chats können automatisch als Datei gespeichert werden"
 
 #: templates/features.html:81
 msgid "everything is customizable"
