@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.3.7-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2012-05-18 09:10+0200\n"
-"PO-Revision-Date: 2012-06-01 21:43+0100\n"
+"POT-Creation-Date: 2012-06-04 18:20+0200\n"
+"PO-Revision-Date: 2012-06-05 17:05+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -148,10 +148,6 @@ msgstr "  %s (Erweiterung: %s)"
 
 msgid "No bar item defined"
 msgstr "Es wurde kein Bar-Item festgelegt"
-
-#, c-format
-msgid "%sError: name can not start with \"#\""
-msgstr "%sFehler: Name darf nicht mit \"#\"beginnen"
 
 #, c-format
 msgid "%sNot enough memory"
@@ -3512,10 +3508,6 @@ msgstr "Keinen Server mit \"%s\" gefunden"
 #, c-format
 msgid "%s%s: server \"%s\" already exists, can't create it!"
 msgstr "%s%s: Der Server \"%s\" existiert bereits und kann daher nicht angelegt werden!"
-
-#, c-format
-msgid "%s%s: name can not start with \"#\""
-msgstr "%s%s: Name darf nicht mit \"#\" beginnen"
 
 #, c-format
 msgid "%s%s: unable to create server"
@@ -7192,6 +7184,12 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "%sError: name can not start with \"#\""
+#~ msgstr "%sFehler: Name darf nicht mit \"#\"beginnen"
+
+#~ msgid "%s%s: name can not start with \"#\""
+#~ msgstr "%s%s: Name darf nicht mit \"#\" beginnen"
 
 #~ msgid "string inserted after nick completion"
 #~ msgstr "Nach Nick-Vervollständigung anzufügende Zeichenfolge"
