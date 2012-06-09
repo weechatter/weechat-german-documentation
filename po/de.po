@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.3.7-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2012-06-04 18:20+0200\n"
-"PO-Revision-Date: 2012-06-05 17:05+0100\n"
+"POT-Creation-Date: 2012-06-08 22:05+0200\n"
+"PO-Revision-Date: 2012-06-09 09:16+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -2071,6 +2071,9 @@ msgstr "nutzt eine andere Farbe um den inaktiven Präfix darzustellen (Fenster i
 msgid "use a different color for inactive message (when window is not current window, or if line is from a merged buffer not selected)"
 msgstr "nutzt eine andere Farbe um die inaktiven Nachrichten darzustellen (Fenster ist nicht das aktuelle Fenster oder wenn die Zeile des zusammengefügten Buffers nicht die aktiv Zeile ist)"
 
+msgid "use a different color for offline nick (not in nicklist any more)"
+msgstr "nutzt eine andere Farbe für Nicks die Offline sind (die nicht in der Nickliste angezeigt werden!)"
+
 msgid "automatically reset table of color pairs when number of available pairs is lower or equal to this number (-1 = disable automatic reset, and then a manual \"/color reset\" is needed when table is full)"
 msgstr "automatischer Reset der Farbpaarungen sobald die verfügbare Anzahl an Paaren kleiner oder gleich der hier angegebenen Anzahl ist (-1 = deaktiviert den automatischen Reset, dann ist ein manueller Reset mittels \"/color reset\" notwendig falls alle Farbpaarungen belegt sind)"
 
@@ -2329,6 +2332,9 @@ msgstr "Textfarbe für Nicks (durch Kommata getrennte Liste von Farben. Eine Hin
 
 msgid "text color for local nick in chat window"
 msgstr "Textfarbe für den eigenen Nicknamen, im lokalen Chat-Fenster."
+
+msgid "text color for offline nick (not in nicklist any more)"
+msgstr "Textfarbe von Nicknamen die Offline sind (die nicht in der Nickliste angezeigt werden!)"
 
 msgid "text color for other nick in private buffer"
 msgstr "Farbe des anderen Nicknamens in einem privaten Buffer"
