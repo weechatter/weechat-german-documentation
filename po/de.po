@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.3.7-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2012-06-09 13:19+0200\n"
-"PO-Revision-Date: 2012-06-09 21:50+0100\n"
+"POT-Creation-Date: 2012-06-10 09:48+0200\n"
+"PO-Revision-Date: 2012-06-10 17:28+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -2251,17 +2251,23 @@ msgstr "Angabe in Prozent, die die Seite hoch oder runter gescrollt werden soll 
 msgid "alert user when text sought is not found in buffer"
 msgstr "Informiert den Anwender falls der gesuchte Text nicht im Buffer gefunden wurde"
 
-msgid "char used to draw horizontal separators around bars (empty value will draw a real line with ncurses, but may cause bugs with URL selection under some terminals), wide chars are NOT allowed here"
-msgstr "das genutzte Zeichen wird verwendet um damit die horizontalen Linien zu zeichnen. Wird kein Zeichen angegeben dann zeichnet ncurses eine durchgezogene Linie. Dies kann allerdings bei einigen Terminals zu Fehlern führen, falls die URL Auswahl genutzt wird. Wide Chars sind für diese Option NICHT erlaubt."
+msgid "char used to draw horizontal separators around bars and windows (empty value will draw a real line with ncurses, but may cause bugs with URL selection under some terminals), wide chars are NOT allowed here"
+msgstr "das angegebene Zeichen wird verwendet um die horizontalen Linien zu zeichnen. Wird kein Zeichen angegeben, dann zeichnet ncurses eine durchgängige Linie. Dies kann allerdings bei einigen Terminals zu Problemen führen, falls die URL Auswahl genutzt wird. Wide Chars sind für diese Option NICHT erlaubt."
 
-msgid "char used to draw vertical separators around bars (empty value will draw a real line with ncurses), wide chars are NOT allowed here"
-msgstr "das genutzte Zeichen wird verwendet um damit die vertikale Linien zu zeichnen. Wird kein Zeichen angegeben dann zeichnet ncurses eine durchgezogene Linie. Wide Chars sind für diese Option NICHT erlaubt."
+msgid "char used to draw vertical separators around bars and windows (empty value will draw a real line with ncurses), wide chars are NOT allowed here"
+msgstr "das angegebene Zeichen wird verwendet um die vertikale Linien zu zeichnen. Wird kein Zeichen angegeben, dann zeichnet ncurses eine durchgängige Linie. Wide Chars sind für diese Option NICHT erlaubt."
 
 msgid "set title for window (terminal for Curses GUI) with name and version"
 msgstr "setzt den Fenstertitels (oder Terminal-Titel im Curses-GUI), mit Name und Version"
 
 msgid "time format for dates converted to strings and displayed in messages"
 msgstr "Zeitstempel für das Datum. Der Zeitstempel wird in eine Zeichenkette umgewandelt und in Nachrichten dargestellt."
+
+msgid "display an horizontal separator between windows"
+msgstr "ist die Option aktiviert dann wird eine horizontale Trennlinie zwischen Fenstern gezeichnet"
+
+msgid "display a vertical separator between windows"
+msgstr "ist die Option aktiviert dann wird eine vertikale Trennlinie zwischen Fenstern gezeichnet"
 
 msgid "background color for window separators (when split)"
 msgstr "Hintergrundfarbe der Fenster-Separatoren im Chatfenster (bei geteiltem Bildschirm)"
