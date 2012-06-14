@@ -584,6 +584,13 @@ auf dem IRC Server "freenode" gesetzt:
 /set weechat.notify.irc.freenode.#weechat highlight
 ----------------------------------------
 
+Die Benachrichtigungsstufe für einen Buffer kann mit dem Befehl `/buffer`
+aktiviert werden:
+
+----------------------------------------
+/buffer notify highlight
+----------------------------------------
+
 [[key_bindings]]
 Standard Tastenbelegung
 ~~~~~~~~~~~~~~~~~~~~~~~
