@@ -816,7 +816,7 @@ einen Tastenkurzbefehl zu legen. Zum Beispiel soll über den Tastenkurzbefehl
 ----------------------------------------
 
 Ist die Mausunterstützung aktiviert kann man mittels gedrückter "Shift"-Taste (Umschalttaste)
-Text im Terminal markieren oder einfügen, als ob die Mausunterstützung deaktiviert sei (bei
+einen Text im Terminal markieren oder einfügen, als sei die Mausunterstützung deaktiviert (bei
 einigen Terminals muss die "Alt"-Taste anstelle der "Shift"-Taste gedrückt werden.
 
 [NOTE]
