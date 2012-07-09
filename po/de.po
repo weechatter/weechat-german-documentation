@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.3.7-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2012-06-30 14:13+0200\n"
-"PO-Revision-Date: 2012-06-30 14:28+0100\n"
+"POT-Creation-Date: 2012-07-07 13:35+0200\n"
+"PO-Revision-Date: 2012-07-08 00:55+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -2161,6 +2161,9 @@ msgstr "wechselt zum vorher genutzten Buffer falls man mit dem Befehl /buffer *N
 msgid "jump to previously visited buffer when closing a buffer (if disabled, then jump to buffer number - 1)"
 msgstr "wechselt zum vorher genutzten Buffer, falls der aktuelle Buffer geschlossen wird (wenn diese Funktion deaktiviert ist wird zum Buffer gewechselt der die relative Position -1 einnimmt)"
 
+msgid "jump back to initial buffer after reaching end of hotlist"
+msgstr "springt zurück zum Ausgangsbuffer, falls keine weiteren Einträge in der Hotlist vorhanden sind"
+
 msgid "enable mouse support"
 msgstr "Mausunterstützung einschalten"
 
@@ -3073,6 +3076,28 @@ msgstr "%s: Das Wort \"%s\" wurde dem persönlichen Wörterbuch hinzugefügt."
 msgid "%s%s: failed to add word to personal dictionary"
 msgstr "%s%s: Es kann kein Wort zum persönlichen Wörterbuch hinzugefügt werden."
 
+msgid "Aspell is enabled"
+msgstr "Aspell ist aktiviert"
+
+msgid "Aspell is disabled"
+msgstr "Aspell ist deaktiviert"
+
+#, c-format
+msgid "Default dictionary: %s"
+msgstr "Standardwörterbuch: %s"
+
+msgid "(not set)"
+msgstr "(keines definiert)"
+
+msgid "Specific dictionaries on buffers:"
+msgstr "Wörterbücher die für die einzelnen Buffer genutzt werden:"
+
+msgid "Aspell enabled"
+msgstr "Aspell wurde aktiviert"
+
+msgid "Aspell disabled"
+msgstr "Aspell wurde deaktiviert"
+
 #, c-format
 msgid "%s%s: no dictionary on this buffer for adding word"
 msgstr "%s%s: Es ist kein Wörterbuch für diesen Buffer aktiviert, deshalb kann das Wort nicht hinzugefügt werden."
@@ -3084,29 +3109,41 @@ msgstr "%s%s: es sind mehrere Wörterbücher für diesen Buffer definiert. Bitte
 msgid "aspell plugin configuration"
 msgstr "Konfiguration für Aspell-Erweiterung"
 
-msgid "dictlist || enable <lang> || disable || addword [<lang>] <word>"
-msgstr "dictlist || enable <lang> || disable || addword [<lang>] <word>"
+msgid "enable|disable|toggle || listdict || setdict <lang> || deldict || addword [<lang>] <word>"
+msgstr "enable|disable|toggle || listdict || setdict <lang> || deldict || addword [<lang>] <word>"
 
 msgid ""
-"dictlist: show installed dictionaries\n"
-"  enable: enable aspell on current buffer\n"
-" disable: disable aspell on current buffer\n"
-" addword: add a word in your personal aspell dictionary\n"
+"  enable: enable aspell\n"
+" disable: disable aspell\n"
+"  toggle: toggle aspell\n"
+"listdict: show installed dictionaries\n"
+" setdict: set dictionary for current buffer\n"
+" deldict: delete dictionary used on current buffer\n"
+" addword: add a word in personal aspell dictionary\n"
 "\n"
 "Input line beginning with a '/' is not checked, except for some commands (see /set aspell.check.commands).\n"
 "\n"
-"To enable aspell on all buffers, use option \"default_dict\", for example:\n"
-"  /set aspell.check.default_dict \"en\""
+"To enable aspell on all buffers, use option \"default_dict\", then enable aspell, for example:\n"
+"  /set aspell.check.default_dict \"en\"\n"
+"  /aspell enable\n"
+"\n"
+"Default key to toggle aspell is alt-s."
 msgstr ""
-"dictlist: listet installierte Wörterbücher auf\n"
-"  enable: aktiviert Aspell in aktuellem Buffer [lang = Wörterbuch)\n"
-" disable: deaktiviert Aspell in aktuellem Buffer\n"
+"  enable: Aspell wird aktiviert\n"
+" disable: Aspell wird deaktiviert\n"
+"  toggle: Aspell Funktionalität umschalten\n"
+"listdict: die, auf dem System, installierten Wörterbücher werden aufgelistet\n"
+" setdict: Wörterbuch für den aktuellen Buffer einstellen\n"
+" deldict: Wörterbuch für den aktuellen Buffer entfernen\n"
 " addword: fügt ein Wort in das persönliche Wörterbuch von Aspell hinzu\n"
 "\n"
 "Eingaben die mit '/' beginnen werden nicht überprüft, davon ausgenommen sind einige Befehle (siehe /set aspell.check.commands).\n"
 "\n"
-"Um in allen Buffern Aspell anzuwenden sollte man die Option \"default_dict\" nutzen , als Beispiel:\n"
-"  /set aspell.check.default_dict \"de_DE-neu\""
+"Um Aspell auf alle Buffer anzuwenden sollte die Option \"default_dict\" genutzt und Aspell aktiviert werden:\n"
+"  /set aspell.check.default_dict \"de_DE-neu\"\n"
+"  /aspell enable\n"
+"\n"
+"Die Standardtastaturbelegung zum Umschalten der Aspell Funktionalität lautet alt-s."
 
 msgid "list of supported langs for aspell"
 msgstr "Liste der zu nutzenden Übersetzungen für Aspell"
@@ -3136,6 +3173,9 @@ msgstr "Voreingestelltes Wörterbuch (oder durch Kommata getrennte Liste der Wö
 
 msgid "check words during text search in buffer"
 msgstr "Überprüfe Wörter während im Buffer nach einem Text gesucht wird"
+
+msgid "enable aspell check for command line"
+msgstr "Aspell wird für die Eingabezeile aktiviert"
 
 msgid "real-time spell checking of words (slower, disabled by default: words are checked only if there's delimiter after)"
 msgstr "Eine Korrektur findet während der Texteingabe statt (da dies langsamer ist, ist diese Funktion standardmäßig deaktiviert. Wörter werden erst überprüft sobald ein Leerzeichen dem vorangegangenen Wort folgt)"
@@ -4862,11 +4902,8 @@ msgstr "es wird bei einer privaten Unterhaltung eine Mitteilung ausgegeben falls
 msgid "display server away message in away bar item"
 msgstr "Abwesenheitsnachricht in der Away-Bar-Item anzeigen"
 
-msgid "display channel modes in \"buffer_name\" bar item"
-msgstr "zeigt die Channel-Modi mittels \"buffer_name\" in der Bar-Item an"
-
-msgid "hide channel key if modes are displayed in \"buffer_name\" bar item (this will hide all channel modes arguments if mode +k is set on channel)"
-msgstr "unterdrückt Channel-Key falls die Modi in der Bar-Item mittels \"buffer_name\" dargestellt werden (diese Option unterdrückt alle Channel-Modi falls der Modus für den Channel auf +k gesetzt wurde)"
+msgid "hide channel key in channel modes (this will hide all channel modes arguments if mode +k is set on channel)"
+msgstr "unterdrückt Channel-Key im Channel Modus (diese Option unterdrückt alle Channel-Modi falls der Modus für den Channel auf +k gesetzt wurde)"
 
 msgid "display nick modes in \"input_prompt\" bar item"
 msgstr "zeigt Nick-Modi in \"input_prompt\" Bar-Item"
@@ -7209,6 +7246,9 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "display channel modes in \"buffer_name\" bar item"
+#~ msgstr "zeigt die Channel-Modi mittels \"buffer_name\" in der Bar-Item an"
 
 #~ msgid "%sError: name can not start with \"#\""
 #~ msgstr "%sFehler: Name darf nicht mit \"#\"beginnen"
