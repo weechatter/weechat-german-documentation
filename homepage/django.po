@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-03 13:43+0200\n"
-"PO-Revision-Date: 2012-06-03 17:33+0100\n"
+"POT-Creation-Date: 2012-07-09 22:52+0200\n"
+"PO-Revision-Date: 2012-07-09 23:33+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: Nils G <weechatter@arcor.de>\n"
 "Language: \n"
@@ -3262,6 +3262,8 @@ msgstr "nach Skript"
 #: templates/info_list.html:18
 #: templates/plugins_list.html:67
 #: templates/plugins_pending.html:32
+#: templates/security.html:27
+#: templates/security.html.py:96
 #: themes/models.py:90
 msgid "Description"
 msgstr "Beschreibung"
@@ -3733,130 +3735,132 @@ msgstr "Change-Log"
 msgid "Release notes"
 msgstr "Release notes"
 
-#: templates/download.html:95
+#: templates/download.html:94
+#: templates/download.html.py:95
+#: templates/security.html:9
+msgid "Security issues"
+msgstr "Sicherheitsfragen"
+
+#: templates/download.html:99
 #: templates/home.html:184
 msgid "Roadmap"
 msgstr "Meilensteinplan"
 
-#: templates/download.html:104
+#: templates/download.html:108
 msgid "Additional commands for some OS"
 msgstr "Installationsbefehle für verschiedene Betriebssysteme"
 
-#: templates/download.html:133
+#: templates/download.html:137
 msgid "Remote interfaces (external contribs, NO support from WeeChat team)"
 msgstr "externe Remote-Schnittstellen (es findet KEINE Hilfestellung durch das WeeChat Team statt)"
 
-#: templates/download.html:145
+#: templates/download.html:149
 msgid "Supported OS"
 msgstr "unterstütze Betriebssysteme"
 
-#: templates/download.html:149
+#: templates/download.html:153
 msgid "OS"
 msgstr "System"
 
-#: templates/download.html:150
+#: templates/download.html:154
 msgid "Status"
 msgstr "Status"
 
-#: templates/download.html:151
+#: templates/download.html:155
 msgid "Comments"
 msgstr "zusätzliche Informationen"
 
-#: templates/download.html:155
-#: templates/download.html.py:160
-#: templates/download.html:165
-#: templates/download.html.py:170
-#: templates/download.html:175
-#: templates/download.html.py:180
-#: templates/download.html:185
-#: templates/download.html.py:190
-#: templates/download.html:195
-#: templates/download.html.py:205
-#: templates/download.html:210
+#: templates/download.html:159
+#: templates/download.html.py:164
+#: templates/download.html:169
+#: templates/download.html.py:174
+#: templates/download.html:179
+#: templates/download.html.py:184
+#: templates/download.html:189
+#: templates/download.html.py:194
+#: templates/download.html:199
+#: templates/download.html.py:209
+#: templates/download.html:214
 msgid "OK"
 msgstr "Ok"
 
-#: templates/download.html:156
-msgid "OK with all distros"
-msgstr "lauffähig auf allen Distributionen"
+#: templates/download.html:180
+msgid "It is recommended to install with Homebrew package manager"
+msgstr "Es wird empfohlen die Installation mittels Homebrew package manager durchzuführen"
 
-#: templates/download.html:176
-msgid "OK (it's recommended to install with Homebrew package manager)"
-msgstr "lauffähig (es wird empfohlen die Installation mittels Homebrew package manager durchzuführen)"
-
-#: templates/download.html:200
+#: templates/download.html:204
 msgid "KO"
 msgstr "KO"
 
-#: templates/download.html:201
+#: templates/download.html:205
 msgid "Under progress"
 msgstr "in der Entwicklung"
 
-#: templates/download.html:211
+#: templates/download.html:215
 msgid "QNX 6.3 ok (needs link with libsocket)"
 msgstr "QNX 6.3 Ok (benötigt link mit libsocket)"
 
-#: templates/download.html:216
+#: templates/download.html:220
 msgid "Looking for testers"
 msgstr "Testpersonen werden benötigt"
 
-#: templates/download.html:220
+#: templates/download.html:224
 msgid "under dev"
 msgstr "in der Entw."
 
-#: templates/download.html:221
+#: templates/download.html:225
 msgid "See:"
 msgstr "siehe:"
 
-#: templates/download.html:229
+#: templates/download.html:233
 msgid "Links"
 msgstr "Links"
 
-#: templates/download.html:231
+#: templates/download.html:235
 msgid "Savannah page"
 msgstr "Savannah Seite"
 
-#: templates/download.html:235
+#: templates/download.html:239
 msgid "Git - sources"
 msgstr "Git - Quelltext"
 
-#: templates/download.html:239
+#: templates/download.html:243
 msgid "Git - scripts"
 msgstr "Git - Skripten"
 
-#: templates/download.html:243
+#: templates/download.html:247
 msgid "Git - clone"
 msgstr "Git - Clone"
 
-#: templates/download.html:247
+#: templates/download.html:251
 msgid "Git - snapshot"
 msgstr "Git - Snapshot"
 
-#: templates/download.html:250
+#: templates/download.html:254
 msgid "Charts"
 msgstr "Charts"
 
-#: templates/download.html:252
+#: templates/download.html:256
 msgid "Commits (core), by month"
 msgstr "Commits (Core), nach Monat"
 
-#: templates/download.html:256
+#: templates/download.html:260
 msgid "Commits (core), by version"
 msgstr "Commits (Core), nach Version"
 
-#: templates/download.html:260
+#: templates/download.html:264
 msgid "Commits (scripts), by month"
 msgstr "Commits (Skripten), nach Monat"
 
-#: templates/download.html:264
+#: templates/download.html:268
 msgid "Commits vs other clients"
 msgstr "Commits gegenüber anderen Clients"
 
-#: templates/download.html:268
+#: templates/download.html:272
 msgid "Map of versions"
 msgstr "Versionsfahrplan"
 
-#: templates/download.html:277
+#: templates/download.html:281
 msgid "Error: there is no version called"
 msgstr "Fehler: Es wurde keine Version ausgewählt"
 
@@ -4695,6 +4699,100 @@ msgstr "Aktualisiere ein Skript"
 msgid "New release has been submitted for review."
 msgstr "Neues Release wurde zur Überprüfung übertragen."
 
+#: templates/security.html:5
+msgid "security"
+msgstr "Sicherheit"
+
+#: templates/security.html:12
+msgid "This page contains a list of all known and fixed security vulnerabilities in WeeChat stable releases."
+msgstr "Auf dieser Seite sind alle bekannten und behobenen sicherheitsrelevanten Schwachstellen aufgeführt, welche in einer stabilen WeeChat Version aufgetreten sind. "
+
+#: templates/security.html:14
+msgid "Note: the security vulnerabilities introduced during development of a version and fixed before stable release are not mentioned."
+msgstr "HInweis: sicherheitsrelevante Schwachstellen welche während der Entwicklung einer Version aufgetreten und behoben wurden, bevor diese in eine stabile Version eingeflossen sind, werden hier nicht aufgeführt."
+
+#: templates/security.html:20
+msgid "External link"
+msgstr "externer Link"
+
+#: templates/security.html:21
+#: templates/support.html:43
+msgid "Tracker"
+msgstr "Tracker"
+
+#: templates/security.html:23
+#: templates/security.html.py:95
+msgid "Severity"
+msgstr "Schweregrad"
+
+#: templates/security.html:24
+msgid "Versions affected"
+msgstr "betroffene Versionen"
+
+#: templates/security.html:25
+msgid "Fixed in version"
+msgstr "Behoben mit Version"
+
+#: templates/security.html:26
+msgid "Release date"
+msgstr "Datum der Veröffentlichung"
+
+#: templates/security.html:41
+msgid "Missing verifications in SSL certificate, which allows man-in-the-middle attackers to spoof an SSL chat server via an arbitrary certificate."
+msgstr "fehlende Verifikation in SSL Zertifikaten. Dadurch war es bei einer man-in-the-middle Attacke möglich sich als SSL Chat Server auszugeben, mittels willkürlichen Zertifikaten."
+
+#: templates/security.html:55
+msgid "Crash when receiving special chars in IRC messages."
+msgstr "Absturz beim Empfang von speziellen Zeichen innerhalb einer IRC Nachricht."
+
+#: templates/security.html:72
+msgid "Uncontrolled format string in API function infobar_printf."
+msgstr "unkontrollierte Stringformatierung in der API Funktion infobar_printf."
+
+#: templates/security.html:86
+msgid "Buffer overflows in build of strings."
+msgstr "Bufferüberlauf beim Erstellen von Strings."
+
+#: templates/security.html:92
+msgid "Severities are:"
+msgstr "Schweregrade:"
+
+#: templates/security.html:97
+msgid "Upgrade of WeeChat"
+msgstr "Upgrade von WeeChat"
+
+#: templates/security.html:101
+msgid "Local problem which occurs in very specific conditions, low impact."
+msgstr "lokales Problem, welches ausschließlich unter bestimmten Voraussetzungen auftritt."
+
+#: templates/security.html:102
+msgid "Not mandatory."
+msgstr "nicht verpflichtend."
+
+#: templates/security.html:106
+msgid "Problem affecting a specific feature."
+msgstr "Problem, welches eine bestimmte Funktion betrifft."
+
+#: templates/security.html:107
+msgid "Recommended, at least for people using the feature."
+msgstr "empfohlen, zumindest für Personen die diese Funktion nutzen."
+
+#: templates/security.html:111
+msgid "Severe problem."
+msgstr "schwerwiegende Probleme."
+
+#: templates/security.html:112
+msgid "Highly recommended."
+msgstr "nachdrücklich empfohlen"
+
+#: templates/security.html:116
+msgid "Critical problem, risk of damage on your system."
+msgstr "kritisches Problem, die zu Schäden am System führen können."
+
+#: templates/security.html:117
+msgid "Mandatory, immediately!"
+msgstr "zwingend notwendig!"
+
 #: templates/stats.html:5
 msgid "statistics"
 msgstr "Statistiken"
@@ -4769,10 +4867,6 @@ msgstr "Abonnieren:"
 #: templates/support.html:40
 msgid "Send mail to:"
 msgstr "Sende eine Mail an:"
-
-#: templates/support.html:43
-msgid "Tracker"
-msgstr "Tracker"
 
 #: templates/support.html:46
 msgid "Report a bug:"
@@ -4921,6 +5015,17 @@ msgstr "interner Fehler."
 #: themes/models.py:147
 msgid "Invalid name: different from theme."
 msgstr "ungültiger Name: unterscheidet sich vom Theme."
+
+#, fuzzy
+#~ msgid "remote"
+#~ msgstr "entfernen"
+
+#, fuzzy
+#~ msgid "Commits"
+#~ msgstr "zusätzliche Informationen"
+
+#~ msgid "OK with all distros"
+#~ msgstr "lauffähig auf allen Distributionen"
 
 #~ msgid "More commits"
 #~ msgstr "weitere Revisionen"
