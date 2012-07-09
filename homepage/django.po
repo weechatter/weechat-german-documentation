@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-09 22:52+0200\n"
-"PO-Revision-Date: 2012-07-09 23:33+0100\n"
+"PO-Revision-Date: 2012-07-09 23:45+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: Nils G <weechatter@arcor.de>\n"
 "Language: \n"
@@ -4705,7 +4705,7 @@ msgstr "Sicherheit"
 
 #: templates/security.html:12
 msgid "This page contains a list of all known and fixed security vulnerabilities in WeeChat stable releases."
-msgstr "Auf dieser Seite sind alle bekannten und behobenen sicherheitsrelevanten Schwachstellen aufgeführt, welche in einer stabilen WeeChat Version aufgetreten sind. "
+msgstr "Auf dieser Seite sind alle bekannten und behobenen sicherheitsrelevanten Schwachstellen aufgeführt, welche in einer stabilen WeeChat Version aufgetreten sind."
 
 #: templates/security.html:14
 msgid "Note: the security vulnerabilities introduced during development of a version and fixed before stable release are not mentioned."
