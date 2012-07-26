@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-09 22:52+0200\n"
-"PO-Revision-Date: 2012-07-09 23:45+0100\n"
+"POT-Creation-Date: 2012-07-26 07:43+0200\n"
+"PO-Revision-Date: 2012-07-26 18:33+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: Nils G <weechatter@arcor.de>\n"
 "Language: \n"
@@ -4716,7 +4716,7 @@ msgid "External link"
 msgstr "externer Link"
 
 #: templates/security.html:21
-#: templates/support.html:43
+#: templates/support.html:51
 msgid "Tracker"
 msgstr "Tracker"
 
@@ -4841,42 +4841,50 @@ msgid "<strong>Warning:</strong> before asking for help, please read carefully d
 msgstr "<strong>Hinweis:</strong> Bevor eine Frage gestellt wird sollte vorher die Anleitung und die FAQ (häufig gestellte Fragen) gelesen werden."
 
 #: templates/support.html:22
-msgid "Server:"
-msgstr "Server:"
-
-#: templates/support.html:22
-msgid "channels:"
-msgstr "Channels:"
+msgid "Official channels (with developers):"
+msgstr "offizielle Channels (mit Entwicklern):"
 
 #: templates/support.html:24
-msgid "for french speakers"
-msgstr "für französischsprachige"
+msgid "english"
+msgstr "englisch"
+
+#: templates/support.html:25
+msgid "french"
+msgstr "französisch"
 
 #: templates/support.html:29
+msgid "Non-official channels:"
+msgstr "keine offiziellen Channels:"
+
+#: templates/support.html:31
+msgid "german"
+msgstr "deutsch"
+
+#: templates/support.html:37
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/support.html:36
+#: templates/support.html:44
 msgid "Mailing list"
 msgstr "Mailingliste"
 
-#: templates/support.html:39
+#: templates/support.html:47
 msgid "Subscribe:"
 msgstr "Abonnieren:"
 
-#: templates/support.html:40
+#: templates/support.html:48
 msgid "Send mail to:"
 msgstr "Sende eine Mail an:"
 
-#: templates/support.html:46
+#: templates/support.html:54
 msgid "Report a bug:"
 msgstr "Melde einen Fehler:"
 
-#: templates/support.html:47
+#: templates/support.html:55
 msgid "Feature requests:"
 msgstr "Vorschläge zu Funktionen:"
 
-#: templates/support.html:48
+#: templates/support.html:56
 msgid "Send a patch:"
 msgstr "Sende einen Patch:"
 
@@ -5015,6 +5023,15 @@ msgstr "interner Fehler."
 #: themes/models.py:147
 msgid "Invalid name: different from theme."
 msgstr "ungültiger Name: unterscheidet sich vom Theme."
+
+#~ msgid "Server:"
+#~ msgstr "Server:"
+
+#~ msgid "channels:"
+#~ msgstr "Channels:"
+
+#~ msgid "for french speakers"
+#~ msgstr "für französischsprachige"
 
 #, fuzzy
 #~ msgid "remote"
