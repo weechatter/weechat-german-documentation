@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.3.7-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2012-07-07 13:35+0200\n"
-"PO-Revision-Date: 2012-07-08 00:55+0100\n"
+"POT-Creation-Date: 2012-07-21 17:23+0200\n"
+"PO-Revision-Date: 2012-07-22 23:37+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -52,21 +52,23 @@ msgid "Usage: %s [option...] [plugin:option...]\n"
 msgstr "Aufruf: %s [Option...] [Erweiterung:Option...]\n"
 
 msgid ""
-"  -a, --no-connect  disable auto-connect to servers at startup\n"
-"  -c, --colors      display default colors in terminal\n"
-"  -d, --dir <path>  set WeeChat home directory (default: ~/.weechat)\n"
-"  -h, --help        this help\n"
-"  -k, --keys        display WeeChat default keys\n"
-"  -l, --license     display WeeChat license\n"
-"  -p, --no-plugin   don't load any plugin at startup\n"
-"  -s, --no-script   don't load any script at startup\n"
-"  -v, --version     display WeeChat version\n"
-"  plugin:option     option for plugin\n"
-"                    for example, irc plugin can connect\n"
-"                    to server with url like:\n"
-"                    irc[6][s]://[nickname[:password]@]irc.example.org[:port][/#channel1][,#channel2[...]]\n"
-"                    (look at plugins documentation for more information\n"
-"                    about possible options)\n"
+"  -a, --no-connect   disable auto-connect to servers at startup\n"
+"  -c, --colors       display default colors in terminal\n"
+"  -d, --dir <path>   set WeeChat home directory (default: ~/.weechat)\n"
+"  -h, --help         this help\n"
+"  -k, --keys         display WeeChat default keys\n"
+"  -l, --license      display WeeChat license\n"
+"  -p, --no-plugin    don't load any plugin at startup\n"
+"  -r, --run-command  run command(s) after startup\n"
+"                     (many commands can be separated by semicolons)\n"
+"  -s, --no-script    don't load any script at startup\n"
+"  -v, --version      display WeeChat version\n"
+"  plugin:option      option for plugin\n"
+"                     for example, irc plugin can connect\n"
+"                     to server with url like:\n"
+"                     irc[6][s]://[nickname[:password]@]irc.example.org[:port][/#channel1][,#channel2[...]]\n"
+"                     (look at plugins documentation for more information\n"
+"                     about possible options)\n"
 msgstr ""
 "  -a, --no-connect  deaktiviert das automatische Verbinden mit den Servern, beim Start von WeeChat\n"
 "  -c, --colors      zeigt die Standardfarben des Terminals an\n"
@@ -75,6 +77,8 @@ msgstr ""
 "  -k, --keys        zeigt die Standard-Tastaturbelegung an\n"
 "  -l, --license     zeigt die Lizenz von WeeChat an\n"
 "  -p, --no-plugin   unterbindet das Laden der Erweiterungen, beim Programmstart\n"
+"  -r, --run-command führt einen oder mehrere Befehle nach dem Start aus\n"
+"                    (mehrere Befehle werden durch ein Semikolon getrennt)\n"
 "  -s, --no-script   Skripten werden beim Programmstart nicht geladen\n"
 "  -v, --version     zeigt die Version von WeeChat an\n"
 "  plugin:option     Option für Erweiterung\n"
@@ -3090,7 +3094,7 @@ msgid "(not set)"
 msgstr "(keines definiert)"
 
 msgid "Specific dictionaries on buffers:"
-msgstr "Wörterbücher die für die einzelnen Buffer genutzt werden:"
+msgstr "Wörterbücher, die für die einzelnen Buffer eingestellt sind:"
 
 msgid "Aspell enabled"
 msgstr "Aspell wurde aktiviert"
@@ -3190,6 +3194,10 @@ msgstr "%s: Hinweis: das Wörterbuch \"%s\" ist auf dem Rechner nicht verfügbar
 #, c-format
 msgid "%s%s: not enough memory to create new speller"
 msgstr "%s%s: Nicht genug Speicher um neue Rechtschreibung zu erstellen"
+
+#, c-format
+msgid "%s%s: UTF-8 is not allowed in charset options (it is internal and default charset: default encode is UTF-8 and decode of UTF-8 is OK even if you specify another charset to decode)"
+msgstr "%s%s: UTF-8 ist in den Charset-Optionen nicht erlaubt (dies ist der interne und Standard-Charset: UTF-8 dient zur Kodierung und zur Dekodierung kann UTF-8 genutzt werden, auch wenn man einen anderen Zeichensatz zur Dekodierung eingestellt hat)"
 
 #, c-format
 msgid "%s%s: error creating charset \"%s\" => \"%s\""
@@ -4869,8 +4877,8 @@ msgstr "Zeichen die genutzt werden sollen damit bei der Generierung der Farbe f�
 msgid "smart completion for nicks (completes first with last speakers)"
 msgstr "intelligente Vervollständigung von Nicknamen (vervollständigt zuerst den letzten Nick, mit dem gesprochen wurde)"
 
-msgid "display message when (un)marking as away"
-msgstr "bei Abwesenheit und Rückkehr eine Nachricht anzeigen"
+msgid "display message when (un)marking as away (off: do not display/send anything, local: display locally, channel: send action to channels)"
+msgstr "zeigt eine Nachricht an, sobald der Abwesenheitsstatus ein- bzw. ausgeschaltet wird (off: zeigt/sendet keine Nachricht, local: eine Nachricht wird lokal angezeigt, channel: sendet eine Nachricht an die Channels)"
 
 msgid "display CTCP message even if it is blocked"
 msgstr "CTCP Nachrichten werden angezeigt, obwohl sie unterdrückt werden"
@@ -5642,8 +5650,8 @@ msgid "%s%s: sending data to server: empty buffer (please report problem to deve
 msgstr "%s%s: sende Daten an Server: leerer Buffer (bitte melden Sie das Problem den Entwicklern)"
 
 #, c-format
-msgid "%s%s: sending data to server: %d %s"
-msgstr "%s%s: sende Daten an Server: %d %s"
+msgid "%s%s: sending data to server: error %d %s"
+msgstr "%s%s: sende Daten an Server: Fehler %d %s"
 
 msgid "(message dropped)"
 msgstr "(Nachricht verworfen)"
@@ -6196,6 +6204,9 @@ msgstr "Filter"
 msgid "history of commands in buffer"
 msgstr "Verlaufspeicher von Befehlen in einem Buffer"
 
+msgid "hotlist"
+msgstr "Hotliste"
+
 msgid "structure with undo for input line"
 msgstr "Struktur der Rücknahmen für die Befehlszeile"
 
@@ -6323,6 +6334,14 @@ msgstr "Authentifizierung fehlgeschlagen"
 
 msgid "disconnected"
 msgstr "unterbrochen"
+
+#, c-format
+msgid "%s%s: reading data on socket for client %d: error %d %s"
+msgstr "%s%s: lese Daten von Socket für Client %d: Fehler %d %s"
+
+#, c-format
+msgid "%s%s: sending data to client %d: error %d %s"
+msgstr "%s%s: sende Daten an Client %d: Fehler %d %s"
 
 #, c-format
 msgid "%s: new client from %s%s%s on port %d (id: %d, relaying: %s%s%s)"
@@ -6528,14 +6547,6 @@ msgstr "%s%s: Nicht genug Speicher um an einem neuen Port zu lauschen"
 #, c-format
 msgid "%s%s: not enough memory for parsing message"
 msgstr "%s%s: Nicht genug Speicher vorhanden um Nachricht zu parsen"
-
-#, c-format
-msgid "%s%s: error sending data to client: %s"
-msgstr "%s%s: Fehler beim Senden von Daten an den Client: %s"
-
-#, c-format
-msgid "%s%s: error sending data to client %d (%s)"
-msgstr "%s%s: Fehler beim Senden von Daten an den Client %d (%s)"
 
 #, c-format
 msgid "%s%s: failed to execute command \"%s\" for client %d"
@@ -7246,6 +7257,15 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "display message when (un)marking as away"
+#~ msgstr "bei Abwesenheit und Rückkehr eine Nachricht anzeigen"
+
+#~ msgid "%s%s: error sending data to client: %s"
+#~ msgstr "%s%s: Fehler beim Senden von Daten an den Client: %s"
+
+#~ msgid "%s%s: error sending data to client %d (%s)"
+#~ msgstr "%s%s: Fehler beim Senden von Daten an den Client %d (%s)"
 
 #~ msgid "display channel modes in \"buffer_name\" bar item"
 #~ msgstr "zeigt die Channel-Modi mittels \"buffer_name\" in der Bar-Item an"
