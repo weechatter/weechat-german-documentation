@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-26 07:43+0200\n"
-"PO-Revision-Date: 2012-07-26 18:33+0100\n"
+"POT-Creation-Date: 2012-07-30 19:23+0200\n"
+"PO-Revision-Date: 2012-08-03 11:58+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: Nils G <weechatter@arcor.de>\n"
 "Language: \n"
@@ -2211,7 +2211,7 @@ msgstr "sende \"whois\" an Nick wenn ein IRC Query empfangen wird."
 #. Translators: description for script "weeget.py" (0.3.0+)
 #: plugins/_plugins_i18n.py:297
 msgid "Scripts manager."
-msgstr "Skript-Manager. Zum einfachen (de-)installieren von Skripten auf der WeeChat-Homepage."
+msgstr "Skripten-Manager. Zum einfachen (de-)installieren und aktualisieren von Skripten von der WeeChat-Homepage."
 
 #. Translators: description for script "quodnp.py" (0.3.0+)
 #: plugins/_plugins_i18n.py:300
@@ -3138,6 +3138,11 @@ msgstr "inoffizieller Datentransfer (Off-The-Record) via IRC."
 #: plugins/_plugins_i18n.py:885
 msgid "Send notifications to remote client using ssh and libnotify."
 msgstr "schickt Highlights zu einem Remote-Client mittels ssh und libnotify."
+
+#. Translators: description for script "itunes.rb" (0.3.0+)
+#: plugins/_plugins_i18n.py:888
+msgid "iTunes control and now playing script."
+msgstr "Fernbedienung für iTunes und zum anzeigen welches Musikstück gerade gespielt wird."
 
 #: plugins/models.py:89
 msgid "Popular script"
