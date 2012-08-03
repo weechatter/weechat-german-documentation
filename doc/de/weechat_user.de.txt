@@ -207,7 +207,15 @@ Wird ein Binärpaket genutzt dann muss zusätzlich das Paket 'weechat-dbg' insta
 Core Dateien
 ^^^^^^^^^^^^
 
-Um 'core' Dateien zu aktivieren muss der `ulimit` Befehl genutzt werden.
+Um 'core' Dateien zu aktivieren kann folgende Option genutzt werden:
+<<option_weechat.startup.sys_rlimit,weechat.startup.sys_rlimit>>:
+
+----------------------------------------
+/set weechat.startup.sys_rlimit "core:-1"
+----------------------------------------
+
+Wird eine WeeChat Version ≤ 0.3.8 verwendet oder man möchte die 'core' Dateien
+aktivieren, bevor WeeChat gestaret wird, wird der Befehl `ulimit` benötigt.
 
 Zum Beispiel muss unter Linux in einer 'bash' Shell folgender Befehl in die `~/.bashrc`
 Datei eingetragen werden:
@@ -305,7 +313,7 @@ WeeChat starten
 Befehlszeile:
 
 -a, --no-connect::
-    deaktiviert das automatische Verbinden mit den Servern beim Start von WeeChat
+    deaktiviert das automatische Verbinden mit den Servern beim Start von WeeChat.
 
 -c, --colors::
     Zeigt die Standardfarben im Terminal an.
@@ -316,25 +324,29 @@ Befehlszeile:
     Sollte das Verzeichnis nicht existieren wird es beim Start angelegt.
 
 -h, --help::
-    zeigt einen Hilfstext an
+    zeigt einen Hilfstext an.
 
 -k, --keys::
-    zeigt die Standard-Tastaturbelegung an
+    zeigt die Standard-Tastaturbelegung an.
 
 -l, --license::
-    zeigt die Lizenz von WeeChat an
+    zeigt die Lizenz von WeeChat an.
 
 -p, --no-plugin::
-    unterbindet das Laden der Erweiterungen beim Programmstart
+    unterbindet das Laden der Erweiterungen beim Programmstart.
+
+-r, --run-command::
+    startet einen oder mehrere Befehle, nachdem WeeChat gestartet wurde
+    (mehrere Befehle müssen durch Kommata voneinander getrennt werden).
 
 -s, --no-script::
-    Skripten werden beim Programmstart nicht geladen
+    Skripten werden beim Programmstart nicht geladen.
 
 -v, --version::
-    zeigt die Version von WeeChat an
+    zeigt die Version von WeeChat an.
 
 plugin:option::
-    Option für Erweiterung (siehe Dokumentation für weitere Einzelheiten)
+    Option für Erweiterung (siehe Dokumentation für weitere Einzelheiten).
 
 Um WeeChat zu starten muss folgender Befehl ausgeführt werden:
 
@@ -405,7 +417,8 @@ Die 'status'-Bar besitzt als Standardeinträge:
 | buffer_count          | [6]                   | Anzahl der geöffneten Buffer
 | buffer_plugin         | [irc/freenode]        | Erweiterung des aktuellen Buffers (IRC Erweiterung setzt den IRC Servername für den Buffer)
 | buffer_number         | 3                     | aktuelle Nummer des Buffers
-| buffer_name           | #test(+n)             | Name des aktuellen Buffers (mit Channel-Modi für IRC-Channels)
+| buffer_name           | #test                 | Name des aktuellen Buffers
+| buffer_modes          | +n                    | IRC Channel-Modi
 | buffer_nicklist_count | {4}                   | Anzahl der Nicks in Nickliste
 | buffer_filter         | *                     | Filteranzeige: `*` bedeutet das Zeilen gefiltert (unterdrückt) wurden. Ein leerer Eintrag zeigt an dass alle Zeilen dargestellt werden
 | lag                   | [Lag: 2.5]            | Verzögerungsanzeige, in Sekunden (keine Anzeige falls Verzögerung gering)
@@ -418,43 +431,43 @@ In der 'input' Bar lautet die Standardeinstellung:
 
 [width="100%",cols="^3,^6l,8",options="header"]
 |========================================
-| Item             | Beispiel                                    | Beschreibung
-| input_paste      | [Paste 7 lines ? [ctrl-Y] Ja [ctrl-N] Nein] | Nachfrage ob sieben Zeilen eingefügt werden sollen
-| input_prompt     | [@Flashy]                                   | input prompt (Nickname für den IRC)
-| away             | (away)                                      | Abwesenheitsanzeige
-| input_search     | [Text search]                               | Textsuche
-| input_text       | hi peter!                                   | Text der eingegeben wird
+| Item         | Beispiel                                    | Beschreibung
+| input_paste  | [Paste 7 lines ? [ctrl-Y] Ja [ctrl-N] Nein] | Nachfrage ob sieben Zeilen eingefügt werden sollen
+| input_prompt | [@Flashy]                                   | input prompt (Nickname für den IRC)
+| away         | (away)                                      | Abwesenheitsanzeige
+| input_search | [Text search]                               | Textsuche
+| input_text   | hi peter!                                   | Text der eingegeben wird
 |========================================
 
 [[buffers_and_windows]]
 Buffer und Fenster
 ~~~~~~~~~~~~~~~~~~
 
-Ein 'Buffer' besitzt einen Namen und es wird ihm eine 'Buffer'-Nummer zugeordnet.
-In einem 'Buffer' werden Textzeilen angezeigt (und noch anderen Daten).
+Ein 'Buffer' besteht aus einer Nummer, besitzt einem Namen, hat Zeilen die angezeigt
+werden (und noch anderen Daten).
 
-Beispiele für Buffer:
+Beispiele von Buffern:
 
-* Core Buffer (wird von WeeChat beim Programmstart erstellt und kann nicht geschlossen werden)
-* IRC Server  (hier werden Informationen vom Server ausgeben)
+* Core Buffer (wird durch WeeChat beim Starten erstellt und kann nicht geschlossen werden!)
+* IRC Server  (hier werden die Nachrichten ausgegeben, die der Server verschickt)
 * IRC Channel
-* IRC Private (oder Query)
+* IRC Privat  (wird auch Query-Buffer genannt)
 
-Ein 'Fenster' ist ein Bildschirmbereich der Buffer darstellt. Dabei ist es möglich
+Ein 'Fenster' ist ein Bildschirmbereich der Buffer darstellt. Es ist möglich
 den Bildschirm in mehrere Fenster aufzuteilen.
 
-Jedes Fenster zeigt einen Buffer an. Ein Buffer kann unsichtbar sein (er wird in einem
-Fenster nicht angezeigt) oder ein Buffer wird durch ein oder mehrere Fenster
+Jedes Fenster stellt einen Buffer dar. Ein Buffer kann unsichtbar sein (er wird
+in einem Fenster nicht angezeigt). Oder ein Buffer wird durch ein oder mehrere Fenster
 angezeigt.
 
-Beispiel wie ein Fenster horizontal aufgeteilt wird (`/window splith`):
+Beispiele für eine horizontal Fensteraufteilung (`/window splith`):
 
 ........................................
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│Willkommen in #abc, Channel über die Lösung: 42!                                         │
+│Welcome to #abc, channel about nothing!                                                  │
 │12:55:12     Max | hi                                                            │@Flashy│
 │12:55:20 @Flashy | hi Max!                                                       │Max    │
-│12:55:32     Max | Wie gehts?                                                    │       │
+│12:55:32     Max | how are you?                                                  │       │
 │                                                                                 │       │
 │                                                                                 │       │ ◀ Fenster #2
 │                                                                                 │       │   (Buffer #4)
@@ -463,9 +476,9 @@ Beispiel wie ein Fenster horizontal aufgeteilt wird (`/window splith`):
 │[12:55] [6] [irc/freenode] 4:#abc(+n){2}                                                 │
 │[@Flashy]                                                                                │
 │─────────────────────────────────────────────────────────────────────────────────────────│
-│Willkommen in #test, dies ist ein Test-Channel                                           │
+│Welcome to #test, this is a test channel                                                 │
 │12:54:15 peter | hey!                                                            │@Flashy│
-│12:55:01  @joe | hallo                                                           │@joe   │
+│12:55:01  @joe | hello                                                           │@joe   │
 │                                                                                 │+weebot│
 │                                                                                 │peter  │
 │                                                                                 │       │ ◀ Fenster #1
@@ -477,14 +490,14 @@ Beispiel wie ein Fenster horizontal aufgeteilt wird (`/window splith`):
 └─────────────────────────────────────────────────────────────────────────────────────────┘
 ........................................
 
-Beispiel für eine vertikale Aufteilung (`/window splitv`):
+Beispiele für eine vertikale Fensteraufteilung (`/window splitv`):
 
 ........................................
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│Willkommen in #test, dies ist ein Test-C    │Willkommen in #abc, Channel über die Lö     │
+│Welcome to #test, this is a test channel    │Welcome to #abc, channel about nothing!     │
 │12:54:15 peter | hey!               │@Flashy│12:55:12     Max | hi               │@Flashy│
-│12:55:01  @joe | hallo              │@joe   │12:55:20 @Flashy | hi Max!          │Max    │
-│                                    │+weebot│12:55:32     Max | Wie gehts?       │       │
+│12:55:01  @joe | hello              │@joe   │12:55:20 @Flashy | hi Max!          │Max    │
+│                                    │+weebot│12:55:32     Max | how are you?     │       │
 │                                    │peter  │                                    │       │
 │                                    │       │                                    │       │
 │                                    │       │                                    │       │
@@ -509,13 +522,13 @@ Beispiel für eine vertikale Aufteilung (`/window splitv`):
                   (Buffer #3)                                   (Buffer #4)
 ........................................
 
-Beispiel für eine vertikale und vertikale Aufteilung von Fenstern:
+Beispiele für eine vertikale und horizontale Fensteraufteilung:
 
 ........................................
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│Willkommen in #test, dies ist ein Test-C    │Willkommen in #def, noch ein Channel        │
+│Welcome to #test, this is a test channel    │Welcome to #def, another channel            │
 │12:54:15 peter | hey!               │@Flashy│12:55:42 @Flashy | hello world      │@Flashy│
-│12:55:01  @joe | hallo              │@joe   │12:55:56    alex | hi Flashy        │alex   │
+│12:55:01  @joe | hello              │@joe   │12:55:56    alex | hi Flashy        │alex   │
 │                                    │+weebot│                                    │       │
 │                                    │peter  │                                    │       │ ◀ Fenster #3
 │                                    │       │                                    │       │   (Buffer #5)
@@ -525,10 +538,10 @@ Beispiel für eine vertikale und vertikale Aufteilung von Fenstern:
 │                                    │       │[12:55] [6] [irc/freenode] 5:#def(+n){2}    │
 │                                    │       │[@Flashy]                                   │
 │                                    │       │────────────────────────────────────────────│
-│                                    │       │Willkommen in #abc, Channel über die Lö     │
+│                                    │       │Welcome to #abc, channel about nothing!     │
 │                                    │       │12:55:12     Max | hi               │@Flashy│
 │                                    │       │12:55:20 @Flashy | hi Max!          │Max    │
-│                                    │       │12:55:32     Max | Wie gehts?       │       │
+│                                    │       │12:55:32     Max | how are you?     │       │
 │                                    │       │                                    │       │
 │                                    │       │                                    │       │ ◀ Fenster #2
 │                                    │       │                                    │       │   (Buffer #4)
@@ -544,48 +557,49 @@ Beispiel für eine vertikale und vertikale Aufteilung von Fenstern:
 [[notify_levels]]
 Benachrichtigungsstufen
 ~~~~~~~~~~~~~~~~~~~~~~~
-Es gibt für Nachrichten vier Benachrichtigungsstufen in denen Nachrichten im
-Buffer dargestellt werden. Nachfolgend die einzelnen Stufen, von niedrig zu hoch:
 
-* 'low': Nachrichten von geringer Bedeutung (zum Beispiel: join/part/quit Mitteilungen)
-* 'message': Nachricht von einem User in einem öffentlichen Channel
-* 'private': Nachricht in einem privaten Buffer
-* 'highlight': Nachricht von besonderer Wichtigkeit (highlight-Nachricht)
+Es gibt vier Benachrichtigungsstufen für Nachrichten, welche in Buffern dargestellt
+werden. Nachfolgend eine Liste, sortiert von niedrig nach hoch:
 
-Jeder Buffer besitzt eine Benachrichtigungsstufe die angibt, bei welcher Nachricht
-der Buffer in der Hotlist angezeigt werden soll.
+*       'low': Nachricht mit einer geringen Wertigkeit (zum Beispiel: IRC join/part/quit)
+*   'message': Nachricht von einem User
+*   'private': Nachricht in einem privaten Buffer
+* 'highlight': wenn es sich um eine 'highlight' Nachricht handelt
 
-Um einen anderen Standardwert, als den voreingestellten Standardwert, für die
-Benachrichtigungsstufe einzustellen kann folgende Option genutzt werden.
-Der voreingestellte Standardwert ist 'all':
+Jeder Buffer besitzt eine Benachrichtigungsstufe, um festzulegen, bei welchen Nachrichten
+der entsprechende Buffer in der Hotlist angezeigt werden soll.
+
+Der Wert für die Benachrichtigungsstufe kann mittels folgender Option festgelegt
+werden:
+The default notify level can be set using option
 <<option_weechat.look.buffer_notify_default,weechat.look.buffer_notify_default>>,
+Der Standardwert ist 'all'.
 
 [width="50%",cols="3m,10",options="header"]
 |========================================
-| Benachrichtigungsstufe | Stufe der Nachricht um in die Hotliste aufgenommen zu werden
+| Benachrichtigungsstufe | Welche Nachrichten Berücksichtigung in der Hotlist finden
 | none                   | (keine)
-| highlight              | 'Highlight' + 'private Nachricht'
-| message                | 'Highlight' + 'private Nachricht' + 'öffentliche Nachricht'
-| all                    | 'Highlight' + 'private Nachricht' + 'öffentliche Nachricht' + 'Nachricht von geringer Bedeutung'
+| highlight              | 'highlight' + 'private Nachrichten'
+| message                | 'highlight' + 'private Nachrichten' + 'normale Nachrichten'
+| all                    | 'highlight' + 'private Nachrichten' + 'normal Nachrichten' + 'Nachrichten mit einer niedrigen Priorität'
 |========================================
 
-Die Benachrichtigungsstufe kann direkt für mehrere Buffer gleichzeitig gesetzt
-werden. Zum Beispiel: alle Buffer die mit dem IRC Server "freenode" verbunden
-sind:
+Benachrichtigungsstufen können für mehrere Buffer definiert werden, zum Beispiel
+für alle Buffer des IRC Servers "freenode":
 
 ----------------------------------------
 /set weechat.notify.irc.freenode message
 ----------------------------------------
 
-Die Benachrichtigungsstufe 'highlight' wird für den Channel "#weechat"
-auf dem IRC Server "freenode" gesetzt:
+Setzt die Benachrichtigungsstufe, ausschließlich für den Channel "#weechat",
+auf die Stufe 'highlight':
 
 ----------------------------------------
 /set weechat.notify.irc.freenode.#weechat highlight
 ----------------------------------------
 
-Die Benachrichtigungsstufe für einen Buffer kann mit dem Befehl `/buffer`
-aktiviert werden:
+Die Benachrichtigungsstufe für einen Buffer kann mittels dem `/buffer`
+Befehl festgelegt werden:
 
 ----------------------------------------
 /buffer notify highlight
@@ -646,6 +660,7 @@ Tastenbefehle für die Befehlszeile
 | @k(A-)@k(d)         | löscht das Wort rechts vom Cursor (Zeichenkette wird in Zwischenablage kopiert) | /input delete_next_word
 | @k(A-)@k(k)         | zeigt den Tastencode, einschließlich des eingebundenen Befehls, einer Tastenkombination an und fügt diesen in die Befehlszeile ein | /input grab_key_command
 | @k(A-)@k(r)         | komplette Eingabezeile löschen| /input delete_line
+| @k(A-)@k(s)         | schaltet die Aspell Funktion an/aus | /mute aspell toggle
 |========================================
 
 [[key_bindings_buffers_windows]]
@@ -815,9 +830,9 @@ einen Tastenkurzbefehl zu legen. Zum Beispiel soll über den Tastenkurzbefehl
 /key bind meta-x /mouse toggle 10
 ----------------------------------------
 
-Ist die Mausunterstützung aktiviert kann man mittels gedrückter "Shift"-Taste (Umschalttaste)
-einen Text im Terminal markieren oder einfügen, als sei die Mausunterstützung deaktiviert (bei
-einigen Terminals muss die "Alt"-Taste anstelle der "Shift"-Taste gedrückt werden.
+Ist die Mausunterstützung aktiviert kann man mittels gedrückter @k(-S-)-Taste (Umschalttaste)
+Text im Terminal markieren oder einfügen, als ob die Mausunterstützung deaktiviert sei (bei
+einigen Terminals muss die @k(-A-)-Taste anstelle der @k(-S-)-Taste gedrückt werden).
 
 [NOTE]
 Sollten Probleme bei der Mausunterstützung auftreten, dann sollte Bitte die 'WeeChat FAQ' gelesen werden.
@@ -958,23 +973,23 @@ Farbtabelle für @k(C-)@k(c) , @k(c):
 
 [width="50%",cols="^1m,3,3",options="header"]
 |========================================
-| Code | IRC           | WeeChat (curses)
-| 00   | weiß          | white
-| 01   | schwarz       | black
-| 02   | dunkelblau    | blue
-| 03   | dunkelgrün    | green
-| 04   | hellrot       | lightred
-| 05   | dunkelrot     | red
-| 06   | magenta       | magenta
-| 07   | orange        | brown
-| 08   | gelb          | yellow
-| 09   | hellgrün      | lightgreen
-| 10   | türkis        | cyan
-| 11   | hell türkis   | lightcyan
-| 12   | hellblau      | lightblue
-| 13   | hell magenta  | lightmagenta
-| 14   | grau          | gray
-| 15   | hellgrau      | white
+| Code | IRC          | WeeChat (curses)
+| 00   | weiß         | white
+| 01   | schwarz      | black
+| 02   | dunkelblau   | blue
+| 03   | dunkelgrün   | green
+| 04   | hellrot      | lightred
+| 05   | dunkelrot    | red
+| 06   | magenta      | magenta
+| 07   | orange       | brown
+| 08   | gelb         | yellow
+| 09   | hellgrün     | lightgreen
+| 10   | türkis       | cyan
+| 11   | hell türkis  | lightcyan
+| 12   | hellblau     | lightblue
+| 13   | hell magenta | lightmagenta
+| 14   | grau         | gray
+| 15   | hellgrau     | white
 |========================================
 
 Beispiel: Im Buffer wird "Hallo an alle!" ausgegeben. Dabei wird "Hallo" in fett und hellblau
@@ -1512,7 +1527,7 @@ erstes Beispiel: Verbindung zu oftc und Überprüfung der Zertifikate
 * Importieren Sie die Zertifikate in einer Shell:
 
 ----------------------------------------
-$ mkdir ~/.weechat/ssl
+$ mkdir -p ~/.weechat/ssl
 $ wget -O ~/.weechat/ssl/CAs.pem http://www.spi-inc.org/ca/spi-cacert.crt
 ----------------------------------------
 
@@ -1532,8 +1547,9 @@ zweites Beispiel: Verbindung zu oftc mittels CertFP
 * Erstellen Sie ein Zertifikat in der Shell:
 
 ----------------------------------------
-$ openssl req -nodes -newkey rsa:2048 -keyout nick.key -x509 -days 365 -out nick.cer
-$ cat nick.cer nick.key > ~/.weechat/ssl/nick.pem
+$ mkdir -p ~/.weechat/ssl
+$ cd ~/.weechat/ssl
+$ openssl req -nodes -newkey rsa:2048 -keyout nick.pem -x509 -days 365 -out nick.pem
 ----------------------------------------
 
 * In WeeChat startet man nun eine Verbindung zum "oftc" Server (der vorher angelegt
@@ -1712,29 +1728,29 @@ mit dem entsprechenden Wert ersetzt:
 
 [width="100%",cols="^2l,4,8l",options="header"]
 |========================================
-| Platzhalter  | Beschreibung                | Wert/Beispiel
-| $clientinfo  | Liste der CTCP Antworten    | ACTION DCC CLIENTINFO FINGER PING SOURCE TIME USERINFO VERSION
-| $version     | WeeChat Version             | 0.3.0
-| $compilation | Datum der Kompilierung      | Sep 13 2009
-| $osinfo      | Info über das genutzte OS   | Linux 2.6.31 / i686
-| $site        | WeeChat Seite               | http://www.weechat.org
-| $download    | WeeChat, download Seite     | http://www.weechat.org/download
-| $time        | aktuelle Uhrzeit/Datum      | Sun Sep 13 15:48:31 2009
-| $username    | Username beim IRC Server    | Nick
-| $realname    | Realname beim IRC Server    | mein Name
+| Platzhalter  | Beschreibung              | Wert/Beispiel
+| $clientinfo  | Liste der CTCP Antworten  | ACTION DCC CLIENTINFO FINGER PING SOURCE TIME USERINFO VERSION
+| $version     | WeeChat Version           | 0.3.0
+| $compilation | Datum der Kompilierung    | Sep 13 2009
+| $osinfo      | Info über das genutzte OS | Linux 2.6.31 / i686
+| $site        | WeeChat Seite             | http://www.weechat.org
+| $download    | WeeChat, download Seite   | http://www.weechat.org/download
+| $time        | aktuelle Uhrzeit/Datum    | Sun, 13 Sep 2009 15:48:31 +0200
+| $username    | Username beim IRC Server  | Nick
+| $realname    | Realname beim IRC Server  | mein Name
 |========================================
 
 Falls CTCP Optionen nicht festgelegt sind, lauten die CTCP Antworten:
 
 [width="100%",cols="^2,4l,8l",options="header"]
 |========================================
-| CTCP         | Antwortformat                   | Beispiel
-| CLIENTINFO   | $clientinfo                     | ACTION DCC CLIENTINFO FINGER PING SOURCE TIME USERINFO VERSION
-| FINGER       | WeeChat $version                | WeeChat 0.3.0
-| SOURCE       | $download                       | http://www.weechat.org/download
-| TIME         | $time                           | Sun Sep 13 15:48:31 2009
-| USERINFO     | $username ($realname)           | Nick (mein Name)
-| VERSION      | WeeChat $version ($compilation) | WeeChat 0.3.0 (Sep 13 2009)
+| CTCP       | Antwortformat                   | Beispiel
+| CLIENTINFO | $clientinfo                     | ACTION DCC CLIENTINFO FINGER PING SOURCE TIME USERINFO VERSION
+| FINGER     | WeeChat $version                | WeeChat 0.3.0
+| SOURCE     | $download                       | http://www.weechat.org/download
+| TIME       | $time                           | Sun Sep 13 15:48:31 2009
+| USERINFO   | $username ($realname)           | Nick (mein Name)
+| VERSION    | WeeChat $version ($compilation) | WeeChat 0.3.0 (Sep 13 2009)
 |========================================
 
 [[irc_target_buffer]]
@@ -2077,6 +2093,40 @@ Zum Beispiel:
 Nun kann man über den Port 9000 mittels einer Oberfläche (wie QWeeChat)
 und dem Passwort "meinPasswort" eine Verbindung zu WeeChat herstellen.
 
+[[relay_ssl]]
+Relay-Verbindung mittels SSL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Man kann SSL mittels eines selbst erstellten Zertifikates und eines privaten
+Schlüssels nutzen. Um SSL für die Verbindung zu aktivieren stellt man dem
+Protokollnamen ein "ssl" voran. 
+
+Die Standarddatei für Zertifikate/Schlüssel ist '~/.weechat/ssl/relay.pem'
+(option <<option_relay.network.ssl_cert_key,relay.network.ssl_cert_key>>).
+
+Ein Zertifikat und einen privaten Schlüssel kann man mit folgenden Befehlen
+erstellen:
+
+----------------------------------------
+$ mkdir -p ~/.weechat/ssl
+$ cd ~/.weechat/ssl
+$ openssl req -nodes -newkey rsa:2048 -keyout relay.pem -x509 -days 365 -out relay.pem
+----------------------------------------
+
+Sollte WeeChat schon gestartet worden sein, kann man das Zertifikat und der private
+Schlüssel mittels folgendem Befehl nachträglich geladen werden:
+
+----------------------------------------
+/relay sslcertkey
+----------------------------------------
+
+um dann die Relay-Verbindung, mit SSL Verschlüsselung, anzulegen:
+
+----------------------------------------
+/relay add ssl.irc.freenode 8001
+/relay add ssl.weechat 9001
+----------------------------------------
+
 [[rmodifier_plugin]]
 Rmodifier Erweiterung
 ~~~~~~~~~~~~~~~~~~~~~
@@ -2238,7 +2288,8 @@ Paket Ersteller::
 Patches::
     Dmitry Kobylin, Rudolf Polzer, Jim Ramsay, Pistos, Gwenn, Dominik Honnef,
     JD Horelick, Stefano Pigozzi, Gu1ll4um3r0m41n, Kyle Fuller,
-    Quentin Glidic (SardemFF7), Simon Kuhnle, Mateusz Poszwa
+    Quentin Glidic (SardemFF7), Simon Kuhnle, Mateusz Poszwa, Peter Boström,
+    Arvydas Sidorenko
 
 
 [[support]]
