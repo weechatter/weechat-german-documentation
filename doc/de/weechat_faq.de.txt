@@ -4,7 +4,8 @@ Sébastien Helleu <flashcode@flashtux.org>
 
 
 [NOTE]
-Diese Dokumentation beschreibt ausschließlich WeeChat Versionen ≥ 0.3.0.
+Diese Dokumentation bezieht sich auf die WeeChat Version ≥ 0.3.0. Es sollte aber
+vorzugsweise immer die aktuell veröffentlichte Version von WeeChat genutzt werden.
 
 
 [[general]]
@@ -776,11 +777,11 @@ Damit WeeChat weniger Speicher benötigt, solltest Du folgende Tipps umsetzen:
   weniger Speicherlecks besitzt, als eine vorherige Version)
 * lade keine Erweiterungen die Du nicht benötigst. Zum Beispiel: ASpell, Fifo,
   Logger, Perl, Python, Ruby, Lua, Tcl, Xfer (wird für DCC benötigst)
-* lade nur Skripten die Du auch benutzt
-* nutze einen kleineren Wert für die Option 'weechat.history.max_lines' (Anzahl
-  der Zeilen die für jeden Buffer im Speicher gehalten werden soll)
-* nutze einen kleineren Wert für die Option 'weechat.history.max_commands' (Anzahl
-  des Verlaufsspeichers, für Befehle, die im Speicher gehalten werden sollen)
+* installiere ausschließlich Skripten die Du auch nutzt
+* der Wert der Option 'weechat.history.max_buffer_lines_number' sollte möglichst
+  niedrig eingestellt werden oder die Option 'weechat.history.max_buffer_lines_minutes'
+  verwendet werden.  
+* nutze einen kleineren Wert für die Option 'weechat.history.max_commands'
 
 
 [[development]]
