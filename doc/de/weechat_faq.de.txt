@@ -228,6 +228,29 @@ um die Ausrichtung für Nicks zu entfernen:
 ----------------------------------------
 
 
+[[input_bar_size]]
+Wie kann man eine mehrzeilige Eingabezeile einstellen?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Mit der Option 'size' kann man angeben aus wie vielen Zeilen die Eingabezeile
+bestehen soll (der Standardwert für die Eingabezeile ist 1), oder man nutzt den
+Wert 0 um die Anzahl der Zeilen, für die Eingabezeile, dynamisch zu verwalten.
+Nutzt man zusätzlich die Option 'size_max' kann man angeben wie viele Zeilen,
+für die Eingabezeile, maximal genutzt werden dürfen (0 = keine Begrenzung)
+
+Beispiele um eine dynamische Größe zu nutzen:
+
+----------------------------------------
+/set weechat.bar.input.size 0
+----------------------------------------
+
+maximal zwei Zeilen:
+
+----------------------------------------
+/set weechat.bar.input.size_max 2
+----------------------------------------
+
+
 [[one_input_root_bar]]
 Ist es möglich nur eine Eingabezeile für alle Fenster zu nutzen (auch falls diese geteilt sind)?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -780,7 +803,7 @@ Damit WeeChat weniger Speicher benötigt, solltest Du folgende Tipps umsetzen:
 * installiere ausschließlich Skripten die Du auch nutzt
 * der Wert der Option 'weechat.history.max_buffer_lines_number' sollte möglichst
   niedrig eingestellt werden oder die Option 'weechat.history.max_buffer_lines_minutes'
-  verwendet werden.  
+  verwendet werden.
 * nutze einen kleineren Wert für die Option 'weechat.history.max_commands'
 
 
