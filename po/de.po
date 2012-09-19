@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.3.7-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2012-09-04 13:19+0200\n"
-"PO-Revision-Date: 2012-09-18 21:26+0100\n"
+"POT-Creation-Date: 2012-09-19 14:48+0200\n"
+"PO-Revision-Date: 2012-09-19 20:55+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -3234,18 +3234,18 @@ msgid "Charset conversions"
 msgstr "Zeichensatzkonvertierung"
 
 #, c-format
-msgid "%s%s: UTF-8 is not allowed in charset options (it is internal and default charset: default encode is UTF-8 and decode of UTF-8 is OK even if you specify another charset to decode)"
-msgstr "%s%s: UTF-8 ist in den Charset-Optionen nicht erlaubt (dies ist der interne und Standard-Charset: UTF-8 dient zur Kodierung und zur Dekodierung kann UTF-8 genutzt werden, auch wenn man einen anderen Zeichensatz zur Dekodierung eingestellt hat)"
+msgid "%s%s: UTF-8 is not allowed in charset decoding options (it is internal and default charset: decode of UTF-8 is OK even if you specify another charset to decode)"
+msgstr "%s%s: UTF-8 ist in den Charset-Optionen, welche zur Dekodierung dienen, nicht erlaubt (UTF-8 wird zur internen Kodierung verwendet und stellt die Standardzeichenkodierung dar: UTF-8 kann zur Dekodierung verwendet werden, auch wenn man einen anderen Zeichensatz zur Dekodierung eingestellt hat)"
 
 #, c-format
 msgid "%s%s: error creating charset \"%s\" => \"%s\""
 msgstr "%s%s: Fehler bei der Erstellung des Zeichensatzes \"%s\" => \"%s\""
 
-msgid "global decoding charset"
-msgstr "globaler Zeichensatz zum dekodieren"
+msgid "global decoding charset: charset used to decode incoming messages (if decoding fails, fallback is UTF-8 because it is the WeeChat internal charset)"
+msgstr "globale Zeichendekodierung: Zeichendekodierung die für eingehende Nachrichten genutzt werden soll (sollte keine Zeichendekodierung angegeben werden, wird UTF-8 verwendet, da WeeChat UTF-8 zur internen Dekodierung nutzt)"
 
-msgid "global encoding charset"
-msgstr "globaler Zeichensatz zum kodieren"
+msgid "global encoding charset: charset used to encode outgoing messages (if empty, default is UTF-8 because it is the WeeChat internal charset)"
+msgstr "globale Zeichenkodierung: Zeichenkodierung die für ausgehende Nachrichten genutzt werden soll (sollte keine Zeichenkodierung angegeben werden, wird UTF-8 verwendet, da WeeChat UTF-8 zur internen Kodierung nutzt)"
 
 #, c-format
 msgid "%s: %s, \"%s\": removed"
@@ -7823,6 +7823,12 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "global decoding charset"
+#~ msgstr "globaler Zeichensatz zum dekodieren"
+
+#~ msgid "global encoding charset"
+#~ msgstr "globaler Zeichensatz zum kodieren"
 
 #~ msgid "alt+d=back to list"
 #~ msgstr "alt+d=zurück zur Auswahl"
