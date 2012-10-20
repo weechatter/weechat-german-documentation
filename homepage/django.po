@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-29 14:43+0200\n"
-"PO-Revision-Date: 2012-09-29 14:47+0100\n"
+"POT-Creation-Date: 2012-10-06 19:34+0200\n"
+"PO-Revision-Date: 2012-10-20 10:50+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: Nils G <weechatter@arcor.de>\n"
 "Language: \n"
@@ -2242,7 +2242,7 @@ msgstr "interaktiver WeeChat- und Erweiterungen-Editor."
 #. Translators: description for script "launcher.pl" (0.3.0+)
 #: plugins/_plugins_i18n.py:264
 msgid "Launch external commands for signals."
-msgstr "tartet externe Programme für Signale."
+msgstr "startet ein externes Programm für ein vorgegebenes Signal ."
 
 #. Translators: description for script "mastermind.pl" (0.3.0+)
 #: plugins/_plugins_i18n.py:267
@@ -4145,8 +4145,8 @@ msgid "extensible with C plugins or scripts (Perl, Python, Ruby, Lua, Tcl and Sc
 msgstr "in der Funktionalität erweiterbar, mittels Erweiterungen in C und durch Skripten (Perl, Python, Ruby, Lua , Tcl und Scheme)"
 
 #: templates/features.html:70
-msgid "easy installation of scripts with weeget.py"
-msgstr "einfache Installation von Skripten mittels weeget.py (ähnlich apt)"
+msgid "scripts manager (easy installation of scripts)"
+msgstr "Skripten-Manager (einfache Installation/Verwaltung von Skripten)"
 
 #: templates/features.html:71
 msgid "upgrade of WeeChat binary with save of full state (buffers, ...), without disconnection (except for SSL servers)"
@@ -4811,7 +4811,7 @@ msgstr "Auf dieser Seite sind alle bekannten und behobenen sicherheitsrelevanten
 
 #: templates/security.html:14
 msgid "Note: the security vulnerabilities introduced during development of a version and fixed before stable release are not mentioned."
-msgstr "HInweis: sicherheitsrelevante Schwachstellen welche während der Entwicklung einer Version aufgetreten und behoben wurden, bevor diese in eine stabile Version eingeflossen sind, werden hier nicht aufgeführt."
+msgstr "Hinweis: sicherheitsrelevante Schwachstellen, welche während der Entwicklung einer Version aufgetreten und behoben wurden, bevor diese in eine stabile Version eingeflossen sind, werden hier nicht aufgeführt."
 
 #: templates/security.html:20
 msgid "External link"
