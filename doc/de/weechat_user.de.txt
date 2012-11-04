@@ -47,7 +47,6 @@ Um WeeChat zu installieren wird folgendes benötigt:
 * 'root' Privilegien (um WeeChat im Systemverzeichnis zu installieren)
 * ncurses Bibliothek
 
-
 [[install]]
 Installation
 ------------
@@ -302,7 +301,6 @@ Sollte WeeChat abgestürzt sein, muss der Befehl `bt full` genutzt werden:
 (gdb) bt full
 ----------------------------------------
 
-
 [[usage]]
 Nutzung
 -------
@@ -554,6 +552,218 @@ Beispiele für eine vertikale und horizontale Fensteraufteilung:
                 ▲ Fenster #1
                   (Buffer #3)
 ........................................
+
+[[bars]]
+Bars
+~~~~
+
+Eine 'Bar' ist ein Bereich, der neben dem Chatfenster, jedwede Art von Text enthalten kann.
+
+Eine Bar kann mittels `weechat.bar.name.option` konfiguriert werden. Dabei steht `name`,
+für den Namen der Bar und `option` für die Option für diese Bar.
+
+Aufzählung von Bar-Optionen:
+
+[width="100%",cols="2m,2,10",options="header"]
+|========================================
+| Option | Wert   | Beschreibung
+
+| type | `root`, `window` |
+  Eine Bar, vom Typ `root`, kann nur einmal, außerhalb von Fenstern, auf dem Bildschirm
+  dargestellt werden. Standardmäßig existiert keine `root` Bar. Eine solche Bar, mit Namen
+  'buffers', wird zum Beispiel durch das Skript 'buffers.pl' eingerichtet in welcher alle
+  geöffneten Buffer aufgeführt werden. +
+  Eine Bar, vom Typ `window`, wird in jedem einzelnen Fenster dargestellt, beispielsweise
+  wenn man das Fenster teilt (mit `/window splith` oder `/window splitv`). Die vier
+  standardmäßigen Bars ('title', 'status', 'input', 'nicklist'), sind vom Typ `window`.
+
+| position | `top`, `bottom`, `left`, `right` |
+  Position der Bar: ober- oder unterhalb des Chatfensters, oder links/rechts davon.
+
+| priority | integer ≥ 0 |
+  Priorität für die Bar: legt die Reihenfolge fest in der die Bars angeordnet werden sollen,
+  wenn mehrere Bars den selben Typ und Position besitzen. +
+  Die Bars werden vom Rand zur Mitte des Bildschirms gezeichnet. Eine höhere Priorität
+  bewirkt, dass die Bar näher am Rand gezeichnet wird. +
+  Beispiel: Die 'input' Bar hat eine Priorität von 1000 und wird somit vor der 'status' Bars
+  gezeichnet, da diese lediglich eine Priorität von 500 besitzt.
+
+| size | integer ≥ 0 |
+  Die Größe der Bar: Anzahl der Spalten, falls die Bar links/rechts bzw. Anzahl an Zeilen falls
+  die Bar oben/unten dargestellt wird. Wird eine Größe `0` gewählt, dann wird die Größe der Bar
+  automatisch bestimmt.
+
+| size_max | integer ≥ 0 |
+  Die maximale Größe der Bar, `0` = keine Limitierung (diese Option wird nur genutzt, falls die
+  Option `size` = `0` ist).
+
+| color_bg | color |
+  Hintergrundfarbe, für die Bar.
+
+| color_fg | color |
+  Textfarbe, für die Bar.
+
+| color_delim | color |
+  Farbe der Trennzeichen, in der Bar.
+
+| hidden | `on`, `off` |
+  Ist diese Option `on`, wird die Bar versteckt. +
+  Hinweis: anstelle dieser Option sollte vorzugsweise der `/bar` Befehl genutzt werden.
+  Beispiel: `/bar toggle nicklist` (siehe Befehl <<command_weechat_bar,/bar>>).
+
+| separator | `on`, `off` |
+  Ist diese Option `on`, wird ein Separator (Linie) gezeichnet die eine Bar von anderen
+  Bars oder dem Chatbereich trennt.
+
+| items | string |
+  Eine Aufzählung von 'items' (siehe <<bar_items,items>> für weitere Informationen).
+
+| filling_left_right | `horizontal`, `vertical`, `columns_horizontal`, `columns_vertical` |
+  Art, wie der Inhalt der Bar die `links` oder `rechts` gezeichnet wird, dargestellt wird (siehe
+  <<bar_filling,filling>> für weitere Informationen).
+
+| filling_top_bottom | `horizontal`, `vertical`, `columns_horizontal`, `columns_vertical` |
+  Art, wie der Inhalt der Bar die `oben` oder `unten` gezeichnet wird, dargestellt wird (siehe
+  <<bar_filling,filling>> für weitere Informationen).
+
+| conditions | string |
+  Bedingungen, wann die Bar angezeigt wird (siehe <<bar_conditions,conditions>> für weitere
+  Informationen).
+|========================================
+
+[[bar_items]]
+Items
+^^^^^
+
+The option 'items' is a string with a list of bar items, separated by a comma
+(space between items on screen) or "+" (glued items).
+
+The list of bar items is displayed with command `/bar listitems`.
+
+Example of bar with items "[time],buffer_number+:+buffer_plugin+.+buffer_name":
+
+........................................
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│[12:55] 3:irc/freenode.#weechat                                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+........................................
+
+[[bar_filling]]
+Filling
+^^^^^^^
+
+There are four types of filling:
+
+* `horizontal`: the items are displayed horizontally, from left to right. If
+  there are new lines in items, a space is used to separate lines.
+* `vertical`: the items are displayed from top to bottom. If there are new
+  lines in items, a new line is used to separate lines.
+* `columns_horizontal`: items are displayed using columns, where text is
+  aligned on the left. The first item is on top left, the second is on same
+  line, on the right.
+* `columns_vertical`: items are displayed using columns, where text is aligned
+  on the left. The first item is on top left, the second is one line below.
+
+Default bars 'title', 'status' and 'input' have 'horizontal' filling, and
+default bar 'nicklist' has 'vertical' filling.
+
+Some examples of filling for bar 'nicklist':
+
+........................................
+┌──────────────────────────────────────────────────┐
+│Welcome to #test, this is a test channel          │
+│12:54:15 peter | hey!                    │@carl   │
+│12:55:01  +Max | hello                   │@jessika│
+│                                         │@maddy  │
+│                                         │%Diego  │
+│                                         │%Melody │
+│                                         │+Max    │
+│                                         │ celia  │
+│                                         │ Eva    │
+│                                         │ freddy │
+│                                         │ Harold^│
+│                                         │ henry4 │
+│                                         │ jimmy17│
+│                                         │ jodie ▼│
+│[12:55] [6] [irc/freenode] 3:#test(+n){24}        │
+└──────────────────────────────────────────────────┘
+                filling_left_right = vertical ▲
+
+┌──────────────────────────────────────────────────┐
+│Welcome to #test, this is a test channel          │
+│12:54:15 peter | hey!           │@carl     lee    │
+│12:55:01  +Max | hello          │@jessika  louise │
+│                                │@maddy    mario  │
+│                                │%Diego    mark   │
+│                                │%Melody   peter  │
+│                                │+Max      Rachel │
+│                                │ celia    richard│
+│                                │ Eva      sheryl │
+│                                │ freddy   Vince  │
+│                                │ Harold^  warren │
+│                                │ henry4   zack   │
+│                                │ jimmy17         │
+│                                │ jodie           │
+│[12:55] [6] [irc/freenode] 3:#test(+n){24}        │
+└──────────────────────────────────────────────────┘
+        filling_left_right = columns_vertical ▲
+
+┌───────────────────────────────────────────────────────────────────────┐
+│@carl    %Diego    celia    Harold^  jodie    mario    Rachel   Vince  │
+│@jessika %Melody   Eva      henry4   lee      mark     richard  warren │
+│@maddy   +Max      freddy   jimmy17  louise   peter    sheryl   zack   │
+│───────────────────────────────────────────────────────────────────────│
+│                                                                       │
+        filling_top_bottom = columns_vertical ▲
+
+┌───────────────────────────────────────────────────────────────────────┐
+│@carl    @jessika @maddy   %Diego   %Melody  +Max      celia    Eva    │
+│ freddy   Harold^  henry4   jimmy17  jodie    lee      louise   mario  │
+│ mark     peter    Rachel   richard  sheryl   Vince    warren   zack   │
+│───────────────────────────────────────────────────────────────────────│
+│                                                                       │
+      filling_top_bottom = columns_horizontal ▲
+........................................
+
+[[bar_conditions]]
+Conditions
+^^^^^^^^^^
+
+The option 'conditions' is a string evaluated to know if the bar is displayed
+or not in the window (it is used only for bars with type 'window').
+
+The string can be:
+
+* 'active': the window must be active
+* 'inactive': the window must be inactive
+* 'nicklist': the buffer displayed in window must have a nicklist
+* an expression: it is evaluated as boolean (see command
+  <<command_weechat_eval,/eval>>)
+
+For the expression, following variables are available:
+
+* `${active}`: true if window is active
+* `${inactive}`: true if window is inactive
+* `$[nicklist}`: true if buffer displayed in window has a nicklist
+
+Following pointers are available:
+
+* `${window}`: the window where condition is evaluated
+* `${buffer}`: the buffer of window where condition is evaluated
+
+Exemple to display nicklist bar in all buffers with a nicklist, and only if
+width of window is > 100 :
+
+----------------------------------------
+/set weechat.bar.nicklist.conditions "${nicklist} && ${window.win_width} > 100"
+----------------------------------------
+
+Same condition, but always display nicklist on buffer '&bitlbee' (even if window
+is small):
+
+----------------------------------------
+/set weechat.bar.nicklist.conditions "${nicklist} && (${window.win_width} > 100 || ${buffer.full_name} == irc.bitlbee.&bitlbee)"
+----------------------------------------
 
 [[notify_levels]]
 Benachrichtigungsstufen
@@ -849,16 +1059,16 @@ einigen Terminals muss die @k(-A-)-Taste anstelle der @k(-S-)-Taste gedrückt we
 Sollten Probleme bei der Mausunterstützung auftreten, dann sollte Bitte die 'WeeChat FAQ' gelesen werden.
 
 [[mouse_bind_events]]
-Einem Maus-Event, Befehle zuweisen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Befehle einem Maus-Ereignis zuweisen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Es gibt eine Anzahl von Maus-Events die schon standardmäßig durch
-WeeChat definiert sind (siehe <<key_bindings_mouse_context,Tasten für "mouse"-Kontext>>).
+Es gibt eine Anzahl von Maus-Ereignissen, die standardmäßig durch WeeChat definiert
+sind (siehe <<key_bindings_mouse_context,Tasten für "mouse"-Kontext>>).
 
 Man kann mit dem Befehl `/key` im Kontext "mouse" aber auch eigene Befehle zuweisen
 und löschen (für die Syntax, siehe <<command_weechat_key,/key Befehl>>).
 
-Der Name eines Events besteht aus einem Modifier (optional), einer Maustaste/Mausrad
+Der Name eines Ereignisses besteht aus einem Modifier (optional), einer Maustaste/Mausrad
 und der Mausgeste (optional). Die unterschiedlichen Elemente werden durch ein "-" getrennt.
 
 Liste der Modifiers:
@@ -888,15 +1098,24 @@ Liste der Mausgesten (nur für Maustasten, nicht für das Mausrad, anwendbar):
 
 [width="50%",cols="3m,4",options="header"]
 |========================================
-| Mausgeste              | Distanz
-| Bewegung hoch          | 3 ... 19
-| Bewegung hoch (lang)   | ≥ 20
-| Bewegung runter        | 3 ... 19
-| Bewegung runter (lang) | ≥ 20
-| Bewegung links         | 3 ... 39
-| Bewegung links (lang)  | ≥ 40
-| Bewegung rechts        | 3 ... 39
-| Bewegung rechts (lang) | ≥ 40
+| Mausgeste          | Distanz
+| gesture-up         | 3 ... 19
+| gesture-up-long    | ≥ 20
+| gesture-down       | 3 ... 19
+| gesture-down-long  | ≥ 20
+| gesture-left       | 3 ... 39
+| gesture-left-long  | ≥ 40
+| gesture-right      | 3 ... 39
+| gesture-right-long | ≥ 40
+|========================================
+
+Liste von unvollständigen Ereignissen (nur für Mausknopf, nützlich für Erweiterungen/Skripten):
+
+[width="50%",cols="3m,4",options="header"]
+|========================================
+| Ereignis   | Beschreibung
+| event-down | Mausknopf ist gedrückt
+| event-drag | Maus wurde mit gedrücktem Mausknopf bewegt
 |========================================
 
 Bespiele von Ereignissen:
@@ -904,6 +1123,8 @@ Bespiele von Ereignissen:
 * `button1`
 * `ctrl-button1`
 * `button1-gesture-right`
+* `button1-event-down`
+* `button1-event-drag`
 * `alt-button2-gesture-down-long`
 * `wheelup`
 * `ctrl-alt-wheeldown`
@@ -1184,7 +1405,6 @@ WeeChat Befehle
 
 include::autogen/user/weechat_commands.txt[]
 
-
 [[plugins]]
 Erweiterungen
 -------------
@@ -1295,6 +1515,34 @@ Um zum Beispiel die Option "ignore-case" einzuschalten:
 ----------------------------------------
 /set aspell.option.ignore-case "true"
 ----------------------------------------
+
+[[aspell_suggestions]]
+Rechtschreibkorrektur
+^^^^^^^^^^^^^^^^^^^^^
+
+Eine Rechtschreibkorrektur wird in der Bar-Item "aspell_suggest" angezeigt.
+Die Anzahl an Vorschlägen, für die Rechtschreibkorrektur, kann mit der Option
+'aspell.check.suggestions' bestimmt werden.
+
+Um die Rechtschreibkorrektur zu aktivieren, muss für die Option 'aspell.check.suggestions'
+ein Wert ≥ 0 eingestellt werden und das Bar-Item "aspell_suggest" zu einer Bar, zum
+Beispiel 'status', hinzufügt werden.
+
+Beispiel der Rechtschreibkorrektur, mit einem deutschen Wörterbuch (`de`):
+
+........................................
+│[12:55] [6] [irc/freenode] 3:#test(+n){4} [dies,Diebs,Viehs]                     │
+│[@Flashy] diehs █                                                                │
+└─────────────────────────────────────────────────────────────────────────────────┘
+........................................
+
+Beispiel der Rechtschreibkorrektur, mit zwei Wörterbüchern (`en,de`):
+
+........................................
+│[12:55] [6] [irc/freenode] 3:#test(+n){4} [print,prone,prune/Prinz]              │
+│[@Flashy] prinr █                                                                │
+└─────────────────────────────────────────────────────────────────────────────────┘
+........................................
 
 [[charset_plugin]]
 Charset Erweiterung
@@ -1840,10 +2088,10 @@ Unvollständige Liste der IRC Nachrichten bzw. Alias die angepasst werden könne
 | 343       | whois         | whois (ist opered als)
 | 344       | reop          | channel reop
 | 345       | reop          | channel reop (Ende)
-| 346       | invitelist    | Einladung list
-| 347       | invitelist    | Einladung list (Ende)
-| 348       | exceptionlist | exception list
-| 349       | exceptionlist | exception list (end)
+| 346       | invitelist    | Einladung Liste
+| 347       | invitelist    | Einladung Liste (Ende)
+| 348       | exceptionlist | exception Liste
+| 349       | exceptionlist | exception Liste (Ende)
 | 351       |               | Server Version
 | 352       | who           | who
 | 353       | names         | Liste von Usern im Channel
@@ -1857,6 +2105,8 @@ Unvollständige Liste der IRC Nachrichten bzw. Alias die angepasst werden könne
 | 433       |               | Nickname wird schon verwendet
 | 438       |               | nicht autorisiert um Nicknamen zu ändern
 | 671       | whois         | whois (sichere Verbindung)
+| 728       | quietlist     | quiet Liste
+| 729       | quietlist     | Ende der quiet Liste
 | 901       |               | Sie sind nun eingelogged
 |========================================
 
@@ -2286,7 +2536,6 @@ Befehle
 
 include::autogen/user/xfer_commands.txt[]
 
-
 [[authors]]
 Autoren
 -------
@@ -2316,7 +2565,6 @@ Patches::
     JD Horelick, Stefano Pigozzi, Gu1ll4um3r0m41n, Kyle Fuller,
     Quentin Glidic (SardemFF7), Simon Kuhnle, Mateusz Poszwa, Peter Boström,
     Arvydas Sidorenko, Simon Arlott
-
 
 [[support]]
 Unterstützung
