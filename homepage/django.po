@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 13:58+0100\n"
-"PO-Revision-Date: 2012-11-18 16:03+0100\n"
+"POT-Creation-Date: 2012-11-27 11:08+0100\n"
+"PO-Revision-Date: 2012-11-27 13:42+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: Nils G <weechatter@arcor.de>\n"
 "Language: \n"
@@ -3117,7 +3117,7 @@ msgstr "zeigt Informationen zu WeeChat an, sinnvoll für Skripten-Entwickler."
 msgid "Minesweeper game."
 msgstr "Spiel: Minesweeper"
 
-#. Translators: description for script "isgd.pl" (0.3.0+)
+#. Translators: description for script "isgd.pl" (0.3.7+)
 #: plugins/_plugins_i18n.py:798
 msgid "Shorten URLs with is.gd on command."
 msgstr "verkürzt lange URLs mit is.gd, wenn der Befehl aufgerufen wird."
@@ -3286,6 +3286,51 @@ msgstr "zeigt, für mplayer, an was gerade abgespielt wird."
 #: plugins/_plugins_i18n.py:903
 msgid "Notifications through OS X notification center."
 msgstr "Benachrichtigung mittels OS X Benachrichtungssystem."
+
+#. Translators: description for script "anotify.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:906
+msgid "Notifications of private messages, highlights, DCC send/receive and more."
+msgstr "Benachrichtigung von privaten Nachrichten, Highlights, DCC Empfang/Versand und mehr."
+
+#. Translators: description for script "maildir.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:909
+msgid "Unread e-mail notification and count from a local Maildir directory."
+msgstr "e-mail Benachrichtigung und Anzeige von ungelesenen Nachrichten, die sich in einem lokalen Mail-Verzeichnis befinden."
+
+#. Translators: description for script "coords.pl" (0.3.9+)
+#: plugins/_plugins_i18n.py:912
+msgid "Select text, nicks or URLs on screen with mouse or keyboard."
+msgstr "Markieren von Text, Nicks oder URLs, mittels Maus oder Tastatur."
+
+#. Translators: description for script "join2fast.pl" (0.3.2+)
+#: plugins/_plugins_i18n.py:915
+msgid "Automatically join channels on UnderNET that get throttled due to \"Target change too fast\"."
+msgstr "automatisches Betreten von Channels die durch eine Warteschleife das automatische Betreten von Channels bremst, z.B. auf UnderNET."
+
+#. Translators: description for script "noirccolors.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:918
+msgid "Remove IRC colors from selected buffers."
+msgstr "entfernt IRC Farben in bestimmten Buffern."
+
+#. Translators: description for script "parse_relayed_msg.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:921
+msgid "Proper integration of remote users' nicknames in channel and nicklist."
+msgstr "korrekte Darstellung der Nicknamen, im Channel und der Nickliste, falls diese durch ein Remote-Bot weitergeleitet wurden."
+
+#. Translators: description for script "rssagg.pl" (0.3.7+)
+#: plugins/_plugins_i18n.py:924
+msgid "RSS aggregator."
+msgstr "RSS-Aggregator."
+
+#. Translators: description for script "xterm_paste.pl" (0.3.9+)
+#: plugins/_plugins_i18n.py:927
+msgid "Make xterm clipboard paste available as command."
+msgstr "Einfügen von Text aus der xterm Zwischenablage."
+
+#. Translators: description for script "multiline.pl" (0.3.0+)
+#: plugins/_plugins_i18n.py:930
+msgid "Multi-line edit box, also supports editing of multi-line pastes."
+msgstr "mehrzeiliges Editieren, auch von mehrzeiligem Text der eingefügt wurde."
 
 #: plugins/models.py:89
 msgid "Popular script"
@@ -4936,7 +4981,7 @@ msgstr "Datum der Veröffentlichung"
 
 #: templates/security.html:42
 msgid "Untrusted command for function hook_process could lead to execution of commands, because of shell expansions (so the problem is only caused by some scripts, not by WeeChat itself)."
-msgstr "nicht vertrauenswürdiger Befehl, für die Funktion hook_process, kann dazu genutzt werden um Befehle über eine Shell-Erweiterung zu starten (diese Problem betrifft nur einige Skripten und ist im engeren Sinne kein Fehler von WeeChat)."
+msgstr "nicht vertrauenswürdiger Befehl, für die Funktion hook_process, kann dazu genutzt werden um Befehle über eine Shell-Erweiterung zu starten (dieses Problem betrifft nur einige Skripten und ist im engeren Sinne kein Fehler von WeeChat)."
 
 #: templates/security.html:44
 #: templates/security.html.py:63
@@ -4949,7 +4994,7 @@ msgstr "entferne/beende alle Skripten, die die Funktion hook_process nutzen (die
 
 #: templates/security.html:61
 msgid "Buffer overflow when decoding IRC colors in strings."
-msgstr "Bufferüberlauf beim Dekodieren von IRC Farbecodes, in Nachrichten"
+msgstr "Bufferüberlauf beim Dekodieren von IRC Farbecodes, in Nachrichten."
 
 #: templates/security.html:79
 msgid "Missing verifications in SSL certificate, which allows man-in-the-middle attackers to spoof an SSL chat server via an arbitrary certificate."
