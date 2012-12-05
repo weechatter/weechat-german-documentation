@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 11:08+0100\n"
-"PO-Revision-Date: 2012-11-27 13:42+0100\n"
+"POT-Creation-Date: 2012-12-04 19:13+0100\n"
+"PO-Revision-Date: 2012-12-05 21:22+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: Nils G <weechatter@arcor.de>\n"
 "Language: \n"
@@ -3310,7 +3310,7 @@ msgstr "automatisches Betreten von Channels die durch eine Warteschleife das aut
 #. Translators: description for script "noirccolors.py" (0.3.0+)
 #: plugins/_plugins_i18n.py:918
 msgid "Remove IRC colors from selected buffers."
-msgstr "entfernt IRC Farben in bestimmten Buffern."
+msgstr "entfernt IRC Farben in ausgewählten Buffern."
 
 #. Translators: description for script "parse_relayed_msg.pl" (0.3.0+)
 #: plugins/_plugins_i18n.py:921
@@ -3331,6 +3331,11 @@ msgstr "Einfügen von Text aus der xterm Zwischenablage."
 #: plugins/_plugins_i18n.py:930
 msgid "Multi-line edit box, also supports editing of multi-line pastes."
 msgstr "mehrzeiliges Editieren, auch von mehrzeiligem Text der eingefügt wurde."
+
+#. Translators: description for script "biditext.py" (0.3.0+)
+#: plugins/_plugins_i18n.py:933
+msgid "Display right-to-left text in chat with fribidi."
+msgstr "stellt, mittels fribidi, den Text im Chat von rechts-nach-links dar"
 
 #: plugins/models.py:89
 msgid "Popular script"
@@ -4948,7 +4953,7 @@ msgstr "Sicherheitsfragen"
 
 #: templates/security.html:14
 msgid "This table contains a list of all known and fixed security vulnerabilities in WeeChat stable releases (the security vulnerabilities introduced during development of a version and fixed before stable release are not mentioned)."
-msgstr "Diese Tabelle enthält alle, bekannten und behobenen sicherheitsrelevanten, Schwachstellen in einer stabilen Version von WeeChat. (sicherheitsrelevante Schwachstellen die während der Entwicklung entdeckt wurden und nicht in eine stabile Version eingeflossen sind, werden nicht aufgeführt)."
+msgstr "Diese Tabelle enthält alle, bekannten und behobenen sicherheitsrelevanten, Schwachstellen in einer stabilen Version von WeeChat (sicherheitsrelevante Schwachstellen die während der Entwicklung entdeckt wurden und nicht in eine stabile Version eingeflossen sind, werden nicht aufgeführt)."
 
 #: templates/security.html:16
 msgid "Note: you can be warned about security vulnerabilities by subscribing to the <a href=\"https://lists.nongnu.org/mailman/listinfo/weechat-security\">weechat-security</a> mailing list."
@@ -4973,7 +4978,7 @@ msgstr "betroffene Versionen"
 
 #: templates/security.html:24
 msgid "Fixed in version"
-msgstr "Behoben mit Version"
+msgstr "Behoben durch Version"
 
 #: templates/security.html:25
 msgid "Release date"
@@ -4986,7 +4991,7 @@ msgstr "nicht vertrauenswürdiger Befehl, für die Funktion hook_process, kann d
 #: templates/security.html:44
 #: templates/security.html.py:63
 msgid "Workaround with a non patched version:"
-msgstr "Übergangslösung für eine nicht gepachte Version:"
+msgstr "Übergangslösung, für eine nicht gepachte Version:"
 
 #: templates/security.html:45
 msgid "remove/unload all scripts calling function hook_process (for maximum safety)"
@@ -5014,7 +5019,7 @@ msgstr "Bufferüberlauf beim Erstellen von Strings."
 
 #: templates/security.html:128
 msgid "Security vulnerabilities are classified using 4 severity levels:"
-msgstr "Sicherheitsrelevante Probleme werden in vier Sicherheitsstufen unterschieden:"
+msgstr "Sicherheitsrelevante Probleme sind in in folgende vier Sicherheitsstufen unterteilt:"
 
 #: templates/security.html:130
 msgid "local problem which occurs in very specific conditions, low impact. Upgrade is not mandatory."
