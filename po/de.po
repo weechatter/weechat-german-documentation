@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.3.7-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2012-11-04 11:49+0100\n"
-"PO-Revision-Date: 2012-11-04 15:41+0100\n"
+"POT-Creation-Date: 2012-12-05 19:17+0100\n"
+"PO-Revision-Date: 2012-12-05 21:25+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -666,6 +666,9 @@ msgstr "Optionen gesichert unter: %s"
 msgid "%sError: failed to save options to %s"
 msgstr "%sFehler: Optionen konnten nicht unter %s gesichert werden"
 
+msgid "default: "
+msgstr "Standardwert: "
+
 msgid "(unknown)"
 msgstr "(unbekannt)"
 
@@ -1298,7 +1301,7 @@ msgstr ""
 "    /filter add irc_smart *,!*#weechat* irc_smart_filter *\n"
 "  filtert alle IRC join/part/quit Nachrichten:\n"
 "    /filter add joinquit * irc_join,irc_part,irc_quit *\n"
-"  filtert Nicks wenn diese den Channel betreten oder durch den Befehl \"/names:\" angezeigt werden:\n"
+"  filtert Nicks wenn diese den Channel betreten oder durch den Befehl \"/names\" angezeigt werden:\n"
 "    /filter add nicks * irc_366 *\n"
 "  filtert Nick \"toto\" im IRC Channel #weechat:\n"
 "    /filter add toto irc.freenode.#weechat nick_toto *\n"
@@ -1530,7 +1533,7 @@ msgstr ""
 "    /key reset meta-r\n"
 "  \"Tab\"-Taste nutzen um im Kontext \"search\" die Suche innerhalb eines Buffers zu beenden:\n"
 "    /key bindctxt search ctrl-I /input search_stop\n"
-"  Auswahl eines Nicknamens mittels mittlerem Mausknopf zeigt zusätzliche Informationen zu dem Nick an:\n"
+"  Auswahl eines Nicknamens mittels mittlerer Maustaste zeigt zusätzliche Informationen zu dem Nick an:\n"
 "    /key bindctxt mouse @item(buffer_nicklist):button3 /msg nickserv info ${nick}"
 
 msgid "save/apply/reset layout for buffers and windows"
@@ -2340,20 +2343,20 @@ msgstr "erzwingt beim Einfügen von Steuersequenzen, nach einer vorgegeben Zeit 
 msgid "max number of lines for paste without asking user (-1 = disable this feature)"
 msgstr "maximale Anzahl an Zeilen die eingefügt werden dürfen, ohne dass der Anwender gefragt wird (-1 = schaltet diese Funktion ab)"
 
-msgid "prefix for error messages"
-msgstr "Präfix für Fehlermeldungen"
+msgid "prefix for error messages, colors are allowed with format \"${color}\""
+msgstr "Präfix, dass bei einer Fehler-Nachricht angezeigt wird. Durch das Format \"${Farbe}\" ist es möglich eine Farbauswahl zu treffen."
 
-msgid "prefix for network messages"
-msgstr "Präfix für Netzwerkmeldungen"
+msgid "prefix for network messages, colors are allowed with format \"${color}\""
+msgstr "Präfix, dass bei einer Netzwerk-Nachricht angezeigt wird. Durch das Format \"${Farbe}\" ist es möglich eine Farbauswahl zu treffen."
 
-msgid "prefix for action messages"
-msgstr "Präfix für Action-Nachrichten"
+msgid "prefix for action messages, colors are allowed with format \"${color}\""
+msgstr "Präfix, dass bei einer Action-Nachricht angezeigt wird. Durch das Format \"${Farbe}\" ist es möglich eine Farbauswahl zu treffen."
 
-msgid "prefix for join messages"
-msgstr "Präfix für Join-Nachrichten"
+msgid "prefix for join messages, colors are allowed with format \"${color}\""
+msgstr "Präfix, dass bei einer Join-Nachricht angezeigt wird. Durch das Format \"${Farbe}\" ist es möglich eine Farbauswahl zu treffen."
 
-msgid "prefix for quit messages"
-msgstr "Präfix für Quit-Nachrichten"
+msgid "prefix for quit messages, colors are allowed with format \"${color}\""
+msgstr "Präfix, dass bei einer Quit-Nachricht angezeigt wird. Durch das Format \"${Farbe}\" ist es möglich eine Farbauswahl zu treffen."
 
 msgid "prefix alignment (none, left, right (default))"
 msgstr "Einstellung für Präfix (keine = none, links = left, rechts = right (Voreinstellung))"
@@ -2597,7 +2600,7 @@ msgid "text color for offline nicknames"
 msgstr "Textfarbe von Nicknamen die Offline sind"
 
 msgid "if enabled, the base word to complete ends at char before cursor; otherwise the base word ends at first space after cursor"
-msgstr "ist diese Option aktiviert, dann kann ein zu vervollständigendes Wort einem anderen Wort vorangestellt werden und es wird ein Leerzeichen zur Trennung hinzugefügt. Ist diese Funktion deaktiviert, muss man selber erst ein Leerzeichen einfügen um eine Vervollständigung vor einem anderen Wort ausführen zu können (zum Beispiel um einen Nick vor einen schon geschriebenen Text einzusetzen)"
+msgstr "ist diese Option aktiviert wird ein zu vervollständigendes Wort in den fließenden Text, mit einem Leerzeichen, hinzugefügt. Ist diese  Option deaktiviert, muss in den fließenden Text ein Leerzeichen manuell einfügt werden, um eine Vervollständigung durchführen zu können (Beispiel: In einen schon geschriebenen Text, einen Nick einzufügen)"
 
 msgid "default completion template (please see documentation for template codes and values)"
 msgstr "Standardvorlage für die automatische Vervollständigung (in der Dokumentation finden Sie die vorgegebenen Codes und Werte)"
@@ -3014,7 +3017,7 @@ msgid "separator line between bar and other bars/windows"
 msgstr "Trennzeichen zwischen verschieden Infobars und Fenstern"
 
 msgid "items of bar, they can be separated by comma (space between items) or \"+\" (glued items)"
-msgstr "Items einer Bar können durch Kommata voneinander getrennt werden (Leerzeichen zwischen Items) oder \"+\" (zusammengefügte Items)"
+msgstr "Items einer Bar können durch entweder durch Kommata (\",\") voneinander getrennt (setzt ein Leerzeichen zwischen die Items), oder durch ein \"+\" Zeichen zusammengefügt werden (Items werden ohne Leerzeichen dargestellt)"
 
 #, c-format
 msgid "Bar \"%s\" updated"
@@ -3358,7 +3361,7 @@ msgid "real-time spell checking of words (slower, disabled by default: words are
 msgstr "Eine Korrektur findet während der Texteingabe statt (da dies langsamer ist, ist diese Funktion standardmäßig deaktiviert. Wörter werden erst überprüft sobald ein Leerzeichen dem vorangegangenen Wort folgt)"
 
 msgid "number of suggestions to display in bar item \"aspell_suggest\" for each dictionary set in buffer (-1 = disable suggestions, 0 = display all possible suggestions in all languages)"
-msgstr "bestimmt die Anzahl an Vorschlägen, für die Rechtschreibkorrektur bei einem falsch geschriebenes Wort. Die Vorschläge werden in der Bar-Item \"aspell_suggest\", für die jeweilige(n) Sprache(n), im Buffer, angezeigt (-1 = deaktiviert die Funktion, 0 = zeigt alle verfügbaren Vorschläge an, für alle eingestellten Sprachen)"
+msgstr "legt die Anzahl an Vorschlägen fest, für ein falsch geschriebenes Wort. Die Vorschläge werden in der Bar-Item \"aspell_suggest\", für die jeweilige(n) Sprache(n), im Buffer, angezeigt (-1 = deaktiviert die Funktion, 0 = zeigt alle verfügbaren Vorschläge an, für alle betreffenden Sprachen)"
 
 msgid "minimum length for a word to be spell checked (use 0 to check all words)"
 msgstr "Mindestlänge für ein Wort, welches auf Rechtschreibung überprüft werden soll (bei 0 werden alle Wörter überprüft)"
@@ -3905,8 +3908,8 @@ msgstr ""
 msgid "connect to IRC server(s)"
 msgstr "Mit IRC-Server(n) verbinden"
 
-msgid "<server> [<server>...] [-<option>[=<value>]] [-no<option>] [-nojoin] [-switch] || -all|-open [-nojoin] [-switch]"
-msgstr "<server> [<server>...] [-<option>[=<value>]] [-no<option>] [-nojoin] [-switch] || -all|-open [-nojoin] [-switch]"
+msgid "<server> [<server>...] [-<option>[=<value>]] [-no<option>] [-nojoin] [-switch] || -all|-auto|-open [-nojoin] [-switch]"
+msgstr "<server> [<server>...] [-<option>[=<value>]] [-no<option>] [-nojoin] [-switch] || -all|-auto|-open [-nojoin] [-switch]"
 
 msgid ""
 "    server: server name, which can be:\n"
@@ -3916,6 +3919,7 @@ msgid ""
 "    option: set option for server (for boolean option, value can be omitted)\n"
 "  nooption: set boolean option to 'off' (for example: -nossl)\n"
 "      -all: connect to all servers defined in configuration\n"
+"     -auto: connect to servers with autoconnect enabled\n"
 "     -open: connect to all opened servers that are not currently connected\n"
 "   -nojoin: do not join any channel (even if autojoin is enabled on server)\n"
 "   -switch: switch to next server address\n"
@@ -3929,14 +3933,15 @@ msgid ""
 "  /connect irc://nick@irc.oftc.net/#channel\n"
 "  /connect -switch"
 msgstr ""
-"    server:  Name des Servers (folgende Möglichkeiten bestehen):\n"
-"            - intern genutzter Servername mit dem verbunden werden soll (Der Server sollte zuerst mittels \"/server add\" angelegt werden)\n"
+"    server: Name des Servers (folgende Möglichkeiten bestehen):\n"
+"            - intern genutzter Servername, zu dem eine Verbindung aufgebaut werden soll (Der Server sollte zuerst mittels \"/server add\" angelegt werden)\n"
 "            - Hostname/Port oder IP/Port (damit wird lediglich ein TEMPORÄRER Server erstellt), Port 6667 wird standardmäßig verwendet\n"
 "            - URL mit folgendem Format: irc[6][s]://[nickname[:password]@]irc.example.org[:port][/#channel1][,#channel2[...]]\n"
-"    option: legt die Optionen für den Server fest (die Boolean-Optionen können weggelassen werden)\n"
-"  nooption: stellt die Boolean Option auf \"off\" (Beispiel: -nossl)\n"
-"      -all: Verbindung wird mit allen Servern hergestellt\n"
-"     -open: stellt eine Verbindung zu allen geöffneten Servern her, zu denen aktuell keine Verbindung besteht\n"
+"    option: legt Option für den Server fest (die Boolean-Optionen können weggelassen werden)\n"
+"  nooption: deaktiviert eine Boolean Option (Beispiel: -nossl)\n"
+"      -all: Verbindung wird zu den Servern hergestellt, für die eine Konfiguration vorhanden ist\n"
+"     -auto: Verbindung zu den Servern herstellen, für die die Option \"autoconnect\" aktiviert ist\n"
+"     -open: stellt eine Verbindung zu allen geöffneten Servern her, zu denen aktuell aber keine Verbindung besteht\n"
 "   -nojoin: Channel(s) werden nicht betreten (auch falls die Funktion \"autojoin\" aktiviert sein sollte)\n"
 "   -switch: wechselt zur nächsten Server-Adresse\n"
 "\n"
@@ -4486,7 +4491,7 @@ msgstr ""
 "  text: Text der gesendet werden soll"
 
 msgid "quiet nicks or hosts"
-msgstr "Nicks oder Hosts das Wort entziehen (User können nicht in den Channel schreiben, solange sich nicht +v oder höher haben)"
+msgstr "Nicks oder Hosts das Wort entziehen (User können im Channel nicht schreiben, solange sich nicht +v oder höher haben)"
 
 msgid ""
 "channel: channel for quiet\n"
@@ -4494,7 +4499,7 @@ msgid ""
 "\n"
 "Without argument, this command display quiet list for current channel."
 msgstr ""
-"channel: Channel in dem der Quiet-Bann ausgeführt werden soll\n"
+"channel: Channel in dem jemanden das Wort entzogen werden soll\n"
 "   nick: User oder Host dem das Wort entzogen werden soll\n"
 "\n"
 "Ohne Angabe von Argumenten wird, für den aktuellen Channel, eine Liste ausgegeben mit den User/Hosts denen das Wort entzogen worden ist."
@@ -5009,8 +5014,8 @@ msgstr "Wartezeit in Sekunden nach Ausführung des Befehls, um z.B. eine Authent
 msgid "comma separated list of channels to join when connected to server (example: \"#chan1,#chan2,#chan3 key1,key2\")"
 msgstr "durch Kommata getrennte Liste der Channels, die beim Verbinden zum Server betreten werden sollen (Beispiel: \"#chan1,#chan2,#chan3 key1,key2\")"
 
-msgid "automatically rejoin channels after kick"
-msgstr "Channels automatisch betreten, falls man rausgeworfen wurde"
+msgid "automatically rejoin channels after kick; you can define a buffer local variable on a channel to override this value (name of variable: \"autorejoin\", value: \"on\" or \"off\")"
+msgstr "Channels automatisch betreten, falls man rausgeworfen wurde. Es kann eine lokale Buffer Variable für einen Channel erstellt werden, diese lokale Variable wird vorrangig behandelt (Name der lokalen Variable: \"autorejoin\", Wert: \"on\" oder \"off\")"
 
 msgid "delay (in seconds) before autorejoin (after kick)"
 msgstr "Wartezeit, in Sekunden, die verstreichen soll bevor man den Channel automatisch erneut betritt (nachdem man rausgeworfen wurde)"
@@ -5398,8 +5403,8 @@ msgid "\"message\": IRC message, \"server\": server name (optional)"
 msgstr "\"message\": IRC Nachricht, \"server\": Servername (optional)"
 
 #. TRANSLATORS: please do not translate key names (enclosed by quotes)
-msgid "\"nick\": nick, \"host\": host, \"command\": command, \"channel\": channel, \"arguments\": arguments (includes channel)"
-msgstr "\"nick\": nick, \"host\": host, \"command\": command, \"channel\": channel, \"arguments\": arguments (beinhaltet Channel)"
+msgid "\"tags\": tags, \"message_without_tags\": message without the tags, \"nick\": nick, \"host\": host, \"command\": command, \"channel\": channel, \"arguments\": arguments (includes channel)"
+msgstr "\"tags\": Tags, \"message_without_tags\": Nachrichten ohne Tags, \"nick\": Nick, \"host\": Host, \"command\": Befehl, \"channel\": Channel, \"arguments\": Argumente (schließt Channel ein)"
 
 msgid "split an IRC message (to fit in 512 bytes)"
 msgstr "dient zum Aufteilen einer überlangen IRC Nachricht (in maximal 512 Bytes große Nachrichten)"
@@ -7486,8 +7491,8 @@ msgstr ""
 "\n"
 "Mausbefehle innerhalb des Skripten-Buffer:\n"
 "  Mausrad            in der Liste scrollen\n"
-"  linker Mausknopf   Skript anwählen\n"
-"  rechter Mausknopf  Skript installieren/entfernen\n"
+"  linke Maustaste    Skript anwählen\n"
+"  rechte Maustaste   Skript installieren/entfernen\n"
 "\n"
 "Beispiele:\n"
 "  /script search url\n"
@@ -7722,8 +7727,8 @@ msgid "aborted"
 msgstr "abgebrochen"
 
 #, c-format
-msgid "%s%s: file %s %s %s: %s"
-msgstr "%s%s: Datei %s %s %s: %s"
+msgid "%s%s: file %s %s %s (%ld.%ld.%ld.%ld): %s"
+msgstr "%s%s: Datei %s %s %s (%ld.%ld.%ld.%ld): %s"
 
 msgid "sent to"
 msgstr "gesendet an"
@@ -7738,8 +7743,8 @@ msgid "FAILED"
 msgstr "FEHLGESCHLAGEN"
 
 #, c-format
-msgid "%s: chat closed with %s (%d.%d.%d.%d)"
-msgstr "%s: Chat mit %s (%d.%d.%d.%d) geschlossen"
+msgid "%s: chat closed with %s (%ld.%ld.%ld.%ld)"
+msgstr "%s: Chat mit %s (%ld.%ld.%ld.%ld) geschlossen"
 
 #, c-format
 msgid "%s%s: aborting active xfer: \"%s\" from %s"
@@ -7750,16 +7755,16 @@ msgid "%s%s: not enough memory for new xfer"
 msgstr "%s%s: Für einen neuen Transfer steht nicht ausreichend Speicher zur Verfügung"
 
 #, c-format
-msgid "%s: incoming file from %s (%s.%s), ip: %d.%d.%d.%d, name: %s, %llu bytes (protocol: %s)"
-msgstr "%s: eingehende Datei von %s (%s.%s), IP: %d.%d.%d.%d, Name: %s, %llu Bytes (Protokoll: %s)"
+msgid "%s: incoming file from %s (%ld.%ld.%ld.%ld, %s.%s), name: %s, %llu bytes (protocol: %s)"
+msgstr "%s: eingehende Datei von %s (%ld.%ld.%ld.%ld, %s.%s), Name: %s, %llu Bytes (Protokoll: %s)"
 
 #, c-format
-msgid "%s: sending file to %s (%s.%s): %s (local filename: %s), %llu bytes (protocol: %s)"
-msgstr "%s: sende Datei an %s (%s.%s): %s (lokaler Dateiname: %s), %llu Bytes (Protokoll: %s)"
+msgid "%s: offering file to %s (%s.%s), name: %s (local filename: %s), %llu bytes (protocol: %s)"
+msgstr "%s: sende Datei an %s (%s.%s), Name: %s (lokaler Dateiname: %s), %llu Bytes (Protokoll: %s)"
 
 #, c-format
-msgid "%s: incoming chat request from %s (%s.%s), ip: %d.%d.%d.%d"
-msgstr "%s: eingehende Chatanforderung von %s (%s.%s), ip: %d.%d.%d.%d"
+msgid "%s: incoming chat request from %s (%ld.%ld.%ld.%ld, %s.%s)"
+msgstr "%s: eingehende Chatanforderung von %s (%ld.%ld.%ld.%ld, %s.%s)"
 
 #, c-format
 msgid "%s: sending chat request to %s (%s.%s)"
@@ -7818,8 +7823,8 @@ msgid "%s%s: error sending data to \"%s\" via xfer chat"
 msgstr "%s%s: Fehler beim Senden von Daten an \"%s\" via Transfer-Chat"
 
 #, c-format
-msgid "Connected to %s (%d.%d.%d.%d) via xfer chat"
-msgstr "Verbindung zu %s (%d.%d.%d.%d) via Transfer-Chat aufgebaut"
+msgid "Connected to %s (%ld.%ld.%ld.%ld) via xfer chat"
+msgstr "Verbindung zu %s (%ld.%ld.%ld.%ld) via Transfer-Chat aufgebaut"
 
 #, c-format
 msgid "%s%s: can't find xfer for buffer \"%s\""
@@ -7838,8 +7843,8 @@ msgid "%3d. %s, chat with %s (local nick: %s), started on %s, status: %s%s"
 msgstr "%3d. %s, Der Chat mit %s (lokaler Nick: %s), wurde am %s gestartet, Status: %s%s"
 
 #, c-format
-msgid "     plugin: %s (id: %s), file: %llu bytes (position: %llu), address: %d.%d.%d.%d (port %d)"
-msgstr "     Erweiterung: %s (id: %s), Datei: %llu Bytes (Position: %llu), Adresse: %d.%d.%d.%d (Port %d)"
+msgid "     plugin: %s (id: %s), file: %llu bytes (position: %llu), address: %ld.%ld.%ld.%ld (port %d)"
+msgstr "     Erweiterung: %s (id: %s), Datei: %llu Bytes (Position: %llu), Addresse: %ld.%ld.%ld.%ld (Port %d)"
 
 #. TRANSLATORS: "%s" after "started on" is a date
 #, c-format
@@ -7986,6 +7991,10 @@ msgid "%s%s: unable to fork"
 msgstr "%s%s: es kann kein fork erstellt werden"
 
 #, c-format
+msgid "%s: sending file to %s (%ld.%ld.%ld.%ld, %s.%s), name: %s (local filename: %s), %llu bytes (protocol: %s)"
+msgstr "%s: sende Datei an %s (%ld.%ld.%ld.%ld, %s.%s), Name: %s (lokaler Dateiname: %s), %llu Bytes (Protokoll: %s)"
+
+#, c-format
 msgid "%s%s: unable to create socket for sending file"
 msgstr "%s%s: für den Dateiversand kann kein Socket erstellt werden"
 
@@ -8032,6 +8041,24 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "automatically rejoin channels after kick"
+#~ msgstr "Channels automatisch betreten, falls man rausgeworfen wurde"
+
+#~ msgid "prefix for error messages"
+#~ msgstr "Präfix für Fehlermeldungen"
+
+#~ msgid "prefix for network messages"
+#~ msgstr "Präfix für Netzwerkmeldungen"
+
+#~ msgid "prefix for action messages"
+#~ msgstr "Präfix für Action-Nachrichten"
+
+#~ msgid "prefix for join messages"
+#~ msgstr "Präfix für Join-Nachrichten"
+
+#~ msgid "prefix for quit messages"
+#~ msgstr "Präfix für Quit-Nachrichten"
 
 #~ msgid ""
 #~ "condition(s) for displaying bar (for bars of type \"window\"): \"active\" "
