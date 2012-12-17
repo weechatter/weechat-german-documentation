@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.3.7-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2012-12-05 19:17+0100\n"
-"PO-Revision-Date: 2012-12-05 21:25+0100\n"
+"POT-Creation-Date: 2012-12-16 19:14+0100\n"
+"PO-Revision-Date: 2012-12-17 16:38+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -41,10 +41,10 @@ msgstr ""
 #. TRANSLATORS: "%s %s" after "compiled on" is date and time
 #, c-format
 msgid ""
-"WeeChat %s Copyright %s, compiled on %s %s\n"
+"WeeChat %s%s%s%s Copyright %s, compiled on %s %s\n"
 "Developed by Sebastien Helleu <flashcode@flashtux.org> - %s"
 msgstr ""
-"WeeChat %s Copyright %s, kompiliert am %s %s\n"
+"WeeChat %s%s%s%s Copyright %s, kompiliert am %s %s\n"
 "Entwickelt von Sebastien Helleu <flashcode@flashtux.org> - %s"
 
 #, c-format
@@ -2759,8 +2759,8 @@ msgid "%sError with command \"%s\" (try /help %s)"
 msgstr "%sFehler mit dem Befehl \"%s\" aufgetreten (nutze: /help %s)"
 
 #, c-format
-msgid "%sError: ambigous command \"%s\": it exists in many plugins and not in \"%s\" plugin"
-msgstr "%sFehler: mehrdeutiger Befehl \"%s\": existiert für mehrere Erweiterungen aber nicht für die Erweiterung \"%s\""
+msgid "%sError: ambiguous command \"%s\": it exists in many plugins and not in \"%s\" plugin"
+msgstr "%sFehler: Der Befehl \"%s\" ist nicht eindeutig: Er existiert für mehrere Erweiterungen, aber nicht für die Erweiterung \"%s\""
 
 #, c-format
 msgid "%sError: too much calls to command \"%s\" (looping)"
@@ -6259,6 +6259,9 @@ msgstr "WeeChat Version"
 
 msgid "WeeChat version (as number)"
 msgstr "WeeChat Version (als Nummer)"
+
+msgid "WeeChat git version (output of command \"git describe\" for a development version only, empty for a stable release)"
+msgstr "WeeChat Git Version (Ausgabe des Befehls \"git describe\", ausschließlich für eine Entwicklerversion. Eine stabile Version gibt keine Information zurück)"
 
 msgid "WeeChat compilation date"
 msgstr "Datum der WeeChat Kompilierung"
