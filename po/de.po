@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2005 Rudolf Polzer <weechat-te@durchnull.de>
 # Copyright (C) 2006-2007 Thomas Schuetz <i18n@internet-villa.de>
-# Copyright (C) 2009-2011 Nils G <weechatter@arcor.de>
+# Copyright (C) 2009-2013 Nils Görs <weechatter@arcor.de>
 #
 # This file is part of WeeChat, the extensible chat client.
 #
@@ -18,12 +18,11 @@
 # You should have received a copy of the GNU General Public License
 # along with WeeChat.  If not, see <http://www.gnu.org/licenses/>.
 #
-# nils, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: WeeChat 0.3.7-dev\n"
+"Project-Id-Version: WeeChat 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2012-12-24 16:46+0100\n"
+"POT-Creation-Date: 2013-01-01 13:40+0100\n"
 "PO-Revision-Date: 2012-12-25 11:59+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
@@ -10000,7 +9999,7 @@ msgstr "Blockgröße für versendete Pakete (in Bytes)"
 
 msgid "does not wait for ACK when sending file"
 msgstr ""
-"wartet beim Versenden von Dateien nicht auf ein Bestätigungssignal (ACK)"
+"beim Versenden von Daten wird nicht auf ein Bestätigungssignal (ACK) gewartet"
 
 msgid ""
 "restricts outgoing files/chats to use only ports in the given range (useful "
@@ -10008,11 +10007,11 @@ msgid ""
 "empty value means any port, it's recommended to use ports greater than 1024, "
 "because only root can use ports below 1024)"
 msgstr ""
-"schränkt den ausgehenden Datenversand bzw. die Chats auf die ausschließliche "
-"Nutzung von Ports in einem vorgegebenen Bereich ein (hilfreich bei NAT) "
-"(Syntax: ein einzelner Port, z.B. 5000 oder ein Port-Bereich, z.B. "
-"5000-5015. Es wird empfohlen Ports zu nutzen welche Größer als 1024 sind. "
-"Denn nur der User \"root\" kann auf den Port-Bereich <1024 zugreifen)"
+"schränkt den ausgehenden Datenversand/Chats auf die ausschließliche Nutzung "
+"von Ports in einem vorgegebenen Bereich ein (hilfreich bei NAT) (Syntax: ein "
+"einzelner Port, z.B. 5000 oder ein Port-Bereich, z.B. 5000-5015. Es wird "
+"empfohlen nur Ports zu nutzen die über 1024 liegen. Denn nur der User \"root"
+"\" kann auf den Port-Bereich unter 1024 zugreifen)"
 
 msgid ""
 "IP or DNS address used for sending files/chats (if empty, local interface IP "
