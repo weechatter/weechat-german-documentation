@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2013-01-04 17:43+0100\n"
-"PO-Revision-Date: 2013-01-06 21:23+0100\n"
+"POT-Creation-Date: 2013-01-08 08:06+0100\n"
+"PO-Revision-Date: 2013-01-12 20:01+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -6885,8 +6885,12 @@ msgid "%s%s: cannot set socket option \"SO_REUSEADDR\""
 msgstr "%s%s Fehler beim Erstellen der Socket-Option \"SO_REUSEADDR\""
 
 #, c-format
-msgid "%s%s: cannot create socket"
-msgstr "%s%s: Socket konnte nicht angelegt werden"
+msgid "%s%s: cannot create socket: error %d %s"
+msgstr "%s%s: Socket kann nicht erstellt werden: Fehler %d %s"
+
+#, c-format
+msgid "%s%s: try /set relay.network.ipv6 off"
+msgstr "%s%s: versuche /set relay.network.ipv6 off"
 
 #, c-format
 msgid "%s%s: cannot set socket option \"IPV6_V6ONLY\" to value %d"
@@ -8080,6 +8084,9 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "%s%s: cannot create socket"
+#~ msgstr "%s%s: Socket konnte nicht angelegt werden"
 
 #~ msgid "background color for window separators (when split)"
 #~ msgstr ""
