@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2013-01-08 08:06+0100\n"
-"PO-Revision-Date: 2013-01-12 20:01+0100\n"
+"POT-Creation-Date: 2013-01-22 09:21+0100\n"
+"PO-Revision-Date: 2013-01-22 23:22+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -40,10 +40,10 @@ msgstr ""
 #. TRANSLATORS: "%s %s" after "compiled on" is date and time
 #, c-format
 msgid ""
-"WeeChat %s%s%s%s Copyright %s, compiled on %s %s\n"
+"WeeChat %s Copyright %s, compiled on %s %s\n"
 "Developed by Sebastien Helleu <flashcode@flashtux.org> - %s"
 msgstr ""
-"WeeChat %s%s%s%s Copyright %s, kompiliert am %s %s\n"
+"WeeChat %s Copyright %s, kompiliert am %s %s\n"
 "Entwickelt von Sebastien Helleu <flashcode@flashtux.org> - %s"
 
 #, c-format
@@ -7122,20 +7122,8 @@ msgid "%s%s: not enough memory in function \"%s\""
 msgstr "%s%s Nicht genug Speicher in Funktion \"%s\""
 
 #, c-format
-msgid "%s%s: not enough memory to parse file \"%s\""
-msgstr "%s%s: Nicht genug Speicher um Datei \"%s\" zu analysieren"
-
-#, c-format
 msgid "%s%s: unable to parse file \"%s\""
 msgstr "%s%s: Datei \"%s\" Analyse nicht möglich"
-
-#, c-format
-msgid "%s%s: unable to run file \"%s\""
-msgstr "%s%s: Kann Datei \"%s\" nicht ausführen"
-
-#, c-format
-msgid "%s%s: unknown error while loading file \"%s\""
-msgstr "%s%s: unbekannter Fehler beim Laden der Datei \"%s\""
 
 #, c-format
 msgid "%s%s: unable to initialize %s"
@@ -7186,8 +7174,8 @@ msgid "%s%s: warning, invalid pointer (\"%s\") for function \"%s\" (script: %s)"
 msgstr "%s%s: Warnung, Pointer (\"%s\") ungültig für Funktion \"%s\" (Skript: %s)"
 
 #, c-format
-msgid "%s: error loading script \"%s\" (bad name, spaces are forbidden)"
-msgstr "%s: Fehler beim Laden des Skriptes \"%s\" (fehlerhafter Name: Leerzeichen sind nicht erlaubt)"
+msgid "%s: error loading script \"%s\" (spaces or empty name not allowed)"
+msgstr "%s: Fehler beim Laden des Skriptes \"%s\" aufgetreten (Leerzeichen sind im Namen nicht erlaubt oder es wurde kein Name angegeben)"
 
 #, c-format
 msgid "%s%s: warning, license \"%s\" for script \"%s\" differs from plugin license (\"%s\")"
@@ -8084,6 +8072,20 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "%s%s: not enough memory to parse file \"%s\""
+#~ msgstr "%s%s: Nicht genug Speicher um Datei \"%s\" zu analysieren"
+
+#~ msgid "%s%s: unable to run file \"%s\""
+#~ msgstr "%s%s: Kann Datei \"%s\" nicht ausführen"
+
+#~ msgid "%s%s: unknown error while loading file \"%s\""
+#~ msgstr "%s%s: unbekannter Fehler beim Laden der Datei \"%s\""
+
+#~ msgid "%s: error loading script \"%s\" (bad name, spaces are forbidden)"
+#~ msgstr ""
+#~ "%s: Fehler beim Laden des Skriptes \"%s\" (fehlerhafter Name: Leerzeichen "
+#~ "sind nicht erlaubt)"
 
 #~ msgid "%s%s: cannot create socket"
 #~ msgstr "%s%s: Socket konnte nicht angelegt werden"
