@@ -20,10 +20,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WeeChat 0.4.0-rc1\n"
+"Project-Id-Version: WeeChat 0.4.1-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2013-01-22 09:21+0100\n"
-"PO-Revision-Date: 2013-01-22 23:22+0100\n"
+"POT-Creation-Date: 2013-01-31 19:07+0100\n"
+"PO-Revision-Date: 2013-01-20 12:07+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -1257,7 +1257,7 @@ msgid ""
 "  no_filter, no_highlight, no_log, log0..log9 (log level),\n"
 "  notify_none, notify_message, notify_private, notify_highlight,\n"
 "  nick_xxx (xxx is nick in message), prefix_nick_ccc (ccc is color of nick),\n"
-"  irc_xxx (xxx is command name or number, see /server raw),\n"
+"  irc_xxx (xxx is command name or number, see /server raw or /debug tags),\n"
 "  irc_numeric, irc_error, irc_action, irc_ctcp, irc_ctcp_reply, irc_smart_filter, away_info.\n"
 "To see tags for lines in buffers: /debug tags\n"
 "\n"
@@ -1301,7 +1301,7 @@ msgstr ""
 "  no_filter, no_highlight, no_log, log0..log9 (log Level),\n"
 "  notify_none, notify_message, notify_private, notify_highlight,\n"
 "  nick_xxx (xxx ist durch den Nicknamen zu ersetzen), prefix_nick_ccc (ccc ist die Farbe mit der der Nick dargestellt wird),\n"
-"  irc_xxx (xxx ist durch einen IRC-Befehl/-Nummer zu ersetzen, siehe /server raw)\n"
+"  irc_xxx (xxx ist durch einen IRC-Befehl/-Nummer zu ersetzen, siehe /server raw oder /debug tags)\n"
 "  irc_numeric, irc_error, irc_action, irc_ctcp, irc_ctcp_reply, irc_smart_filter, away_info.\n"
 "Mittels \"/debug tags\" kann man sich die Tags jeder einzelnen Zeile darstellen zu lassen.\n"
 "\n"
@@ -3256,18 +3256,26 @@ msgstr "Alias Name (darf mit einem \"*\" als Platzhalter beginnen oder enden) (o
 msgid "Spell checker for input (with Aspell)"
 msgstr "Rechtschreibprüfung für die Eingabezeile (mittels Aspell)"
 
-#, c-format
-msgid "%s: \"%s\" removed"
-msgstr "%s: \"%s\" entfernt"
-
 #. TRANSLATORS: "%s" is "aspell"
 #, c-format
 msgid "%s dictionaries list:"
 msgstr "%s Wörterbücher:"
 
 #, c-format
+msgid "%s: \"%s\" removed"
+msgstr "%s: \"%s\" entfernt"
+
+#, c-format
 msgid "%s: error: dictionary \"%s\" is not available on your system"
 msgstr "%s: Fehler: das Wörterbuch \"%s\" ist auf diesem Rechner nicht verfügbar."
+
+#, c-format
+msgid "%s%s: no dictionary on this buffer for adding word"
+msgstr "%s%s: Es ist kein Wörterbuch für diesen Buffer aktiviert, deshalb kann das Wort nicht hinzugefügt werden."
+
+#, c-format
+msgid "%s%s: many dictionaries are defined for this buffer, please specify dictionary"
+msgstr "%s%s: es sind mehrere Wörterbücher für diesen Buffer definiert. Bitte wählen Sie ein Wörterbuch davon aus."
 
 #, c-format
 msgid "%s: word \"%s\" added to personal dictionary"
@@ -3299,26 +3307,18 @@ msgstr "Aspell wurde aktiviert"
 msgid "Aspell disabled"
 msgstr "Aspell wurde deaktiviert"
 
-#, c-format
-msgid "%s%s: no dictionary on this buffer for adding word"
-msgstr "%s%s: Es ist kein Wörterbuch für diesen Buffer aktiviert, deshalb kann das Wort nicht hinzugefügt werden."
-
-#, c-format
-msgid "%s%s: many dictionaries are defined for this buffer, please specify dictionary"
-msgstr "%s%s: es sind mehrere Wörterbücher für diesen Buffer definiert. Bitte wählen Sie ein Wörterbuch davon aus."
-
 msgid "aspell plugin configuration"
 msgstr "Konfiguration für Aspell-Erweiterung"
 
-msgid "enable|disable|toggle || listdict || setdict <lang> || deldict || addword [<lang>] <word>"
-msgstr "enable|disable|toggle || listdict || setdict <lang> || deldict || addword [<lang>] <word>"
+msgid "enable|disable|toggle || listdict || setdict <dict>[,<dict>...] || deldict || addword [<dict>] <word>"
+msgstr "enable|disable|toggle || listdict || setdict <dict>[,<dict>...] || deldict || addword [<dict>] <word>"
 
 msgid ""
 "  enable: enable aspell\n"
 " disable: disable aspell\n"
 "  toggle: toggle aspell\n"
 "listdict: show installed dictionaries\n"
-" setdict: set dictionary for current buffer\n"
+" setdict: set dictionary for current buffer (multiple dictionaries can be separated by a comma)\n"
 " deldict: delete dictionary used on current buffer\n"
 " addword: add a word in personal aspell dictionary\n"
 "\n"
@@ -3334,7 +3334,7 @@ msgstr ""
 " disable: Aspell wird deaktiviert\n"
 "  toggle: Aspell Funktionalität umschalten\n"
 "listdict: die, auf dem System, installierten Wörterbücher werden aufgelistet\n"
-" setdict: Wörterbuch für den aktuellen Buffer einstellen\n"
+" setdict: Wörterbuch für den aktuellen Buffer einstellen (mehrere Wörterbücher müssen durch Kommata getrennt werden)\n"
 " deldict: Wörterbuch für den aktuellen Buffer entfernen\n"
 " addword: fügt ein Wort in das persönliche Wörterbuch von Aspell hinzu\n"
 "\n"
@@ -3346,8 +3346,11 @@ msgstr ""
 "\n"
 "Die Standardtastaturbelegung zum Umschalten der Aspell Funktionalität lautet alt-s."
 
-msgid "list of supported langs for aspell"
-msgstr "Liste der zu nutzenden Übersetzungen für Aspell"
+msgid "list of all languages supported by aspell"
+msgstr "Liste aller Sprachen die durch Aspell unterstützt werden"
+
+msgid "list of aspell installed dictionaries"
+msgstr "Auflistung der installierten Wörterbücher"
 
 msgid "comma separated list of dictionaries to use on this buffer"
 msgstr "eine durch Kommata getrennte Liste von Wörterbüchern, die in diesem Buffer genutzt werden sollen"
@@ -3387,13 +3390,15 @@ msgstr "legt die Anzahl an Vorschlägen fest, für ein falsch geschriebenes Wort
 msgid "minimum length for a word to be spell checked (use 0 to check all words)"
 msgstr "Mindestlänge für ein Wort, welches auf Rechtschreibung überprüft werden soll (bei 0 werden alle Wörter überprüft)"
 
+msgid "comma-separated list of dictionaries used in buffer"
+msgstr "eine durch Kommata getrennte Liste von Wörterbüchern, die in diesem Buffer genutzt wird"
+
+msgid "buffer pointer (\"0x12345678\") or buffer full name (\"irc.freenode.#weechat\")"
+msgstr "Buffer-Pointer (\"0x12345678\") oder der vollständige Buffername (\"irc.freenode.#weechat\")"
+
 #, c-format
 msgid "%s: warning: dictionary \"%s\" is not available on your system"
 msgstr "%s: Hinweis: das Wörterbuch \"%s\" ist auf dem Rechner nicht verfügbar"
-
-#, c-format
-msgid "%s%s: not enough memory to create new speller"
-msgstr "%s%s: Nicht genug Speicher um neue Rechtschreibung zu erstellen"
 
 msgid "Charset conversions"
 msgstr "Zeichensatzkonvertierung"
@@ -3545,8 +3550,8 @@ msgid "%s%s: unable to open pipe (%s) for reading"
 msgstr "%s%s: Pipe (%s) kann nicht zum Lesen geöffnet werden"
 
 #, c-format
-msgid "%s%s: unable to create pipe for remote control (%s)"
-msgstr "%s%s: Pipe kann nicht zur Fernsteuerung (%s) angelegt werden"
+msgid "%s%s: unable to create pipe for remote control (%s): error %d %s"
+msgstr "%s%s: Pipe kann nicht zur Fernsteuerung (%s) angelegt werden: Fehler %d %s"
 
 #, c-format
 msgid "%s: pipe closed"
@@ -6873,16 +6878,16 @@ msgid "%s: socket closed for %s (port %d)"
 msgstr "%s: Socket wurde für %s (Port %d) geschlossen"
 
 #, c-format
-msgid "%s%s: cannot accept client on port %d (%s)"
-msgstr "%s%s: Der Client wird an dem Port %d (%s) nicht akzeptiert"
+msgid "%s%s: cannot accept client on port %d (%s): error %d %s"
+msgstr "%s%s: Der Client wird am Port %d (%s) nicht akzeptiert: Fehler %d %s"
 
 #, c-format
 msgid "%s%s: IP address \"%s\" not allowed for relay"
 msgstr "%s%s: IP Adresse \"%s\" für Relay nicht gültig"
 
 #, c-format
-msgid "%s%s: cannot set socket option \"SO_REUSEADDR\""
-msgstr "%s%s Fehler beim Erstellen der Socket-Option \"SO_REUSEADDR\""
+msgid "%s%s: cannot set socket option \"%s\" to %d: error %d %s"
+msgstr "%s%s: Die Socket-Option \"%s\" kann nicht auf %d geändert werden: Fehler %d %s"
 
 #, c-format
 msgid "%s%s: cannot create socket: error %d %s"
@@ -6893,16 +6898,12 @@ msgid "%s%s: try /set relay.network.ipv6 off"
 msgstr "%s%s: versuche /set relay.network.ipv6 off"
 
 #, c-format
-msgid "%s%s: cannot set socket option \"IPV6_V6ONLY\" to value %d"
-msgstr "%s%s der Wert %d kann nicht für die Socket-Option, \"IPV6_V6ONLY\", gesetzt werden"
+msgid "%s%s: cannot \"bind\" on port %d (%s): error %d %s"
+msgstr "%s%s: \"bind\" am Port %d (%s) nicht möglich: Fehler %d %s"
 
 #, c-format
-msgid "%s%s: cannot set socket option \"SO_KEEPALIVE\""
-msgstr "%s%s Fehler beim Erstellen der Socket-Option \"SO_KEEPALIVE\""
-
-#, c-format
-msgid "%s%s: error with \"bind\" on port %d (%s)"
-msgstr "%s%s: Fehler mit \"bind\" am Port %d (%s)"
+msgid "%s%s: cannot \"listen\" on port %d (%s): error %d %s"
+msgstr "%s%s: \"listen\" an Port %d (%s) nicht möglich: Fehler %d %s"
 
 #, c-format
 msgid "%s: listening on port %d (relay: %s, %s, max %d clients)"
@@ -7826,8 +7827,8 @@ msgid "%s%s: could not find address for \"%s\", falling back to local IP"
 msgstr "%s%s: Adresse für \"%s\" wurde nicht gefunden. Es wird auf die lokale IP zurückgegriffen."
 
 #, c-format
-msgid "%s%s: cannot create socket for xfer"
-msgstr "%s%s: Für den Transfer konnte kein Socket angelegt werden"
+msgid "%s%s: cannot create socket for xfer: error %d %s"
+msgstr "%s%s: Socket kann für xfer nicht erstellt werden: Fehler %d %s"
 
 #, c-format
 msgid "%s%s: cannot find available port for xfer"
@@ -7990,8 +7991,8 @@ msgid "xfer pointer (optional)"
 msgstr "Transferpointer (optional)"
 
 #, c-format
-msgid "%s%s: unable to create pipe"
-msgstr "%s%s: Pipe kann nicht erstellt werden"
+msgid "%s%s: unable to create pipe: error %d %s"
+msgstr "%s%s: Pipe kann nicht erstellt werden: Fehler %d %s"
 
 #, c-format
 msgid "%s%s: unable to read local file"
@@ -8026,12 +8027,12 @@ msgid "%s: sending file to %s (%ld.%ld.%ld.%ld, %s.%s), name: %s (local filename
 msgstr "%s: sende Datei an %s (%ld.%ld.%ld.%ld, %s.%s), Name: %s (lokaler Dateiname: %s), %llu Bytes (Protokoll: %s)"
 
 #, c-format
-msgid "%s%s: unable to create socket for sending file"
-msgstr "%s%s: für den Dateiversand kann kein Socket erstellt werden"
+msgid "%s%s: unable to create socket for sending file: error %d %s"
+msgstr "%s%s: für den Dateiversand kann kein Socket erstellt werden. Fehler %d %s"
 
 #, c-format
-msgid "%s%s: unable to set option \"nonblock\" for socket"
-msgstr "%s%s: Die \"nonblock\"-Option für den Socket kann nicht festlegt werden"
+msgid "%s%s: unable to set option \"nonblock\" for socket: error %d %s"
+msgstr "%s%s: Die \"nonblock\"-Option für den Socket kann nicht festlegt werden: Fehler %d %s"
 
 #, c-format
 msgid "%s%s: timeout for \"%s\" with %s"
@@ -8072,6 +8073,23 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "%s%s: not enough memory to create new speller"
+#~ msgstr "%s%s: Nicht genug Speicher um neue Rechtschreibung zu erstellen"
+
+#~ msgid "%s%s: cannot set socket option \"SO_REUSEADDR\""
+#~ msgstr "%s%s Fehler beim Erstellen der Socket-Option \"SO_REUSEADDR\""
+
+#~ msgid "%s%s: cannot set socket option \"IPV6_V6ONLY\" to value %d"
+#~ msgstr ""
+#~ "%s%s der Wert %d kann nicht für die Socket-Option, \"IPV6_V6ONLY\", "
+#~ "gesetzt werden"
+
+#~ msgid "%s%s: cannot set socket option \"SO_KEEPALIVE\""
+#~ msgstr "%s%s Fehler beim Erstellen der Socket-Option \"SO_KEEPALIVE\""
+
+#~ msgid "%s%s: cannot create socket for xfer"
+#~ msgstr "%s%s: Für den Transfer konnte kein Socket angelegt werden"
 
 #~ msgid "%s%s: not enough memory to parse file \"%s\""
 #~ msgstr "%s%s: Nicht genug Speicher um Datei \"%s\" zu analysieren"
