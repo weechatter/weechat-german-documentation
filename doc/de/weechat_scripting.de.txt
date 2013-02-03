@@ -163,8 +163,20 @@ weechat::print "" "Hallo, von einem tcl Skript!"
 Laden von Skripten
 ~~~~~~~~~~~~~~~~~~
 
-Der Befehl zum Laden von Skripten ist davon abhängig welche Skriptsprache
-genutzt werden soll:
+Es wird empfohlen die "script" Erweiterung zum Laden von Skripten zu
+nutzen, zum Beispiel:
+
+----------------------------------------
+/script load script.py
+/script load script.pl
+/script load script.rb
+/script load script.lua
+/script load script.tcl
+/script load script.scm
+----------------------------------------
+
+Es besteht natürlich weiterhin die Möglichkeit, individuell für jede
+Skriptsprache, den entsprechenden Befehl zu nutzen:
 
 ----------------------------------------
 /python load python/skript.py
@@ -175,8 +187,8 @@ genutzt werden soll:
 /guile load guile/skript.scm
 ----------------------------------------
 
-Um Skripten automatisch beim Start von WeeChat zu laden kann man einen Link
-in das Verzeichnis 'Skriptsprache/autoload' setzen.
+Um Skripten automatisch beim Start von WeeChat zu laden sollte man einen Link
+anlegen, der in das Verzeichnis 'Skriptsprache/autoload' zeigt.
 
 Ein Beispiel für ein Python-Skript:
 
@@ -184,6 +196,10 @@ Ein Beispiel für ein Python-Skript:
 $ cd ~/.weechat/python/autoload
 $ ln -s ../script.py
 ----------------------------------------
+
+[NOTE]
+Installiert man mittels `/script install` ein Skript, dann wird automatisch
+ein Link in das entsprechende 'autoload' Verzeichnis erzeugt.
 
 [[differences_with_c_api]]
 Unterschiede zur C API
@@ -202,18 +218,22 @@ Falls Ihr Skript 'test.py' eine WeeChat API Funktion aufruft wird der Aufruf
 wie folgt abgearbeitet:
 
 ........................................
-       (Skript API)                                (C API)
-            \/                                        \/
-test.py  ------->  python Erweiterung (python.so)  ------->  WeeChat core
+               ┌──────────────────────┐        ╔══════════════════╗
+               │  python Erweiterung  │        ║  WeeChat "core"  ║
+               ├────────────┬─────────┤        ╟─────────┐        ║
+test.py ─────► │ Skript API │  C API  │ ─────► ║  C API  │        ║
+               └────────────┴─────────┘        ╚═════════╧════════╝
 ........................................
 
 Gibt WeeChat einen Rückgabewert an Ihr Skript 'test.py' zurück wird der
 Aufruf in umgekehrter Reihenfolge abgearbeitet:
 
 ........................................
-              (C API)                                 (Skript API)
-                 \/                                        \/
-WeeChat core  ------->  python Erweiterung (python.so)  ------->  test.py
+╔══════════════════╗        ┌──────────────────────┐
+║  WeeChat "core"  ║        │  python Erweiterung  │
+║        ┌─────────╢        ├─────────┬────────────┤
+║        │  C API  ║ ─────► │  C API  │ Skript API │ ─────► test.py
+╚════════╧═════════╝        └─────────┴────────────┘
 ........................................
 
 [[pointers]]
@@ -257,16 +277,78 @@ C Callbacks nutzen ein "Data" Argument welches ein Pointer ist. In der
 Skript API ist "Data" ein String der jeden Wert haben darf (es handelt sich
 nicht um einen Pointer).
 
-Beispiel:
+callback Beispiele, für jede Skriptsprache:
+
+* python:
 
 [source,python]
 ----------------------------------------
-weechat.hook_timer(1000, 0, 1, "mein_timer_cb", "mein data")
-
-def mein_timer_cb(data, verbleibende_aufrufe):
-    # es wird "mein data" angezeigt
-    weechat.prnt("", data)
+def timer_cb(data, remaining_calls):
+    weechat.prnt("", "timer! data=%s" % data)
     return weechat.WEECHAT_RC_OK
+
+weechat.hook_timer(1000, 0, 1, "timer_cb", "test")
+----------------------------------------
+
+* perl:
+
+[source,perl]
+----------------------------------------
+sub timer_cb {
+    my ($data, $remaining_calls) = @_;
+    weechat::print("", "timer! data=$data");
+    return weechat::WEECHAT_RC_OK;
+}
+
+weechat::hook_timer(1000, 0, 1, "timer_cb", "test");
+----------------------------------------
+
+* ruby:
+
+[source,ruby]
+----------------------------------------
+def timer_cb(data, remaining_calls)
+  Weechat.print("", "timer! data=#{data}");
+  return Weechat::WEECHAT_RC_OK
+end
+
+Weechat.hook_timer(1000, 0, 1, "timer_cb", "test");
+----------------------------------------
+
+* lua:
+
+[source,lua]
+----------------------------------------
+function timer_cb(data, remaining_calls)
+    weechat.print("", "timer! data="..data)
+    return weechat.WEECHAT_RC_OK
+end
+
+weechat.hook_timer(1000, 0, 1, "timer_cb", "test")
+----------------------------------------
+
+* tcl:
+
+[source,tcl]
+----------------------------------------
+proc timer_cb { data remaining_calls } {
+    weechat::print {} "timer! data=$data"
+    return $::weechat::WEECHAT_RC_OK
+}
+
+weechat::hook_timer 1000 0 1 timer_cb test
+----------------------------------------
+
+* guile (scheme):
+
+[source,lisp]
+----------------------------------------
+(define (timer_cb args)
+  (weechat:print "" (string-append "timer! data=" (list-ref args 0)))
+  weechat:WEECHAT_RC_OK
+)
+
+(weechat:hook_timer 1000 0 1 "timer_cb" "test")
 ----------------------------------------
 
 [[script_api]]
@@ -701,7 +783,7 @@ skript_optionen = {
     "Option2" : "Wert2",
     "Option3" : "Wert3",
 }
-for option, standardwert in skript_optionen.iteritems():
+for option, standardwert in skript_optionen.items():
     if not weechat.config_is_set_plugin(option):
         weechat.config_set_plugin(option, standardwert)
 ----------------------------------------
