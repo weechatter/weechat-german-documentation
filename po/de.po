@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.4.1-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2013-01-31 19:07+0100\n"
-"PO-Revision-Date: 2013-01-20 12:07+0100\n"
+"POT-Creation-Date: 2013-02-23 12:49+0100\n"
+"PO-Revision-Date: 2013-02-23 18:07+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: \n"
@@ -1095,6 +1095,7 @@ msgid ""
 "   buffer: dump buffer content with hexadecimal values in log file\n"
 "    color: display infos about current color pairs\n"
 "   cursor: toggle debug for cursor mode\n"
+"     dirs: display directories\n"
 "    hdata: display infos about hdata (with free: remove all hdata in memory)\n"
 "    hooks: display infos about hooks\n"
 "infolists: display infos about infolists\n"
@@ -1107,11 +1108,12 @@ msgstr ""
 "     list: zeigt alle Erweiterungen mit Debuglevel an\n"
 "      set: setzt den Level der Protokollierung für eine Erweiterung\n"
 "   plugin: Name der Erweiterung (\"core\" für den WeeChat Kern)\n"
-"    level: Debuglevel der Erweiterung (0 = deaktiviert das Debug)\n"
+"    level: Debuglevel der Erweiterung (0 = deaktiviert Debug)\n"
 "     dump: Speicherabbild in die WeeChat Protokolldatei schreiben (wie bei einem Programmabsturz)\n"
 "   buffer: speichert den Bufferinhalt als hexadezimale Ausgabe in die Protokolldatei\n"
 "    color: zeigt Informationen über die aktuellen Farbpaarungen an\n"
 "   cursor: schaltet den debug-Modus für den Cursor-Modus ein/aus\n"
+"     dirs: Verzeichnisse werden angezeigt\n"
 "    hdata: zeigt Informationen zu hdata an (mittels free werden alle hdata Informationen aus dem Speicher entfernt)\n"
 "    hooks: zeigt die aktiven Hooks an\n"
 "infolists: zeigt Information über die Infolists an\n"
@@ -2623,8 +2625,8 @@ msgstr "Textfarbe von Nicknamen die Offline sind"
 msgid "if enabled, the base word to complete ends at char before cursor; otherwise the base word ends at first space after cursor"
 msgstr "ist diese Option aktiviert wird ein zu vervollständigendes Wort in den fließenden Text, mit einem Leerzeichen, hinzugefügt. Ist diese  Option deaktiviert, muss in den fließenden Text ein Leerzeichen manuell einfügt werden, um eine Vervollständigung durchführen zu können (Beispiel: In einen schon geschriebenen Text, einen Nick einzufügen)"
 
-msgid "default completion template (please see documentation for template codes and values)"
-msgstr "Standardvorlage für die automatische Vervollständigung (in der Dokumentation finden Sie die vorgegebenen Codes und Werte)"
+msgid "default completion template (please see documentation for template codes and values: plugin API reference, function \"weechat_hook_command\")"
+msgstr "Standardvorlage für die automatische Vervollständigung (in der API-Dokumentation findet man die vorgegebenen Codes und Werte, Funktion \"weechat_hook_command\")"
 
 msgid "add space after nick completion (when nick is not first word on command line)"
 msgstr "fügt ein Leerzeichen hinter die Nick-Vervollständigung ein (sofern der Nickname nicht das erste Wort in einer Kommandozeile darstellt)"
@@ -2754,6 +2756,12 @@ msgstr "Auslastung des Speichers (siehe\"man mallinfo\" für Hilfe):"
 
 msgid "Memory usage not available (function \"mallinfo\" not found)"
 msgstr "Speicheranzeige nicht verfügbar (Funktion \"mallinfo\" nicht gefunden)"
+
+msgid "Directories:"
+msgstr "Verzeichnisse:"
+
+msgid "default"
+msgstr "voreingestellt"
 
 #, c-format
 msgid "%sError: another command \"%s\" already exists for plugin \"%s\""
@@ -2988,11 +2996,6 @@ msgstr "Maus ist deaktiviert"
 #, c-format
 msgid "  TERM='%s', size: %dx%d"
 msgstr "  TERM='%s', Größe: %dx%d"
-
-msgid "server"
-msgid_plural "servers"
-msgstr[0] "Server"
-msgstr[1] "Server"
 
 #, c-format
 msgid "%sUnable to change bar type: you must delete bar and create another to do that"
@@ -3579,6 +3582,11 @@ msgstr "Name der FIFO-Pipe"
 msgid "away"
 msgstr "abwesend"
 
+msgid "server"
+msgid_plural "servers"
+msgstr[0] "Server"
+msgstr[1] "Server"
+
 msgid "Lag"
 msgstr "Lag"
 
@@ -3774,6 +3782,35 @@ msgstr "%s%s: Benachrichtigung nicht gefunden"
 #, c-format
 msgid "%s%s: cannot create new private buffer \"%s\""
 msgstr "%s%s: ein neuer privater Buffer \"%s\" kann nicht erstellt werden"
+
+#, c-format
+msgid "Server: %s%s %s[%s%s%s]%s%s"
+msgstr "Server: %s%s %s[%s%s%s]%s%s"
+
+msgid "connected"
+msgstr "verbunden"
+
+msgid "not connected"
+msgstr "nicht verbunden"
+
+msgid " (temporary)"
+msgstr " (temporär)"
+
+msgid "on"
+msgstr "an"
+
+msgid "off"
+msgstr "aus"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "Minute"
+msgstr[1] "Minuten"
+
+msgid "channel"
+msgid_plural "channels"
+msgstr[0] "Channel"
+msgstr[1] "Channels"
 
 msgid "All servers:"
 msgstr "Alle Server:"
@@ -5171,9 +5208,6 @@ msgstr "zeigt Nick-Modi in \"input_prompt\" Bar-Item"
 msgid "display nick prefix in \"input_prompt\" bar item"
 msgstr "der Nick-Präfix wird in \"input_prompt\" Bar-Item angezeigt"
 
-msgid "hide password displayed by nickserv"
-msgstr "Passwörter verstecken die durch NickServ angezeigt werden"
-
 msgid "comma separated list of words to highlight in server buffers (case insensitive, use \"(?-i)\" at beginning of words to make them case sensitive; special variables $nick, $channel and $server are replaced by their value), these words are added to buffer local variable \"highlight_words\" only when buffer is created (it does not affect current buffers), an empty string disables default highlight on nick, examples: \"$nick\", \"(?-i)$nick\""
 msgstr "durch Kommata getrennte Liste von Wörtern die im Serverbuffer als Highlight erscheinen sollen (zwischen Groß- und Kleinschreibung wird nicht unterschieden. Um zwischen Groß- und Kleinschreibung zu unterscheiden muss zu Beginn \"(?-i)\" genutzt werden; des weiteren können folgende Variablen genutzt werden: $nick, $channel und $server). Die angegeben Wörter werden der lokalen Variable \"highlight_words\" hinzugefügt, sobald der Buffer geöffnet wird. Dies bedeutet, dass diese Option keinen direkten Einfluss auf schon geöffnete Buffer hat. Eine leere Zeichenkette deaktiviert ein Highlight für den Nick. Beispiel: \"$nick\", \"(?-i)$nick\""
 
@@ -5191,6 +5225,9 @@ msgstr "Name der Bar-Item in dem der IRC Server angezeigt wird (für Status-Bar)
 
 msgid "default target buffer for msgbuffer options when target is private and that private buffer is not found"
 msgstr "Standardbuffer der für Ausgaben genutzt werden soll, falls ein privater Buffer nicht gefunden wird"
+
+msgid "comma separated list of nicks for which passwords will be hidden when a message is sent, for example to hide password in message displayed by \"/msg nickserv identify password\", example: \"nickserv,nickbot\""
+msgstr "durch Kommata getrennte Liste von Nicks bei denen das Passwort in einer Nachricht unterdrückt werden soll. Zum Beispiel bei einer Nachricht die durch \"/msg nickserv identify password\" generiert wird. Beispiel: \"nickserv,nickbot\""
 
 msgid "display notices as private messages (if auto, use private buffer if found)"
 msgstr "zeigt Notizen als private Nachricht an (wird die \"auto\" Option verwendet dann wird ein privater Buffer genutzt, falls vorhanden)"
@@ -5217,13 +5254,16 @@ msgstr "Verzögerung, in Minuten, in denen join/part/quit Nachrichten gefiltert 
 msgid "enable smart filter for \"join\" messages"
 msgstr "aktiviert einen intelligenten Filter für \"join\" Nachrichten"
 
+msgid "delay for unmasking a join message that was filtered with tag \"irc_smart_filter\" (in minutes): if a nick jas joined max N minutes ago and then says something on channel (message, notice or update on topic), the join is unmasked, as well as nick changes after this join (0 = disable: never unmask a join)"
+msgstr "Verzögerung (in Minuten) um Join Mitteilungen rückwirkend anzuzeigen, falls diese mittels \"irc_smart_filter\" unterdrückt wurden. Sollte ein Nick während der vorgegeben Zeit etwas im Channel schreiben, dann wird seine Join Mitteilung angezeigt. Dies bezieht sich auf Nachrichten, eine Notice, Änderungen am Topic oder falls er den Nick wechselt (0 = deaktiviert: join-Mitteilungen bleiben verborgen)"
+
 #. TRANSLATORS: please do not translate "part" and "quit"
 msgid "enable smart filter for \"part\" and \"quit\" messages"
 msgstr "aktiviert einen intelligenten Filter für \"part\" und \"quit\" Nachrichten"
 
 #. TRANSLATORS: please do not translate "nick"
-msgid "enable smart filter for \"nick\" messages"
-msgstr "aktiviert einen intelligenten Filter für Nachrichten von einem \"Nick\""
+msgid "enable smart filter for \"nick\" messages (nick changes)"
+msgstr "aktiviert einen intelligenten Filter für \"nick\" Nachrichten (Änderungen des Nick)"
 
 msgid "strip colors in topic (used only when displaying buffer title)"
 msgstr "Farben werden im Channel-Thema entfernt (wird nur genutzt wenn der Buffer-Titel angezeigt wird)"
@@ -5347,35 +5387,6 @@ msgstr "%s%s: unbekannter DCC CHAT-Typ empfangen von %s%s%s: \"%s\""
 #, c-format
 msgid "%sUnknown CTCP requested by %s%s%s: %s%s%s%s%s"
 msgstr "%sunbekannte CTCP Anfrage von %s%s%s: %s%s%s%s%s"
-
-#, c-format
-msgid "Server: %s%s %s[%s%s%s]%s%s"
-msgstr "Server: %s%s %s[%s%s%s]%s%s"
-
-msgid "connected"
-msgstr "verbunden"
-
-msgid "not connected"
-msgstr "nicht verbunden"
-
-msgid " (temporary)"
-msgstr " (temporär)"
-
-msgid "on"
-msgstr "an"
-
-msgid "off"
-msgstr "aus"
-
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "Minute"
-msgstr[1] "Minuten"
-
-msgid "channel"
-msgid_plural "channels"
-msgstr[0] "Channel"
-msgstr[1] "Channels"
 
 msgid "1 if string is a valid IRC channel name for server"
 msgstr "1, falls die Zeichenkette ein gültiger IRC-Channelname für den Server ist"
@@ -6615,6 +6626,18 @@ msgid "%s%s: TLS handshake timeout for client %s%s%s"
 msgstr "%s%s: TLS Handshake Zeitüberschreitung für Client %s%s%s"
 
 #, c-format
+msgid "%s%s: invalid websocket handshake received for client %s%s%s"
+msgstr "%s%s: ungültigen WebSocket Handshake für Client %s%s%s empfangen"
+
+#, c-format
+msgid "%s%s: origin \"%s\" not allowed for websocket"
+msgstr "%s%s: Origin \"%s\" nicht erlaubt für WebSocket"
+
+#, c-format
+msgid "%s%s: error decoding websocket frame for client %s%s%s"
+msgstr "%s%s: Fehler beim Dekodieren des WebSocket Frame, für Client %s%s%s"
+
+#, c-format
 msgid "%s%s: reading data on socket for client %s%s%s: error %d %s"
 msgstr "%s%s: lese Daten von Socket für Client %s%s%s: Fehler %d %s"
 
@@ -6700,7 +6723,7 @@ msgid ""
 "         ipv6: force use of IPv6\n"
 "          ssl: enable SSL\n"
 "protocol.name: protocol and name to relay:\n"
-"                 - protocol \"irc\": name is the server to share\n"
+"                 - protocol \"irc\": name is the server to share (optional, if not given, the server name must be sent by client in command \"PASS\", with format: \"PASS server:password\")\n"
 "                 - protocol \"weechat\" (name is not used)\n"
 "         port: port used for relay\n"
 "          raw: open buffer with raw Relay data\n"
@@ -6713,6 +6736,8 @@ msgid ""
 "    /relay add irc.freenode 8000\n"
 "  irc proxy, for server \"freenode\", with SSL:\n"
 "    /relay add ssl.irc.freenode 8001\n"
+"  irc proxy, for all servers (client will choose), with SSL:\n"
+"    /relay add ssl.irc 8002\n"
 "  weechat protocol:\n"
 "    /relay add weechat 9000\n"
 "  weechat protocol with SSL:\n"
@@ -6733,7 +6758,7 @@ msgstr ""
 "         ipv6: erzwingt die Nutzung von IPv6\n"
 "          ssl: aktiviert SSL\n"
 "protocol.name: Protokoll und Name des Relay:\n"
-"                 - Protokoll \"irc\": und der Name des Servers welcher geteilt werden soll\n"
+"                 - Protokoll \"irc\": Name des Servers welcher geteilt werden soll (optional). Wird kein Name angegeben, dann muss der Client den Servernamen mittels Befehl \"PASS\" anfordern. Format: \"PASS Server:Passwort\")\n"
 "                 - Protokoll \"weechat\" (Name wird nicht unterstützt)\n"
 "         port: Port den das Relay nutzen soll\n"
 "          raw: öffnet Buffer mit RAW-Relay Daten\n"
@@ -6746,6 +6771,8 @@ msgstr ""
 "    /relay add irc.freenode 8000\n"
 "  IRC Proxy, für Server \"freenode\", mit SSL:\n"
 "    /relay add ssl.irc.freenode 8001\n"
+"  IRC Proxy für alle Server (Client wählt aus), mit SSL:\n"
+"    /relay add ssl.irc 8002\n"
 "  WeeChat Protokoll:\n"
 "    /relay add weechat 9000\n"
 "  WeeChat Protokoll, mit SSL:\n"
@@ -6781,10 +6808,6 @@ msgstr "%s%s: Unbekanntes Protokoll \"%s\""
 #, c-format
 msgid "%s%s: error: name is not allowed for protocol \"%s\""
 msgstr "%s%s: Fehler: dieser Name ist für das Protokoll \"%s\" nicht erlaubt"
-
-#, c-format
-msgid "%s%s: error: name is not required for protocol \"%s\""
-msgstr "%s%s: Fehler: ein Name ist für das Protokoll \"%s\" nicht notwendig"
 
 #, c-format
 msgid "%s%s: error: relay for \"%s\" already exists"
@@ -6840,6 +6863,9 @@ msgstr "Passwort wird von Clients benötigt um Zugriff auf dieses Relay zu erhal
 
 msgid "file with SSL certificate and private key (for serving clients with SSL)"
 msgstr "Datei mit SSL Zertifikat und privatem Schlüssel (zur Nutzung von Clients mit SSL)"
+
+msgid "regular expression with origins allowed in websockets (case insensitive, use \"(?-i)\" at beginning to make it case sensitive), example: \"^http://(www\\.)?example\\.(com|org)\""
+msgstr "erlaubt regulären Ausdruck für Origins in WebSockets (Groß- und Kleinschreibung wird ignoriert, um Groß- und Kleinschreibung zu nutzen muss \"(?-i)\" dem Origin vorangestellt werden), Beispiele: \"^http://(www\\.)?example\\.(com|org)\""
 
 msgid "maximum number of lines in backlog per IRC channel (0 = unlimited)"
 msgstr "maximale Anzahl an Zeilen im Verlaufsspeicher. Dies gilt für jeden IRC Channel (0: keine Zeilenbegrenzung)"
@@ -8074,6 +8100,12 @@ msgstr "Type"
 msgid "Constants"
 msgstr "Konstanten"
 
+#~ msgid "hide password displayed by nickserv"
+#~ msgstr "Passwörter verstecken die durch NickServ angezeigt werden"
+
+#~ msgid "%s%s: error: name is not required for protocol \"%s\""
+#~ msgstr "%s%s: Fehler: ein Name ist für das Protokoll \"%s\" nicht notwendig"
+
 #~ msgid "%s%s: not enough memory to create new speller"
 #~ msgstr "%s%s: Nicht genug Speicher um neue Rechtschreibung zu erstellen"
 
@@ -8220,9 +8252,6 @@ msgstr "Konstanten"
 
 #~ msgid "display message when (un)marking as away"
 #~ msgstr "bei Abwesenheit und Rückkehr eine Nachricht anzeigen"
-
-#~ msgid "%s%s: error sending data to client %d (%s)"
-#~ msgstr "%s%s: Fehler beim Senden von Daten an den Client %d (%s)"
 
 #~ msgid "display channel modes in \"buffer_name\" bar item"
 #~ msgstr "zeigt die Channel-Modi mittels \"buffer_name\" in der Bar-Item an"
