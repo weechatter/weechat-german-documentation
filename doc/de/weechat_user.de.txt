@@ -26,11 +26,11 @@ wesentliche Merkmale:
 * mehrere Server Verbindungen sind möglich (mittels SSL, IPv6, proxy)
 * klein, schnell und schlank
 * den eigenen persönlichen Bedürfnissen anpassbar und durch Erweiterungen und Skripten in der Funktionalität erweiterbar
-* IRC RFCs konform http://www.ietf.org/rfc/rfc1459.txt[1459],
-  http://www.ietf.org/rfc/rfc2810.txt[2810],
-  http://www.ietf.org/rfc/rfc2811.txt[2811],
-  http://www.ietf.org/rfc/rfc2812.txt[2812] and
-  http://www.ietf.org/rfc/rfc2813.txt[2813]
+* IRC RFCs konform http://tools.ietf.org/html/rfc1459[1459],
+  http://tools.ietf.org/html/rfc2810[2810],
+  http://tools.ietf.org/html/rfc2811[2811],
+  http://tools.ietf.org/html/rfc2812[2812] and
+  http://tools.ietf.org/html/rfc2813[2813]
 * Betriebssystemunabhängig (GNU/Linux, *BSD, MacOS X, Windows und weitere)
 * 100% GPL, freie Software
 
@@ -101,7 +101,7 @@ welche Pakete optional genutzt werden können.
 | ruby1.9.1-dev          | ≥ 1.8       |          | ruby Erweiterung
 | liblua5.1-0-dev        |             |          | lua Erweiterung
 | tcl-dev                | ≥ 8.5       |          | tcl Erweiterung
-| guile-1.8-dev          |             |          | guile (scheme) Erweiterung
+| guile-2.0-dev          | ≥ 2.0       |          | guile (scheme) Erweiterung
 | asciidoc               | ≥ 8.5.0     |          | erstellt Dokumentation (HTML Dateien)
 | source-highlight       |             |          | Syntax Highlight für Quelltext in HTML Dokumentation
 |========================================
@@ -2329,49 +2329,22 @@ Befehle
 
 include::autogen/user/relay_commands.txt[]
 
-[[relay_irc_proxy]]
-IRC proxy
-^^^^^^^^^
+[[relay_password]]
+Passwort
+^^^^^^^^
 
-Die Relay-Erweiterung verhält sich wie ein IRC Proxy: Es kann ein Port als IRC Server
-definiert und ein Passwort für Clients genutzt werden.
-
-Beispiel:
-
-----------------------------------------
-/set relay.network.password "mein Passwort"
-/relay add irc.freenode 8000
-----------------------------------------
-
-Nun kann mittels eines IRC Clients (WeeChat, XChat, irssi, ...) am Port 8000 und dem
-Server-Passwort "mein Passwort" eine Verbindung hergestellt werden.
-
-Die Anzahl an erlaubten Clients kann limitiert werden:
-
-----------------------------------------
-/set relay.network.max_clients 1
-----------------------------------------
-
-[[relay_weechat_protocol]]
-WeeChat Protokoll
-^^^^^^^^^^^^^^^^^
-
-Die Relay-Erweiterung kann Daten, mittels dem WeeChat Protokoll, an eine
-externe Oberfläche senden.
-
-Zum Beispiel:
+Es wird nachdrücklich Empfohlen ein Passwort für die Relay-Verbindung zu nutzen:
 
 ----------------------------------------
 /set relay.network.password "meinPasswort"
-/relay add weechat 9000
 ----------------------------------------
 
-Nun kann man über den Port 9000 mittels einer Oberfläche (wie QWeeChat)
-und dem Passwort "meinPasswort" eine Verbindung zu WeeChat herstellen.
+Dieses Passwort wird sowohl für das 'irc' als auch für das 'weechat' Protokoll
+verwendet.
 
 [[relay_ssl]]
-Relay-Verbindung mittels SSL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SSL
+^^^
 
 Man kann SSL mittels eines selbst erstellten Zertifikates und eines privaten
 Schlüssels nutzen. Um SSL für die Verbindung zu aktivieren stellt man dem
@@ -2396,12 +2369,75 @@ Schlüssel mittels folgendem Befehl nachträglich geladen werden:
 /relay sslcertkey
 ----------------------------------------
 
-um dann die Relay-Verbindung, mit SSL Verschlüsselung, anzulegen:
+[[relay_irc_proxy]]
+IRC Proxy
+^^^^^^^^^
+Die Relay Erweiterung kann wie ein IRC Proxy genutzt werden. Dabei simuliert
+die Erweiterung einen IRC Server und man kann sich mit jedem IRC Client zu WeeChat
+verbinden.
+
+Es kann für jeden IRC Server ein Port definiert werden, oder aber ein Port für
+alle Server.
+
+Wird ein Port für alle Server genutzt, dann muss der Client den internen Namen
+des zu nutzenden Servers mit dem IRC Befehl "PASS" anfordern:
 
 ----------------------------------------
-/relay add ssl.irc.freenode 8001
-/relay add ssl.weechat 9001
+PASS server:meinPasswort
 ----------------------------------------
+
+Beispiel: IRC Proxy mit SSL für einen beliebigen Server (Client wählt aus):
+
+----------------------------------------
+/relay add ssl.irc 8000
+----------------------------------------
+
+Beispiel: IRC Proxy ohne SSL und nur für "freenode":
+
+----------------------------------------
+/relay add irc.freenode 8000
+----------------------------------------
+
+Nun kann man eine Verbindung zum Port 8000 mit jedem beliebigen IRC Client
+herstellen, indem man das Server Passwort "meinPasswort" nutzt (oder
+"freenode:meinPasswort" sofern kein Server angegeben wurde).
+
+[[relay_weechat_protocol]]
+WeeChat Protokoll
+^^^^^^^^^^^^^^^^^
+
+Die Relay-Erweiterung kann Daten, mittels dem WeeChat Protokoll, an eine
+externe Oberfläche senden.
+
+Zum Beispiel:
+
+----------------------------------------
+/relay add weechat 9000
+----------------------------------------
+
+Nun kann man über den Port 9000 mittels einer Oberfläche und dem Passwort
+"meinPasswort" eine Verbindung zu WeeChat herstellen.
+
+[[relay_websocket]]
+WebSocket
+^^^^^^^^^
+
+Das WebSocket Protokoll (http://tools.ietf.org/html/rfc6455[RFC 6455]) wird nun
+in der Relay Erweiterung unterstützt.
+
+Der WebSocket Handshake wird automatisch erkannt und der Socket ist sofort
+funktionsfähig, sofern die benötigten Header gefunden werden und die Herkunft
+bestätigt wurde (siehe Option <<option_relay.network.websocket_allowed_origins,relay.network.websocket_allowed_origins>>).
+
+Ein WebSocket kann in HTML5, mit einer JavaScript Zeile, geöffnet werden:
+
+[source,js]
+----------------------------------------
+websocket = new WebSocket("ws://server.com:9000/weechat");
+----------------------------------------
+
+Der Port (im Beispiel: 9000) ist der Port der in der Relay Erweiterung angegeben wurde.
+Die URI muss immer auf "/weechat" enden ('irc' und 'weechat' Protokoll).
 
 [[rmodifier_plugin]]
 Rmodifier Erweiterung
