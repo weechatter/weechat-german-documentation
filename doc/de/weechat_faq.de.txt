@@ -26,32 +26,10 @@ Aber dieses trifft nicht auf WeeChat zu!)
 Weshalb sollte man WeeChat nutzen? - X-Chat und Irssi sind doch auch sehr gut...
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Weil WeeChat schlank ist und neue Funktionen besitzt.
-Einige Funktionen (Version ≥ 0.3.x):
-
-* Unterstützung verschiedener Protokolle durch Erweiterungen (IRC, Jabber)
-* mehrere Remote GUIs als Ergänzung zu Curses (in Kürze)
-* Unterstützung von 256 Farben
-* in mehreren Sprachen verfügbar
-* den eigenen Bedürfnissen durch Erweiterungen anpassbar (C, Perl, Python, Ruby, Lua, Tcl)
-* Buffer mit unabhängigem Inhalt
-* Filterung der Anzeige mittels Tags und regulären Ausdrücken
-* horizontale und vertikale Einteilung der Fenster
-* anpassbare und erweiterbare Leisten
-* native Nickliste
-* Auflistung von Buffern (mittels dem Skript buffers.pl)
-* IRC Proxy
-* Umleitung von IRC Befehlen
-* inkrementelle Textsuche in Buffern, zu Highlights springen
-* FIFO Pipe für Fernsteuerung
-* Unterstützung von Aspell
-* Doppelter Zeichensatz (Kodierung/Dekodierung)
-* Neuentwicklung (basiert auf keinem anderen Programm)
-* lauffähig auf einer Vielzahl von Plattformen
-* 100% GPL und Frei
+WeeChat ist sehr Speicher schonend und besticht durch innovative Funktionen.
 
 Weitere Informationen gibt es auf der folgenden Internetseite:
-http://www.weechat.org/features
+http://weechat.org/about/features
 
 [[compilation_install]]
 Kompilierung / Installation
@@ -61,10 +39,12 @@ Kompilierung / Installation
 Ich habe gehört es gibt mehrere GUIs für WeeChat. Wie kann ich diese kompilieren bzw. nutzen?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Zur Zeit ist nur eine GUI, für Curses, verfügbar.
+Folgende GUIs sind verfügbar:
 
-Andere GUIs (zur Zeit in der Entwicklung) werden als Remote Clients verfügbar
-sein.
+* http://weechat.org/download/devel[QWeeChat] (Qt)
+* https://github.com/ubergeek42/weechat-android[weechat-android] (Android)
+* https://github.com/the-kenny/weechat.el[weechat.el] (Emacs)
+* https://github.com/eirikb/weecloud[weecloud] (Web)
 
 [[compile_git]]
 Ich kann WeeChat nach Cloning des git Repository nicht kompilieren - weshalb?
@@ -103,8 +83,8 @@ Anzeige
 Teilweise fehlen den Zeichen die Akzente. Wie kann ich das korrigieren?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Dies ist ein bekanntes Problem. Aus diesem Grund sollte der nachfolgende Text
-sorgfältig durchgelesen und *alle* aufgezeigten Lösungsmöglichkeiten durchgeführt
+Dies ist ein bekanntes Problem. Aus diesem Grund sollten die folgenden Punkte
+sorgfältig durchgelesen und *alle* aufgezeigten Lösungsmöglichkeiten überprüft
 werden:
 
 * überprüfe, ob weechat-curses mit libncursesw verlinkt ist (Warnung: Dies ist bei den
@@ -112,17 +92,19 @@ werden:
 * prüfe mit dem Befehl `/plugin`, ob die "Charset" Erweiterung geladen ist (falls
   dies nicht der Fall sein sollte benötigst Du wahrscheinlich noch das Paket "weechat-plugins")
 * überprüfe die Ausgabe des `/charset` Befehls (im Server-Buffer). Du solltest
-  'ISO-XXXXXX' oder 'UTF-8' für den Terminal Zeichensatz als Antwort erhalten. Falls Du
-  'ANSI_X3.4-1968' oder einen anderen Wert angezeigt bekommen solltest, ist Deine Einstellung der
-  locale möglicherweise falsch.
+  'ISO-XXXXXX' oder 'UTF-8' für den Terminal Zeichensatz als Antwort erhalten. Falls
+  'ANSI_X3.4-1968' oder einen anderer Wert angezeigt werden sollte, ist Deine lokale
+  Einstellung möglicherweise falsch.
 * Einstellen des globalen decode Wertes, z.B.:
   `/set charset.default.decode "ISO-8859-15"`
-* Falls Du UTF-8 locale nutzt:
+* Falls Du UTF-8 lokal nutzt:
 ** prüfe, ob Dein Terminal überhaupt UTF-8 fähig ist (der empfohlene Terminal für UTF-8
    ist rxvt-unicode)
-** Solltest Du screen nutzten, prüfe ob dieser im UTF-8 Modus läuft
-   ("`defutf8 on`" in der Datei ~/.screenrc oder `screen -U` zum Starten von
+** Solltest Du screen nutzten, prüfe ob screen im UTF-8 Modus läuft
+   ("`defutf8 on`" in der Datei ~/.screenrc oder `screen -U` zum starten von
    screen)
+* überprüfe die Option 'weechat.look.eat_newline_glitch' (diese Option kann zu
+  Darstellungsfehlern führen, wenn sie aktiviert ist) 
 
 [NOTE]
 Für Weechat wird die Nutzung von UTF-8 locale empfohlen. Nutzt Du jedoch ISO
@@ -298,7 +280,7 @@ Zeilen angefügt (dies führt dazu, dass URLs beim Markieren korrekt erkannt wer
 Bei der Nutzung dieser Option kann es zu Darstellungsfehlern kommen. Sollte dies
 auftreten, sollte diese Option wieder deaktiviert werden.
 
-Eine weitere Möglichkeit ist, ein Skript zu nutzen: http://www.weechat.org/scripts/stable/tag/url
+Eine weitere Möglichkeit ist, ein Skript zu nutzen: http://weechat.org/scripts/stable/tag/url
 
 [[change_locale_without_quit]]
 Ich möchte die Meldungen von Weechat in einer anderen Sprache ausgeben lassen, ohne WeeChat zu beenden. Ist dies möglich?
@@ -316,7 +298,7 @@ Hierdurch erhält man für das Terminal deutsche, UTF-8 kodierte Meldungen.
 Benutzer von ISO-Kodierungen können folgendes eingeben:
 `/shell setenv LANG=de_DE`.
 
-[[256_colors]]
+[[use_256_colors]]
 Wie kann ich 256 Farben in WeeChat nutzen?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -716,7 +698,7 @@ Beim Skript 'launcher.pl' müssen noch die Befehle angepasst werden:
 /set plugins.var.perl.launcher.signal.weechat_highlight "/Pfad/zum/Befehl Argumente"
 ----------------------------------------
 
-andere Skripten die auch zu diesem Thema passen: http://www.weechat.org/scripts/stable/tag/notify/
+andere Skripten die auch zu diesem Thema passen: http://weechat.org/scripts/stable/tag/notify/
 
 [[irc_target_buffer]]
 Wie kann ich bei zusammengefügten Buffern den Zielbuffer ändern (z.B. bei einem Server-Buffer)?
@@ -796,7 +778,7 @@ Es gibt drei Möglichkeiten:
   * Einen Verbesserungsvorschlag machen: https://savannah.nongnu.org/task/?group=weechat
   * Einen Patch einsenden: https://savannah.nongnu.org/patch/?group=weechat
 . Du kannst den Entwicklern mailen, entsprechende Mail-Adressen auf der Supportseite:
-  http://www.weechat.org/about
+  http://weechat.org/dev/support
   (Um emails an die "support" Mailing-Liste zu schicken, kannst Du diese abonnieren)
 
 [[gdb_error_threads]]
@@ -824,7 +806,7 @@ $ LD_PRELOAD=/lib/libpthread.so.0 gdb /Pfad/zu/weechat-curses
 Auf welchen Plattformen läuft WeeChat und wird es noch auf andere Betriebssystemen portiert?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Eine vollständige Liste der Portierungen findest Du unter: http://www.weechat.org/download
+Eine vollständige Liste der Portierungen findest Du unter: http://weechat.org/download
 
 Wir geben unser Bestes um WeeChat auf möglichst viele Plattformen zu portieren.
 Aber um WeeChat auf fremden Betriebssystemen zu testen, zu denen wir keinen Zugang haben,
@@ -837,11 +819,11 @@ Ich möchte den Entwicklern von WeeChat helfen. Was kann ich tun?
 Es gibt einiges zu tun z.B. testen, programmieren, Dokumentation, ...
 
 Bitte kontaktiere uns via IRC oder email, schaue auf die Support-Seite:
-http://www.weechat.org/support
+http://weechat.org/dev/support
 
 [[donate]]
 Kann ich Geld oder anderes an die WeeChat Entwickler spenden?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Du kannst uns Geld zur Unterstützung der weiteren Entwicklung spenden.
-Details hierzu gibt es auf: http://www.weechat.org/donate
+Details hierzu gibt es auf: http://weechat.org/about/donate
