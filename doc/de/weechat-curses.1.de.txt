@@ -1,0 +1,116 @@
+WEECHAT-CURSES(1)
+=================
+:doctype: manpage
+
+NAME
+----
+
+weechat-curses - der erweiterbare Chat Client (Curses Version)
+
+SYNOPSIS
+--------
+
+[verse]
+'weechat-curses' [-a|--no-connect] [-d|--dir <path>] [-p|--no-plugin] [-r|--run-command <command>] [-s|--no-script] [--upgrade] [plugin:option...]
+'weechat-curses' [-c|--colors]
+'weechat-curses' [-h|--help]
+'weechat-curses' [-k|--keys]
+'weechat-curses' [-l|--license]
+'weechat-curses' [-v|--version]
+
+BESCHREIBUNG
+------------
+
+WeeChat ist ein schneller, leichter und erweiterbarer Chat Client.
+
+Der Client ist modular aufgebaut (ein kleiner Kern mit nachladbaren Erweiterungen),
+Multiprotokollfähig (IRC und Jabber),erweiterbar mittels C und durch Skripten, wobei
+verschiedenen Sprachen unterstützt werden.
+
+OPTIONEN
+--------
+
+include::cmdline_options.de.txt[]
+
+OPTIONEN von ERWEITERUNGEN
+--------------------------
+
+Um eine vollständige Dokumentation der Optionen zu erhalten, siehe
+http://weechat.org/doc[WeeChat user's guide].
+
+Mittels der IRC Erweiterung kann man sich zu einen temporären Server, mittels einer URL,
+verbinden lassen:
+
+    irc[6][s]://[[nickname][:password]@]server[:port][/#channel1[,#channel2...]]
+
+Um dem WeeChat IRC Support-Channel, mit dem Nick "mynick", beizutreten:
+
+    irc://mynick@irc.freenode.net/#weechat
+
+Um eine IPv6 Adresse zu nutzen, muss diese in eckige Klammern gesetzt werden:
+
+    irc://mynick@[2001:db8:0:85a3::ac1f:8001]:6668/#test
+
+DATEIEN
+-------
+
+$HOME/.weechat/weechat.conf::
+    WeeChats Konfigurationsdatei
+
+$HOME/.weechat/plugins.conf::
+    Konfigurationsdatei für Erweiterungen
+
+$HOME/.weechat/alias.conf::
+    Konfigurationsdatei für 'alias' Erweiterung
+
+$HOME/.weechat/aspell.conf::
+    Konfigurationsdatei für 'aspell' Erweiterung
+
+$HOME/.weechat/charset.conf::
+    Konfigurationsdatei für 'charset' Erweiterung
+
+$HOME/.weechat/irc.conf::
+    Konfigurationsdatei für 'irc' Erweiterung
+
+$HOME/.weechat/logger.conf::
+    Konfigurationsdatei für 'logger' Erweiterung
+
+$HOME/.weechat/relay.conf::
+    Konfigurationsdatei für 'relay' Erweiterung
+
+$HOME/.weechat/rmodifier.conf::
+    Konfigurationsdatei für 'rmodifier' Erweiterung
+
+$HOME/.weechat/script.conf::
+    Konfigurationsdatei für 'script' Erweiterung
+
+$HOME/.weechat/xfer.conf::
+    Konfigurationsdatei für 'xfer' Erweiterung
+
+$HOME/.weechat/weechat.log::
+    WeeChat Protokolldatei
+
+AUTOREN
+-------
+WeeChat ist programmiert von Sébastien Helleu und Beitragenden (eine vollständige Auflistung
+findet man in der AUTHORS Datei).
+
+Copyright (C) 2003-2013 Sébastien Helleu <flashcode@flashtux.org>
+
+WeeChat is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+Please read the COPYING file for more information.
+
+Web: <http://weechat.org/>
+
+FEHLER MELDEN
+-------------
+
+Fehlerbeschreibungen oder Vorschläge für neue Funktionen können auf
+der Savannah Webseite hinterlegt werden:
+
+* Fehler: <http://savannah.nongnu.org/bugs/?group=weechat>
+* Feature-Request: <http://savannah.nongnu.org/task/?group=weechat>
