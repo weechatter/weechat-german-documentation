@@ -87,8 +87,8 @@ Dies ist ein bekanntes Problem. Aus diesem Grund sollten die folgenden Punkte
 sorgfältig durchgelesen und *alle* aufgezeigten Lösungsmöglichkeiten überprüft
 werden:
 
-* überprüfe, ob weechat-curses mit libncursesw verlinkt ist (Warnung: Dies ist bei den
-  meisten Distributionen nötig - jedoch nicht bei allen): `ldd /path/to/weechat-curses`
+* überprüfe, ob weechat mit libncursesw verlinkt ist (Warnung: Dies ist bei den
+  meisten Distributionen nötig - jedoch nicht bei allen): `ldd /path/to/weechat`
 * prüfe mit dem Befehl `/plugin`, ob die "Charset" Erweiterung geladen ist (falls
   dies nicht der Fall sein sollte benötigst Du wahrscheinlich noch das Paket "weechat-plugins")
 * überprüfe die Ausgabe des `/charset` Befehls (im Server-Buffer). Du solltest
@@ -104,7 +104,7 @@ werden:
    ("`defutf8 on`" in der Datei ~/.screenrc oder `screen -U` zum starten von
    screen)
 * überprüfe die Option 'weechat.look.eat_newline_glitch' (diese Option kann zu
-  Darstellungsfehlern führen, wenn sie aktiviert ist) 
+  Darstellungsfehlern führen, wenn sie aktiviert ist)
 
 [NOTE]
 Für Weechat wird die Nutzung von UTF-8 locale empfohlen. Nutzt Du jedoch ISO
@@ -527,6 +527,22 @@ Connect durchführen:
 /connect freenode
 ----------------------------------------
 
+[[irc_oauth]]
+Wie stellt man eine Verbindung zu einem Server her, der "oauth" verlangt?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Einige Server, wie z.B. 'twitch', verlangen oauth für eine Verbindung.
+
+Bei oauth handelt es sich lediglich um ein Passwort mit dem Format "oauth:XXXX".
+
+Mit folgenden Befehlen kann man einen Server erstellen und sich mit diesem
+verbinden (Name und Adresse muss durch entsprechende Werte ersetzt werden):
+
+----------------------------------------
+/server add name irc.server.org -password="oauth:XXXX"
+/connect name
+----------------------------------------
+
 [[irc_sasl]]
 Wie kann ich mich, vor dem Betreten von Channels, identifizieren?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -788,7 +804,7 @@ Wenn man WeeChat in gdb startet kann ein Thread-Fehler auftreten. Was beudeutet 
 Falls man WeeChat in gdb ausführt kann folgende Fehlermeldung erscheinen:
 
 ----------------------------------------
-$ gdb /Pfad/zu/weechat-curses
+$ gdb /Pfad/zu/weechat
 (gdb) run
 [Thread debugging using libthread_db enabled]
 Cannot find new threads: generic error
@@ -798,7 +814,7 @@ Um diesen Fehler zu beheben sollte man gdb wie folgt aufrufen (der Pfad zu
 libpthread und WeeChat muss natürlich an das eigene System angepasst werden):
 
 ----------------------------------------
-$ LD_PRELOAD=/lib/libpthread.so.0 gdb /Pfad/zu/weechat-curses
+$ LD_PRELOAD=/lib/libpthread.so.0 gdb /Pfad/zu/weechat
 (gdb) run
 ----------------------------------------
 
