@@ -729,10 +729,14 @@ Items
 
 Die Option 'items' ist ein String, mit einer Anzahl von Bar-Items. Diese werden
 durch Komma voneinander getrennt (auf dem Bildschirm wird das Komma durch ein
-Leerzeichen ersetzt) oder man nutzt ein "+" (Item werden ohne Leerzeichen
-angezeigt).
+Leerzeichen ersetzt). Möchte man die Items ohne Leerzeichen darstellen, nutzt
+man ein "+", zwischen den Items.
 
 Eine Liste von Bar-Items kann man sich mit dem Befehl `/bar listitems` anzeigen lassen.
+
+Vor oder nach dem Item können Zeichen eingefügt werden. Diese dürfen nicht alphanumerisch,
+"-" oder "_" sein. Die Zeichen werden mit der entsprechenden Farbe, für Trennzeichen,
+dargestellt (Option 'color_delim').
 
 Beispiel einer Bar mit den Items, "[time],buffer_number+:+buffer_plugin+.+buffer_name":
 
@@ -742,11 +746,26 @@ Beispiel einer Bar mit den Items, "[time],buffer_number+:+buffer_plugin+.+buffer
 └─────────────────────────────────────────────────────────────────────────────────────────┘
 ........................................
 
+Eine Besonderheit stellt die Möglichkeit dar, ein Item eines bestimmten Buffers
+anzuzeigen. Syntax: "@buffer:item" ("buffer" ist der vollständige Name des Buffers
+und "item" der Name der Bar-Item)
+
+Dies ist für root-Bars sinnvoll, um gezielt ein Item eines bestimmten Buffers
+anzuzeigen, welcher nicht im aktuellen Fenster oder überhaupt nicht sichtbar
+ist.
+
+Beispiel: Nickliste von bitlbee permanent in einer root-Bar darstellen (die Bar
+heißt hierbei 'bitlist' und der Name des bitlbee Servers 'bitlbee'):
+
+----------------------------------------
+/set weechat.bar.bitlist.items "@irc.bitlbee.&bitlbee:buffer_nicklist"
+----------------------------------------
+
 [[bar_filling]]
 Darstellung innerhalb einer Bar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Es gibt vier Möglichkeiten Text innerhalb einer Bar darzustellen:
+Es gibt folgende vier Möglichkeiten um Text innerhalb einer Bar darzustellen:
 
 * `horizontal`: die Items werden horizontal, von links nach rechts, dargestellt.
    Sollten neue Zeilen dargestellt werden, dann werden diese durch ein Leerzeichen
@@ -831,7 +850,7 @@ kann nur für Bars vom Typ 'window' genutzt werden).
 
 Folgende Zeichenketten sind möglich:
 
-* 'active': das Fenster muss das aktive Fenster sein
+* 'active'  : das Fenster muss das aktive Fenster sein
 * 'inactive': das Fenster muss das inaktive Fenster sein
 * 'nicklist': der Buffer der in einem Fenster dargestellt wird, muss eine
               Nickliste anzeigen.
@@ -840,7 +859,7 @@ Folgende Zeichenketten sind möglich:
 
 Für den Ausdruck sind folgende Variablen verfügbar:
 
-* `${active}`: wahr, wenn Fenster aktiv ist
+* `${active}`  : wahr, wenn Fenster aktiv ist
 * `${inactive}`: wahr, wenn Fenster inaktiv ist
 * `${nicklist}`: wahr, wenn der Buffer im Fenster eine Nicklist anzeigt.
 
@@ -880,7 +899,6 @@ der entsprechende Buffer in der Hotlist angezeigt werden soll.
 
 Der Wert für die Benachrichtigungsstufe kann mittels folgender Option festgelegt
 werden:
-The default notify level can be set using option
 <<option_weechat.look.buffer_notify_default,weechat.look.buffer_notify_default>>,
 Der Standardwert ist 'all'.
 
@@ -893,14 +911,14 @@ Der Standardwert ist 'all'.
 | all                    | 'highlight' + 'private Nachrichten' + 'normal Nachrichten' + 'Nachrichten mit einer niedrigen Priorität'
 |========================================
 
-Benachrichtigungsstufen können für mehrere Buffer definiert werden, zum Beispiel
+Benachrichtigungsstufen können für mehrere Buffer definiert werden. Zum Beispiel
 für alle Buffer des IRC Servers "freenode":
 
 ----------------------------------------
 /set weechat.notify.irc.freenode message
 ----------------------------------------
 
-Setzt die Benachrichtigungsstufe, ausschließlich für den Channel "#weechat",
+Setzt die Benachrichtigungsstufe ausschließlich für den Channel "#weechat",
 auf die Stufe 'highlight':
 
 ----------------------------------------
@@ -1230,7 +1248,7 @@ Bespiele von Ereignissen:
 * `ctrl-alt-wheeldown`
 
 [TIP]
-Wird eine Funktion im "mouse"-Kontext hinzufügt ist es möglich mehrere Mausereignisse
+Wird eine Funktion im "mouse"-Kontext hinzufügt ist es möglich, mehrere Mausereignisse
 mittels `*` abzufangen. Zum Beispiel fängt `button1-gesture-*` alle Mausgesten ab, die
 mit der linken Maustaste eingeleitet werden.
 
