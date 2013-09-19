@@ -10840,12 +10840,3 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
-
-#~ msgid "username for proxy server"
-#~ msgstr "Benutzername für die Proxy-Verbindung"
-
-#~ msgid "password for proxy server"
-#~ msgstr "Passwort für die Proxy-Verbindung"
-
-#~ msgid "password for server"
-#~ msgstr "Passwort für den Server"
