@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-19 14:18+0200\n"
-"PO-Revision-Date: 2013-10-21 16:27+0100\n"
+"POT-Creation-Date: 2013-10-21 16:42+0200\n"
+"PO-Revision-Date: 2013-10-21 16:48+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <nils_2@freenode.#weechat>\n"
 "Language: de\n"
@@ -2316,7 +2316,7 @@ msgstr "WeeChat mit Cygwin"
 
 #: news/_i18n_info.py:94
 msgid ""
-"WeeChat is now in Cygwin, and can be installed with setup.exe. \n"
+"WeeChat is now in Cygwin, and can be installed with setup.exe.\n"
 "Version 0.4.2 is available for 32 and 64-bit Cygwin.\n"
 "\n"
 "Note: Guile plugin is missing, since it requires guile >= 2.0, which is not "
@@ -3600,232 +3600,227 @@ msgstr ""
 msgid "RSS/RDF/Atom feed aggregator."
 msgstr "zum Anzeigen von RSS/RDF/Atom Feeds."
 
-#. Translators: description for script "weemustfeed.py" (0.3.7+)
-#: plugins/_i18n_plugins.py:413
-msgid "RSS/RDF/Atom feed aggregator. "
-msgstr "zum Anzeigen von RSS/RDF/Atom Feeds."
-
 #. Translators: description for script "nma.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:415
+#: plugins/_i18n_plugins.py:413
 msgid "Receive notifications in Notify My Android (android phone app)."
 msgstr ""
 "empfange Benachrichtigung mittels NotifyMyAndroid (Android Telefon-App)."
 
 #. Translators: description for script "stalker.pl" (0.3.4+)
-#: plugins/_i18n_plugins.py:417
+#: plugins/_i18n_plugins.py:415
 msgid "Record and correlate nick!user@host information."
 msgstr "speichert und korreliert nick!user@host Informationen."
 
 #. Translators: description for script "recoverop.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:419
+#: plugins/_i18n_plugins.py:417
 msgid "Recover channel operator in empty channel."
 msgstr ""
 "versucht Channel Operation Status zu übernehmen, wenn der letzte User den "
 "Channel verlassen hat."
 
 #. Translators: description for script "highlightxmpp.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:421
+#: plugins/_i18n_plugins.py:419
 msgid "Relay highlighted and private messages over XMPP (Jabber)."
 msgstr "übermittelt Highlight oder private Nachrichten über XMPP (Jabber)."
 
 #. Translators: description for script "noirccolors.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:423
+#: plugins/_i18n_plugins.py:421
 msgid "Remove IRC colors from selected buffers."
 msgstr "entfernt IRC Farben in ausgewählten Buffern."
 
 #. Translators: description for script "curiousignore.pl" (0.3.2+)
-#: plugins/_i18n_plugins.py:425
+#: plugins/_i18n_plugins.py:423
 msgid "Remove messages from a nick and only print nick."
 msgstr ""
 "unterdrückt die Nachricht eines Users in einem Channel und nur sein Nickname "
 "wird angezeigt."
 
 #. Translators: description for script "unset_unused.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:427
+#: plugins/_i18n_plugins.py:425
 msgid "Remove options of scripts that are no longer installed."
 msgstr "Optionen von nicht installierten Skripten werden gelöscht."
 
 #. Translators: description for script "facebook_rename.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:429
+#: plugins/_i18n_plugins.py:427
 msgid "Rename Facebook usernames when using Bitlbee or Minbif."
 msgstr "benennt Facebook-Namen um wenn Bitlbee oder Minbif genutzt wird."
 
 #. Translators: description for script "autoconnect.py" (0.3.2+)
-#: plugins/_i18n_plugins.py:431
+#: plugins/_i18n_plugins.py:429
 msgid "Reopen servers and channels opened last time WeeChat closed."
 msgstr ""
 "öffnet erneut die Server und Channel die geöffnet waren, als WeeChat beendet "
 "wurde."
 
 #. Translators: description for script "text_replace.py" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:433
+#: plugins/_i18n_plugins.py:431
 msgid "Replace text in messages."
 msgstr "ersetzt einen Text in Nachrichten."
 
 #. Translators: description for script "text_replace.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:435
+#: plugins/_i18n_plugins.py:433
 msgid "Replaces text you write with replacement text."
 msgstr "ersetzt den geschriebenen Text durch einen anderen Text."
 
 #. Translators: description for script "upside_down.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:437
+#: plugins/_i18n_plugins.py:435
 msgid "Replaces text you write with upside down text."
 msgstr "stellt den geschriebenen Text auf dem Kopf dar."
 
 #. Translators: description for script "bashorg.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:439
+#: plugins/_i18n_plugins.py:437
 msgid "Retrieve quotes from bash.org."
 msgstr "zeigt Zitate von bash.org an."
 
 #. Translators: description for script "roll.rb" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:441
+#: plugins/_i18n_plugins.py:439
 msgid "Roll a random number with different simulated dice combo."
 msgstr "zufällige Zahl mit unterschiedlichen Würfelkombinationen."
 
 #. Translators: description for script "pyexec.py" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:443
+#: plugins/_i18n_plugins.py:441
 msgid "Run Python code directly from WeeChat."
 msgstr "starte Python Code direkt von WeeChat."
 
 #. Translators: description for script "msg_command.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:445
+#: plugins/_i18n_plugins.py:443
 msgid "Run chat received in a buffer as commands."
 msgstr "führt einen empfangen Befehl in einem Buffer aus."
 
 #. Translators: description for script "away_action.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:447
+#: plugins/_i18n_plugins.py:445
 msgid "Run command on highlight and privmsg when away."
 msgstr ""
 "führt einen Befehl aus falls man abwesend (/away) ist und man eine "
 "highlight- oder private Nachricht erhalten sollte."
 
 #. Translators: description for script "shell.py" (0.1.7-0.2.6)
-#: plugins/_i18n_plugins.py:449
+#: plugins/_i18n_plugins.py:447
 msgid "Run shell commands inside WeeChat."
 msgstr "ein Shell-Befehl wird aus WeeChat heraus ausgeführt."
 
 #. Translators: description for script "samegame.py" (0.3.6+)
-#: plugins/_i18n_plugins.py:451
+#: plugins/_i18n_plugins.py:449
 msgid "SameGame."
 msgstr "Spiel: SameGame (Puzzlespiel)."
 
 #. Translators: description for script "histman.py" (0.4.0+)
-#: plugins/_i18n_plugins.py:453
+#: plugins/_i18n_plugins.py:451
 msgid "Save and restore global and/or buffer command history."
 msgstr ""
 "sichert und stellt den globalen und/oder Buffer Verlaufsspeicher, für die "
 "Eingabezeile, wieder her."
 
 #. Translators: description for script "queryman.py" (0.3.7+)
-#: plugins/_i18n_plugins.py:455
+#: plugins/_i18n_plugins.py:453
 msgid "Save and restore query buffers after /quit."
 msgstr ""
 "speichert Query-Buffer bei einem /quit und öffnet diese Buffer bei einem "
 "Neustart."
 
 #. Translators: description for script "autosavekey.py" (0.3.2+)
-#: plugins/_i18n_plugins.py:457
+#: plugins/_i18n_plugins.py:455
 msgid "Save channel key to autojoin or secured data."
 msgstr "speichert Channel-Keys automatisch in autojoin oder in secured data."
 
 #. Translators: description for script "confversion.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:459
+#: plugins/_i18n_plugins.py:457
 msgid "Save config files in a version control system."
 msgstr "speichert die Konfigurationsdateien mittels einer Versionsverwaltung."
 
 #. Translators: description for script "bufsave.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:461
+#: plugins/_i18n_plugins.py:459
 msgid "Save current buffer content to a file."
 msgstr "speichert den aktuellen Buffer-Inhalt in eine Datei."
 
 #. Translators: description for script "bufsave.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:463
+#: plugins/_i18n_plugins.py:461
 msgid "Save current buffer to a file."
 msgstr "speichert den aktiven Buffer in eine Datei."
 
 #. Translators: description for script "layout.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:465
+#: plugins/_i18n_plugins.py:463
 msgid "Save/restore buffers layout."
 msgstr "speichert und stellt Buffer Layouts wieder her."
 
 #. Translators: description for script "mslapper.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:467
+#: plugins/_i18n_plugins.py:465
 msgid "Say all nicknames on current channel."
 msgstr "benennt alle Nicknamen des aktuellen Channel."
 
 #. Translators: description for script "clonescan.py" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:469
+#: plugins/_i18n_plugins.py:467
 msgid "Scans clones on demand on a channel, or on join."
 msgstr ""
 "sucht auf Nachfrage in einem Channel nach Klonen oder automatisch, sobald "
 "man einen Channel betritt."
 
 #. Translators: description for script "obsolete.py" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:471
+#: plugins/_i18n_plugins.py:469
 msgid ""
 "Script to check if your scripts are up to date with list located at WeeChat "
 "website."
 msgstr "Dieses Skript überprüft ob die installierten Skripten aktuell sind."
 
 #. Translators: description for script "weeget.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:473
+#: plugins/_i18n_plugins.py:471
 msgid "Scripts manager."
 msgstr ""
 "Skripten-Manager. Zum einfachen (de-)installieren und aktualisieren von "
 "Skripten von der WeeChat-Homepage."
 
 #. Translators: description for script "grep.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:475
+#: plugins/_i18n_plugins.py:473
 msgid "Search regular expression in buffers or log files."
 msgstr "sucht nach regulären Ausdrücken in Buffern und Protokoll-Dateien."
 
 #. Translators: description for script "seeks.pl" (0.3.6+)
-#: plugins/_i18n_plugins.py:477
+#: plugins/_i18n_plugins.py:475
 msgid "Search terms on seeks node and display results."
 msgstr "sucht nach Begriffen auf Seeks Node und zeigt das Ergebnis an."
 
 #. Translators: description for script "challengeauth.rb" (0.3.0+)
-#: plugins/_i18n_plugins.py:479
+#: plugins/_i18n_plugins.py:477
 msgid "Securely authenticate with QuakeNet by using CHALLENGEAUTH."
 msgstr "sichere Authentifizierung auf QuakeNet mittels CHALLENGEAUTH."
 
 #. Translators: description for script "coords.pl" (0.3.9+)
-#: plugins/_i18n_plugins.py:481
+#: plugins/_i18n_plugins.py:479
 msgid "Select text, nicks or URLs on screen with mouse or keyboard."
 msgstr "Markieren von Text, Nicks oder URLs, mittels Maus oder Tastatur."
 
 #. Translators: description for script "whois_on_query.py" (0.3.2+)
-#: plugins/_i18n_plugins.py:483
+#: plugins/_i18n_plugins.py:481
 msgid "Send \"whois\" on nick when receiving new IRC query."
 msgstr "sende \"whois\" an Nick wenn ein IRC Query empfangen wird."
 
 #. Translators: description for script "weeter.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:485
+#: plugins/_i18n_plugins.py:483
 msgid "Send CTCP ACTIONs as Twitter updates."
 msgstr "sendet CTCP Aktionen bei Twitter updates."
 
 #. Translators: description for script "growl.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:487
+#: plugins/_i18n_plugins.py:485
 msgid "Send Growl notifications upon events."
 msgstr "sendet eine Growl-Benachrichtigung bei einem Ereignis."
 
 #. Translators: description for script "kikoo.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:489
+#: plugins/_i18n_plugins.py:487
 msgid "Send a colored \"kikoo\" on current channel."
 msgstr "schickt eine farbige \"kikoo\" in den aktuellen Channel."
 
 #. Translators: description for script "wtwitter.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:491
+#: plugins/_i18n_plugins.py:489
 msgid "Send latest tweet to the current buffer."
 msgstr "sendet den aktuellen Tweet in den aktuellen Buffer."
 
 #. Translators: description for script "notify_send.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:493
+#: plugins/_i18n_plugins.py:491
 msgid "Send libnotify notifications with smart delays to avoid spam."
 msgstr "sendet etwas zeitversetzt Benachrichtigung mittels libnotify."
 
 #. Translators: description for script "bitlbee_typing_notice.py" (0.3.6+)
-#: plugins/_i18n_plugins.py:495
+#: plugins/_i18n_plugins.py:493
 msgid ""
 "Send notice when typing message on bitlbee, display if user is writing in a "
 "bar item."
@@ -3834,7 +3829,7 @@ msgstr ""
 "oder zeigt an falls jemand eine Nachricht an Sie schreibt."
 
 #. Translators: description for script "minbif_typing_notice.rb" (0.3.2+)
-#: plugins/_i18n_plugins.py:497
+#: plugins/_i18n_plugins.py:495
 msgid ""
 "Send notice when typing message on minbif, display if user is writing in a "
 "bar item."
@@ -3843,22 +3838,22 @@ msgstr ""
 "oder zeigt an falls jemand eine Nachricht an Sie schreibt."
 
 #. Translators: description for script "zmq_notify.rb" (0.3.0+)
-#: plugins/_i18n_plugins.py:499
+#: plugins/_i18n_plugins.py:497
 msgid "Send notifications to a ZMQ socket."
 msgstr "sendet eine Benachrichtigung an ein ZMQ Socket."
 
 #. Translators: description for script "pyrnotify.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:501
+#: plugins/_i18n_plugins.py:499
 msgid "Send notifications to remote client using ssh and libnotify."
 msgstr "schickt Highlights zu einem Remote-Client mittels ssh und libnotify."
 
 #. Translators: description for script "pushover.pl" (0.3.7+)
-#: plugins/_i18n_plugins.py:503
+#: plugins/_i18n_plugins.py:501
 msgid "Send notifications to your mobile devices using pushover.net."
 msgstr "schickt Mitteilungen zu einem mobilen Gerät, mittels pushover.net."
 
 #. Translators: description for script "notifo.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:505
+#: plugins/_i18n_plugins.py:503
 msgid ""
 "Send private messages and highlights as push notifications to your iPhone/"
 "Android."
@@ -3867,64 +3862,64 @@ msgstr ""
 "iPhone/Android."
 
 #. Translators: description for script "amqp_notify.rb" (0.3.3+)
-#: plugins/_i18n_plugins.py:507
+#: plugins/_i18n_plugins.py:505
 msgid "Send private messages and highlights to an AMQP exchange."
 msgstr "schickt private Nachrichten und Highlights an einen AMQP Exchange."
 
 #. Translators: description for script "ragefaces.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:509
+#: plugins/_i18n_plugins.py:507
 msgid "Send ragefac.es URLs."
 msgstr "sendet ragefac.es URLs."
 
 #. Translators: description for script "remnotify.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:511
+#: plugins/_i18n_plugins.py:509
 msgid "Send raw TCP notify to remote host for highlights and private messages."
 msgstr ""
 "schickt TCP Benachrichtigung an entfernten Host für Highlights und private "
 "Nachrichten."
 
 #. Translators: description for script "prism.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:513
+#: plugins/_i18n_plugins.py:511
 msgid "Send text using rainbow colors."
 msgstr "versendet den Text in Regenbogenfarben."
 
 #. Translators: description for script "lastfm.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:515
+#: plugins/_i18n_plugins.py:513
 msgid "Send your latest Last.fm track to the current buffer."
 msgstr "sendet den aktuellen Last.fm Titel in den aktuellen Buffer."
 
 #. Translators: description for script "wetwit.py" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:517
+#: plugins/_i18n_plugins.py:515
 msgid "Send/read Twitter messages."
 msgstr "sendet und Liest Twitter-Nachrichten."
 
 #. Translators: description for script "uname.py" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:519
+#: plugins/_i18n_plugins.py:517
 msgid "Sends \"uname -a\" output to current channel."
 msgstr "sendet die Ausgabe von \"uname -a\" in den aktuellen Channel."
 
 #. Translators: description for script "fortune.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:521
+#: plugins/_i18n_plugins.py:519
 msgid "Sends a random fortune cookie."
 msgstr "verschickt ein Zufalls-Cookie."
 
 #. Translators: description for script "hello.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:523
+#: plugins/_i18n_plugins.py:521
 msgid "Sends greetings in the current channel."
 msgstr "verschickt einen Gruß an den aktiven Channel."
 
 #. Translators: description for script "rnotify.tcl" (0.3.0+)
-#: plugins/_i18n_plugins.py:525
+#: plugins/_i18n_plugins.py:523
 msgid "Sends highlights to (remote) client using libnotify."
 msgstr "schickt Highlights zu einem (remote) Client mittels libnotify."
 
 #. Translators: description for script "myuptime.rb" (0.3.0+)
-#: plugins/_i18n_plugins.py:527
+#: plugins/_i18n_plugins.py:525
 msgid "Sends machine uptime to current channel."
 msgstr "sendet die Computer \"Uptime\" an aktuellen Channel."
 
 #. Translators: description for script "now-playing.rb" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:529
+#: plugins/_i18n_plugins.py:527
 msgid ""
 "Sends now-playing informations (fetched from amaroK or moc) to the current "
 "channel."
@@ -3933,144 +3928,144 @@ msgstr ""
 "(benötigt amaroK oder moc)."
 
 #. Translators: description for script "mpdbitl.lua" (0.3.5+)
-#: plugins/_i18n_plugins.py:531
+#: plugins/_i18n_plugins.py:529
 msgid "Set Bitlbee's status message with current MPD track."
 msgstr "setzt den Bitlbee's Nachrichtenstatus mittels MPD track."
 
 #. Translators: description for script "iset.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:533
+#: plugins/_i18n_plugins.py:531
 msgid "Set WeeChat and plugins options interactively."
 msgstr "interaktiver WeeChat- und Erweiterungen-Editor."
 
 #. Translators: description for script "fileaway.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:535
+#: plugins/_i18n_plugins.py:533
 msgid "Set away status based on presence of a file."
 msgstr "die Abwesenheit wird durch das Vorhandensein einer Datei gesteuert."
 
 #. Translators: description for script "slock_away.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:537
+#: plugins/_i18n_plugins.py:535
 msgid "Set away status if slock (X display locker) is running."
 msgstr "setzt den Abwesenheitsstatus falls slock (X Bildschirmlocker) läuft."
 
 #. Translators: description for script "screen_away.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:539
+#: plugins/_i18n_plugins.py:537
 msgid "Set away status when detaching and attaching from screen or tmux."
 msgstr ""
 "setzt den Status auf abwesend, falls man sich bei Screen oder tmux an-oder "
 "abmeldet."
 
 #. Translators: description for script "chanpriority.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:541
+#: plugins/_i18n_plugins.py:539
 msgid "Set channel priority."
 msgstr "setzt die Priorität des Channels."
 
 #. Translators: description for script "title.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:543
+#: plugins/_i18n_plugins.py:541
 msgid "Set terminal title to active buffer name and hotlist items."
 msgstr ""
 "setzt den aktiven Buffer Namen als Terminal-Titel und fügt Hotlist-Einträge "
 "hinzu."
 
 #. Translators: description for script "xfer_setip.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:545
+#: plugins/_i18n_plugins.py:543
 msgid "Set xfer own ip with external ip."
 msgstr "die externe IP wird in der Option \"xfer.network.own_ip\" gesichert."
 
 #. Translators: description for script "autoaway.py" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:547
+#: plugins/_i18n_plugins.py:545
 msgid "Sets away after a period of inactivity."
 msgstr ""
 "nach Ablauf einer festgelegten Zeit ohne Aktivität wird der eigene Status "
 "auf abwesend gesetzt."
 
 #. Translators: description for script "isgd.pl" (0.3.7+)
-#: plugins/_i18n_plugins.py:549
+#: plugins/_i18n_plugins.py:547
 msgid "Shorten URLs with is.gd."
 msgstr "verkürzt lange URLs mittels is.gd."
 
 #. Translators: description for script "url_shorten.rb" (0.3.0+)
-#: plugins/_i18n_plugins.py:551
+#: plugins/_i18n_plugins.py:549
 msgid "Shorten URLs with many shortening services."
 msgstr "verkürzt lange URLs unter Zuhilfenahme verschiedener Dienste."
 
 #. Translators: description for script "urlserver.py" (0.3.4+)
-#: plugins/_i18n_plugins.py:553
+#: plugins/_i18n_plugins.py:551
 msgid "Shorten URLs with own HTTP server."
 msgstr "verkürzt lange URLs mittels eigenem HTTP Server."
 
 #. Translators: description for script "url_arza.pl" (0.3.6+)
-#: plugins/_i18n_plugins.py:555
+#: plugins/_i18n_plugins.py:553
 msgid "Shorten long URLs in buffers and input line."
 msgstr "verkürzt lange URLs im Buffer und in der Eingabezeile."
 
 #. Translators: description for script "url_shorten.rb" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:557
+#: plugins/_i18n_plugins.py:555
 msgid "Shorten long urls in channels."
 msgstr "verkürzt lange URLs in Channels."
 
 #. Translators: description for script "shortenurl.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:559
+#: plugins/_i18n_plugins.py:557
 msgid "Shorten long urls using isgd or tinyurl."
 msgstr "verkürzt lange URLs mittels isgd oder tinyurl."
 
 #. Translators: description for script "listbuffer.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:561
+#: plugins/_i18n_plugins.py:559
 msgid "Show /list results in a common buffer and interact with them."
 msgstr ""
 "die Ausgabe des \"/list\" Befehls wird in einem separaten Buffer ausgegeben."
 
 #. Translators: description for script "topicdiff.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:563
+#: plugins/_i18n_plugins.py:561
 msgid "Show differences between old and new topics."
 msgstr "zeigt Unterschiede zwischen einem alten und dem neuen Topic an."
 
 #. Translators: description for script "xosdnotify.tcl" (0.3.0+)
-#: plugins/_i18n_plugins.py:565
+#: plugins/_i18n_plugins.py:563
 msgid "Show highlights and private messages with OSD."
 msgstr "zeigt Highlight- oder private Nachrichten mittels OSD."
 
 #. Translators: description for script "hl_here.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:567
+#: plugins/_i18n_plugins.py:565
 msgid "Show highlights in the active buffer."
 msgstr "Highlights werden im aktiven Buffer angezeigt."
 
 #. Translators: description for script "foo_spam.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:569
+#: plugins/_i18n_plugins.py:567
 msgid "Show info about current song in foobar2000."
 msgstr "zeigt Informationen über den aktuellen Song in foobar2000 an."
 
 #. Translators: description for script "moc.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:571
+#: plugins/_i18n_plugins.py:569
 msgid "Show info about current song in moc."
 msgstr "zeigt Informationen über den aktuellen Song in moc an."
 
 #. Translators: description for script "volumeter.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:573
+#: plugins/_i18n_plugins.py:571
 msgid "Show volume of data on network interface in a bar."
 msgstr "gibt das Datenvolumen der Netzwerk-Schnittstelle in einer Bar an."
 
 #. Translators: description for script "weesonata.py" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:575
+#: plugins/_i18n_plugins.py:573
 msgid "Show what's playing on your sonata player."
 msgstr "zeigt an was sonata-Player gerade spielt."
 
 #. Translators: description for script "buffers.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:577
+#: plugins/_i18n_plugins.py:575
 msgid "Sidebar with list of buffers."
 msgstr "zeigt alle Buffer in einem separaten Seitenfenster an."
 
 #. Translators: description for script "arespond.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:579
+#: plugins/_i18n_plugins.py:577
 msgid "Simple autoresponder."
 msgstr "Anfragen werden automatisch beantwortet."
 
 #. Translators: description for script "query_blocker.pl" (0.3.1+)
-#: plugins/_i18n_plugins.py:581
+#: plugins/_i18n_plugins.py:579
 msgid "Simple blocker for private message (i.e. spam)."
 msgstr "einfaches Blockieren von privaten Nachrichten (zum Beispiel: Spam)."
 
 #. Translators: description for script "mplex.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:583
+#: plugins/_i18n_plugins.py:581
 msgid ""
 "Simple remote control of multiplexer (screen or tmux), optionally set away "
 "status."
@@ -4079,101 +4074,101 @@ msgstr ""
 "Abwesenheitsstatus."
 
 #. Translators: description for script "shuffle.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:585
+#: plugins/_i18n_plugins.py:583
 msgid "Simple text shuffler."
 msgstr "einfacher Textmischer."
 
 #. Translators: description for script "rslap.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:587
+#: plugins/_i18n_plugins.py:585
 msgid "Slaps with random messages."
 msgstr "nerve mit zufälligen Nachrichten."
 
 #. Translators: description for script "snake.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:589
+#: plugins/_i18n_plugins.py:587
 msgid "Snake game."
 msgstr "Spiel: Snake."
 
 #. Translators: description for script "snarl_net_notify.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:591
+#: plugins/_i18n_plugins.py:589
 msgid "Snarl notifications for highlights."
 msgstr "Snarln Benachrichtigung bei Highlight-Nachrichten."
 
 #. Translators: description for script "sort_servers.py" (0.3.9+)
-#: plugins/_i18n_plugins.py:593
+#: plugins/_i18n_plugins.py:591
 msgid "Sort buffers by server and alphabetically."
 msgstr "sortiert IRC Buffer alphabetisch und nach Server."
 
 #. Translators: description for script "sort_buffers.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:595
+#: plugins/_i18n_plugins.py:593
 msgid "Sort irc buffers alphabetically."
 msgstr "sortiert IRC Buffer alphabetisch."
 
 #. Translators: description for script "listsort.pl" (0.3.4+)
-#: plugins/_i18n_plugins.py:597
+#: plugins/_i18n_plugins.py:595
 msgid "Sort the output of /list command by user count."
 msgstr "sortiert die Ausgabe des /list Befehls nach Anzahl der Besucher."
 
 #. Translators: description for script "beep.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:599
+#: plugins/_i18n_plugins.py:597
 msgid "Speaker beep on highlight/private message."
 msgstr "Lautsprecher beep bei einer Hightlight- oder privaten Nachricht."
 
 #. Translators: description for script "jnotify.pl" (0.3.1+)
-#: plugins/_i18n_plugins.py:601
+#: plugins/_i18n_plugins.py:599
 msgid "Start command/program if a user joins a channel you are in."
 msgstr ""
 "startet einen internen Befehl oder ein externes Programm falls ein User "
 "einen Channel betritt, in dem Du dich befindest."
 
 #. Translators: description for script "stick_buffer.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:603
+#: plugins/_i18n_plugins.py:601
 msgid "Stick buffer to a window."
 msgstr "Buffer werden in einem bestimmten Fenster angezeigt."
 
 #. Translators: description for script "buffer_swap.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:605
+#: plugins/_i18n_plugins.py:603
 msgid "Swap two buffers."
 msgstr "die Position zweier Buffer wird getauscht."
 
 #. Translators: description for script "sysinfo.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:607
+#: plugins/_i18n_plugins.py:605
 msgid "System info command."
 msgstr "Befehl um Systeminformationen anzeigen zu lassen."
 
 #. Translators: description for script "tailer.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:609
+#: plugins/_i18n_plugins.py:607
 msgid "Tail any number of files and run any command with line appended."
 msgstr "fügt an das Ende einer Datei die Ausgabe eines Befehls hinzu."
 
 #. Translators: description for script "weetris.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:611
+#: plugins/_i18n_plugins.py:609
 msgid "Tetris-like game."
 msgstr "Tetris-Spiel."
 
 #. Translators: description for script "theme.py" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:613
+#: plugins/_i18n_plugins.py:611
 msgid "Theme manager for WeeChat."
 msgstr "Theme-Manager für WeeChat."
 
 #. Translators: description for script "thinklight_blink.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:615
+#: plugins/_i18n_plugins.py:613
 msgid "Thinklight blink on highlight/private message."
 msgstr "Thinklight blinkt bei einer Hightlight- oder privaten Nachricht."
 
 #. Translators: description for script "cron.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:617
+#: plugins/_i18n_plugins.py:615
 msgid "Time-based scheduler, like cron and at."
 msgstr "Zeit basiertes Steuerprogramm, wie cron und at."
 
 #. Translators: description for script "toggle_highlight.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:619
+#: plugins/_i18n_plugins.py:617
 msgid "Toggle notifications of normal messages for current buffer."
 msgstr ""
 "schaltet beim aktuellen Buffer die Benachrichtigungen für normale "
 "Nachrichten um."
 
 #. Translators: description for script "uppercase.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:621
+#: plugins/_i18n_plugins.py:619
 msgid ""
 "Transform all your input to uppercase (useful for INTERNATIONAL CAPSLOCK "
 "DAY)."
@@ -4182,74 +4177,74 @@ msgstr ""
 "INTERNATIONALEN FESTSTELLTASTEN-TAG)."
 
 #. Translators: description for script "translate.py" (0.3.7+)
-#: plugins/_i18n_plugins.py:623
+#: plugins/_i18n_plugins.py:621
 msgid "Translate string using Google translate API."
 msgstr "übersetzt ein Wort mittels der Google Übersetzungs-API."
 
 #. Translators: description for script "translate.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:625
+#: plugins/_i18n_plugins.py:623
 msgid "Translate words from/to other languages."
 msgstr "übersetzt Wörter in/aus eine(r) anderen Sprache."
 
 #. Translators: description for script "tray.rb" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:627
+#: plugins/_i18n_plugins.py:625
 msgid "Tray and notification."
 msgstr "Tray und Benachrichtigung."
 
 #. Translators: description for script "ubus.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:629
+#: plugins/_i18n_plugins.py:627
 msgid "Ubus notification."
 msgstr "Skript um eine Ubus Benachrichtigung zu erstellen."
 
 #. Translators: description for script "maildir.pl" (0.3.0+)
-#: plugins/_i18n_plugins.py:631
+#: plugins/_i18n_plugins.py:629
 msgid "Unread e-mail notification and count from a local Maildir directory."
 msgstr ""
 "e-mail Benachrichtigung und Anzeige von ungelesenen Nachrichten, die sich in "
 "einem lokalen Mail-Verzeichnis befinden."
 
 #. Translators: description for script "mac-update-status.pl" (0.0.1-0.2.6)
-#: plugins/_i18n_plugins.py:633
+#: plugins/_i18n_plugins.py:631
 msgid "Update status messages in various Mac IM programs."
 msgstr "Update Status-Nachricht von verschiedenen MAC IM Programmen."
 
 #. Translators: description for script "colorize_nicks.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:635
+#: plugins/_i18n_plugins.py:633
 msgid "Use the weechat nick colors in the chat area and command line."
 msgstr ""
 "im Textbereich oder der Eingabezeile wird der Nickname mit der "
 "entsprechenden Farbe für den Nick angezeigt."
 
 #. Translators: description for script "vimode.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:637
+#: plugins/_i18n_plugins.py:635
 msgid "Vi-like key bindings/commands with normal and insert mode."
 msgstr "Vi-ähnliche Tastenkombinationen/Befehle mit Normal- und Eingabemodus."
 
 #. Translators: description for script "oldswarner.lua" (0.3.7+)
-#: plugins/_i18n_plugins.py:639
+#: plugins/_i18n_plugins.py:637
 msgid "Warn user if about to paste URL already existing in buffer."
 msgstr ""
 "warnt den Anwender falls eine schon vorhandene URL im Buffer veröffentlicht "
 "werden soll."
 
 #. Translators: description for script "weetweet.py" (0.4.0+)
-#: plugins/_i18n_plugins.py:641
+#: plugins/_i18n_plugins.py:639
 msgid "WeeChat twitter client."
 msgstr "WeeChat Twitter Client."
 
 #. Translators: description for script "wmiibar.pl" (0.3.3+)
-#: plugins/_i18n_plugins.py:643
+#: plugins/_i18n_plugins.py:641
 msgid "Wmii statusbar notification for highlights."
 msgstr "Wmii Benachrichtigung bei Highlight-Nachrichten."
 
 #. Translators: description for script "ichatts.py" (0.3.0+)
-#: plugins/_i18n_plugins.py:645
+#: plugins/_i18n_plugins.py:643
 msgid "iChat-style timestamps."
 msgstr ""
 "iChat-mäßiger Zeitstempel der in den jeweiligen Channel geschrieben wird."
 
 #. Translators: description for script "itunes.rb" (0.3.0+)
-#: plugins/_i18n_plugins.py:647
+#: plugins/_i18n_plugins.py:645
 msgid "iTunes control and now playing script."
 msgstr ""
 "Fernbedienung für iTunes und zum anzeigen welches Musikstück gerade gespielt "
@@ -6000,3 +5995,6 @@ msgstr "interner Fehler."
 #: themes/models.py:191
 msgid "Invalid name: different from theme."
 msgstr "ungültiger Name: unterscheidet sich vom Theme."
+
+#~ msgid "RSS/RDF/Atom feed aggregator. "
+#~ msgstr "zum Anzeigen von RSS/RDF/Atom Feeds."
