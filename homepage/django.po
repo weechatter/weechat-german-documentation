@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-21 16:42+0200\n"
-"PO-Revision-Date: 2013-10-21 16:48+0100\n"
+"POT-Creation-Date: 2013-10-23 14:09+0200\n"
+"PO-Revision-Date: 2013-10-29 22:22+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <nils_2@freenode.#weechat>\n"
 "Language: de\n"
@@ -815,7 +815,7 @@ msgstr ""
 "Dritte Vorabveröffentlichung (Version 0.3.0-rc3), der neuen Version 0.3.0, "
 "ist verfügbar."
 
-#: news/_i18n_info.py:46 plugins/models.py:185 templates/doc/doc.html:28
+#: news/_i18n_info.py:46 plugins/models.py:187 templates/doc/doc.html:28
 #: templates/download/packages.html:43 templates/plugins/list.html:69
 #: templates/plugins/pending.html:32
 msgid "Version"
@@ -4254,7 +4254,7 @@ msgstr ""
 msgid "Popular script"
 msgstr "Skript wird empfohlen"
 
-#: plugins/models.py:145 plugins/models.py:156 plugins/models.py:158
+#: plugins/models.py:145 plugins/models.py:158 plugins/models.py:160
 #: themes/models.py:106 themes/models.py:108
 msgid "This field is required."
 msgstr "Dieser Eintrag ist notwendig."
@@ -4269,109 +4269,116 @@ msgid ""
 "accordingly)."
 msgstr "Dieser Name existiert bereits. Bitte wähle einen anderen Namen."
 
-#: plugins/models.py:181 templates/plugins/list.html:63
+#: plugins/models.py:152
+msgid "This name is too long (must be max 20 chars)."
+msgstr "Der Name ist zu lang (maximal 20 Zeichen werden unterstützt)."
+
+#: plugins/models.py:183 templates/plugins/list.html:63
 #: templates/plugins/list.html.py:65 templates/plugins/pending.html:33
 msgctxt "programming language"
 msgid "Language"
 msgstr "Sprache"
 
-#: plugins/models.py:182 templates/about/donate.html:47
+#: plugins/models.py:184 templates/about/donate.html:47
 #: templates/plugins/list.html:57 templates/plugins/list.html.py:59
 #: templates/plugins/pending.html:29
 msgid "Name"
 msgstr "Name"
 
-#: plugins/models.py:183
-msgid "short name of script (only lower case letters, digits or \"_\")"
-msgstr "Kurzname des Skripts (nur Kleinbuchstaben, Ziffern oder \"_\")"
+#: plugins/models.py:185
+msgid ""
+"short name of script (max 20 chars, only lower case letters, digits or \"_\")"
+msgstr ""
+"Kurzname des Skripts (maximal 20 Zeichen und nur Kleinbuchstaben, Ziffern "
+"oder \"_\")"
 
-#: plugins/models.py:186
+#: plugins/models.py:188
 msgid "version of script (only digits or dots)"
 msgstr "Version des Skripts (nur Ziffern oder Punkte)"
 
-#: plugins/models.py:188 templates/plugins/list.html:72
+#: plugins/models.py:190 templates/plugins/list.html:72
 #: templates/plugins/list.html.py:74 templates/plugins/pending.html:34
 msgid "License"
 msgstr "Lizenz"
 
-#: plugins/models.py:189
+#: plugins/models.py:191
 msgid "license (for example: GPL3, BSD, ...)"
 msgstr "Lizenzen (zum Beispiel: GPL3, BSD, ...)"
 
-#: plugins/models.py:191 plugins/models.py:225 templates/doc/doc.html:88
+#: plugins/models.py:193 plugins/models.py:227 templates/doc/doc.html:88
 #: themes/models.py:113 themes/models.py:163
 msgid "File"
 msgstr "Datei"
 
-#: plugins/models.py:191 plugins/models.py:225
+#: plugins/models.py:193 plugins/models.py:227
 msgid "the script"
 msgstr "nach Skript"
 
-#: plugins/models.py:192 templates/dev/info_list.html:19
+#: plugins/models.py:194 templates/dev/info_list.html:19
 #: templates/dev/roadmap.html:46 templates/download/security.html:31
 #: templates/plugins/list.html:68 templates/plugins/pending.html:30
 #: themes/models.py:115
 msgid "Description"
 msgstr "Beschreibung"
 
-#: plugins/models.py:194
+#: plugins/models.py:196
 msgid "Requirements"
 msgstr "zusätzliche Anforderungen"
 
-#: plugins/models.py:195 themes/models.py:116
+#: plugins/models.py:197 themes/models.py:116
 msgid "optional"
 msgstr "optional"
 
-#: plugins/models.py:196
+#: plugins/models.py:198
 msgid "Min/max WeeChat"
 msgstr "Min/Max WeeChat"
 
-#: plugins/models.py:197 plugins/models.py:226 themes/models.py:117
+#: plugins/models.py:199 plugins/models.py:228 themes/models.py:117
 #: themes/models.py:165
 msgid "Your name or nick"
 msgstr "Dein Name oder Nick"
 
-#: plugins/models.py:198 plugins/models.py:200
+#: plugins/models.py:200 plugins/models.py:202
 msgid "used for scripts page and git commit"
 msgstr "wird für die Skripten Seite und Git Commits benötigt"
 
-#: plugins/models.py:199 plugins/models.py:228 themes/models.py:118
+#: plugins/models.py:201 plugins/models.py:230 themes/models.py:118
 #: themes/models.py:166
 msgid "Your e-mail"
 msgstr "Deine email"
 
-#: plugins/models.py:202 plugins/models.py:231 themes/models.py:121
+#: plugins/models.py:204 plugins/models.py:233 themes/models.py:121
 #: themes/models.py:169
 msgid "Comments"
 msgstr "zusätzliche Informationen"
 
-#: plugins/models.py:203 themes/models.py:122 themes/models.py:170
+#: plugins/models.py:205 themes/models.py:122 themes/models.py:170
 msgid "optional, not displayed"
 msgstr "optional, wird nicht dargestellt"
 
-#: plugins/models.py:205 plugins/models.py:234 themes/models.py:124
+#: plugins/models.py:207 plugins/models.py:236 themes/models.py:124
 #: themes/models.py:172
 msgid "Are you a spammer?"
 msgstr "Bist Du ein Spammer?"
 
-#: plugins/models.py:206 plugins/models.py:235 themes/models.py:125
+#: plugins/models.py:208 plugins/models.py:237 themes/models.py:125
 #: themes/models.py:173
 msgid "enter \"no\" if you are not a spammer"
 msgstr "Gebe \"no\" ein, sofern Du kein Spammer bist"
 
-#: plugins/models.py:222 templates/plugins/source.html:13
+#: plugins/models.py:224 templates/plugins/source.html:13
 msgid "Script"
 msgstr "Skript"
 
-#: plugins/models.py:223
+#: plugins/models.py:225
 msgid "New version"
 msgstr "Neue Version"
 
-#: plugins/models.py:227 plugins/models.py:229
+#: plugins/models.py:229 plugins/models.py:231
 msgid "used for git commit"
 msgstr "wird für Git Commit benötigt"
 
-#: plugins/models.py:232
+#: plugins/models.py:234
 msgid "changes in this release"
 msgstr "Änderungen dieser Version"
 
@@ -5581,12 +5588,25 @@ msgstr ""
 
 #: templates/plugins/add.html:17
 msgid ""
+"check that no script (or <a href=\"/scripts/pending/\">pending script</a>) "
+"does exactly same thing as your script"
+msgstr ""
+"überprüfe vorher, dass kein anderes Skript (oder ein <a href=\"/scripts/"
+"pending/\">eingereichtes Skript</a>) die gleiche Funktionalität abdeckt wie "
+"Dein Skript"
+
+#: templates/plugins/add.html:19
+msgid "script name"
+msgstr "Regeln für den Skriptnamen"
+
+#: templates/plugins/add.html:21
+msgid ""
 "unique name (not used by any other script, even in a different language)"
 msgstr ""
 "für das Skript muss ein Name gewählt werden der nicht durch ein anderes "
 "Skript genutzt wird"
 
-#: templates/plugins/add.html:18
+#: templates/plugins/add.html:22
 msgid ""
 "the script name in register function must be exactly same name as script "
 "(without extension)"
@@ -5594,40 +5614,49 @@ msgstr ""
 "der Programmname in der register() Funktion muss exakt mit dem Dateinamen "
 "des Skriptes (ohne Dateierweiterung) übereinstimmen"
 
-#: templates/plugins/add.html:19
-msgid "a free license"
-msgstr "das Skript muss unter einer freien Lizenz stehen"
+#: templates/plugins/add.html:23
+msgid ""
+"the word 'weechat' is not needed in name: for example don't use "
+"'weechat_notify' but 'notify' instead (the script is only for WeeChat)"
+msgstr ""
+"der Namenszusatz 'weechat' ist nicht notwendig: Es sollte zum Beispiel nur "
+"'notify' als Name gewählt werden und nicht 'weechat_notify' (das Skript ist "
+"ausschließlich für WeeChat)"
 
-#: templates/plugins/add.html:20
+#: templates/plugins/add.html:27
+msgid "script content"
+msgstr "Regeln für den Skriptaufbau"
+
+#: templates/plugins/add.html:29
 msgid ""
 "a comment at beginning with your name (or pseudo), your e-mail, and the "
-"chosen license"
+"chosen license (the license must be free)"
 msgstr ""
-"ein Kommentar am Anfang des Skriptes muss vorhanden sein, welcher Deinen "
-"Namen (oder Dein Pseudonym), Deine e-mail Adresse und die entsprechende "
-"Lizenz für das Skript enthält"
+"das Skript muss mit einem Kommentar eingeleitet werden, welches Deinen Namen "
+"(oder ein Pseudonym), Deine e-mail Adresse und eine freie Lizenz beinhaltet "
 
-#: templates/plugins/add.html:21
+#: templates/plugins/add.html:30
 msgid "no shebang on first line (like '#!/usr/bin/perl'), it's not needed"
 msgstr ""
 "ein Skript benötigt in der ersten Zeile keine \"Magic Line\" ('#!/usr/bin/"
 "perl')"
 
-#: templates/plugins/add.html:22
+#: templates/plugins/add.html:31
 msgid "use only english for code and comments"
 msgstr ""
-"für den Code und Kommentare bitte ausschließlich die englische Sprache nutzen"
+"für den Programmcode und Kommentare darf nur die englische Sprache verwendet "
+"werden"
 
-#: templates/plugins/add.html:23
+#: templates/plugins/add.html:32
 msgid ""
 "no use of extra API between WeeChat and your script (like Ruby gem "
 "'WeeChat'), you must use standard WeeChat API"
 msgstr ""
-"Es ist nicht gewünscht dass zwischen WeeChat und Deinem Skript eine "
-"zusätzliche API genutzt wird (z.B. Ruby gem 'WeeChat'). Es darf nur die "
-"standardisierte WeeChat API genutzt werden"
+"Es darf nur die standardisierte WeeChat API genutzt werden. Es ist nicht "
+"gestattet, dass zwischen WeeChat und Deinem Skript eine zusätzliche API "
+"genutzt wird (z.B. Ruby gem 'WeeChat')"
 
-#: templates/plugins/add.html:24
+#: templates/plugins/add.html:33
 msgid ""
 "if your script is doing something blocking (like fetching URL), you must use "
 "function hook_process (or hook_process_hashtable) to not block WeeChat"
@@ -5637,16 +5666,7 @@ msgstr ""
 "oder hook_process_hashtable() genutzt werden um ein Blockieren von WeeChat "
 "zu verhindern"
 
-#: templates/plugins/add.html:25
-msgid ""
-"check that no script (or <a href=\"/scripts/pending/\">pending script</a>) "
-"does exactly same thing as your script"
-msgstr ""
-"überprüfe vorher, dass kein anderes Skript (oder ein <a href=\"/scripts/"
-"pending/\">eingereichtes Skript</a>) die gleiche Funktionalität abdeckt wie "
-"Dein Skript"
-
-#: templates/plugins/add.html:32 templates/plugins/update.html:25
+#: templates/plugins/add.html:42 templates/plugins/update.html:25
 #: templates/themes/add.html:25 templates/themes/update.html:17
 msgid "Submit"
 msgstr "Versenden"
@@ -5995,6 +6015,9 @@ msgstr "interner Fehler."
 #: themes/models.py:191
 msgid "Invalid name: different from theme."
 msgstr "ungültiger Name: unterscheidet sich vom Theme."
+
+#~ msgid "a free license"
+#~ msgstr "das Skript muss unter einer freien Lizenz stehen"
 
 #~ msgid "RSS/RDF/Atom feed aggregator. "
 #~ msgstr "zum Anzeigen von RSS/RDF/Atom Feeds."
