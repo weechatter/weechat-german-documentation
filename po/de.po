@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.4.3-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2013-11-02 10:22+0100\n"
-"PO-Revision-Date: 2013-11-03 11:44+0100\n"
+"POT-Creation-Date: 2013-11-09 10:17+0100\n"
+"PO-Revision-Date: 2013-11-09 10:54+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: de_DE\n"
@@ -3922,10 +3922,6 @@ msgid "FATAL: error initializing configuration options"
 msgstr "FATAL: Fehler bei der Initialisierung der Konfiguration-Optionen"
 
 #, c-format
-msgid "%sError reading configuration"
-msgstr "%sFehler beim Lesen der Konfiguration aufgetreten"
-
-#, c-format
 msgid "Writing configuration file %s %s"
 msgstr "speichere Konfigurationsdatei %s %s"
 
@@ -3942,8 +3938,16 @@ msgstr ""
 "%sEs ist ein Fehler beim Speichern der Konfigurationsdatei \"%s\" aufgetreten"
 
 #, c-format
-msgid "%sWarning: configuration file \"%s\" not found"
-msgstr "%sWarnung: Konfigurationsdatei \"%s\" nicht gefunden"
+msgid "%sWARNING: failed to read configuration file \"%s\" (%s)"
+msgstr "%sWARNUNG: Konfigurationsdatei \"%s\" konnte nicht geladen werden (%s)"
+
+#, c-format
+msgid ""
+"%sWARNING: file \"%s\" will be overwritten on exit with default values (it "
+"is HIGHLY recommended to backup this file now)"
+msgstr ""
+"%sWARNUNG: Datei \"%s\" wird beim Beenden mit Standardwerten überschrieben "
+"(es wird DRINGEND empfohlen, die original Konfigurationsdatei zu sichern)"
 
 #, c-format
 msgid "Reading configuration file %s"
@@ -4578,10 +4582,6 @@ msgstr "%sAlias \"%s\" nicht gefunden"
 #, c-format
 msgid "Alias \"%s\" removed"
 msgstr "Alias \"%s\" entfernt"
-
-#, c-format
-msgid "%s%s: error creating configuration file"
-msgstr "%s%s: Fehler beim Erstellen einer Konfigurationsdatei"
 
 msgid "create an alias for a command"
 msgstr "Einem Befehl wird ein Alias zugewiesen"
@@ -10911,3 +10911,12 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "%sError reading configuration"
+#~ msgstr "%sFehler beim Lesen der Konfiguration aufgetreten"
+
+#~ msgid "%sWarning: configuration file \"%s\" not found"
+#~ msgstr "%sWarnung: Konfigurationsdatei \"%s\" nicht gefunden"
+
+#~ msgid "%s%s: error creating configuration file"
+#~ msgstr "%s%s: Fehler beim Erstellen einer Konfigurationsdatei"
