@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.4.3-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2014-01-09 16:10+0100\n"
-"PO-Revision-Date: 2014-01-12 11:22+0100\n"
+"POT-Creation-Date: 2014-01-22 18:47+0100\n"
+"PO-Revision-Date: 2014-01-22 21:22+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: de_DE\n"
@@ -211,8 +211,8 @@ msgid "Buffers list:"
 msgstr "Liste der vorhandenen Buffer:"
 
 #, c-format
-msgid "  %s[%s%d%s]%s (%s) %s%s%s (notify: %s)"
-msgstr "  %s[%s%d%s]%s (%s) %s%s%s (Benachrichtigung: %s)"
+msgid "  %s[%s%d%s]%s %s%s.%s%s%s (notify: %s)"
+msgstr "  %s[%s%d%s]%s %s%s.%s%s%s (Benachrichtigung: %s)"
 
 #, c-format
 msgid "%sError: incorrect buffer number"
@@ -500,19 +500,19 @@ msgid_plural "%d new keys added (context: \"%s\")"
 msgstr[0] "(%d) neue Taste hinzugefügt"
 msgstr[1] "(%d) neue Tasten hinzugefügt (Kontext: \"%s\")"
 
-msgid "Saved layouts:"
-msgstr "gespeicherte Layouts:"
+msgid "Stored layouts:"
+msgstr "erstellte Layouts:"
 
 msgid " (current layout)"
 msgstr " (aktuelles Layout)"
 
-msgid "No layout saved"
-msgstr "Kein Layout gespeichert"
+msgid "No stored layouts"
+msgstr "keine Layouts erstellt"
 
 #. TRANSLATORS: %s%s%s is "buffers" or "windows" or "buffers+windows"
 #, c-format
-msgid "Layout of %s%s%s saved in \"%s\" (current layout: %s)"
-msgstr "Layout %s%s%s gesichert in \"%s\" (aktuelles Layout: %s)"
+msgid "Layout of %s%s%s stored in \"%s\" (current layout: %s)"
+msgstr "Layout %s%s%s erstellt in \"%s\" (aktuelles Layout: %s)"
 
 msgid "buffers"
 msgstr "Buffer"
@@ -1943,32 +1943,32 @@ msgstr ""
 
 msgid ""
 "  store: store current buffers/windows in a layout\n"
-"  apply: apply saved layout\n"
+"  apply: apply stored layout\n"
 "  leave: leave current layout (does not update any layout)\n"
-"    del: delete buffers and/or windows in a saved layout\n"
+"    del: delete buffers and/or windows in a stored layout\n"
 "         (if neither \"buffers\" nor \"windows\" is given after the name, "
 "the layout is deleted)\n"
 " rename: rename a layout\n"
-"   name: name for saved layout (default is \"default\")\n"
-"buffers: save/apply only buffers (order of buffers)\n"
-"windows: save/apply only windows (buffer displayed by each window)\n"
+"   name: name for stored layout (default is \"default\")\n"
+"buffers: store/apply only buffers (order of buffers)\n"
+"windows: store/apply only windows (buffer displayed by each window)\n"
 "\n"
-"Without argument, this command displays saved layouts."
+"Without argument, this command displays stored layouts."
 msgstr ""
 "  store: erstellt ein Layout der zur Zeit verwendeten Buffer/Fenster\n"
-"  apply: das gespeicherte Layout anwenden\n"
+"  apply: erstelle Layout verwenden\n"
 "  leave: belässt das aktuelle Layout (es wird kein Layout aktualisiert)\n"
-"    del: entfernt Buffer und/oder Fenster eines gesicherten Layouts\n"
+"    del: entfernt Buffer und/oder Fenster eines erstellten Layouts\n"
 "         (falls weder \"buffers\" noch \"windows\" angegeben wird, dann wird "
 "das Layout entfernt)\n"
 " rename: ein Layout umbenennen\n"
-"   name: Name unter welchem das Layout gesichert werden soll (Standardlayout "
-"lautet \"default\")\n"
-"buffers: speichert bzw. verwendet nur Buffer (Reihenfolge der Buffer)\n"
-"windows: speichert bzw. verwendet nur Fenster (Buffer welche im jeweiligen "
+"   name: Name unter welchem das Layout erstellt werden soll (Standardlayout "
+"heisst \"default\")\n"
+"buffers: erstellt bzw. verwendet nur Buffer (Reihenfolge der Buffer)\n"
+"windows: erstellt bzw. verwendet nur Fenster (Buffer welche im jeweiligen "
 "Fenster dargestellt werden)\n"
 "\n"
-"Wird der Befehl ohne Argumente aufgerufen wird das gespeicherte Layout "
+"Wird der Befehl ohne Argumente aufgerufen, werden die erstellten Layout "
 "dargestellt."
 
 msgid "mouse control"
@@ -2010,8 +2010,8 @@ msgstr ""
 msgid "execute a command silently"
 msgstr "Führt einen Befehl ohne Textausgabe aus"
 
-msgid "[-current | -buffer <name> | -all] command"
-msgstr "[-current | -buffer <name> | -all] command"
+msgid "[-current | -buffer <name> | -all] <command>"
+msgstr "[-current | -buffer <name> | -all] <command>"
 
 msgid ""
 "-current: no output on current buffer\n"
@@ -2093,6 +2093,85 @@ msgstr ""
 "\n"
 "Ohne Angabe eines Arguments werden alle installierten Erweiterungen "
 "angezeigt."
+
+msgid "display text on a buffer"
+msgstr "gibt einen Text"
+
+msgid ""
+"[-buffer <number>|<name>] [-core] [-escape] [-date <date>] [-tags <tags>] [-"
+"action|-error|-join|-network|-quit] <text> || -stdout|-stderr <text>"
+msgstr ""
+"[-buffer <number>|<name>] [-core] [-escape] [-date <date>] [-tags <tags>] [-"
+"action|-error|-join|-network|-quit] <text> || -stdout|-stderr <text>"
+
+msgid ""
+"-buffer: the buffer where text is displayed (default: current buffer)\n"
+"  -core: alias of \"-buffer core.weechat\"\n"
+"-escape: interpret escaped chars (for example \\a, \\07, \\x07)\n"
+"  -date: message date, format can be:\n"
+"           -n: 'n' seconds before now\n"
+"           +n: 'n' seconds in the future\n"
+"            n: 'n' seconds since the Epoch (see man time)\n"
+"           date/time (ISO 8601): yyyy-mm-ddThh:mm:ss, example: "
+"2014-01-19T04:32:55\n"
+"           time: hh:mm:ss (example: 04:32:55)\n"
+"  -tags: comma-separated list of tags (see /help filter for a list of tags "
+"most commonly used)\n"
+"   text: text to display (prefix and message must be separated by \\t)\n"
+"-stdout: display text on stdout (not in a buffer)\n"
+"-stderr: display text on stderr (not in a buffer)\n"
+"\n"
+"The options -action ... -quit use the prefix defined in options \"weechat."
+"look.prefix_*\".\n"
+"\n"
+"With options -stdout and -stderr, escaped chars are always interpreted.\n"
+"\n"
+"Examples:\n"
+"  display a reminder on core buffer with a highlight:\n"
+"    /print -core -tags notify_highlight Reminder: buy milk\n"
+"  display an error on core buffer:\n"
+"    /print -core -error Some error here\n"
+"  display message on core buffer with prefix \"abc\":\n"
+"    /print -core abc\\tThe message\n"
+"  display a message on channel #weechat:\n"
+"    /print -buffer irc.freenode.#weechat Message on #weechat\n"
+"  send alert (BEL):\n"
+"    /print -stderr \\a"
+msgstr ""
+"-buffer: Buffer in welchem der Text ausgegeben werden soll (standardmäßig: "
+"aktueller Buffer)\n"
+"  -core: Alias für \"-buffer core.weechat\"\n"
+"-escape: Escapesequenzen werden umgewandelt (zum Beispiel \\a, \\07, \\x07)\n"
+"  -date: Datum der Nachricht, mögliche Formatierung:\n"
+"           -n: 'n' vor dem jetzigen Zeipunkt, in Sekunden\n"
+"           +n: 'n' in Zukunft, in Sekunden\n"
+"            n: 'n' Sekunden seit der Epoche (siehe man time)\n"
+"           date/time (ISO 8601): yyyy-mm-ddThh:mm:ss, Beispiel: "
+"2014-01-19T04:32:55\n"
+"           time: hh:mm:ss (Beispiel: 04:32:55)\n"
+"  -tags: durch Kommata getrennte Liste von Tags (siehe /help filter für eine "
+"Liste von Tags die häufig genutzt werden)\n"
+"   text: Text der ausgegeben werden soll (Präfix und Nachricht muss durch "
+"\\t getrennt werden)\n"
+"-stdout: Text wird an stdout geschickt (und nicht im Buffer dargestellt)\n"
+"-stderr:  Text wird an stderr geschickt (und nicht im Buffer dargestellt)\n"
+"\n"
+"Die Option -action ... -quit nutzt den Präfix der in der Option \"weechat."
+"look.prefix_*\" definiert ist.\n"
+"\n"
+"Die Optionen -stdout und -stderr wandeln Escapesequenzen automatisch um.\n"
+"\n"
+"Beispiele:\n"
+"  zeigt eine Erinnerung, mit Highlight, im Core-Buffer dar:\n"
+"    /print -core -tags notify_highlight Reminder: Milch kaufen\n"
+"  zeigt eine Fehlernachricht im Core-Buffer an:\n"
+"    /print -core -error irgend ein Fehler\n"
+"  zeigt eine Nachricht im Core-Buffer mit dem Präfix \"abc\" an:\n"
+"    /print -core abc\\tmeine Nachricht\n"
+"  es wird eine Nachricht im Channel #weechat ausgegeben:\n"
+"    /print -buffer irc.freenode.#weechat Message on #weechat\n"
+"  verschickt Alarm (BEL):\n"
+"    /print -stderr \\a"
 
 msgid "manage proxies"
 msgstr "Proxys verwalten"
@@ -2756,6 +2835,9 @@ msgstr "Konfigurationsoptionen"
 msgid "names of plugins"
 msgstr "Liste der Erweiterungen"
 
+msgid "names of plugins installed"
+msgstr "Namen der installierten Erweiterungen"
+
 msgid "commands defined by plugins"
 msgstr "Befehle, definiert durch Erweiterungen"
 
@@ -3159,9 +3241,9 @@ msgstr ""
 
 msgid ""
 "POSIX extended regular expression used to check if a message has highlight "
-"or not, at least one match in string must be surrounded by word chars "
-"(alphanumeric, \"-\", \"_\" or \"|\"), regular expression is case "
-"insensitive (use \"(?-i)\" at beginning to make it case sensitive), "
+"or not, at least one match in string must be surrounded by delimiters (chars "
+"different from: alphanumeric, \"-\", \"_\" and \"|\"), regular expression is "
+"case insensitive (use \"(?-i)\" at beginning to make it case sensitive), "
 "examples: \"flashcode|flashy\", \"(?-i)FlashCode|flashy\""
 msgstr ""
 "Suchmuster (erweiterter regulärer POSIX Ausdruck) welches genutzt werden "
@@ -3509,8 +3591,7 @@ msgstr "die aktuelle Konfiguration wird beim Beenden automatisch gesichert"
 
 msgid "save layout on exit (buffers, windows, or both)"
 msgstr ""
-"beim Beenden wird das aktuelle Layout automatisch gesichert (Buffer, Fenster "
-"oder beides)"
+"beim Beenden wird das aktuelle Layout gesichert (Buffer, Fenster oder beides)"
 
 msgid "how many lines to scroll by with scroll_up and scroll_down"
 msgstr ""
@@ -3557,6 +3638,9 @@ msgstr ""
 "das angegebene Zeichen wird verwendet um die vertikale Linien zu zeichnen. "
 "Wird kein Zeichen angegeben, dann zeichnet ncurses eine durchgängige Linie. "
 "Die Schriftbreite muss exakt ein Zeichen betragen"
+
+msgid "number of spaces used to display tabs in messages"
+msgstr "Anzahl an Leerzeichen um Tabulatoren in Nachrichten darzustellen"
 
 msgid ""
 "time format for dates converted to strings and displayed in messages (see "
@@ -6754,6 +6838,10 @@ msgstr ""
 "folgender Position der Zeichenkette: \"%s\""
 
 #, c-format
+msgid "%s%s: fingerprint must have exactly 40 hexadecimal digits"
+msgstr "%s%s: Fingerprint muss aus exakt 40 hexadezimalen Zeichen bestehen"
+
+#, c-format
 msgid ""
 "%s%s: warning: server \"%s\" not found in configuration file, not deleted in "
 "memory because it's currently used"
@@ -6834,6 +6922,18 @@ msgid "size of the key used during the Diffie-Hellman Key Exchange"
 msgstr ""
 "Größe des Schlüssels der während des Diffie-Hellman-Schlüsselaustausches "
 "genutzt wurde"
+
+msgid ""
+"SHA1 fingerprint of certificate which is trusted and accepted for the server "
+"(it must be exactly 40 hexadecimal digits without separators); if this "
+"option is set, the other checks on certificates are NOT performed (option "
+"\"ssl_verify\")"
+msgstr ""
+"SHA1 Fingerprint des Zertifikates welches als vertrauenswürdig eingestuft "
+"und für diesen Server akzeptiert wird (hier müssen exakt 40 hexadezimale "
+"Zeichen, ohne Trennung, angegeben werden); wird diese Option verwendet dann "
+"werden andere Optionen, die eine Überprüfung von Zertifikaten vornehmen, "
+"NICHT berücksichtigt (Option \"ssl_verify\")"
 
 msgid "check that the SSL connection is fully trusted"
 msgstr "Überprüft ob die SSL-Verbindung vertrauenswürdig ist"
@@ -8399,10 +8499,56 @@ msgid "%s%s: unable to create socket"
 msgstr "%s%s: Socket kann nicht erstellt werden"
 
 #, c-format
+msgid "%sgnutls: failed to calculate certificate fingerprint"
+msgstr "%sgnutls: Fingerprint-Zertifikat konnte nicht berechnet werden"
+
+#, c-format
 msgid "%sgnutls: connected using %d-bit Diffie-Hellman shared secret exchange"
 msgstr ""
 "%sgnutls: Verbindung mittels geheimen %d-Bit Diffie-Hellman Schlüssels "
 "hergestellt"
+
+#, c-format
+msgid "%sgnutls: failed to initialize certificate structure"
+msgstr "%sgnutls: Zertifikatsstruktur konnte nicht initialisiert werden"
+
+#, c-format
+msgid "%sgnutls: receiving %d certificate"
+msgid_plural "%sgnutls: receiving %d certificates"
+msgstr[0] "%sgnutls: empfange %d Zertifikat"
+msgstr[1] "%sgnutls: empfange %d Zertifikate"
+
+#, c-format
+msgid "%sgnutls: failed to import certificate[%d]"
+msgstr "%sgnutls:  Zertifikat[%d] konnte nicht importiert werden"
+
+#, c-format
+msgid "%s - certificate[%d] info:"
+msgstr "%s - Zertifikat [%d] Information:"
+
+#, c-format
+msgid "%sgnutls: certificate has expired"
+msgstr "%sgnutls: die Gültigkeitsdauer des Zertifikates ist abgelaufen"
+
+#, c-format
+msgid "%sgnutls: certificate is not yet activated"
+msgstr "%sgnutls: Zertifikat ist noch nicht freigeschaltet"
+
+#, c-format
+msgid "%sgnutls: certificate fingerprint matches"
+msgstr "%sgnutls: Fingerprint Zertifikat stimmt überein"
+
+#, c-format
+msgid ""
+"%sgnutls: certificate fingerprint does NOT match (check value of option irc."
+"server.%s.ssl_fingerprint)"
+msgstr ""
+"%sgnutls: certificate fingerprint does NOT match (check value of option irc."
+"server.%s.ssl_fingerprint)"
+
+#, c-format
+msgid "%sgnutls: the hostname in the certificate does NOT match \"%s\""
+msgstr "%sgnutls: der Hostname im Zertifikat \"%s\" stimmt NICHT überein"
 
 #, c-format
 msgid "%sgnutls: error while checking peer's certificate"
@@ -8423,28 +8569,6 @@ msgstr "%sgnutls: Der Aussteller für das Peer-Zertifikat ist unbekannt"
 #, c-format
 msgid "%sgnutls: the certificate has been revoked"
 msgstr "%sgnutls: Das Zertifikat wurde widerrufen"
-
-#, c-format
-msgid "%sgnutls: receiving %d certificate"
-msgid_plural "%sgnutls: receiving %d certificates"
-msgstr[0] "%sgnutls: empfange %d Zertifikat"
-msgstr[1] "%sgnutls: empfange %d Zertifikate"
-
-#, c-format
-msgid "%s - certificate[%d] info:"
-msgstr "%s - Zertifikat [%d] Information:"
-
-#, c-format
-msgid "%sgnutls: certificate has expired"
-msgstr "%sgnutls: die Gültigkeitsdauer des Zertifikates ist abgelaufen"
-
-#, c-format
-msgid "%sgnutls: certificate is not yet activated"
-msgstr "%sgnutls: Zertifikat ist noch nicht freigeschaltet"
-
-#, c-format
-msgid "%sgnutls: the hostname in the certificate does NOT match \"%s\""
-msgstr "%sgnutls: der Hostname im Zertifikat \"%s\" stimmt NICHT überein"
 
 #, c-format
 msgid "%sgnutls: sending one certificate"
@@ -11107,6 +11231,9 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
+
+#~ msgid "No layout saved"
+#~ msgstr "Kein Layout gespeichert"
 
 #~ msgid "%s%s: could not find address for \"%s\", falling back to local IP"
 #~ msgstr ""
