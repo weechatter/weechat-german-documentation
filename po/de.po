@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat 0.4.3-dev\n"
 "Report-Msgid-Bugs-To: flashcode@flashtux.org\n"
-"POT-Creation-Date: 2014-01-22 18:47+0100\n"
-"PO-Revision-Date: 2014-01-22 21:22+0100\n"
+"POT-Creation-Date: 2014-01-23 11:24+0100\n"
+"PO-Revision-Date: 2014-01-23 20:37+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <weechatter@arcor.de>\n"
 "Language: de_DE\n"
@@ -5410,8 +5410,12 @@ msgid "%s%s: notify already exists"
 msgstr "%s%s: Benachrichtigung existiert schon"
 
 #, c-format
-msgid "%s: notification added for %s%s"
-msgstr "%s: Benachrichtigung für %s%s hinzugefügt"
+msgid "%sMonitor list is full (%d)"
+msgstr "%sMonitor-Liste ist voll (%d)"
+
+#, c-format
+msgid "%s: notification added for %s%s%s"
+msgstr "%s: Benachrichtigung für %s%s%s hinzugefügt"
 
 #, c-format
 msgid "%s%s: error adding notification"
@@ -5426,8 +5430,8 @@ msgid "%s: no notification in list"
 msgstr "%s keine Benachrichtigung in Liste vorhanden"
 
 #, c-format
-msgid "%s: notification deleted"
-msgstr "%s: Benachrichtigung gelöscht"
+msgid "%s: notification deleted for %s%s%s"
+msgstr "%s: Benachrichtigung für %s%s%s gelöscht"
 
 #, c-format
 msgid "%s%s: notification not found"
@@ -7950,20 +7954,20 @@ msgid "Notify list is empty on all servers"
 msgstr "es liegt für keinen Server eine Benachrichtigung vor"
 
 #, c-format
-msgid "%snotify: %s%s%s is connected"
-msgstr "%snotify: %s%s%s ist angemeldet"
+msgid "%snotify: %s%s%s%s%s%s%s%s%s is connected"
+msgstr "%snotify: %s%s%s%s%s%s%s%s%s ist angemeldet"
 
 #, c-format
-msgid "%snotify: %s%s%s is offline"
-msgstr "%snotify: %s%s%s ist offline"
+msgid "%snotify: %s%s%s%s%s%s%s%s%s is offline"
+msgstr "%snotify: %s%s%s%s%s%s%s%s%s ist offline"
 
 #, c-format
-msgid "%snotify: %s%s%s has joined"
-msgstr "%snotify: %s%s%s hat sich angemeldet"
+msgid "%snotify: %s%s%s%s%s%s%s%s%s has joined"
+msgstr "%snotify: %s%s%s%s%s%s%s%s%s hat sich angemeldet"
 
 #, c-format
-msgid "%snotify: %s%s%s has quit"
-msgstr "%snotify: %s%s%s hat sich abgemeldet"
+msgid "%snotify: %s%s%s%s%s%s%s%s%s has quit"
+msgstr "%snotify: %s%s%s%s%s%s%s%s%s hat den IRC verlassen"
 
 #, c-format
 msgid "%snotify: %s%s%s is now away: \"%s\""
@@ -11231,24 +11235,3 @@ msgstr "Type"
 
 msgid "Constants"
 msgstr "Konstanten"
-
-#~ msgid "No layout saved"
-#~ msgstr "Kein Layout gespeichert"
-
-#~ msgid "%s%s: could not find address for \"%s\", falling back to local IP"
-#~ msgstr ""
-#~ "%s%s: Adresse für \"%s\" wurde nicht gefunden. Es wird auf die lokale IP "
-#~ "zurückgegriffen"
-
-#~ msgid "%s%s: connected to %s (%ld.%ld.%ld.%ld)"
-#~ msgstr "%s%s: verbunden mit %s (%ld.%ld.%ld.%ld)"
-
-#~ msgid ""
-#~ "%s: sending file to %s (%ld.%ld.%ld.%ld, %s.%s), name: %s (local "
-#~ "filename: %s), %llu bytes (protocol: %s)"
-#~ msgstr ""
-#~ "%s: sende Datei an %s (%ld.%ld.%ld.%ld, %s.%s), Name: %s (lokaler "
-#~ "Dateiname: %s), %llu Bytes (Protokoll: %s)"
-
-#~ msgid "Connected to %s (%ld.%ld.%ld.%ld) via xfer chat"
-#~ msgstr "Verbindung zu %s (%ld.%ld.%ld.%ld) via Transfer-Chat aufgebaut"
