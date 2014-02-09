@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-25 16:31+0100\n"
-"PO-Revision-Date: 2014-01-25 20:41+0100\n"
+"POT-Creation-Date: 2014-02-09 11:22+0100\n"
+"PO-Revision-Date: 2014-02-09 13:37+0100\n"
 "Last-Translator: Nils Görs <weechatter@arcor.de>\n"
 "Language-Team: German <nils_2@freenode.#weechat>\n"
 "Language: de\n"
@@ -2250,6 +2250,53 @@ msgstr ""
 
 #: news/_i18n_info.py:90
 msgid ""
+"Version 0.4.3 is available!\n"
+"\n"
+"Among the new features:\n"
+"\n"
+"- new command /print\n"
+"- logical and/or for tags in /filter and hook_print\n"
+"- gaps in buffer numbers\n"
+"- support of italic text\n"
+"- new options to customize default text search in buffers\n"
+"- use of IRC monitor command for /notify (if available on server)\n"
+"- new IRC server option \"ssl_fingerprint\"\n"
+"- new option to smart-filter IRC mode messages\n"
+"- new option for default IRC ban mask\n"
+"- support of IPv6 for DCC chat/file\n"
+"- auto check CRC32 of files received with DCC\n"
+"- many bugs fixed.\n"
+"\n"
+"For complete list of new features and bugs fixed, please look at <a href="
+"\"http://dev.weechat.org/post/2014/02/09/Version-0.4.3\">development blog</"
+"a> or <a href=\"/files/changelog/ChangeLog-0.4.3.html\">ChangeLog</a>."
+msgstr ""
+"Version 0.4.3 ist verfügbar!\n"
+"\n"
+"Überblick, der neuen Funktionen:\n"
+"\n"
+"- neuer Befehl /print\n"
+"- logische and/or für Tags in /filter und hook_print\n"
+"- Buffer können einer frei wählbaren Position zugeordnet werden\n"
+"- Unterstützung von kursivem Text\n"
+"- neue Optionen um die Textsuche in Buffers zu individualisieren\n"
+"- IRC monitor Befehl wird für /notify verwendet (sofern der Server es "
+"unterstützt)\n"
+" - neue IRC Serveroption \"ssl_fingerprint\"\n"
+"- neue Option um IRC mode-Nachrichten intelligent zu filtern\n"
+"- neue Option für eine standard IRC-Ban-Maske\n"
+"- DCC Chat/Transfer unterstützt IPv6\n"
+"- automatische CRC32 Überprüfung von Dateien die mittels DCC empfangen "
+"werden\n"
+"- viele Fehlerbereinigungen\n"
+"\n"
+"Eine vollständige Liste der neuen Funktionen und Fehlerbereinigungen findet "
+"man unter folgenden Links: <a href=\"http://dev.weechat.org/post/2014/02/09/"
+"Version-0.4.3\">development blog</a> oder <a href=\"/files/changelog/"
+"ChangeLog-0.4.3.html\">ChangeLog</a>."
+
+#: news/_i18n_info.py:91
+msgid ""
 "Version v0.1.2 is available!\n"
 "\n"
 "News since last version are:\n"
@@ -2281,11 +2328,11 @@ msgstr ""
 "Add-on, 24.05.2005: Absturz beim Programmstart und Perl/Python Erkennung "
 "behoben, Version ist nun 0.1.2.1."
 
-#: news/_i18n_info.py:91
+#: news/_i18n_info.py:92
 msgid "WeeChat - Wee Enhanced Environment for Chat"
 msgstr "WeeChat - Wee Enhanced Environment for Chat"
 
-#: news/_i18n_info.py:92
+#: news/_i18n_info.py:93
 msgid ""
 "WeeChat has many new important features since some weeks:\n"
 "- multi-windows management (with horizontal and vertical window split)\n"
@@ -2310,11 +2357,11 @@ msgstr ""
 "in der Testphase. Wenn Sie Fehler finden oder Anmerkungen haben um die "
 "Funktionalität der buffer/window/nzu erhöhen, dann melden Sie sich."
 
-#: news/_i18n_info.py:93
+#: news/_i18n_info.py:94
 msgid "WeeChat in Cygwin"
 msgstr "WeeChat mit Cygwin"
 
-#: news/_i18n_info.py:94
+#: news/_i18n_info.py:95
 msgid ""
 "WeeChat is now in Cygwin, and can be installed with setup.exe.\n"
 "Version 0.4.2 is available for 32 and 64-bit Cygwin.\n"
@@ -2329,7 +2376,7 @@ msgstr ""
 "Hinweis: Guile Erweiterung ist nicht verfügbar, da guile >= 2.0 benötigt "
 "wird und diese nicht von Cygwin zur Verfügung gestellt wird."
 
-#: news/_i18n_info.py:95
+#: news/_i18n_info.py:96
 msgid ""
 "WeeChat project is started.\n"
 "\n"
@@ -2349,7 +2396,7 @@ msgstr ""
 "- schnell, schlank und erweiterbar durch Skripten.\n"
 "- ..."
 
-#: news/_i18n_info.py:96
+#: news/_i18n_info.py:97
 msgid ""
 "WeeChat project now accepts donations via Paypal account, with secured "
 "payment."
@@ -2357,15 +2404,15 @@ msgstr ""
 "Das WeeChat Projekt kann nun durch das sichere Paypal Verfahren direkt "
 "unterstützt werden."
 
-#: news/_i18n_info.py:97
+#: news/_i18n_info.py:98
 msgid "WeeChat screenshot"
 msgstr "WeeChat Screenshot"
 
-#: news/_i18n_info.py:98
+#: news/_i18n_info.py:99
 msgid "WeeChat scripts page"
 msgstr "WeeChat Skriptenseite"
 
-#: news/_i18n_info.py:99
+#: news/_i18n_info.py:100
 msgid ""
 "WeeChat scripts page (today Perl scripts only) has been added.\n"
 "On this page you can submit your script (need to be approved by WeeChat "
@@ -2381,7 +2428,7 @@ msgstr ""
 "Hinweis: Perl-Skripten benötigen mindestens Version > 0.0.3 von WeeChat. Zur "
 "Zeit muss somit die Entwicklerversion genutzt werden."
 
-#: news/_i18n_info.py:100
+#: news/_i18n_info.py:101
 msgid ""
 "WeeChat story page is now available, as screenshots. You can see differences "
 "between all versions in one view!\n"
@@ -2392,15 +2439,15 @@ msgstr ""
 "Entwicklungsversionen sind ebenso aufgeführt und es findet ein regelmäßiges "
 "Update statt."
 
-#: news/_i18n_info.py:101
+#: news/_i18n_info.py:102
 msgid "WeeChat users map"
 msgstr "Karte der WeeChat Anwender"
 
-#: news/_i18n_info.py:102
+#: news/_i18n_info.py:103
 msgid "WeeChat will merge with irssi"
 msgstr "WeeChat verschmilzt mit irssi"
 
-#: news/_i18n_info.py:103
+#: news/_i18n_info.py:104
 msgid ""
 "WeeChat, the fast, light and extensible IRC client, is released for the "
 "first time, version 0.0.1.\n"
@@ -2914,7 +2961,8 @@ msgstr "Bars für jeden Buffer individuell anpassen."
 #. Translators: description for script "server_autoswitch.py" (0.3.6+)
 #: plugins/_i18n_plugins.py:169
 msgid "Cycle to currently used server (for merged buffers)."
-msgstr "wechselt zum aktuell genutzten Server (bei zusammengefügten Buffern!)."
+msgstr ""
+"bei zusammengefügten Server-Buffern, erhält der aktuelle Server den Fokus."
 
 #. Translators: description for script "pybuffer.py" (0.3.0+)
 #: plugins/_i18n_plugins.py:171
@@ -3334,8 +3382,7 @@ msgstr ""
 #: plugins/_i18n_plugins.py:319
 msgid "List multiple occurences of the same nick(s) in a set of channels."
 msgstr ""
-"zeigt in welchen geöffneten und per Option ausgewählten Channels welche "
-"Nicknamen mehrfach vertreten sind."
+"zeigt für ausgewählte Channels welche Nicknamen mehrfach vertreten sind."
 
 #. Translators: description for script "input_lock.rb" (0.3.0+)
 #: plugins/_i18n_plugins.py:321
@@ -3508,7 +3555,7 @@ msgstr "zeigt an welches Lied gerade von banshee gespielt wird."
 #. Translators: description for script "otr.py" (0.3.0+)
 #: plugins/_i18n_plugins.py:381
 msgid "Off-The-Record IRC messaging."
-msgstr "inoffizieller Datentransfer (Off-The-Record) via IRC."
+msgstr "verschlüsselte Konversation (Off-The-Record) via IRC."
 
 #. Translators: description for script "xclip.pl" (0.3.0+)
 #: plugins/_i18n_plugins.py:383
@@ -4511,7 +4558,7 @@ msgstr "WeeChat, der erweiterbare Chat Client"
 msgid "Valid"
 msgstr "Valid"
 
-#: templates/error.html:11 templates/home/home.html:105
+#: templates/error.html:11 templates/home/home.html:104
 msgid "Back to home"
 msgstr "Zurück zur Hauptseite"
 
@@ -4783,19 +4830,19 @@ msgstr ""
 msgid "Almost everything is a plugin, for example:"
 msgstr "Fast alles wird durch Erweiterungen bereitgestellt, zum Beispiel:"
 
-#: templates/about/features.html:50
+#: templates/about/features.html:51
 msgid "Internet Relay Chat (IRC) protocol"
 msgstr "Internet Relay Chat (IRC) Protokoll"
 
-#: templates/about/features.html:51
+#: templates/about/features.html:52
 msgid "API for script languages"
 msgstr "API für Skriptsprachen"
 
-#: templates/about/features.html:52
+#: templates/about/features.html:53
 msgid "IRC proxy and remote interface"
 msgstr "IRC Proxy und Remote-Oberfläche"
 
-#: templates/about/features.html:53 templates/about/features.html.py:80
+#: templates/about/features.html:54 templates/about/features.html.py:81
 msgid "Scripts manager"
 msgstr "Skripten-Manager"
 
@@ -4816,48 +4863,48 @@ msgstr ""
 msgid "Look by yourself (the list is not exhaustive):"
 msgstr "Sehen Sie selber (diese Aufzählung ist nicht vollständig):"
 
-#: templates/about/features.html:71
+#: templates/about/features.html:72
 msgid "256 colors"
 msgstr "256 Farben"
 
-#: templates/about/features.html:72
+#: templates/about/features.html:73
 msgid "Mouse support"
 msgstr "Mausunterstützung"
 
-#: templates/about/features.html:73
+#: templates/about/features.html:74
 msgid "Customizable bars"
 msgstr "Bars können individuell anpasst werden"
 
-#: templates/about/features.html:74
+#: templates/about/features.html:75
 msgid "6 script languages"
 msgstr "sechs Skriptsprachen"
 
-#: templates/about/features.html:75
+#: templates/about/features.html:76
 msgid "Horizontal/vertical split"
 msgstr "freie Fenstereinteilung horizontal/vertikal"
 
-#: templates/about/features.html:76
+#: templates/about/features.html:77
 msgid "Dynamic filtering of lines"
 msgstr "dynamische Filterung von Zeilen"
 
-#: templates/about/features.html:77
+#: templates/about/features.html:78
 msgid "Incremental text search"
 msgstr "schrittweise Textsuche"
 
-#: templates/about/features.html:78
+#: templates/about/features.html:79
 msgid "FIFO pipe"
 msgstr "FIFO Pipe"
 
-#: templates/about/features.html:79
+#: templates/about/features.html:80
 msgid "Spell checking"
 msgstr "Rechtschreibprüfung"
 
-#: templates/about/features.html:81 templates/about/features.html.py:121
+#: templates/about/features.html:82 templates/about/features.html.py:121
 #: templates/download/packages.html:115
 msgid "Remote interfaces"
 msgstr "Remote-Oberfläche"
 
-#: templates/about/features.html:82
+#: templates/about/features.html:83
 msgid "Upgrade without quitting"
 msgstr "Upgrade ohne Neustart"
 
@@ -4878,51 +4925,51 @@ msgstr ""
 "Des weiteren werden folgende <strong>eingebaute Funktionen</strong> "
 "bereitgestellt:"
 
-#: templates/about/features.html:100
+#: templates/about/features.html:101
 msgid "Multi-servers"
 msgstr "Multi-Server"
 
-#: templates/about/features.html:101
+#: templates/about/features.html:102
 msgid "IPv6, SSL, proxy"
 msgstr "IPv6, SSL, Proxy"
 
-#: templates/about/features.html:102
+#: templates/about/features.html:103
 msgid "SASL authentication"
 msgstr "SASL Authentifizierung"
 
-#: templates/about/features.html:103
+#: templates/about/features.html:104
 msgid "Nicklist"
 msgstr "Nickliste"
 
-#: templates/about/features.html:104
+#: templates/about/features.html:105
 msgid "Color for nicks"
 msgstr "Nickfarbe"
 
-#: templates/about/features.html:105
+#: templates/about/features.html:106
 msgid "Color for away nicks"
 msgstr "Farbe für abwesende Nicks"
 
-#: templates/about/features.html:106
+#: templates/about/features.html:107
 msgid "Smart filter"
 msgstr "intelligente Filterung"
 
-#: templates/about/features.html:107
+#: templates/about/features.html:108
 msgid "Anti-flood"
 msgstr "Anti-Flood"
 
-#: templates/about/features.html:108
+#: templates/about/features.html:109
 msgid "Commands redirection"
 msgstr "Umleitung von Befehlen"
 
-#: templates/about/features.html:109
+#: templates/about/features.html:110
 msgid "Custom CTCP replies"
 msgstr "benutzerdefinierte CTCP Antworten"
 
-#: templates/about/features.html:110
+#: templates/about/features.html:111
 msgid "Lag indicator"
 msgstr "Wartezeit Indikator"
 
-#: templates/about/features.html:111
+#: templates/about/features.html:112
 msgid "DCC (file/chat)"
 msgstr "DCC (Datentransfer/Chat)"
 
@@ -4937,11 +4984,11 @@ msgstr ""
 msgid "Here is a list of available interfaces:"
 msgstr "Eine Auswahl von verfügbaren Benutzeroberflächen:"
 
-#: templates/about/features.html:131
+#: templates/about/features.html:132
 msgid "Qt interface"
 msgstr "Qt Oberfläche"
 
-#: templates/about/features.html:143
+#: templates/about/features.html:144
 msgid "web interface"
 msgstr "Web-Oberfläche"
 
@@ -5429,19 +5476,19 @@ msgstr "Release notes"
 msgid "(see above)"
 msgstr "(siehe oben)"
 
-#: templates/download/packages.html:143
+#: templates/download/packages.html:149
 msgid "Checking the signatures"
 msgstr "Verifizieren der Signaturen"
 
-#: templates/download/packages.html:147
+#: templates/download/packages.html:153
 msgid "Import the gpg key:"
 msgstr "GPG Schlüssel importieren:"
 
-#: templates/download/packages.html:151
+#: templates/download/packages.html:157
 msgid "Display the fingerprint:"
 msgstr "Fingerabdruck anzeigen:"
 
-#: templates/download/packages.html:155
+#: templates/download/packages.html:161
 msgid ""
 "Check that the fingerprint is correct by asking to a developer on #weechat "
 "(irc.freenode.net)."
@@ -5449,39 +5496,39 @@ msgstr ""
 "Um die Echtheit des Fingerabdruckes zu überprüfen kann ein Entwickler im "
 "#weechat Channel (irc.freenode.net) angesprochen werden."
 
-#: templates/download/packages.html:158
+#: templates/download/packages.html:164
 msgid "Trust the key:"
 msgstr "Schlüssel vertrauen:"
 
-#: templates/download/packages.html:167
+#: templates/download/packages.html:173
 msgid "In directory with package + signature:"
 msgstr "Im Verzeichnis mit den Paketen und Signaturen:"
 
-#: templates/download/packages.html:171
+#: templates/download/packages.html:177
 msgid "If the signature is OK you should see a message like this one:"
 msgstr "Wird die Signatur als korrekt erkannt, wird eine Nachricht angezeigt:"
 
-#: templates/download/packages.html:266
+#: templates/download/packages.html:272
 msgid "Links"
 msgstr "Links"
 
-#: templates/download/packages.html:268
+#: templates/download/packages.html:274
 msgid "Savannah page"
 msgstr "Savannah Seite"
 
-#: templates/download/packages.html:274
+#: templates/download/packages.html:280
 msgid "Git - sources"
 msgstr "Git - Quelltext"
 
-#: templates/download/packages.html:280
+#: templates/download/packages.html:286
 msgid "Git - scripts"
 msgstr "Git - Skripten"
 
-#: templates/download/packages.html:286
+#: templates/download/packages.html:292
 msgid "Git - clone"
 msgstr "Git - Clone"
 
-#: templates/download/packages.html:296
+#: templates/download/packages.html:302
 msgid "Error: there is no version called"
 msgstr "Fehler: Es wurde keine Version ausgewählt"
 
